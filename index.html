@@ -2,6 +2,7 @@
 <!-- xlsx.js (C) 2013-present  SheetJS http://sheetjs.com 
 		https://github.com/SheetJS/js-xlsx
 		https://stuk.github.io/jszip/
+		https://oss.sheetjs.com/js-xlsx/
 -->
 <html>
 <head>
@@ -279,11 +280,13 @@
 <script src="js/cookie.js"></script>
 <script src="js/table.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/convertuni.js"></script>
 
 <script>
 var debug = false;
 
 var X = XLSX;
+var CSV = false;
 var global_wb;
 
 var colValues =[];
@@ -301,7 +304,13 @@ csvData = 'Test Data\n'
 + '"","Apelles","ebcd","man:split,divide,division,separate","looks_like"\n'
 +' "","Levi","eb1b","man: with: equal,same: people",\n';
 
-function getCols(workbook)  { //your workbook variable
+/*
+var xstringToArrayBuffer = function(str) {
+console.log(str);
+  return (new Uint8Array([].map.call(str,function(x){return x.charCodeAt(0)}))).buffer;
+}
+
+function xgetCols(workbook)  { //your workbook variable
     var first_sheet_name = workbook.SheetNames[0];
     var worksheet = workbook.Sheets[first_sheet_name];
     var cells = Object.keys(worksheet);
@@ -313,12 +322,42 @@ function getCols(workbook)  { //your workbook variable
 	console.log(colValues);
  }
 
+function stringToUTF8Bytes(string) {
+console.log('string2utf8',new TextEncoder().encode(string));
+  return new TextEncoder().encode(string);
+}
+*/
+function fixUnicode(lines) {
+	console.log('fix');
+	for (var i = 0; i < lines.length; i ++) {
+		rowx = lines[i]
+		console.log('before',i, rowx.length, rowx);
+		for (var j = 0;  j < rowx.length; j++) {  
+			var uni = rowx[j];
+			//console.log(toHex(uni), uni.length);
+			if (uni.length === 3) {
+				var hArry = toHexArray(uni);
+				uni = convertUTF82CP(hArry).toLowerCase();
+				//console.log( "\\u"+uni);
+				var char = unescape('%u' + uni);
+				//console.log(char.toString(16));
+				lines[i][j] = char;
+			}
+			//console.log('after',lines[i]);
+		}
+	}
+	console.log('csvfix',lines);
+	return lines;
+}
+
 var process_wb = (function() {
 	var OUT = document.getElementById('output');
 	var to_csv = function to_csv(workbook) {
 		var result = [];
 		workbook.SheetNames.forEach(function(sheetName) {
 			var csv = X.utils.sheet_to_csv(workbook.Sheets[sheetName]);
+			//var csv = X.utils.sheet_to_json(workbook.Sheets[sheetName], {header:1, raw:true});
+			console.log(csv);
 			if(csv.length){
 				result.push("SHEET: " + sheetName);
 				result.push("");
@@ -333,8 +372,10 @@ var process_wb = (function() {
 		global_wb = wb;
 		var output = "";
         csv = to_csv(wb);
-		//getCols(wb);
+		console.log('csv file',CSV, csv);
+
 		output = csvToArray(csv);
+		if (CSV) output = fixUnicode(output);
 		generateTable(output);
 		table_mismatch();
 		//sortTable();
@@ -347,14 +388,28 @@ var do_file = (function() {
 		var rABS = false;
 		//use_worker = domwork.checked;
 		var f = files[0];
+		//console.log(f);
+		var fname = f["name"];
+		//document.getElementById('xlf').value = fname;
+		var ext = fname.slice((fname.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
+		//console.log(ext);
+		if (ext === 'csv') CSV = true;
+		else CSV = false;
 		var reader = new FileReader();
 		reader.onload = function(e) {
 			var data = e.target.result;
-			if(!rABS) data = new Uint8Array(data);
-			process_wb(X.read(data, {type: rABS ? 'binary' : 'array'}));
+			//if(!rABS) data = new Uint8Array(data);
+			console.log(data);
+			//process_wb(X.read(data, {type: rABS ? 'binary' : 'array'}));
+			process_wb(X.read(data, {type:'array'}));
+			//process_wb(X.read(data));
 		};
 		if(rABS) reader.readAsBinaryString(f);
-		else reader.readAsArrayBuffer(f);
+		else {
+			console.log('readasarray');
+			reader.readAsArrayBuffer(f);
+			//reader.readAsText(f);
+		}
 	};
 
 
@@ -387,176 +442,6 @@ var do_file = (function() {
 	function handleFile(e) { do_file(e.target.files); }
 	xlf.addEventListener('change', handleFile, false);
 })();
-/*
-function generateTable(lines){
-	//Clear previous data
-	document.getElementById("output").innerHTML = "";
-	var table = document.createElement("table");
-	table.id = "searchtable";
-	table.className = 'xreftable';
-	var len = 0;
-	for (var i = 0; i < lines.length; i++) {
-	  // find longest row
-		if (lines[i].length > len) {
-			len = lines[i].length;
-		}
-	}
-	
-	table.createCaption();
-	table.caption.innerHTML = lines[0];
-	// make header
-	// checkbox in each column header for compare
-
-	var row = document.createElement('TR');
-	for (var j = 0; j < len; j++) {
-		var th = document.createElement("TH");
-		th.onclick = function() {
-		sortTable(this.cellIndex); };
-		th.appendChild(document.createTextNode('col '+j));
-		row.appendChild(th);
-	}
-
-	table.appendChild(row);
-	var tbody = document.createElement('TBODY');
-	for (var i = 1; i < lines.length; i++) {  // get line
-		//console.log(lines[i]);
-		if (lines[i].length > 1) {	// process row
-			var row = document.createElement('TR');
-			var mismatch = false;
-			var icontext = "";
-			var col2text = "";
-			for (var j = 0; j < lines[i].length; j++) {
-				var text = "";
-				var td = document.createElement("TD");
-				if (lines[i][j]) text = lines[i][j].trim();
-				if (j ===0) {
-					//td.className = 'td0';
-				}
-				td.appendChild(document.createTextNode(text));
-				row.appendChild(td);
-			}  // end column process
-				}	// end row process
-		tbody.appendChild(row);
-	}  // end process line
-	table.appendChild(tbody);
-	document.getElementById("output").appendChild(table);
-
-}
-
-
-function table_mismatch(){
-	var chkCols = [];
-	var found = false;
-	var table = document.getElementById("searchtable");
-	var rows = table.getElementsByTagName("tr");
-
-	var rowx = 0;
-	for (var i = 3; i < rows.length; i ++) {
-		rowx = rows[i]
-		console.log(i, rowx.childNodes.length, rowx);
-		for (var j = 0;  j < rowx.childNodes.length; j++) {
-			var uni = rowx.childNodes[j].innerText.charCodeAt(0).toString(16).toLowerCase();
-			if (uni.length == 4) { 
-				chkCols[0] = [j, uni];
-				found = true;
-				break;
-			}	
-		}
-		if (found) break;
-	}
-
-	for (var i = 0; i < rowx.childNodes.length; i++) {
-		var c0 = rowx.childNodes[i].innerText.toString().toLowerCase();
-		if (c0 === chkCols[0][1]) { 
-			chkCols[1] = [i, c0];
-			break;
-		}	
-	}
-
-	var fontcol = chkCols[0][0];			// fonticon column
-	var unicol = chkCols[1][0];			// unicode column
-	var ths = table.getElementsByTagName("th");
-	var tds = table.getElementsByTagName("td");
-	i = fontcol;
-	for (var i = 0; i < ths.length; i++) {
-	//i = fontcol;
-		if (i === fontcol) {
-			ths[i].className = "fonticon";
-			ths[i].innerHTML = 'Font';
-			//console.log(i, ths[i]);
-		}
-	//i = unicol;
-		if (i === unicol) {
-			ths[i].innerHTML = 'Unicode';
-			ths[i].className = "unicol";
-			//console.log(i, ths[i]);
-		}	
-	//ths[ths.length-1].className = "width100";
-	}
-	
-	console.log(fontcol, unicol);
-	for (i = 1; i < rows.length; i++) {
-		var c0 = rows[i].childNodes[fontcol].innerText.charCodeAt(0).toString(16).toLowerCase();
-		var c1 = rows[i].childNodes[unicol].innerText.toLowerCase();
-	//	var fontname = rows[i].childNodes[1].innerText;
-	//	console.log(c0, c1, typeof(c0));
-	    rows[i].childNodes[fontcol].className = "fonticon";
-		rows[i].childNodes[unicol].className = "unicol";
-		//console.log(rows[i].childNodes.length);
-		//var len = rows[i].childNodes.length
-		//rows[i].childNodes[len - 1].className = "width100";
-		if (c0 !== c1) {
-			console.log('not equal', fontcol, unicol)
-			mismatch = true;	
-			var fontname = rows[i].childNodes[1].innerText;
-			var errdata = "Font error\nicon = " +c0+"\nunicode = "+c1;
-			rows[i].className = "uerror";
-			rows[i].setAttribute("rowdata", errdata);
-			dispModal(rows[i], chkCols);
-		}
-	}
-*/	
-/*
-function dispModal(btn, chkCols) {	
-			// Get the modal
-		var modal = document.getElementById("myModal");
-	    
-		// Get the button that opens the modal
-		//var btn = document.getElementById("myBtn");
-
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-
-		// When the user clicks the button, open the modal 
-		//btn.onclick = function(e) {
-		btn.onclick = function(e) {
-			modal.style.display = "block";
-			var tr = e.target.parentElement;
-			console.log(e.target.parentElement);
-			var fontcol = chkCols[0][0];			// fonticon column
-			var unc = chkCols[1][0];				// unicode column
-			var c0 = tr.childNodes[fontcol].innerText.charCodeAt(0).toString(16).toLowerCase();
-			var c1 = tr.childNodes[unc].innerText.toLowerCase();
-			var errdata = "Font error<br>icon = " +c0+"<br>unicode = "+c1;
-			console.log(errdata);
-			var mdisp = document.getElementById("mdisp");
-			mdisp.innerHTML = errdata;
-		}
-
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		  modal.style.display = "none";
-		}
-
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		  if (event.target == modal) {
-			modal.style.display = "none";
-		  }
-		}
-	} //if modal
-}
-*/
 
 document.getElementById('sfont').value = "";
 document.getElementById('xlf').value = ""; 
@@ -577,8 +462,11 @@ if (debug) {
 	//sortTable();
 }
 	
-
-
+/*
+var u = ["EE", "AC", "8D"];
+console.log(u);
+convertUTF82CP(u);
+*/
 </script>
 </body>
 </html>

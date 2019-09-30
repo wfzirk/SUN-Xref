@@ -1,5 +1,6 @@
 function generateTable(lines){
 	//Clear previous data
+	console.log('generateTable');
 	document.getElementById("output").innerHTML = "";
 	var table = document.createElement("table");
 	table.id = "searchtable";
@@ -57,8 +58,27 @@ function generateTable(lines){
 }
 
 
+  function toHex(str) {
+    var result = '';
+    for (var i=0; i<str.length; i++) {
+      result += str.charCodeAt(i).toString(16);
+    }
+	console.log('toHex', str, result);
+	 return result;
+  }
+   function toHexArray(str) {
+    var result = [];
+    for (var i=0; i<str.length; i++) {
+      result.push(str.charCodeAt(i).toString(16));
+    }
+	console.log('toHexArr', str, result);
+	 return result;
+  }
+  
 function table_mismatch() {
 	var chkCols = [];
+	var fontCol = -1;
+	var uniCol = -1;
 	var found = false;
 	var table = document.getElementById("searchtable");
 	var rows = table.getElementsByTagName("tr");
@@ -67,72 +87,83 @@ function table_mismatch() {
 	for (var i = 3; i < rows.length; i ++) {
 		rowx = rows[i]
 		console.log(i, rowx.childNodes.length, rowx);
-		for (var j = 0;  j < rowx.childNodes.length; j++) {
-			var uni = rowx.childNodes[j].innerText.charCodeAt(0).toString(16).toLowerCase();
-			if (uni.length == 4) { 
+		for (var j = 0;  j < rowx.childNodes.length; j++) {  //  eeac8d = eb0d
+			//	https://stackoverflow.com/questions/17267329/converting-unicode-character-to-string-format
+			var	uni = rowx.childNodes[j].innerText.charCodeAt(0).toString(16).toLowerCase();
+			console.log(j, '|'+uni+'|', uni.length);
+		    if (uni.length == 4) { 
 				chkCols[0] = [j, uni];
+				fontCol = j;
+				console.log(uni);
 				found = true;
 				break;
 			}	
 		}
 		if (found) break;
 	}
-
-	for (var i = 0; i < rowx.childNodes.length; i++) {
-		var c0 = rowx.childNodes[i].innerText.toString().toLowerCase();
-		if (c0 === chkCols[0][1]) { 
-			chkCols[1] = [i, c0];
-			break;
-		}	
-	}
-
-	var fontcol = chkCols[0][0];			// fonticon column
-	var unicol = chkCols[1][0];			// unicode column
-	var ths = table.getElementsByTagName("th");
-	var tds = table.getElementsByTagName("td");
-	i = fontcol;
-	for (var i = 0; i < ths.length; i++) {
-	//i = fontcol;
-		if (i === fontcol) {
-			ths[i].className = "fonticon";
-			ths[i].innerHTML = 'Font';
-			//console.log(i, ths[i]);
+    if (found) {
+		for (var i = 0; i < rowx.childNodes.length; i++) {
+			var c0 = rowx.childNodes[i].innerText.toString().toLowerCase();
+			if (c0 === chkCols[0][1]) { 
+				chkCols[1] = [i, c0];
+				uniCol = i;
+				break;
+			}	
 		}
-	//i = unicol;
-		if (i === unicol) {
-			ths[i].innerHTML = 'Unicode';
-			ths[i].className = "unicol";
-			//console.log(i, ths[i]);
-		}	
-	//ths[ths.length-1].className = "width100";
-	}
-	
-	console.log(fontcol, unicol);
-	for (i = 1; i < rows.length; i++) {
-		var c0 = rows[i].childNodes[fontcol].innerText.charCodeAt(0).toString(16).toLowerCase();
-		var c1 = rows[i].childNodes[unicol].innerText.toLowerCase();
-	//	var fontname = rows[i].childNodes[1].innerText;
-	//	console.log(c0, c1, typeof(c0));
-	    rows[i].childNodes[fontcol].className = "fonticon";
-		rows[i].childNodes[unicol].className = "unicol";
-		//console.log(rows[i].childNodes.length);
-		//var len = rows[i].childNodes.length
-		//rows[i].childNodes[len - 1].className = "width100";
-		if (c0 !== c1) {
-			console.log('not equal', fontcol, unicol)
-			mismatch = true;	
-			var fontname = rows[i].childNodes[1].innerText;
-			var errdata = "Font error\nicon = " +c0+"\nunicode = "+c1;
-			rows[i].className = "uerror";
-			rows[i].setAttribute("rowdata", errdata);
-			dispModal(rows[i], chkCols);
+
+		//var fontcol = chkCols[0][0];			// fonticon column
+		//var unicol = chkCols[1][0];			// unicode column
+		var ths = table.getElementsByTagName("th");
+		var tds = table.getElementsByTagName("td");
+		
+		ths[fontCol].className = "fonticon";
+		ths[fontCol].innerHTML = "Font";
+		ths[uniCol].className = "Unicode";
+		ths[uniCol].innerHTML = "unicol";
+		/* i = fontCol;
+		for (var i = 0; i < ths.length; i++) {
+		//i = fontcol;
+			if (i === fontCol) {
+				ths[i].className = "fonticon";
+				ths[i].innerHTML = 'Font';
+				//console.log(i, ths[i]);
+			}
+		//i = unicol;
+			if (i === uniCol) {
+				ths[i].innerHTML = 'Unicode';
+				ths[i].className = "unicol";
+				//console.log(i, ths[i]);
+			}	
+		//ths[ths.length-1].className = "width100";
 		}
-	}
+	*/	
+		console.log(fontCol, uniCol);
+		for (i = 1; i < rows.length; i++) {
+			var c0 = rows[i].childNodes[fontCol].innerText.charCodeAt(0).toString(16).toLowerCase();
+			var c1 = rows[i].childNodes[uniCol].innerText.toLowerCase();
+		//	var fontname = rows[i].childNodes[1].innerText;
+		//	console.log(c0, c1, typeof(c0));
+			rows[i].childNodes[fontCol].className = "fonticon";
+			rows[i].childNodes[uniCol].className = "unicol";
+			//console.log(rows[i].childNodes.length);
+			//var len = rows[i].childNodes.length
+			//rows[i].childNodes[len - 1].className = "width100";
+			if (c0 !== c1) {
+				console.log('not equal', fontCol, uniCol)
+				mismatch = true;	
+				var fontname = rows[i].childNodes[1].innerText;
+				var errdata = "Font error\nicon = " +c0+"\nunicode = "+c1;
+				rows[i].className = "uerror";
+				rows[i].setAttribute("rowdata", errdata);
+				dispModal(rows[i], chkCols);
+			}
+		}
+	}   // if found
 }
 
 function csvToArray(text) {
     let p = '', row = [''], ret = [row], i = 0, r = 0, s = !0, line;
-   
+   console.log(text);
    for (line of text) {
         if ('"' === line) {
             if (s && line === p) {
@@ -151,7 +182,7 @@ function csvToArray(text) {
 		}
         p = line;
     }
-	console.log(ret);
+	console.log('csv2array',ret);
     return ret;
 };
 
@@ -211,7 +242,7 @@ function showError() {
 	console.log(input.checked);
 }   
 
-function sortTable(n) {
+function xsortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("searchtable");
   switching = true;

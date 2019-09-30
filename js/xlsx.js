@@ -111,6 +111,7 @@ var Base64 = (function make_b64(){
 			var o = "";
 			var c1=0, c2=0, c3=0, e1=0, e2=0, e3=0, e4=0;
 			input = input.replace(/[^\w\+\/\=]/g, "");
+			console.log('decode');
 			for(var i = 0; i < input.length;) {
 				e1 = map.indexOf(input.charAt(i++));
 				e2 = map.indexOf(input.charAt(i++));
@@ -1339,6 +1340,7 @@ function parse_extra_field(blob) {
 var fs;
 function get_fs() { return fs || (fs = require('fs')); }
 function parse(file, options) {
+	console.log('parse');
 if(file[0] == 0x50 && file[1] == 0x4b) return parse_zip(file, options);
 if(file.length < 512) throw new Error("CFB file size " + file.length + " < 512");
 var mver = 3;
