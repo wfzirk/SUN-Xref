@@ -197,7 +197,7 @@ function search_Table(){
 		for(j=0 ; j < td.length ; j++) {
 			  let tdata = td[j] ;
 			  if (tdata) {
-				 text = text + tdata.innerHTML.toUpperCase();
+				 text = text +'+'+ tdata.innerHTML.toUpperCase();
 			  }
 		  }
 		var found =true;
@@ -297,7 +297,7 @@ function xsortTable(n) {
   }
 }
 
-function sortArrayByCol(arr, colIndex){
+function xsortArrayByCol(arr, colIndex){
     arr.sort(sortFunction);
     function sortFunction(a, b) {
         a = a[colIndex];
