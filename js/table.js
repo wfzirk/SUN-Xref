@@ -186,6 +186,7 @@ function csvToArray(text) {
 	row = [];
 	lines = text.split('\n');
 	for (var i in lines){
+		l = lines[i].replace(/|/g, ",");
 		console.log(i, lines[i]);
 		r = parse(lines[i]);
 		row.push(r);
