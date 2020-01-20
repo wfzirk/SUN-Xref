@@ -71,7 +71,7 @@ function generateTable(lines){
     for (var i=0; i<str.length; i++) {
       result.push(str.charCodeAt(i).toString(16));
     }
-	console.log('toHexArr', str, result);
+	//console.log('toHexArr', str, result);
 	 return result;
   }
   
@@ -187,7 +187,7 @@ function csvToArray(text) {
 	lines = text.split('\n');
 	for (var i in lines){
 		l = lines[i].replace(/|/g, ",");
-		console.log(i, lines[i]);
+		//console.log(i, lines[i]);
 		r = parse(lines[i]);
 		row.push(r);
 	}

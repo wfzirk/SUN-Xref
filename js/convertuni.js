@@ -515,7 +515,7 @@ function convertUTF82CP ( argarr ) {
 	//console.log(compte,n.toString(16));
 
   }
-  console.log(outputString)
+  //console.log(outputString)
 return outputString;
 }
 

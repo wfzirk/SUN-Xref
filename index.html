@@ -357,7 +357,7 @@ var process_wb = (function() {
         csv = to_csv(wb);
 		console.log('csv file',CSV, csv);
 		output = csvToArray(csv);
-		console.log(typeof(output), typeof(csv))
+		//console.log(typeof(output), typeof(csv))
 		console.log(output)
 		if (CSV) output = fixUnicode(output);
 		generateTable(output);
