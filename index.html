@@ -9,8 +9,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Search SUN Spreadsheet</title>
 <style>
-		 body {
-			font-family: "SUN7.21";
+		@font-face{
+		  font-family: "SUN7.24";
+		  src: url("SUN7.24.ttf");
+		}
+		body {
+			font-family: "SUN7.24";
 			width = 600px;
 		}
 		
@@ -23,18 +27,18 @@
 		}
 
  
-	div.filetable {
-		width: 100%
-	}	
-	
-	label#xrefclear {
-		float: left;
-		width: 30%
-	}	
-	
-	input#xrefclear {
-		float: right;
-	}	
+		div.filetable {
+			width: 100%
+		}	
+		
+		label#xrefclear {
+			float: left;
+			width: 30%
+		}	
+		
+		input#xrefclear {
+			float: right;
+		}	
 	
 
 		table.xreftable {
@@ -63,7 +67,7 @@
 			font-size: 14px;
 			text-align: right; 
 		}
-		
+		/*
 		.xfonticon {
 			font-size: 32px;
 			font-family: var(--sun-font);
@@ -72,8 +76,8 @@
 			padding: 1px;
 			width: 100px;
 		}
-				 
-	 .xreftable td:not(.unicol), .xreftable th:not(.unicol), .xreftable td:not(.fonticon), .xreftable th:not(.fonticon) {
+			*/	 
+		.xreftable td:not(.unicol), .xreftable th:not(.unicol), .xreftable td:not(.fonticon), .xreftable th:not(.fonticon) {
 			 border-width: 1px;
 			 padding: 1px;
 			 border-style: inset;
@@ -88,7 +92,7 @@
 			white-space: -pre-wrap; 
 			min-width: 50px;
 		/*	width: auto;*/
-		 }
+		}
 
 		 .xreftable td.fonticon {
 			font-size: 32px;
@@ -302,37 +306,16 @@ csvData = 'Test Data\n'
 + '"","ground","e153",,"land:earth"\n'
 + '"","blaspheme","e05b","mouth,said,speak,confessiom: bad: no,not: good: king,crown,ruler,lord,master: man: love,compassion","insult:blasphemy"\n'
 + '"","Apelles","ebcd","man:split,divide,division,separate","looks_like"\n'
++ '"","Lud","e1c2","Lud"\n'
 +' "","Levi","eb1b","man: with: equal,same: people",\n';
 
-/*
-var xstringToArrayBuffer = function(str) {
-console.log(str);
-  return (new Uint8Array([].map.call(str,function(x){return x.charCodeAt(0)}))).buffer;
-}
-
-function xgetCols(workbook)  { //your workbook variable
-    var first_sheet_name = workbook.SheetNames[0];
-    var worksheet = workbook.Sheets[first_sheet_name];
-    var cells = Object.keys(worksheet);
-    for (var i = 0; i < Object.keys(cells).length; i++) {
-        if( cells[i].indexOf('1') > -1) {
-            colValues.push(worksheet[cells[i]].v); //Contails all column names
-        }
-    }
-	console.log(colValues);
- }
-
-function stringToUTF8Bytes(string) {
-console.log('string2utf8',new TextEncoder().encode(string));
-  return new TextEncoder().encode(string);
-}
-*/
 function fixUnicode(lines) {
 	console.log('fix');
 	for (var i = 0; i < lines.length; i ++) {
 		rowx = lines[i]
-		console.log('before',i, rowx.length, rowx);
-		for (var j = 0;  j < rowx.length; j++) {  
+		//console.log('before',i, rowx.length, rowx);
+		//for (var j = 0;  j < rowx.length; j++) {  
+			j = 0
 			var uni = rowx[j];
 			//console.log(toHex(uni), uni.length);
 			if (uni.length === 3) {
@@ -344,7 +327,7 @@ function fixUnicode(lines) {
 				lines[i][j] = char;
 			}
 			//console.log('after',lines[i]);
-		}
+		//}
 	}
 	console.log('csvfix',lines);
 	return lines;
@@ -373,8 +356,9 @@ var process_wb = (function() {
 		var output = "";
         csv = to_csv(wb);
 		console.log('csv file',CSV, csv);
-
 		output = csvToArray(csv);
+		console.log(typeof(output), typeof(csv))
+		console.log(output)
 		if (CSV) output = fixUnicode(output);
 		generateTable(output);
 		table_mismatch();

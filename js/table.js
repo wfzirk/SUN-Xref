@@ -161,10 +161,43 @@ function table_mismatch() {
 	}   // if found
 }
 
+// Parse a CSV row, accounting for commas inside quotes   
+// https://exceptionshub.com/how-to-read-data-from-csv-file-using-javascript-2.html                
+function parse(row){
+  var insideQuote = false,                                             
+      entries = [],                                                    
+      entry = [];
+  row.split('').forEach(function (character) {                         
+    if(character === '"') {
+      insideQuote = !insideQuote;                                      
+    } else {
+      if(character == "," && !insideQuote) {                           
+        entries.push(entry.join(''));                                  
+        entry = [];                                                    
+      } else {
+        entry.push(character);                                         
+      }                                                                
+    }                                                                  
+  });
+  entries.push(entry.join(''));                                        
+  return entries;                                                      
+}
 function csvToArray(text) {
+	row = [];
+	lines = text.split('\n');
+	for (var i in lines){
+		console.log(i, lines[i]);
+		r = parse(lines[i]);
+		row.push(r);
+	}
+	return row;
+}
+
+function xcsvToArray(text) {
     let p = '', row = [''], ret = [row], i = 0, r = 0, s = !0, line;
    console.log(text);
    for (line of text) {
+	   //console.log(line, typeof(line))
         if ('"' === line) {
             if (s && line === p) {
 				row[i] += line;
