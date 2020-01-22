@@ -11,7 +11,7 @@
 <style>
 	@font-face{
 	  font-family: "SUN7_24";
-	  src: url("fonts/SUN7_24.ttf");
+	  src: url("fonts/SUN7.24.ttf");
 	}
 	
 	#sfont {
@@ -435,6 +435,9 @@ var do_file = (function() {
 	function handleFile(e) { 
 		f = (e.target.files)
 		var g = f[0]["name"]
+		g = g.substring(0, g.lastIndexOf("."))
+		
+		console.log(g)
 		changeFont(g); 
 	}
 	xfont.addEventListener('change', handleFile, false);
@@ -448,25 +451,26 @@ document.getElementById('sfont').value = fval
 changeFont("SUN7.24.ttf");
 
 function getFont() {
-	e = document.getElementById('sfont').value;
-	console.log(e)
+	fval = document.getElementById('sfont').value;
+	console.log(fval)
 	document.documentElement.style.setProperty('--sun-font', fval);
+	changeFont(fval)
 }
 
 function changeFont(f) {
 	//var f = e[0]["name"]
 	
-	var fval= f.substring(0, f.lastIndexOf("."))
+	//var fval= f.substring(0, f.lastIndexOf("."))
 	
-	console.log(fval)
+	console.log(f)
 	try {
-		fval ='"'+fval+'"';
+		fval ='"'+f+'"';
 		console.log('changefont',fval);
 		document.documentElement.style.setProperty('--sun-font', fval);
 	} catch {
 		alert("Font not found", fval);
 	}
-	document.getElementById('sfont').value = fval;
+	document.getElementById('sfont').value = f;
 }
 //debug
 if (debug) {
