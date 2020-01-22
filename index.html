@@ -229,9 +229,8 @@
 			<div class="filetable">
 				<div >
 					<label for="sfont"> <strong>Enter Sun font name</strong></label>
-			<!--		<input id='sfont' onChange='changeFont(true)' type='text' style='width: 50%;'>
-				-->
-					<input type="file" name="xfile" id="sfont" />
+					<input id='sfont' type='text' style='width: 25%;'>
+					<input type="file" name="xfile" id="xfont" />
 					<label for="showerror" style='float: right;'> <strong>Errors Only &nbsp  </strong>
 					<!-- <input id='showerr'  onclick='showError()' type='button' >  -->
 					<input type="button" id="showerr"  onclick="showError();"  >
@@ -426,12 +425,19 @@ var do_file = (function() {
 (function() {
 	var sfont = document.getElementById('sfont');
 	if(!sfont.addEventListener) return;
+	function handleFile(e) { getFont(); }
+	sfont.addEventListener('change', handleFile, false);
+})();
+
+(function() {
+	var xfont = document.getElementById('xfont');
+	if(!xfont.addEventListener) return;
 	function handleFile(e) { 
 		f = (e.target.files)
 		var g = f[0]["name"]
 		changeFont(g); 
 	}
-	sfont.addEventListener('change', handleFile, false);
+	xfont.addEventListener('change', handleFile, false);
 })();
 
 //document.getElementById('sfont').value = "";
@@ -440,6 +446,12 @@ document.getElementById('xlf').value = "";
 var fval = "";
 document.getElementById('sfont').value = fval
 changeFont("SUN7.24.ttf");
+
+function getFont() {
+	e = document.getElementById('sfont').value;
+	console.log(e)
+	document.documentElement.style.setProperty('--sun-font', fval);
+}
 
 function changeFont(f) {
 	//var f = e[0]["name"]
@@ -454,7 +466,7 @@ function changeFont(f) {
 	} catch {
 		alert("Font not found", fval);
 	}
-	//document.getElementById('sfont').value = fval;
+	document.getElementById('sfont').value = fval;
 }
 //debug
 if (debug) {
