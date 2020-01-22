@@ -452,8 +452,8 @@ changeFont("SUN7.24.ttf");
 
 function getFont() {
 	fval = document.getElementById('sfont').value;
-	console.log(fval)
-	document.documentElement.style.setProperty('--sun-font', fval);
+	console.log('getFont',fval)
+	//document.documentElement.style.setProperty('--sun-font', fval);
 	changeFont(fval)
 }
 
