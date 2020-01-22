@@ -9,216 +9,210 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Search SUN Spreadsheet</title>
 <style>
-		@font-face{
-		  font-family: "SUN7.24";
-		  src: url("SUN7.24.ttf");
-		}
-		body {
-			font-family: "SUN7.24";
-			width = 600px;
-		}
-		
-		 h3 {	    
-			 margin-block-start: .3em;
-			 margin-block-end: .3em;
-			 margin-inline-start: 0px;
-			 margin-inline-end: 0px;
-			 text-align: center;
-		}
+	@font-face{
+	  font-family: "SUN7_24";
+	  src: url("fonts/SUN7_24.ttf");
+	}
+	
+	#sfont {
+		background-color: skyblue;
+		font-family: var(--sun-font);  
+	}
+	
+	:root {
+		--sun-font: "SUN7_24";
+	}
 
- 
-		div.filetable {
-			width: 100%
-		}	
-		
-		label#xrefclear {
-			float: left;
-			width: 30%
-		}	
-		
-		input#xrefclear {
-			float: right;
-		}	
+	
+	/*html, select { font-family: Verdana, Geneva, sans-serif, SUN7_24; }
+	*/
+	body {
+		/*font-family: "SUN7_24"; */
+		width = 600px;
+	}
+	
+	 h3 {	    
+		 margin-block-start: .3em;
+		 margin-block-end: .3em;
+		 margin-inline-start: 0px;
+		 margin-inline-end: 0px;
+		 text-align: center;
+	}
+
+
+	div.filetable {
+		width: 100%
+	}	
+	
+	label#xrefclear {
+		float: left;
+		width: 30%
+	}	
+	
+	input#xrefclear {
+		float: right;
+	}	
+
+
+	table.xreftable {
+		 border-width: 1px;
+		 border-spacing: 0;
+		 border-style: outset;
+		 border-color: black;
+		 border-collapse: separate; 
+	/* 	border-collapse:collapse; */
+		 background-color: white; 
+		 font-size: 14px;
+		/* font-family: var(--sun-font);*/
+		 table-layout: fixed;
+		 margin-bottom: 15px;
+		 width: 100%; 
+		 empty-cells: show;
+	}
+
+	.unicol{
+		width: 50px;
+		color: blue;
+		border-width: 1px;
+		padding: 1px;
+		border-style: inset;
+		border-color: lightblue;
+		font-size: 14px;
+		text-align: right; 
+	}
+
+	.xreftable td:not(.unicol), .xreftable th:not(.unicol), .xreftable td:not(.fonticon), .xreftable th:not(.fonticon) {
+		 border-width: 1px;
+		 padding: 1px;
+		 border-style: inset;
+		 border-color: lightblue;
+		 font-size: 14px;
+		 text-align: right; 
+
+		white-space: -o-pre-wrap; 
+		word-wrap: break-word;
+		white-space: pre-wrap; 
+		white-space: -moz-pre-wrap; 
+		white-space: -pre-wrap; 
+		min-width: 50px;
+	/*	width: auto;*/
+	}
+
+	 .xreftable td.fonticon {
+		font-size: 32px;
+		font-family: var(--sun-font);  
+		color: blue;
+		border-width: 1px;
+		padding: 1px;
+		width: 100px;
+	}
+	 .xreftable th.fonticon {
+
+		color: blue;
+		border-width: 1px;
+		padding: 1px;
+		width: 100px;
+	}
+
+	 
+		 /*Table Even Rows Styles*/
+	 .xreftable tbody, .xreftable tr:nth-child(even){
+		 background-color: #efefef;
+	 }
+
+		 /*Table ODD Rows Styles*/
+	 .xreftable tbody, .xreftable tr:nth-child(odd){
+		 background-color: #dfdfdf;
+	 }
+
+		 /*Table Row HOver Style*/
+	 .xreftable table, .xreftable tbody, .xreftable tr:hover{
+		 background-color: #ffffd8;
+	 }
+
+
+	.uerror {
+		  color: red;
+	 }
+	
+	 
+
+	#drop{
+		border:2px dashed #bbb;
+		border-radius:5px;
+		padding:5px;
+		text-align:center;
+		font:20pt bold,"Vollkorn";color:#bbb
+	}
 	
 
-		table.xreftable {
-			 border-width: 1px;
-			 border-spacing: 0;
-			 border-style: outset;
-			 border-color: black;
-			 border-collapse: separate; 
-		/* 	border-collapse:collapse; */
-			 background-color: white; 
-			 font-size: 14px;
-			 font-family: var(--sun-font);
-			 table-layout: fixed;
-			 margin-bottom: 15px;
-			 width: 100%; 
-			 empty-cells: show;
-		}
+	/* The Modal (background) */
+	.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  padding-top: 100px; /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
 
-		.unicol{
-			width: 50px;
-			color: blue;
-			border-width: 1px;
-			padding: 1px;
-			border-style: inset;
-			border-color: lightblue;
-			font-size: 14px;
-			text-align: right; 
-		}
-		/*
-		.xfonticon {
-			font-size: 32px;
-			font-family: var(--sun-font);
-			color: blue;
-			border-width: 1px;
-			padding: 1px;
-			width: 100px;
-		}
-			*/	 
-		.xreftable td:not(.unicol), .xreftable th:not(.unicol), .xreftable td:not(.fonticon), .xreftable th:not(.fonticon) {
-			 border-width: 1px;
-			 padding: 1px;
-			 border-style: inset;
-			 border-color: lightblue;
-			 font-size: 14px;
-			 text-align: right; 
+	/* Modal Content */
+	.modal-content {
+	  position: relative;
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 0;
+	  border: 1px solid #888;
+	  border-radius:5px;
+	  width: 200px;;
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	  -webkit-animation-name: animatetop;
+	  -webkit-animation-duration: 0.4s;
+	  animation-name: animatetop;
+	  animation-duration: 0.4s
+	}
 
-			white-space: -o-pre-wrap; 
-			word-wrap: break-word;
-			white-space: pre-wrap; 
-			white-space: -moz-pre-wrap; 
-			white-space: -pre-wrap; 
-			min-width: 50px;
-		/*	width: auto;*/
-		}
+	/* Add Animation */
+	@-webkit-keyframes animatetop {
+	  from {top:-300px; opacity:0} 
+	  to {top:0; opacity:1}
+	}
 
-		 .xreftable td.fonticon {
-			font-size: 32px;
-			font-family: var(--sun-font);
-			color: blue;
-			border-width: 1px;
-			padding: 1px;
-			width: 100px;
-		}
-		 .xreftable th.fonticon {
+	@keyframes animatetop {
+	  from {top:-300px; opacity:0}
+	  to {top:0; opacity:1}
+	}
 
-			color: blue;
-			border-width: 1px;
-			padding: 1px;
-			width: 100px;
-		}
+	/* The Close Button */
+	.close {
+	  color: white;
+	  float: right;
+	  font-size: 28px;
+	  font-weight: bold;
+	}
 
-		 
-			 /*Table Even Rows Styles*/
-		 .xreftable tbody, .xreftable tr:nth-child(even){
-			 background-color: #efefef;
-		 }
+	.close:hover,
+	.close:focus {
+	  color: #000;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
 
-			 /*Table ODD Rows Styles*/
-		 .xreftable tbody, .xreftable tr:nth-child(odd){
-			 background-color: #dfdfdf;
-		 }
+	.modal-header {
+	  padding: 1px 5px;
+	  background-color: red;
+	  color: white;
+	  font-size: 28px;
+	  font-weight: bold;
+	}
 
-			 /*Table Row HOver Style*/
-		 .xreftable table, .xreftable tbody, .xreftable tr:hover{
-			 background-color: #ffffd8;
-		 }
+	.modal-body {padding: 2px 16px;}
 
-
-		.uerror {
-			  color: red;
-		 }
-		
-		 
-
-		:root {
-			--sun-font: "SUN7.22";
-		}
-
-		#drop{
-			border:2px dashed #bbb;
-			border-radius:5px;
-			padding:5px;
-			text-align:center;
-			font:20pt bold,"Vollkorn";color:#bbb
-		}
-		
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  border-radius:5px;
-  width: 200px;;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 1px 5px;
-  background-color: red;
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.modal-body {padding: 2px 16px;}
-/*
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-*/
 </style>
 </head>
 <body>
@@ -235,7 +229,9 @@
 			<div class="filetable">
 				<div >
 					<label for="sfont"> <strong>Enter Sun font name</strong></label>
-					<input id='sfont' onChange='changeFont(true)' type='text' style='width: 50%;'>
+			<!--		<input id='sfont' onChange='changeFont(true)' type='text' style='width: 50%;'>
+				-->
+					<input type="file" name="xfile" id="sfont" />
 					<label for="showerror" style='float: right;'> <strong>Errors Only &nbsp  </strong>
 					<!-- <input id='showerr'  onclick='showError()' type='button' >  -->
 					<input type="button" id="showerr"  onclick="showError();"  >
@@ -281,7 +277,7 @@
 
 <script src="js/jszip.js"></script>
 <script src="js/xlsx.js"></script>
-<script src="js/cookie.js"></script>
+/*<script src="js/cookie.js"></script>*/
 <script src="js/table.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/convertuni.js"></script>
@@ -427,18 +423,39 @@ var do_file = (function() {
 	xlf.addEventListener('change', handleFile, false);
 })();
 
-document.getElementById('sfont').value = "";
+(function() {
+	var sfont = document.getElementById('sfont');
+	if(!sfont.addEventListener) return;
+	function handleFile(e) { 
+		f = (e.target.files)
+		var g = f[0]["name"]
+		changeFont(g); 
+	}
+	sfont.addEventListener('change', handleFile, false);
+})();
+
+//document.getElementById('sfont').value = "";
 document.getElementById('xlf').value = ""; 
 
-console.log(listCookies());
-var fnt = cookie.get('font');
-if (fnt)  {
-	fnt = fnt.replace (/(^")|("$)/g, ''); // remove quotes
-	console.log(fnt);
-	document.getElementById('sfont').value = fnt;
-	changeFont(true);
-}
+var fval = "";
+document.getElementById('sfont').value = fval
+changeFont("SUN7.24.ttf");
 
+function changeFont(f) {
+	//var f = e[0]["name"]
+	
+	var fval= f.substring(0, f.lastIndexOf("."))
+	
+	console.log(fval)
+	try {
+		fval ='"'+fval+'"';
+		console.log('changefont',fval);
+		document.documentElement.style.setProperty('--sun-font', fval);
+	} catch {
+		alert("Font not found", fval);
+	}
+	//document.getElementById('sfont').value = fval;
+}
 //debug
 if (debug) {
 	generateTable(csvToArray(csvData));

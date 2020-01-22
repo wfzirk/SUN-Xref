@@ -41,7 +41,7 @@ function listCookies() {
  * Usage: d = new FontDetector();
  *        d.detect('font name');
  */
-var FontDetector = function() {
+var xFontDetector = function() {
 console.log('fontdetector');
     // a font will be compared against all the three default fonts.
     // and if it doesn't match all 3 then that font is not available.
@@ -87,19 +87,15 @@ console.log('fontdetector');
     this.detect = detect;
 };
  
- function changeFont(setCookie) {
+ function xchangeFont(setCookie) {
 	var fval = document.getElementById('sfont').value;
-	d = new FontDetector().detect(fval);
-	console.log(d);
-	if (d) {
+	
+	try {
 		fval ='"'+fval+'"';
-		console.log('changefont',fval, setCookie);
+		console.log('changefont',fval);
 		document.documentElement.style.setProperty('--sun-font', fval);
-		if (setCookie) {
-		  cookie.set('font', fval, 90);
-		}
-	} else {
+	} catch {
 		alert("Font not found", fval);
 	}
-	console.log(listCookies());
+	
 }
