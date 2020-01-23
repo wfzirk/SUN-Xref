@@ -233,17 +233,19 @@
 			<h3> <div id="title">XREF Search</div></h3>
 		</legend>
 		<fieldset>
-			<label for="xlf"> <strong>Select ODS, XLSX or CSV File:</strong></label>  
-			<input type="file" name="xlfile" id="xlf" />
+			<div>
+				<label for="xlf" style="float: left;"> <strong>Select ODS, XLSX or CSV File:</strong></label>  
+				<input type="file" name="xlfile" id="xlf" />
+				<label for="showdebug" style="float: right;">Debug&nbsp
+				<input type="checkbox" id="showdebug"  onclick="showDebug();"  >
+			</div>
 			<div id="drop">Or drop file here</div>
-						<br>
+			<br>
 			<div class="filetable">
 				<div >
 					<label for="sfont"> <strong>Enter Sun font name</strong></label>
 					<input id='sfont' type='text' style='width: 25%;'>
 					<!--<input type="file" name="xfile" id="xfont" /> -->
-					<label for="showdebug" style='float: right;'>Debug&nbsp
-					<input type="checkbox" id="showdebug"  onclick="showDebug();"  >
 					<label for="showerror" style='float: right;'> <strong>Errors Only &nbsp  </strong>
 					<!-- <input id='showerr'  onclick='showError()' type='button' >  -->
 					<input type="button" id="showerr"  onclick="showError();"  >
@@ -268,7 +270,6 @@
 </div>  
 <font face = "SUN7.24" size = "5">  -->
 <div id="output">
-
 &#174; &#xe000;
 </font>
 </div>
