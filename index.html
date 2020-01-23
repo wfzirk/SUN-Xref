@@ -3,6 +3,7 @@
 		https://github.com/SheetJS/js-xlsx
 		https://stuk.github.io/jszip/
 		https://oss.sheetjs.com/js-xlsx/
+		https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
 -->
 <html>
 <head>
@@ -10,24 +11,24 @@
 <title>Search SUN Spreadsheet</title>
 <style>
 	@font-face{
-	  font-family: "SUN7_24";
-	  src: url("fonts/SUN7.24.ttf");
+	  font-family: "SUN7.24";
+	  /*src: url("fonts/SUN7.24.ttf");*/
 	}
 	
-	#sfont {
-		background-color: skyblue;
+	#output {
+		/*background-color: skyblue;*/
 		font-family: var(--sun-font);  
 	}
 	
 	:root {
-		--sun-font: "SUN7_24";
+		--sun-font: "SUN7.24";
 	}
 
 	
 	/*html, select { font-family: Verdana, Geneva, sans-serif, SUN7_24; }
 	*/
 	body {
-		/*font-family: "SUN7_24"; */
+		font-family: "SUN7.24";
 		width = 600px;
 	}
 	
@@ -231,6 +232,8 @@
 					<label for="sfont"> <strong>Enter Sun font name</strong></label>
 					<input id='sfont' type='text' style='width: 25%;'>
 					<input type="file" name="xfile" id="xfont" />
+					<label for="showdebug" style='float: right;'> <strong>Debug&nbsp  </strong>
+					<input type="checkbox" id="showdebug"  onclick="showDebug();"  >
 					<label for="showerror" style='float: right;'> <strong>Errors Only &nbsp  </strong>
 					<!-- <input id='showerr'  onclick='showError()' type='button' >  -->
 					<input type="button" id="showerr"  onclick="showError();"  >
@@ -247,8 +250,17 @@
 	
 <div><span style="color: #ff0000">Red text</span> indicates a unicode miscompare between font and the unicode.  Click on the line for specifics.
 </div>
-
-<pre id="output"></pre>
+<!--<div>
+	<font face = "Times New Roman" size = "5">Times New Roman</font><br />
+	<font face = "Verdana" size = "5">Verdana</font><br />
+	<font face = "Comic sans MS" size =" 5">Comic Sans MS</font><br />
+	<font face = "WildWest" size = "5">WildWest</font><br />
+	<font face = "Bedrock" size = "5">Bedrock</font><br />
+	<font face = "SUN7.24" size = "5">SUN7.24</font><br />
+</div>  -->
+<pre id="output">
+<font face = "SUN7.24" size = "5">SUN7.24</font><br />
+</pre>
 <footer>
     <center>
       <p>&copy; Wilbur Zirk 2019
@@ -276,7 +288,7 @@
 
 <script src="js/jszip.js"></script>
 <script src="js/xlsx.js"></script>
-/*<script src="js/cookie.js"></script>*/
+<!-- <script src="js/cookie.js"></script> -->
 <script src="js/table.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/convertuni.js"></script>
@@ -434,6 +446,7 @@ var do_file = (function() {
 	if(!xfont.addEventListener) return;
 	function handleFile(e) { 
 		f = (e.target.files)
+		console.log(f)
 		var g = f[0]["name"]
 		g = g.substring(0, g.lastIndexOf("."))
 		
@@ -448,7 +461,7 @@ document.getElementById('xlf').value = "";
 
 var fval = "";
 document.getElementById('sfont').value = fval
-changeFont("SUN7.24.ttf");
+changeFont("SUN7.24");
 
 function getFont() {
 	fval = document.getElementById('sfont').value;
@@ -473,6 +486,18 @@ function changeFont(f) {
 	document.getElementById('sfont').value = f;
 }
 //debug
+
+function showDebug() {
+	e =document.getElementById('showdebug').checked;
+	console.log(e)
+	if (e) {
+		generateTable(csvToArray(csvData));
+		table_mismatch();
+	} else {
+		document.getElementById("output").innerHTML = ""
+	}
+}
+
 if (debug) {
 	generateTable(csvToArray(csvData));
 	table_mismatch();
