@@ -14,7 +14,7 @@
 	  font-family: "SUN7.24";
 	  /*src: url("fonts/SUN7.24.ttf");*/
 	}
-	
+/*	
 	@font-face {
 		font-family: 'sun7.24regular';
 		src: url('sun7.24-webfont.woff2') format('woff2'),
@@ -22,17 +22,17 @@
 		font-weight: normal;
 		font-style: normal;
 
-	} 
+	} */
 	#output {
-		/*background-color: skyblue;
+		/*background-color: skyblue;*/
 		font-family: var(--sun-font);  */
-		font-family: "SUN7.24";
+		/*font-family: "SUN7.24";*/
 	}
-	/*
+	
 	:root {
 		--sun-font: "SUN7.24";
 	}
-*/
+
 	
 	/*html, select { font-family: Verdana, Geneva, sans-serif, SUN7_24; }
 	*/
@@ -241,8 +241,8 @@
 				<div >
 					<label for="sfont"> <strong>Enter Sun font name</strong></label>
 					<input id='sfont' type='text' style='width: 25%;'>
-					<!--<input type="file" name="xfile" id="xfont" /> -->SUN7.24
-					<label for="showdebug" style='float: right;'> <strong>Debug&nbsp  </strong>
+					<!--<input type="file" name="xfile" id="xfont" /> -->
+					<label for="showdebug" style='float: right;'>Debug&nbsp
 					<input type="checkbox" id="showdebug"  onclick="showDebug();"  >
 					<label for="showerror" style='float: right;'> <strong>Errors Only &nbsp  </strong>
 					<!-- <input id='showerr'  onclick='showError()' type='button' >  -->
@@ -260,21 +260,20 @@
 	
 <div><span style="color: #ff0000">Red text</span> indicates a unicode miscompare between font and the unicode.  Click on the line for specifics.
 </div>
-<div>
+<!--<div>
 	<font face = "Times New Roman" size = "5">Times New Roman</font><br />
 	<font face = "Verdana" size = "5">Verdana</font><br />
 	<font face = "Comic sans MS" size =" 5">Comic Sans MS</font><br />
 	<font face = SUN7.24 size = "5">SUN7.24 &#174; &#xe000;   &#57344;</font><br />
 </div>  
-<font face = "SUN7.24" size = "5">
+<font face = "SUN7.24" size = "5">  -->
 <div id="output">
-SUN7.24 &#174; &#xe000;
 
 
 &#174; &#xe000;
 </font>
 </div>
-</font>
+<!--</font>-->
 <footer>
     <center>
       <p>&copy; Wilbur Zirk 2019
@@ -454,7 +453,7 @@ var do_file = (function() {
 	function handleFile(e) { getFont(); }
 	sfont.addEventListener('change', handleFile, false);
 })();
-
+/*
 (function() {
 	var xfont = document.getElementById('xfont');
 	if(!xfont.addEventListener) return;
@@ -469,7 +468,7 @@ var do_file = (function() {
 	}
 	xfont.addEventListener('change', handleFile, false);
 })();
-
+*/
 //document.getElementById('sfont').value = "";
 document.getElementById('xlf').value = ""; 
 
