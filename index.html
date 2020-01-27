@@ -11,18 +11,21 @@
 <title>Search SUN Spreadsheet</title>
 <style>
 	@font-face{
-	  font-family: "SUN7.24";
-	  /*src: url("fonts/SUN7.24.ttf");*/
-	}
-/*	
-	@font-face {
-		font-family: 'sun7.24regular';
-		src: url('sun7.24-webfont.woff2') format('woff2'),
-			 url('sun7.24-webfont.woff') format('woff');
+		font-family: "SUN7.24";
+		/*src: url("fonts/SUN7.24.ttf");*/
 		font-weight: normal;
 		font-style: normal;
+		src: local('SUN7.24'), url('SUN7.24.ttf') format('truetype');
+	}
+/*@font-face {
+    font-family: 'sun7.24regular';
+    src: url('sun7.24-webfont.woff2') format('woff2'),
+         url('sun7.24-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	src: local('Monofett'), url('80Hnw.ttf') format('truetype');
 
-	} */
+} */
 	#output {
 		/*background-color: skyblue;*/
 		font-family: var(--sun-font); 
@@ -30,7 +33,8 @@
 	}
 	
 	:root {
-		--sun-font: "SUN7.24";
+		/*--sun-font: 'sun7.24regular';  */
+		--sun-font: 'SUN7.24';
 	}
 
 	
