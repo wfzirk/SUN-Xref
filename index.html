@@ -469,22 +469,7 @@ var do_file = (function() {
 	function handleFile(e) { getFont(); }
 	sfont.addEventListener('change', handleFile, false);
 })();
-/*
-(function() {
-	var xfont = document.getElementById('xfont');
-	if(!xfont.addEventListener) return;
-	function handleFile(e) { 
-		f = (e.target.files)
-		console.log(f)
-		var g = f[0]["name"]
-		g = g.substring(0, g.lastIndexOf("."))
-		
-		console.log(g)
-		changeFont(g); 
-	}
-	xfont.addEventListener('change', handleFile, false);
-})();
-*/
+
 //document.getElementById('sfont').value = "";
 document.getElementById('xlf').value = ""; 
 
@@ -522,17 +507,11 @@ function showDebug() {
 	e =document.getElementById('showdebug').checked;
 	//console.log(e)
 	if (e) {
-		//cd = csvData.split('\n')
-		//console.log(cd)
-		//console.log(cd[2])
 		generateTable(xcsvToArray(csvData));
 		table_mismatch();
 	} else {
 		document.getElementById("output").innerHTML = ""
 	}
-
-	//console.log(csvData)
-	//document.getElementById("output").innerHTML = tn;
 }
 
 /*
