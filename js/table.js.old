@@ -120,7 +120,23 @@ function table_mismatch() {
 		ths[fontCol].innerHTML = "Font";
 		ths[uniCol].className = "Unicode";
 		ths[uniCol].innerHTML = "unicol";
-	
+		/* i = fontCol;
+		for (var i = 0; i < ths.length; i++) {
+		//i = fontcol;
+			if (i === fontCol) {
+				ths[i].className = "fonticon";
+				ths[i].innerHTML = 'Font';
+				//console.log(i, ths[i]);
+			}
+		//i = unicol;
+			if (i === uniCol) {
+				ths[i].innerHTML = 'Unicode';
+				ths[i].className = "unicol";
+				//console.log(i, ths[i]);
+			}	
+		//ths[ths.length-1].className = "width100";
+		}
+	*/	
 		console.log(fontCol, uniCol);
 		for (i = 1; i < rows.length; i++) {
 			var c0 = rows[i].childNodes[fontCol].innerText.charCodeAt(0).toString(16).toLowerCase();
@@ -166,28 +182,21 @@ function parse(row){
   entries.push(entry.join(''));                                        
   return entries;                                                      
 }
-function xcsvToArray(text) {
-	console.log('xcsv...')
+function csvToArray(text) {
 	row = [];
 	lines = text.split('\n');
 	for (var i in lines){
-		//l = lines[i].replace(/|/g, ",");
-		l = lines[i].split('|')
-		for (var j in l) {
-			l[j] = l[j].substring(1, l[j].length - 1)
-		}
+		l = lines[i].replace(/|/g, ",");
 		//console.log(i, lines[i]);
-		//r = parse(lines[i]);
-		row.push(l);
+		r = parse(lines[i]);
+		row.push(r);
 	}
-	console.log(row[2])
 	return row;
 }
 
-
-function csvToArray(text) {
+function xcsvToArray(text) {
     let p = '', row = [''], ret = [row], i = 0, r = 0, s = !0, line;
-   //console.log(text);
+   console.log(text);
    for (line of text) {
 	   //console.log(line, typeof(line))
         if ('"' === line) {
@@ -207,7 +216,7 @@ function csvToArray(text) {
 		}
         p = line;
     }
-	console.log('csv2array',ret[4]);
+	console.log('csv2array',ret);
     return ret;
 };
 

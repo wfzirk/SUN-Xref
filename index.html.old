@@ -29,11 +29,6 @@
 		font-family: var(--sun-font); 
 		/*font-family: "SUN7.24";*/
 	}
-	#otxt,#etxt {
-		background-color: skyblue;
-		font-family: var(--sun-font); 
-		/*font-family: "SUN7.24";*/
-	}
 	
 	:root {
 		/*--sun-font: 'sun7.24regular';  */
@@ -274,26 +269,21 @@
 	<font face = "Comic sans MS" size =" 5">Comic Sans MS</font><br />
 	<font face = SUN7.24 size = "5">SUN7.24 &#174; &#xe000;   &#57344;</font><br />
 </div>  
-
-<iframe id="itxt" src='s1.js' scrolling='yes' frameborder='1'></iframe>
-
-
-<embed id="etxt" src="k.html">
-<object id="otxt" width="800" height="300" type="text/plain" data="k.html" border="1" >
-  <a href="plain.txt">Embedded Text Document</a>
-</object>
---->
+-->
 <div id="output">
+
 &#174; &#xe000;
 </div>
-
+ <embed src="sunxref.js">
 <footer>
     <center>
-		<!--<font face="SUN7.24"> -->
+		<font face="SUN7.24">
       <p>&copy; Wilbur Zirk 2020 &#xe000;
 	  </p>
-	 <!-- </font> -->
+	  </font>
+	  
     </center>
+	<div><object data="sunxref.js"></object></div>
   </footer>
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -307,6 +297,9 @@
     <div class="modal-body">
       <p id="mdisp" >Some text in the Modal Body</p>
 	</div>
+  <!--  <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>  -->
   </div>
 
 </div>
@@ -314,25 +307,24 @@
 <script src="js/jszip.js"></script>
 <script src="js/xlsx.js"></script>
 <!-- <script src="js/cookie.js"></script> -->
-<script src="js/table.js" id="tbl"></script>
+<script src="js/table.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/convertuni.js"></script>
-<script src="sun.js" > </script>
-<!-- https://stackoverflow.com/questions/1017424/pass-vars-to-javascript-via-the-src-attribute  -->
-<!-- <script type="text/javascript" data-parameter_1="value_1" ... src="sun.js"></script>
--->
+
 
 <script>
 var debug = false;
+
 var X = XLSX;
 var CSV = false;
 var global_wb;
 
 var colValues =[];
 
-/*
-xcsvData = 'Test Data\n'
-+ '"","questioned","\n'e061","mouth,said,speak: ?","ask"\n'
+
+
+csvData = 'Test Data\n'
++ '"","questioned","e061","mouth,said,speak: ?","ask"\n'
 + '"","ashamed","e05f","no,not: mouth: heart",\n'
 + '"","loaf","e05d","mouth,said,speak: grain,wheat","bread"\n'
 + '"","boy","e001","small,few: man",\n'
@@ -344,7 +336,7 @@ xcsvData = 'Test Data\n'
 + '"","Apelles","ebcd","man:split,divide,division,separate","looks_like"\n'
 + '"","Lud","e1c2","Lud"\n'
 +' "","Levi","eb1b","man: with: equal,same: people",\n';
-*/
+
 function fixUnicode(lines) {
 	console.log('fix');
 	for (var i = 0; i < lines.length; i ++) {
@@ -376,7 +368,7 @@ var process_wb = (function() {
 		workbook.SheetNames.forEach(function(sheetName) {
 			var csv = X.utils.sheet_to_csv(workbook.Sheets[sheetName]);
 			//var csv = X.utils.sheet_to_json(workbook.Sheets[sheetName], {header:1, raw:true});
-			//console.log(csv);
+			console.log(csv);
 			if(csv.length){
 				result.push("SHEET: " + sheetName);
 				result.push("");
@@ -391,7 +383,7 @@ var process_wb = (function() {
 		global_wb = wb;
 		var output = "";
         csv = to_csv(wb);
-		//console.log('csv file',CSV, csv);
+		console.log('csv file',CSV, csv);
 		output = csvToArray(csv);
 		//console.log(typeof(output), typeof(csv))
 		console.log(output)
@@ -516,34 +508,28 @@ function changeFont(f) {
 }
 //debug
 
-
-
 function showDebug() {
 	e =document.getElementById('showdebug').checked;
-	//console.log(e)
+	console.log(e)
 	if (e) {
-		//cd = csvData.split('\n')
-		//console.log(cd)
-		//console.log(cd[2])
-		generateTable(xcsvToArray(csvData));
+		generateTable(csvToArray(csvData));
 		table_mismatch();
 	} else {
 		document.getElementById("output").innerHTML = ""
 	}
-
-	//console.log(csvData)
-	//document.getElementById("output").innerHTML = tn;
 }
 
-/*
 if (debug) {
-	console.log(csvData)
 	generateTable(csvToArray(csvData));
 	table_mismatch();
 	//sortTable();
-}*/
-
-
+}
+	
+/*
+var u = ["EE", "AC", "8D"];
+console.log(u);
+convertUTF82CP(u);
+*/
 </script>
 </body>
 </html>
