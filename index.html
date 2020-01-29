@@ -321,6 +321,12 @@ var global_wb;
 
 var colValues =[];
 
+fetch("https://github.com/wfzirk/SUN-Xref/raw/gh-pages/724.csv")
+.then( response => response.text() )
+.then( text => console.log(text) )
+
+
+
 csvData = 'Test Data\n'
 + '"","questioned","e061","mouth,said,speak: ?","ask"\n'
 + '"","ashamed","e05f","no,not: mouth: heart",\n'
