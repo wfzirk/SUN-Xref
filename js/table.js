@@ -21,10 +21,6 @@ function generateTable(lines){
 	var row = document.createElement('TR');
 	for (var j = 0; j < len; j++) {
 		var th = document.createElement("TH");
-	//	th.onclick = function() {
-	//		w3.sortHTML('#searchtable', '.item', 'td:nth-child('+j+')'); // " //style="cursor:pointer">Name</th>
-	//		//sortTable(this.cellIndex); 
-	//	};
 		th.appendChild(document.createTextNode('col '+j));
 		row.appendChild(th);
 	}
@@ -49,7 +45,8 @@ function generateTable(lines){
 				td.appendChild(document.createTextNode(text));
 				row.appendChild(td);
 			}  // end column process
-				}	// end row process
+			row.style.display = "";
+		}	// end row process
 		tbody.appendChild(row);
 	}  // end process line
 	table.appendChild(tbody);
@@ -166,7 +163,7 @@ function parse(row){
   entries.push(entry.join(''));                                        
   return entries;                                                      
 }
-function xcsvToArray(text) {
+function jscsvToArray(text) {
 	console.log('xcsv...')
 	row = [];
 	lines = text.split('\n');
@@ -210,8 +207,8 @@ function csvToArray(text) {
 	console.log('csv2array',ret[4]);
     return ret;
 };
-
-function search_Table(){
+/*
+function xsearch_Table(){
 	var input = document.getElementById('xsearch').value.toUpperCase();
 	var filter =  input.split(' '); 
 	table = document.getElementById("searchtable");
@@ -224,13 +221,76 @@ function search_Table(){
 			  if (tdata) {
 				 text = text +'+'+ tdata.innerHTML.toUpperCase();
 			  }
-		  }
+		}
+		t1 = text.replace(/,/g, "+").replace(/:/g, "+");
+		
 		var found =true;
 		for(var f = 0; f < filter.length; f++) {
 			if (text.indexOf(filter[f])  === -1) { 
 				found = false;
 			}
 		}
+		if (found) {
+				tr[i].style.display = "";
+		} else {
+				tr[i].style.display = "none";
+		}
+	}
+}
+*/
+
+/*
+function multiSearchAnd(text, searchWords){
+  var currTest;
+  while (currTest = searchWords.pop()){
+    if (!text.match(new RegExp(currTest,"i"))) return false;
+  }
+  return true;
+}
+// Check if array1 contains all elements of array2
+function arrayContains(a1, a2) {
+	var result = a1.filter(e => a2.indexOf(e) !== -1).length === a2.length
+	//console.log(a1, a2, result)
+	return result;
+}
+*/
+function search_Table(){
+	var input = document.getElementById('xsearch').value.toUpperCase();
+	var filter =  input.split(' '); 
+console.log('searchtable',srchType, input)	
+	table = document.getElementById("searchtable");
+	tr = table.getElementsByTagName("tr");
+	for (i = 0; i < tr.length; i++) {
+		td = tr[i].getElementsByTagName("td") ; 
+		var txt = "+";
+		for(j=1 ; j < td.length ; j++) {
+			  let tdata = td[j] ;
+			  if (tdata) {
+				 txt = txt +'+'+ tdata.innerHTML.toUpperCase();
+			  }
+		}
+		if (srchType === 'word') {  // word search
+			txt = txt +'+';
+			txt = txt.replace(/ /g,'')
+			txt = txt.replace(/:/g,'+')
+			txt = txt.replace(/,/g,'+')
+			//txt = txt.split('+')
+			var found = true;
+			for(var f = 0; f < filter.length; f++) {
+				if (txt.indexOf('+'+filter[f]+'+')  === -1) { 
+					found = false;
+				}
+			}
+		} else {			// char search
+			var found = true;
+			for(var f = 0; f < filter.length; f++) {
+				if (txt.indexOf(filter[f])  === -1) { 
+					found = false;
+				}
+			}
+		}	
+		//found = arrayContains(txt, filter)
+		//console.log(i,input, txt, found)
 		if (found) {
 				tr[i].style.display = "";
 		} else {

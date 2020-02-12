@@ -66,7 +66,7 @@
 		width: 30%
 	}	
 	
-	input#xrefclear {
+	xxxinput#xxxrefclear {
 		float: right;
 	}	
 
@@ -240,27 +240,39 @@
 		</legend>
 		<fieldset>
 			<div>
-				<label for="xlf" style="float: left;"> <strong>Select ODS, XLSX or CSV File:</strong></label>  
-				<input type="file" name="xlfile" id="xlf" />
-				<label for="showdebug" style="float: right;">Debug&nbsp
-				<input type="checkbox" id="showdebug"  onclick="showDebug();"  >
+				<label for="xlf" style="float:left;"> <strong>Select ODS, XLSX or CSV File:</strong></label>
+				<input id="XLF"  type="file" name="xlfile" >
+				<label style="float:right;">Debug&nbsp
+					<input type="checkbox" id="showdebug"  onclick="showDebug();">
+				</label>
 			</div>
 			<div id="drop">Or drop file here</div>
 			<br>
 			<div class="filetable">
 				<div >
-					<label for="sfont"> <strong>Enter Sun font name</strong></label>
+					<label for="sfont" style="float:left;"> <strong>Enter Sun font name &nbsp</strong></label>
 					<input id='sfont' type='text' style='width: 25%;'>
 					<!--<input type="file" name="xfile" id="xfont" /> -->
-					<label for="showerror" style='float: right;'> <strong>Errors Only &nbsp  </strong>
-					<!-- <input id='showerr'  onclick='showError()' type='button' >  -->
-					<input type="button" id="showerr"  onclick="showError();"  >
+					<label style='float: right;'> <strong>Errors Only &nbsp  </strong>
+						<input type="button" id="showerr"  onclick="showError();"  >
+					</label>
 				</div>
 				<br>
-				<div ><label for="xsearch"> <strong>Enter search words separated by space</strong></label>
-					<input id='xsearch' onkeyup='search_Table("xref1")' type='text' style='width: 40%;'>
-					<label for="xrefclear" style='float: right;'> <strong>Clear &nbsp  </strong>
-					<input id='xrefclear'  onclick='clearTable()' type='button' >
+				<div >
+					<label style='float:left; width:60%'> <strong>Enter search words separated by space &nbsp</strong>
+						<input id='xsearch' onkeyup='search_Table("xref1")' type='text' style='width:50%'>
+					</label>
+					<label style='float:right; width=10%'> <strong>Clear &nbsp  </strong>
+						<input id='xrefclear'  onclick='clearTable()' type='button' >
+					</label>
+					<label style='float:right; width:30%'> <strong>&nbspSearch Type&nbsp</strong>
+						<span id="radiospan" style="border:1px; border-style:solid; ">
+							<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
+							<label for="wordsrch">Word</label>
+							<input type="radio" id="charsrch" name="wsrch" value="char" onClick="setSrch(false)">
+							<label for="charsrch">Char&nbsp</label>
+						</span>
+					</label>
 				</div>
 			</div>
 		</fieldset>
@@ -327,24 +339,25 @@ var debug = false;
 var X = XLSX;
 var CSV = false;
 var global_wb;
-
+var srchType = document.querySelector('input[name = wsrch]:checked').value
+console.log(srchType);
 var colValues =[];
 
 /*
-xcsvData = 'Test Data\n'
-+ '"","questioned","\n'e061","mouth,said,speak: ?","ask"\n'
+var csvData = 'Test Data\n'
++ '"","questioned","e061","mouth,said,speak: ?","ask"\n'
 + '"","ashamed","e05f","no,not: mouth: heart",\n'
 + '"","loaf","e05d","mouth,said,speak: grain,wheat","bread"\n'
 + '"","boy","e001","small,few: man",\n'
 + '"me poss","mine",,,"ours:my:our"\n'
-+ '"we poss","ours",,,"mine:my:our"\n'
-+ '" ","waist","e391","person",\n'
-+ '"","ground","e153",,"land:earth"\n'
 + '"","blaspheme","e05b","mouth,said,speak,confessiom: bad: no,not: good: king,crown,ruler,lord,master: man: love,compassion","insult:blasphemy"\n'
 + '"","Apelles","ebcd","man:split,divide,division,separate","looks_like"\n'
-+ '"","Lud","e1c2","Lud"\n'
-+' "","Levi","eb1b","man: with: equal,same: people",\n';
++ '"","Levi","eb1b","man: with: equal,same: people",\n'
++ '"","chariot","EC82","horse: chair,sit",\n'
++ '"","Cilicia","EB5B","hair: face: fabric,clothing: land,ground,earth",\n'
++ '"","Nahor","EC6E","man: air",\n';
 */
+
 function fixUnicode(lines) {
 	console.log('fix');
 	for (var i = 0; i < lines.length; i ++) {
@@ -501,13 +514,25 @@ function changeFont(f) {
 }
 //debug
 
-
+function setSrch(e) {
+	console.log('setsrch',e)
+	//srchType = e
+	srchType = document.querySelector('input[name = wsrch]:checked').value
+	//table = document.getElementById("searchtable");
+	//tr = table.getElementsByTagName("tr");
+	// reset table display
+	//for (i = 0; i < tr.length; i++) {
+	//	tr[i].style.display = "";
+	//	console.log('row',i)
+	//}
+	search_Table()
+}
 
 function showDebug() {
 	e =document.getElementById('showdebug').checked;
 	//console.log(e)
 	if (e) {
-		generateTable(xcsvToArray(csvData));
+		generateTable(jscsvToArray(csvData));
 		table_mismatch();
 	} else {
 		document.getElementById("output").innerHTML = ""
@@ -520,8 +545,8 @@ if (debug) {
 	generateTable(csvToArray(csvData));
 	table_mismatch();
 	//sortTable();
-}*/
-
+}
+*/
 
 </script>
 </body>
