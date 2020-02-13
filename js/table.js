@@ -1,6 +1,7 @@
 function generateTable(lines){
 	//Clear previous data
 	console.log('generateTable');
+	var t0 = performance.now();
 	document.getElementById("output").innerHTML = "";
 	var table = document.createElement("table");
 	table.id = "searchtable";
@@ -51,7 +52,8 @@ function generateTable(lines){
 	}  // end process line
 	table.appendChild(tbody);
 	document.getElementById("output").appendChild(table);
-
+	var t1 = performance.now();
+	console.log("generateTable " + (t1 - t0) + " milliseconds.");
 }
 
 
@@ -73,6 +75,7 @@ function generateTable(lines){
   }
   
 function table_mismatch() {
+	var t0 = performance.now();
 	var chkCols = [];
 	var fontCol = -1;
 	var uniCol = -1;
@@ -140,6 +143,8 @@ function table_mismatch() {
 			}
 		}
 	}   // if found
+	var t1 = performance.now();
+	console.log("table_mismatch " + (t1 - t0) + " milliseconds.");
 }
 
 // Parse a CSV row, accounting for commas inside quotes   
@@ -183,6 +188,7 @@ function jscsvToArray(text) {
 
 
 function csvToArray(text) {
+	var t0 = performance.now();
     let p = '', row = [''], ret = [row], i = 0, r = 0, s = !0, line;
    //console.log(text);
    for (line of text) {
@@ -204,7 +210,9 @@ function csvToArray(text) {
 		}
         p = line;
     }
-	console.log('csv2array',ret[4]);
+	//console.log('csv2array',ret[4]);
+	var t1 = performance.now();
+	console.log("csvToArray " + (t1 - t0) + " milliseconds.");
     return ret;
 };
 /*
@@ -301,6 +309,7 @@ console.log('searchtable',srchType, input)
 
 
 function showError() {
+	table_mismatch();
 	var input =  document. getElementById("showerr");
 	if (input.checked) {
 		input.checked = false;

@@ -360,6 +360,8 @@ var csvData = 'Test Data\n'
 
 function fixUnicode(lines) {
 	console.log('fix');
+	var t0 = performance.now();
+
 	for (var i = 0; i < lines.length; i ++) {
 		rowx = lines[i]
 		//console.log('before',i, rowx.length, rowx);
@@ -379,12 +381,15 @@ function fixUnicode(lines) {
 		//}
 	}
 	console.log('csvfix',lines);
+	var t1 = performance.now();
+	console.log("fixUnicode " + (t1 - t0) + " milliseconds.");
 	return lines;
 }
 
 var process_wb = (function() {
 	var OUT = document.getElementById('output');
 	var to_csv = function to_csv(workbook) {
+		var t0 = performance.now();
 		var result = [];
 		workbook.SheetNames.forEach(function(sheetName) {
 			var csv = X.utils.sheet_to_csv(workbook.Sheets[sheetName]);
@@ -396,11 +401,15 @@ var process_wb = (function() {
 				result.push(csv);
 			}
 		});
+		var t1 = performance.now();
+		console.log("to_csv " + (t1 - t0) + " milliseconds.");
 		return result.join("\n");
 	};
 
 
 	return function process_wb(wb) {
+		var t0 = performance.now();
+		console.log('process_wb')
 		global_wb = wb;
 		var output = "";
         csv = to_csv(wb);
@@ -410,13 +419,17 @@ var process_wb = (function() {
 		console.log(output)
 		if (CSV) output = fixUnicode(output);
 		generateTable(output);
-		table_mismatch();
+		//table_mismatch();
 		//sortTable();
+		var t1 = performance.now();
+		console.log("process_wb "+ (t1 - t0) + " milliseconds.");
 	};
+
 })();
 
 var do_file = (function() {
 	return function do_file(files) {
+		var t0 = performance.now();
 		//rABS = domrabs.checked;
 		var rABS = false;
 		//use_worker = domwork.checked;
@@ -443,6 +456,8 @@ var do_file = (function() {
 			reader.readAsArrayBuffer(f);
 			//reader.readAsText(f);
 		}
+		var t1 = performance.now();
+console.log("do_file " + (t1 - t0) + " milliseconds.");
 	};
 
 
