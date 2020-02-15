@@ -21,7 +21,8 @@ IMAGEPOS = 0
 NAMEPOS = 1
 UECPOS = 2
 XREFPOS = 3
-
+csv_file = "724all_xref2 (4).csv"
+js_out = "sun.js"
 
 def convert2csv(filename):
 	print('convert2csv ', filename)
@@ -43,7 +44,8 @@ def read_csv_data(path, outfile):
     f = open(path, 'r', encoding="utf-8")
     #data = csv.reader(f, delimiter=',', quotechar='"')
     csvReader = csv.reader(f, delimiter=',', quotechar='"')
-    
+    line = '"'+""+'"|"'+csv_file+'"|"'+""+'"|"'+""+'"\\n'    
+    outdata = outdata+line 
     for row in csvReader:
         print(len(row),row)
         name = row[NAMEPOS]
@@ -68,6 +70,5 @@ def read_csv_data(path, outfile):
 
 
 #csv_file = "kmn724_xref.csv"
-csv_file = "724all_xref2 (4).csv"
-js_out = "sun.js"
+
 read_csv_data(csv_file, js_out)
