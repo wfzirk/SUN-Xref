@@ -341,8 +341,12 @@ var X = XLSX;
 var CSV = false;
 var global_wb;
 var srchType = document.querySelector('input[name = wsrch]:checked').value
-console.log(srchType);
 var colValues =[];
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+	console.log('DOM fully loaded')
+});
 
 /*
 var csvData = 'Test Data\n'
@@ -365,21 +369,14 @@ function fixUnicode(lines) {
 
 	for (var i = 0; i < lines.length; i ++) {
 		rowx = lines[i]
-		//console.log('before',i, rowx.length, rowx);
-		//for (var j = 0;  j < rowx.length; j++) {  
 			j = 0
 			var uni = rowx[j];
-			//console.log(toHex(uni), uni.length);
 			if (uni.length === 3) {
 				var hArry = toHexArray(uni);
 				uni = convertUTF82CP(hArry).toLowerCase();
-				//console.log( "\\u"+uni);
 				var char = unescape('%u' + uni);
-				//console.log(char.toString(16));
 				lines[i][j] = char;
 			}
-			//console.log('after',lines[i]);
-		//}
 	}
 	console.log('csvfix',lines);
 	var t1 = performance.now();
@@ -395,7 +392,6 @@ var process_wb = (function() {
 		workbook.SheetNames.forEach(function(sheetName) {
 			var csv = X.utils.sheet_to_csv(workbook.Sheets[sheetName]);
 			//var csv = X.utils.sheet_to_json(workbook.Sheets[sheetName], {header:1, raw:true});
-			//console.log(csv);
 			if(csv.length){
 				result.push("SHEET: " + sheetName);
 				result.push("");
@@ -414,14 +410,17 @@ var process_wb = (function() {
 		global_wb = wb;
 		var output = "";
         csv = to_csv(wb);
-		//console.log('csv file',CSV, csv);
 		output = csvToArray(csv);
-		//console.log(typeof(output), typeof(csv))
 		console.log(output)
 		if (CSV) output = fixUnicode(output);
 		generateTable(output);
-		table_mismatch();
+		//var ta = performance.now();
+		//for ( i = 0; i < 3; i++){
+		//table_mismatch();
+		//}
 		//sortTable();
+		//var tb = performance.now();
+		//console.log("2nd delay "+ (tb - ta) + " milliseconds.");
 		var t1 = performance.now();
 		console.log("process_wb "+ (t1 - t0) + " milliseconds.");
 	};
@@ -430,38 +429,27 @@ var process_wb = (function() {
 
 var do_file = (function() {
 	return function do_file(files) {
+		console.log('do_file');
 		var t0 = performance.now();
-		//rABS = domrabs.checked;
 		var rABS = false;
-		//use_worker = domwork.checked;
 		var f = files[0];
-		//console.log(f);
 		var fname = f["name"];
-		//document.getElementById('xlf').value = fname;
 		var ext = fname.slice((fname.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
-		//console.log(ext);
 		if (ext === 'csv') CSV = true;
 		else CSV = false;
 		var reader = new FileReader();
 		reader.onload = function(e) {
 			var data = e.target.result;
-			//if(!rABS) data = new Uint8Array(data);
 			console.log(data);
-			//process_wb(X.read(data, {type: rABS ? 'binary' : 'array'}));
 			process_wb(X.read(data, {type:'array'}));
-			//process_wb(X.read(data));
 		};
 		if(rABS) reader.readAsBinaryString(f);
 		else {
-			console.log('readasarray');
 			reader.readAsArrayBuffer(f);
-			//reader.readAsText(f);
 		}
 		var t1 = performance.now();
-console.log("do_file " + (t1 - t0) + " milliseconds.");
+		console.log("do_file " + (t1 - t0) + " milliseconds.");
 	};
-
-
 })();
 
 (function() {
@@ -514,10 +502,6 @@ function getFont() {
 }
 
 function changeFont(f) {
-	//var f = e[0]["name"]
-	
-	//var fval= f.substring(0, f.lastIndexOf("."))
-	
 	console.log(f)
 	try {
 		fval ='"'+f+'"';
@@ -528,28 +512,17 @@ function changeFont(f) {
 	}
 	document.getElementById('sfont').value = f;
 }
-//debug
 
 function setSrch(e) {
-	console.log('setsrch',e)
-	//srchType = e
 	srchType = document.querySelector('input[name = wsrch]:checked').value
-	//table = document.getElementById("searchtable");
-	//tr = table.getElementsByTagName("tr");
-	// reset table display
-	//for (i = 0; i < tr.length; i++) {
-	//	tr[i].style.display = "";
-	//	console.log('row',i)
-	//}
 	search_Table()
 }
 
 function showDebug() {
 	e =document.getElementById('showdebug').checked;
-	//console.log(e)
 	if (e) {
 		generateTable(jscsvToArray(csvData));
-		table_mismatch();
+		//table_mismatch();
 	} else {
 		document.getElementById("output").innerHTML = ""
 	}

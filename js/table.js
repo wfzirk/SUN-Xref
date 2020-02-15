@@ -1,5 +1,46 @@
+var fontCol = -1;
+var uniCol = -1;
+	
+function findCol(arry) {
+	var t0 = performance.now();
+	var found = false;
+	var rowx = 0;
+	for (var i = 4; i < arry.length; i ++) {
+		rowx = arry[i]
+		console.log(i, rowx.length, rowx);
+		for (var j = 0;  j < rowx.length; j++) {  //  eeac8d = eb0d
+			//	https://stackoverflow.com/questions/17267329/converting-unicode-character-to-string-format
+			var	uni = rowx[j].charCodeAt(0).toString(16).toUpperCase();
+			console.log(i, j, '|'+uni+'|', uni.length);
+		    if (uni.length == 4) { 
+				fontCol = j;
+				for (var k = 0;  k < rowx.length; k++){
+					if (k === fontCol) continue;
+					console.log(j,k,uni, rowx[k], rowx[k].length, fontCol);
+					if (rowx[k].toUpperCase() === uni) {
+						console.log('found')
+						uniCol = k;
+						found = true;
+						break;
+					}
+				}
+				//console.log(uni);
+				//found = true;
+				//break;
+			}	
+		}
+		if (i > 16) break;   
+		if (found) break;
+	}
+	console.log(fontCol, uniCol);
+	var t1 = performance.now();
+	console.log("findCol " + (t1 - t0) + " milliseconds.");
+}
+
+
 function generateTable(lines){
 	//Clear previous data
+	findCol(lines)
 	console.log('generateTable');
 	var t0 = performance.now();
 	document.getElementById("output").innerHTML = "";
@@ -23,6 +64,14 @@ function generateTable(lines){
 	for (var j = 0; j < len; j++) {
 		var th = document.createElement("TH");
 		th.appendChild(document.createTextNode('col '+j));
+		if (j === fontCol) {
+			th.className = "fonticon";
+			th.innerHTML = "Font";
+		}
+		if (j === uniCol) {
+			th.className = "Unicode";
+			th.innerHTML = "unicol";
+		}
 		row.appendChild(th);
 	}
 
@@ -30,23 +79,36 @@ function generateTable(lines){
 	var tbody = document.createElement('TBODY');
 	for (var i = 1; i < lines.length; i++) {  // get line
 		//console.log(lines[i]);
+		//console.log(fontCol, uniCol)
 		if (lines[i].length > 1) {	// process row
 			var row = document.createElement('TR');
 			row.className = "item";
 			var mismatch = false;
-			var icontext = "";
-			var col2text = "";
+			var c0;
+		    var c1;
 			for (var j = 0; j < lines[i].length; j++) {
 				var text = "";
 				var td = document.createElement("TD");
 				if (lines[i][j]) text = lines[i][j].trim();
-				if (j ===0) {
-					//td.className = 'td0';
+				if (j ===fontCol) {
+					td.className = "fonticon";
+					c0 = lines[i][fontCol].charCodeAt(0).toString(16).toLowerCase();
+				}
+				if (j === uniCol) {
+					td.className = "unicol";
+					c1 = lines[i][uniCol].toLowerCase();
 				}
 				td.appendChild(document.createTextNode(text));
 				row.appendChild(td);
 			}  // end column process
 			row.style.display = "";
+			if (c0 !== c1) {
+				console.log('not equal',i,c0, c1)
+				var errdata = "Font error\nicon = " +c0+"\nunicode ="+ c1;
+				row.className = "uerror";
+				row.setAttribute("rowdata", errdata);
+				dispModal(row, fontCol, uniCol);
+			}
 		}	// end row process
 		tbody.appendChild(row);
 	}  // end process line
@@ -76,80 +138,32 @@ function generateTable(lines){
   
 function table_mismatch() {
 	var t0 = performance.now();
-	var chkCols = [];
-	var fontCol = -1;
-	var uniCol = -1;
-	var found = false;
 	var table = document.getElementById("searchtable");
 	var rows = table.getElementsByTagName("tr");
-
-	var rowx = 0;
-	for (var i = 3; i < rows.length; i ++) {
-		rowx = rows[i]
-		console.log(i, rowx.childNodes.length, rowx);
-		for (var j = 0;  j < rowx.childNodes.length; j++) {  //  eeac8d = eb0d
-			//	https://stackoverflow.com/questions/17267329/converting-unicode-character-to-string-format
-			var	uni = rowx.childNodes[j].innerText.charCodeAt(0).toString(16).toLowerCase();
-			console.log(j, '|'+uni+'|', uni.length);
-		    if (uni.length == 4) { 
-				chkCols[0] = [j, uni];
-				fontCol = j;
-				console.log(uni);
-				found = true;
-				break;
-			}	
+	for (i = 1; i < rows.length; i++) {
+		var c0 = rows[i].childNodes[fontCol].innerText.charCodeAt(0).toString(16).toLowerCase();
+		//var c1 = rows[i].childNodes[uniCol].innerText.toLowerCase();
+		//rows[i].childNodes[fontCol].className = "fonticon";
+		//rows[i].childNodes[uniCol].className = "unicol";
+		c0 = rows[i][fontCol]
+		c1 = rows[i][uniCol]
+		if (c0 !== c1) {
+			console.log('not equal', fontCol, uniCol)
+			mismatch = true;	
+			var fontname = rows[i].childNodes[1].innerText;
+			var errdata = "Font error\nicon = " +c0+"\nunicode = "+c1;
+			rows[i].className = "uerror";
+			rows[i].setAttribute("rowdata", errdata);
+			dispModal(rows[i], [fontCol, uniCol]);
 		}
-		if (found) break;
 	}
-    if (found) {
-		for (var i = 0; i < rowx.childNodes.length; i++) {
-			var c0 = rowx.childNodes[i].innerText.toString().toLowerCase();
-			if (c0 === chkCols[0][1]) { 
-				chkCols[1] = [i, c0];
-				uniCol = i;
-				break;
-			}	
-		}
-
-		//var fontcol = chkCols[0][0];			// fonticon column
-		//var unicol = chkCols[1][0];			// unicode column
-		var ths = table.getElementsByTagName("th");
-		var tds = table.getElementsByTagName("td");
-		
-		ths[fontCol].className = "fonticon";
-		ths[fontCol].innerHTML = "Font";
-		ths[uniCol].className = "Unicode";
-		ths[uniCol].innerHTML = "unicol";
-	
-		console.log(fontCol, uniCol);
-		for (i = 1; i < rows.length; i++) {
-			var c0 = rows[i].childNodes[fontCol].innerText.charCodeAt(0).toString(16).toLowerCase();
-			var c1 = rows[i].childNodes[uniCol].innerText.toLowerCase();
-		//	var fontname = rows[i].childNodes[1].innerText;
-		//	console.log(c0, c1, typeof(c0));
-			rows[i].childNodes[fontCol].className = "fonticon";
-			rows[i].childNodes[uniCol].className = "unicol";
-			//console.log(rows[i].childNodes.length);
-			//var len = rows[i].childNodes.length
-			//rows[i].childNodes[len - 1].className = "width100";
-			if (c0 !== c1) {
-				console.log('not equal', fontCol, uniCol)
-				mismatch = true;	
-				var fontname = rows[i].childNodes[1].innerText;
-				var errdata = "Font error\nicon = " +c0+"\nunicode = "+c1;
-				rows[i].className = "uerror";
-				rows[i].setAttribute("rowdata", errdata);
-				dispModal(rows[i], chkCols);
-			}
-		}
-	}   // if found
 	var t1 = performance.now();
-	console.log("table_mismatch " + (t1 - t0) + " milliseconds.");
+	console.log("table_mismatch 2 " + (t1 - t0) + " milliseconds.");
 }
-
+/*
 // Parse a CSV row, accounting for commas inside quotes   
 // https://exceptionshub.com/how-to-read-data-from-csv-file-using-javascript-2.html                
-function parse(row){
+function xparse(row){
   var insideQuote = false,                                             
       entries = [],                                                    
       entry = [];
@@ -168,6 +182,7 @@ function parse(row){
   entries.push(entry.join(''));                                        
   return entries;                                                      
 }
+*/
 function jscsvToArray(text) {
 	console.log('xcsv...')
 	row = [];
@@ -178,8 +193,6 @@ function jscsvToArray(text) {
 		for (var j in l) {
 			l[j] = l[j].substring(1, l[j].length - 1)
 		}
-		//console.log(i, lines[i]);
-		//r = parse(lines[i]);
 		row.push(l);
 	}
 	console.log(row[2])
@@ -190,10 +203,8 @@ function jscsvToArray(text) {
 function csvToArray(text) {
 	var t0 = performance.now();
     let p = '', row = [''], ret = [row], i = 0, r = 0, s = !0, line;
-   //console.log(text);
    for (line of text) {
-	   //console.log(line, typeof(line))
-        if ('"' === line) {
+	    if ('"' === line) {
             if (s && line === p) {
 				row[i] += line;
 			}
@@ -215,53 +226,7 @@ function csvToArray(text) {
 	console.log("csvToArray " + (t1 - t0) + " milliseconds.");
     return ret;
 };
-/*
-function xsearch_Table(){
-	var input = document.getElementById('xsearch').value.toUpperCase();
-	var filter =  input.split(' '); 
-	table = document.getElementById("searchtable");
-	tr = table.getElementsByTagName("tr");
-	for (i = 0; i < tr.length; i++) {
-		td = tr[i].getElementsByTagName("td") ; 
-		var text = "";
-		for(j=0 ; j < td.length ; j++) {
-			  let tdata = td[j] ;
-			  if (tdata) {
-				 text = text +'+'+ tdata.innerHTML.toUpperCase();
-			  }
-		}
-		t1 = text.replace(/,/g, "+").replace(/:/g, "+");
-		
-		var found =true;
-		for(var f = 0; f < filter.length; f++) {
-			if (text.indexOf(filter[f])  === -1) { 
-				found = false;
-			}
-		}
-		if (found) {
-				tr[i].style.display = "";
-		} else {
-				tr[i].style.display = "none";
-		}
-	}
-}
-*/
 
-/*
-function multiSearchAnd(text, searchWords){
-  var currTest;
-  while (currTest = searchWords.pop()){
-    if (!text.match(new RegExp(currTest,"i"))) return false;
-  }
-  return true;
-}
-// Check if array1 contains all elements of array2
-function arrayContains(a1, a2) {
-	var result = a1.filter(e => a2.indexOf(e) !== -1).length === a2.length
-	//console.log(a1, a2, result)
-	return result;
-}
-*/
 function search_Table(){
 	var input = document.getElementById('xsearch').value.toUpperCase();
 	var filter =  input.split(' '); 
