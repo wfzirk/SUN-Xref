@@ -1,5 +1,5 @@
 	
-function dispModal(btn, chkCols) {	
+function dispModal(btn, fontCol, uniCol) {	
 		// Get the modal
 	var modal = document.getElementById("myModal");
 
@@ -15,10 +15,10 @@ function dispModal(btn, chkCols) {
 		modal.style.display = "block";
 		var tr = e.target.parentElement;
 		console.log(e.target.parentElement);
-		var fontcol = chkCols[0][0];			// fonticon column
-		var unc = chkCols[1][0];				// unicode column
-		var c0 = tr.childNodes[fontcol].innerText.charCodeAt(0).toString(16).toLowerCase();
-		var c1 = tr.childNodes[unc].innerText.toLowerCase();
+		//var fontcol = chkCols[0];			// fonticon column
+		//var unc = chkCols[1];				// unicode column
+		var c0 = tr.childNodes[fontCol].innerText.charCodeAt(0).toString(16).toLowerCase();
+		var c1 = tr.childNodes[uniCol].innerText.toLowerCase();
 		var errdata = "Font error<br>icon = " +c0+"<br>unicode = "+c1;
 		console.log(errdata);
 		var mdisp = document.getElementById("mdisp");

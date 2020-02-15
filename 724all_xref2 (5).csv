@@ -789,7 +789,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Haran_land,EB0B,Dry: no: water: land
 ,Haran_man,EFA4,Man: hill: small: mountain
 ,hard,E269,"soft: no,not"
-,harlot,ECFC,"Dirty,impure: water,wet: no,not: good: woman"
+,harlot,ECFC,"Dirty,impure: water,wet: bad: no,not: good: woman"
 ,harp,ECC6,String: box
 ,harsh,ECA7,"Hurt,pain: knife,cut: heart: mouth,said,speak,confession"
 ,harvest,E082,"hand: grain,wheat"
@@ -803,10 +803,10 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Hazezon_Tamar,EDEA,Knife: tree: village: many: neighbor: house: near 
 ,Hazo,E1B0,Man: no: prophet: prophesy: person: eye: forward
 ,head,E206,face
-,heal,E084,"hand: health,healthy: happy,joy: heart"
-,healer,E144,"person: health,healthy: hand: happy,joy: heart"
-,health,E209,"happy,joy: heart"
-,healthy,E209,"happy,joy: heart"
+,heal,E084,"hand: health,healthy: happy,joy: face: heart"
+,healer,E144,"person: hand: health,healthy: happy,joy: face: heart"
+,health,E209,"happy,joy: face: heart"
+,healthy,E209,"happy,joy: face: heart"
 ,hear,E299,
 ,heart,E29A,
 ,heat,E301,
@@ -819,29 +819,29 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,height,ECC1,Straight: up
 ,heir,E018,"money,wealth,wealthy: son,sons: small,few: man: love,compassion"
 ,Heli,EC44,man: up
-,hell,E0D1,"all,whole: time,when: fire,heat,hot"
+,hell,E0D1,"always: all,whole: time,when: fire,heat,hot"
 ,help,E13A,straight: people
-,helper,E150,person: straight: people: help
+,helper,E150,person: help: straight: people
 ,Heman,E1B2,Man: right: no
 ,Hemdan,EFF4,Man: heart
 ,here,E212,"very: land,ground,earth"
 ,Hermas,EBC4,"man: far: no,not: near"
-,Hermes_idol,EB2F,"Mute: mouth,said,speak,confession: no,not: thing: backward: money,wealth,wealthy: forward,to"
+,Hermes_idol,EB2F,"Mute: mouth,said,speak,confession: no,not: thing: sell: backward: money,wealth,wealthy: buy: forward,to"
 ,Hermes_person,EBED,Man: everywhere: land: all
 ,Hermogenes,ECB5,"Man: permit,allow,permission: mouth,said,speak,confession: crown,ruler,king,lord,master"
 ,Herod,E360,man: man: big
-,Herodians,EA05,"person: crown,king,ruler,lord: no,not: good"
-,Herodias,E355,"woman: no,not: good: eye,see"
-,Herodion,EBF1,"Man: house: love,compassion"
-,Heth,EDEC,"Man: angry,anger"
+,Herodians,EA05,"person: crown,king,ruler,lord: bad: no,not: good"
+,Herodias,E355,"woman: bad: no,not: good: eye,see"
+,Herodion,EBF1,"Man: family: house: love,compassion"
+,Heth,EDEC,"OT: Man: angry,anger"
 ,Hezekiah,EA62,"man: crown,ruler,king,lord: can,ability,power: big: knife,cut"
 ,Hezron,EA4F,man: wall
 ,hide,E085,hand: under: thing: .
-,Hierapolis,ECE9,"Person: thing: village: many,much: neighbor: house: near,close"
-,hill,E202,"hill: small,few: mountain"
+,Hierapolis,ECE9,"holy: person: thing: village: many,much: neighbor: house: near,close"
+,hill,E202,"small,few: mountain"
 ,Hirah,E1B3,Man: mouth: you
 ,hire,E13B,"person: money,wealth,wealthy"
-,hit,E0E4,"hand: hurt,pain: knife,cut: heart"
+,hit,E0E4,"beat: hand: hurt,pain: knife,cut: heart"
 ,Hittites,EDED,Angry: people
 ,Hivites,EDEE,Mouth: people
 ,Hobah,EDEF,"Blind: no,not: see: village: many,much: neighbor: house: near,close"
@@ -854,15 +854,15 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Horites,EDF1,Cave: hole: mountain: people
 ,horn,ECC5,Bone: head: face
 ,horse,E303,
-,hosanna,E216,"very: help: people: straight: time,when"
+,hosanna,E216,"very: help: straight: people: now: time,when"
 ,Hosea,EBC5,"man: search: hand: eye,see"
 ,hot,E301,
 ,hour,E331,"time,when: around"
 ,house,E171,
-,how,E068,"know,knowledge: mouth,said,speak: ?"
-,how_long,E83C,"time,when: mouth,said,speak: ?"
+,how,E068,"know,knowledge: ask: mouth,said,speak: ?"
+,how_long,E83C,"time,when: ask: mouth,said,speak: ?"
 ,Hul,EDF2,"Man: small,few: shake"
-,human_nature,E23D,"way: start,beginning: person"
+,human_nature,E23D,"road: birth: start,beginning: person"
 ,humble,E19D,"small,few: mouth,said,speak: me"
 ,humiliate,E065,"know,knowledge: bad: no,not: good: me,i"
 ,humility,E19D,"small,few: mouth,said,speak: me"
@@ -872,13 +872,13 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,husband,E012,"man: love,compassion"
 ,Husham,E1B4,Man: sweet: air
 ,Hushim,EFC6,"Man; no,not: very: to,forward"
-,Hymenaeus,ECAA,"Man: good: no,not: teaching,teach: mouth,said,speak,confession: book,read,learn"
-,hymn,E0E3,"cross: sing,song: mouth,said,speak: dance: walk: happy,joy"
-,hypocrite,E152,"person: deceive,deception,false,lead_astray,lie: no,not: good: measure"
+,Hymenaeus,ECAA,"Man: bad:  good: no,not: teaching,teach: mouth,said,speak,confession: book,read,learn"
+,hymn,E0E3,"cross: sing,song: mouth,said,speak: dance: walk: happy,joy: face"
+,hypocrite,E152,"person: deceive,deception,false,lead_astray,lie: bad: no,not: good: measure"
 ,I,E166,
 ,Iconium,EC1F,"go,travel,trip: village: many: neighbor: house: near"
 ,idol,E35D,"Mute: no,not: mouth,said,speak: thing"
-,Idumea,E378,"man: hair: land,ground,earth: face"
+,Idumea,E378,"man: hair: face: land,ground,earth"
 ,if,E111,straight: thing
 ,ignorance,E06E,"know,knowledge: no,not"
 ,ignorant,E06E,"know,knowledge: no,not"
@@ -889,7 +889,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,important,EBE7,"very: choose: love,compassion: or"
 ,impossible,E180,"no,not: can,ability,power: big: knife,cut"
 ,imprisoned,E25F,
-,impure,E249,"wet,water: no,not: good"
+,impure,E249,"wet,water: bad: no,not: good"
 ,in,E240,door: thing: .
 ,in_front,E112,thing
 ,incense,EC98,"perfume,fragrant: good: nose,smell: gift: hand: love,compassion"
@@ -901,8 +901,8 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Irad,EDF3,Man: valley
 ,Iram,EFF6,Man: building
 ,iron,EB29,"hard: no,not: soft: metal"
-,Isaac,E374,"man: very: happy,joy: laugh"
-,Isaiah,E372,man: very: help: straight: people
+,Isaac,E374,"man: laugh: very: happy,joy:  face"
+,Isaiah,E372,man: save: very: help: straight: people
 ,Ishbak,EEDA,"Man: free: no,not: chain,arrest,bound,imprisoned"
 ,Ishmael,E1B5,OT: dry: no: water: land
 ,Ishvah,EFC8,Man: straight
@@ -923,17 +923,17 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Jairus,E367,"man: king,crown,ruler,lord: temple,church: mouth,said,speak: authority"
 ,Jakin,E1B9,Man: no: left
 ,Jalam,EFF7,Man: hide: put: hand: under: thing
-,Jambres,ECBC,"Man: forward,to: money,wealth,wealthy"
+,Jambres,ECBC,"Man: buy: forward,to: money,wealth,wealthy"
 ,James,E358,man: person: foot
 ,James_the_Disciple,E376,man: person: foot
 ,Jamin,EFCC,man: right: hand
 ,Jannai,EC46,man: ?
-,Jannes,ECBE,"Man: day,sun: money,wealth,wealthy"
+,Jannes,ECBE,"Man: denarius: day,sun: money,wealth,wealthy"
 ,Japheth,EDF4,OT: man: very: big
-,jar,E0D5,"soft: no,not: cup,drink"
+,jar,E0D5,"hard: soft: no,not: cup,drink"
 ,Jared,EC62,man: down
-,Jason,EB64,man: help: straight: people
-,Javan,E1BA,OT: deceive: bad: no: good: measure
+,Jason,EB64,man: no: wine: cup: fruit
+,Javan,E1BA,OT: man: deceive: bad: no: good: measure
 ,Jebusites,E1E5,Past: backward: time: peace: sleep: love: village: many: neighbor: house: near: people
 ,Jechoniah,EA66,"man: king,crown.ruler,lord: stay: person: straight"
 ,Jegar_Sahadutha,E1E6,Message: book: mouth: near: mountain 
@@ -942,7 +942,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Jephthah,ED04,"Man: open: no,not: closed"
 ,Jerah,EDF5,"Man: moon,night"
 ,Jeremiah,EA28,"man: cry: sad, grieve"
-,Jericho,EA08,"wall: down: land,ground,earth"
+,Jericho,EA08,wall: down: village: many: neighbor: house: near
 ,Jerusalem,E338,"peace: rest,sleep,lie_down: love,compassion: village: many: neighbor: house,near"
 ,Jesse,EA58,"man: gift: hand: love,compassion"
 ,Jesus,E037,"king,ruler,crown,lord: cross"
