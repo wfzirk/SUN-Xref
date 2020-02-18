@@ -22,7 +22,7 @@
 ,according_to,E24D,"same,equal: mouth,said,speak"
 ,accuse,E055,"mouth,said,speak: no,not: good"
 ,Achaia,EB7C,"pain,hurt: knife,cut: land,ground,earth"
-,Achaicus,ECA5,Man: cross: people: person
+,Achaicus,ECA5,Man: cross: people
 ,Achim,EA6E,"man: know,knowledge: write,pen"
 ,Adah,EDA7,Woman: good: face
 ,Adam,EC4F,"man: soil,dirt,ground_soil: land,ground"
@@ -234,11 +234,11 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Bethesda,EBA0,"love,compassion: person: small: wet,water"
 ,Bethlehem,EA45,"born,birth: land ,ground,earth: beginning,start: person"
 ,Bethphage,E348,right: village: many: neighbor: house: near
-,Bethsaida,E340,"harvest: hand: grain,wheat: village: many: neighbor,house,near"
+,Bethsaida,E340,"harvest: hand: grain,wheat: village: many: neighbor: house: near"
 ,Bethuel_city,E1E0,OT: man: clean: water: good: village: many: neighbor: house: near
 ,Bethuel_man,E1A0,OT: man: clean: water: good
-,betray,E195,"no,not: love,compassion: good: measure"
-,betrayal,E195,"no,not: love,compassion: good: measure"
+,betray,E195,"no,not: trust: love,compassion: good: measure"
+,betrayal,E195,"no,not: trust: love,compassion: good: measure"
 ,better,E09E,good: many
 ,between,E118,thing: stick
 ,Bible,E22C,"book,read,learn: cross"
@@ -252,18 +252,18 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,bitter,ECD2,"Bad: no,not: good: tongue: mouth,said,speak,confession: fabric,clothing"
 ,black,EB86,"color: moon,night"
 ,blaspheme,E05B,"Mouth,said,speak,confessiom: bad: no,not: good: king,crown,ruler,lord,master: man: love,compassion"
-,blasphemy,E05B,"mouth,said,speak: no,not: good: crown,ruler,king,lord: man: love,compassion"
+,blasphemy,E05B,"mouth,said,speak: bad: no,not: good: crown,ruler,king,lord: man: love,compassion"
 ,Blastus,EB8D,"man: small,few: plant,tree,wood"
 ,blemish,ED01,
 ,bless,E05C,"mouth,said,speak: gift: hand: love,compassion"
-,blessed,EA21,"happy,joy: many"
+,blessed,EA21,"happy,joy: face: many"
 ,blessing,E05C,"mouth,said,speak: gift: hand: love,compassion"
 ,blind,E192,"no,not: eye,see"
 ,blood,E087,"hand: wet,water"
 ,blue,ECDA,"River,stream: color"
 ,boast,E14B,"big: mouth,said,speak: me,i"
 ,boat,E265,
-,Boaz,EA54,"man: very: forward,to"
+,Boaz,EA54,"man: fast_speed: very: forward,to"
 ,body,E143,person
 ,bone,E0B2,
 ,book,E22A,
@@ -278,7 +278,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,boys,E002,"small,few: man"
 ,Bozrah,EFEC,"Sheep: soft: keep: very: have: hand: village: many,much: neighbor: house: near,close"
 ,branch,E246,"tree,plant,wood"
-,brave,E196,"afraid,fear: no,not: mouth,said,speak: heart"
+,brave,E196,"no: afraid,fear: mouth,said,speak: heart"
 ,bread,E05D,"mouth,said,speak: grain,wheat"
 ,break,E0E1,"knife,cut: whole,all"
 ,breastplate,ECD5,Shield: body: person
@@ -286,15 +286,15 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,breathe,ECEE,"mouth,said,speak: air"
 ,bribe,EBDB,"Bad: no,not: good: to,forward: money,wealth,wealthy"
 ,brick,EEFB,"Make,create: hand: person: rock: hard: soft: no,not: thing"
-,bride,E015,"woman: start,beginning: love,compassion"
+,bride,E015,"start,beginning: love,compassion: woman"
 ,bright,E21B,"very: sun,day"
 ,bring,E088,hand: thing
 ,bronze,EB2C,soft: metal
-,brother,E006,"man: small,few: love,compassion"
-,brothers,E007,"man: small,few: love,compassion"
+,brother,E006,"man: love,compassion: small"
+,brothers,E007,"man: love,compassion: small"
 ,build,E17A,house: make: hand: person
 ,building,E0A1,
-,burden,EC86,hand: big: measure: person
+,burden,EC86,Heavy: hand: big: measure: person
 ,burn,ECD0,"Kill,destroy,destruction: knife,cut: person: fire,hot,heat"
 ,burnt,ECD0,"Kill,destroy,destruction: knife,cut: person: fire,hot,heat"
 ,bury,E0D7,"straight: death,dead,die: no,not: heart"
@@ -303,7 +303,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Buz,E1A5,Man: least: very: small: know
 ,Caesar,E370,"man: big: ruler,king,crown,lord"
 ,Caesarea,E346,"person: crown,ruler,king,lord: land,ground,earth"
-,Caiaphas,EA77,"man: murderer: cross: knife,cut: person: kill,destroy"
+,Caiaphas,EA77,"man: crucify: knife,cut: person: kill,destroy: cross"
 ,Cain,EC56,Man: have: hand
 ,Cainan,EC56,man: have: hand: .
 ,Calah,EDC6,"Old: no,not: new: village: many,much: neighbor: house: near,close"
@@ -319,7 +319,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Cappadocia,EB74,"horse: land,ground,earth"
 ,careful,E19E,"small,few: heart"
 ,carpenter,E14F,"person: hand: thing: tree,plant,wood"
-,Carpus,ECAD,"Man: Big: fabric,clothing"
+,Carpus,ECAD,"Man: cloak: big: fabric,clothing"
 ,carry,E088,hand: thing
 ,case,EC87,"justice: to,forward: hand: equal,same: land,ground,earth: church,temple"
 ,catch,E115,thing: net
@@ -341,10 +341,10 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Chios,EB22,"island: wet,water: land,ground,earth: cold: no,not: fire,heat,hot"
 ,Chloe,EBE2,"woman: grain,wheat"
 ,choose,E021,"love,compassion: or"
-,Chorazin,EA8F,"not,no: good: hot,fire,heat: village: many: neighbor,house,near"
-,Christ,E334,"very: king,ruler,crown,lord: anointed: mouth,said,speak: near: person"
+,Chorazin,EA8F,"bad: not,no: good: hot,fire,heat: village: many: neighbor: house: near"
+,Christ,E334,"very: anointed: king,ruler,crown,lord: appointed: call: mouth,said,speak: near: person"
 ,Christian,EB90,"follow: people: to,forward: crown,ruler.king,lord: cross"
-,church,EBFC,cross: building
+,church,EBFC,cross: people
 ,Chuza,EC57,"man: small,few: mouth,speak,said"
 ,Cilicia,EB5B,"hair: face: fabric,clothing: land,ground,earth"
 ,circumcise,E250,"knife,cut: flesh: soft: person"
@@ -371,14 +371,14 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Colossae,ECE8,"Animal: bad: no,not: good: village: many,much: neighbor: house: near,close"
 ,come,E25A,walk: near
 ,come_out,E243,"door: to,forward"
-,comfort,EA3B,"love,compassion: person"
+,comfort,EA3B,"love,compassion: sleep"
 ,command,E058,"mouth,said,speak: !"
-,commandment,E22F,"Book,learn,read: allow,permit,permission: mouth,said,speak: crown,ruler,king,lord,master"
+,commandment,E22F,"Book,learn,read: story; allow,permit,permission: mouth,said,speak: crown,ruler,king,lord,master"
 ,compassion,E01A,
 ,complete,ECEC,"Very: all,whole"
 ,concubine,EEFC,"Love,compassion: chain,imprisoned,bound,arrest: woman"
-,condemn,EA7F,"mouth,said,speak: know,knowledge: no,not"
-,condemnation,EA7F,"mouth,said,speak: know,knowledge: no,not"
+,condemn,EA7F,"mouth,said,speak: know,knowledge: wrong: no,not"
+,condemnation,EA7F,"mouth,said,speak: know,knowledge: wrong: no,not"
 ,confession,E03F,
 ,confidence,E070,"know,knowledge: know,knowledge"
 ,confuse,EB08,"no,not: understand,understanding: know,knowledge: very"
@@ -391,23 +391,23 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,cornerstone,E21C,"very: hard: soft: no,not: thing"
 ,correct,E09A,good
 ,Cosam,EC59,man: many
-,couch,EB5F,"big: chair,sit"
-,council,E0F7,body: person
+,couch,EB5F,big: chair
+,council,E0F7,body: forward; person
 ,counted,EBC0,very: measure
 ,country,E0A2,"big: land,ground,earth"
-,countrymen,E157,"person: friend: love,compassion: land,ground,earth"
+,countrymen,E157,"friend: person: love,compassion: land,ground,earth"
 ,countryside,EB96,"big: field,farm: grain,wheat: land,ground,earth"
 ,courage,E196,"no,not: afraid,fear: mouth,said,speak: heart"
-,courtyard,E0F6,"land,ground,earth: church,temple"
-,covenant,E21D,"mouth,said,speak: promise: very: work,do"
+,courtyard,E0F6,"land,ground,earth"
+,covenant,E21D,"promise: mouth,said,speak: very: work,do"
 ,cover,E39A,straight: thing
 ,covet,E022,"desire,like,want: heart: love,compassion: you: thing"
 ,cow,EB36,
 ,create,E076,hand: person
 ,creation,EBC3,"person: thing: all,whole"
-,Creator,EC22,"god: crown,ruler,king,lord: man: house: make,create: hand: person: love,compassion"
+,Creator,EC22,"God: crown,ruler,king,lord: man: build: house: make,create: hand: person: love,compassion"
 ,credit,EBC0,very: measure
-,Crescan,ECAF,"Man: up: land,ground,earth"
+,Crescan,ECAF,"Man: grow: up: land,ground,earth"
 ,Crete,EC8D,"flesh: soft: person: island: wet,water: land,ground,earth"
 ,Crispus,EB3A,"man: crooked: no,not: straight"
 ,criticize,E055,"Mouth,said,speak,confession: bad: no,not: good"
@@ -419,16 +419,16 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,crush,E146,person: thing
 ,cry,E20C,"sad,grieve: wet,water"
 ,cup,E274,
-,curse,E05A,"mouth,said,speak: no,not: good: fire,heat,hot"
+,curse,E05A,"mouth,said,speak: bad: no,not: good: fire,heat,hot"
 ,curtain,E254,"fabric,clothing: window"
-,Cush,EDCA,"all,whole: night,moon: land,ground,earth"
-,Cush_land,E1E2,Man: all: moon: land
+,Cush,EDCA,"man: all,whole: night,moon"
+,Cush_land,E1E2,Land: man: all: moon
 ,Cush_man,EDCA,"Man: all,whole: moon,night"
-,cushion,E26C,soft: face
+,cushion,E26C,soft: head: face
 ,custom,EB10,"whole,all: work,do"
 ,cut,E24E,
 ,cymbal,EBE3,"hand: sound,noise: ear,hear: thing"
-,cypress,EDCB,
+,cypress,EDCB,Sad tree
 ,Cyprus,EB88,"good: island: wet,water: land,ground.earth: plant,tree,wood"
 ,Cyrene,EB59,"Horse: knot,tie: land,ground,earth"
 ,Dalmanutha,E344,"shout: big: mouth,said,speak: land,ground,earth"
@@ -437,35 +437,35 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Damascus,EC31,"blood: hand: wet,water: village: many: neighbor: house: near"
 ,Dan_land,EDCC,"Ruler,lord,king,crown,master: or: earth,ground,land"
 ,Dan_man,EDCD,"Man: ruler,lord,king,crown,master: or"
-,dance,E259,"walk: happy,joy"
+,dance,E259,"walk: happy,joy: face"
 ,Daniel,EA78,"man: me,i: or"
 ,dark,EA17,"no,not: light: eye,see: sun,day"
-,daughter,E00C,"woman: love,compassion: small,few"
-,daughters,E00D,"woman: love,compassion: small,few"
-,David,E35E,"man: appointed: mouth,said,speak: near: person: call,beckon"
+,daughter,E00C,"small: woman: love,compassion"
+,daughters,E00D,"small: woman: love,compassion"
+,David,E35E,"man: appointed: call: mouth,said,speak: near: person"
 ,day,E15F,
 ,deacon,E12D,"Person: love,compassion: work,do"
 ,dead,E181,"no,not: heart"
 ,deaf,E191,"no,not: hear,ear"
 ,death,E181,"no,not: heart"
-,Deborah,EFB5,"Woman: ruler,lord,king,crown,master: or"
+,Deborah,EFB5,"Woman: judge: ruler,lord,king,crown,master: or"
 ,Decapolis,E33E,"ten: land,ground,earth"
 ,deceive,E17F,"no,not: good: measure"
 ,deceiver,E152,"person: no,not: good: measure: deceive,deception,lie,false,lead_astray"
 ,deception,E17F,no: good: measure
 ,Dedan,EDCE,"Man: to,forward"
 ,deep,E321,
-,deer,EFB6,"Fast: very: to,forward: animal"
-,Demes,ECB2,Man: people: person
-,Demetrius,EB1A,"man: sow,to_plant: seed: plant,tree,wood: small: hand"
-,demon,EB87,"no,not: good: spirit: person"
+,deer,EFB6,"Fast_speed: very: to,forward: animal"
+,Demes,ECB2,Man: people
+,Demetrius,EB1A,"man: sow,to_plant: hand: seed: plant,tree,wood: small"
+,demon,EB87,"bad: no,not: good: spirit: person"
 ,denarius,E165,"sun,day: money,wealth,wealthy"
 ,deny,E0E5,"no,not: mouth,said,speak: know,knowledge"
 ,depart,E243,"door: to,forward"
 ,depth,E321,
 ,Derbe,EB43,flesh: soft: person: village: many: neighbor: house: near
 ,descend,E317,Down
-,descendant,EB60,"time: to,forward: small,few: people"
+,descendant,EB60,"future: time: to,forward: children: small,few: people"
 ,desert,E156,"land,ground,earth: no,not: tree,plant,wood"
 ,deserve,E0F5,"money,wealth,wealthy: work,do"
 ,desire,E020,"love,compassion: heart"
@@ -480,10 +480,10 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Dinah,EFB7,"Woman: mouth,said,speak,confession"
 ,Dinhabah_city,EFED,King: village: many: neighbor: house: near
 ,Dionysius,EB78,"man: fill: cup,drink"
-,Diotrephes,ECE2,?
+,Diotrephes,ECE2,Man: thunder: mouth: storm
 ,direction,E323,
 ,dirt,E15B,"land,ground,earth"
-,dirty,E249,"wet,water: no,not: good"
+,dirty,E249,"wet,water: bad: no,not: good"
 ,disciple,E142,"person: follow: people: to,forward"
 ,discipline,EDA5,Whip: message: mouth: book
 ,discourage,E261,"chain,bound,imprisoned,arrest: heart"
@@ -497,14 +497,14 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,division,E326,"Backward: forward,to"
 ,divorce,EA3D,"house: split,division,divide,separate"
 ,do,E08C,
-,doctor,E144,"person: heal: hand: happy,joy: heart"
+,doctor,E144,"person: heal: hand: happy,joy: face: heart"
 ,Dodanim,EDCF,"Man: lead,leader: to,forward: person"
 ,dog,E104,"small,few: animal"
-,dominion,E032,"crown,ruler,king,lord: land,ground,earth: knife,cut"
+,dominion,E032,"crown,ruler,king,lord: power: big: knife,cut"
 ,donkey,EA09,"small,few: horse"
 ,door,E23E,
 ,Dorcas,EC2C,Woman: horse
-,Dothan,EFA3,Water: two: village: many: neighborhood: house: near
+,Dothan,EFA3,Water: two: village: many: neighbor: house: near
 ,doubt,E194,"no,not: believe,faith: know,knowledge: cross"
 ,dough,EA36,"soft: mouth,said,speak: grain,wheat"
 ,dove,E25E,"bird: peace: rest,sleep,lie_down: love,compassion"
@@ -512,8 +512,8 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,dragon,ECDF,"Fire,heat,hot: bird"
 ,dream,EA80,"eye: rest,sleep,lie_down"
 ,drink,E274,
-,drum,EBE3,"hand:sound,noise: ear,hear: thing"
-,drunk,EA8D,"cup,drink: no,not: good"
+,drum,EBE3,"hand: sound,noise: ear,hear: thing"
+,drunk,EA8D,"cup,drink: bad: no,not: good"
 ,Drusilla,EB9C,"woman: wet,water"
 ,dry,E188,"no: wet,water"
 ,Dumah,EEFD,"Man: small,few: mute: mouth,said,speak,confession: no,not"
@@ -532,37 +532,37 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Eden_garden,EDD2,Up: grain: small: land
 ,Eden_man,E1E9,Man: small: happy: face
 ,Edom_land,E1A7,OT: man: blood: hand: water: land
-,Edom_man,E1A6,
-,Egypt,EA44,"slave: land,ground,earth: thing: person"
-,Ehi,EFB8,"Man: gathered(people),together(people): people"
+,Edom_man,E1A6,OT: man: blood: hand: water: color
+,Egypt,EA44,"slave: thing: person: land,ground,earth"
+,Ehi,EFB8,Man: together(people)
 ,eight,E293,
 ,El,EDD3,OT: king: man: love
-,El_Elohe,E1E4,OT: son: man: small: love”: .:
+,El_Elohe,E1E4,OT: son: man: small: love”: .
 ,Elah,E1A9,Man: dry: no: water
 ,Elam_land,EB6D,"time,when: land,ground,earth"
 ,Elam_man,EDD4,Man: everything: all: thing
-,Eldaah,E1E3,Man: know: god: king: love
-,elder,EB62,"no,not: new: lead,leader: to,forward: person"
+,Eldaah,E1E3,Man: know: God: king: love
+,elder,EB62,"old: no,not: new: lead,leader: to,forward: person"
 ,Eleazar,EA70,"man: king,crown,ruler,lord: help: straight: people"
 ,elect,EC9F,"choose: love,compassion: or: people"
 ,Eli,EC44,man: up
 ,Eliakim,EA6B,"man: up: money,wealth,wealthy"
 ,Eliezer,EC5B,"man: me,i: help: straight: people"
 ,Elijah,E36A,"man: heat,fire,hot"
-,Eliphaz,EFF1,"Man: gold: big: money,wealth,wealthy"
+,Eliphaz,EFF1,"OT: man: gold: big: money,wealth,wealthy"
 ,Elisha,EC5C,"man: can,power,ability: person: knife,cut"
 ,Elishah,EC5C,"Man: ability,can,power: big: knife,cut"
-,Eliud,EA6F,"man: amazing,amazing: person: mouth,said,speak: good: praise,worship,exalt"
-,Elizabeth,EC3A,"woman: promise: mouth,speak,said: work: very"
+,Eliud,EA6F,"man: amazed: big: praise: mouth,said,speak: good"
+,Elizabeth,EC3A,"woman: covenant: promise: mouth,speak,said: work: very"
 ,Ellasar,EDD6,"Hit,beat: hand: hurt,pain: knife,cut: heart: ground,land,earth"
 ,Elmadam,EC5D,man: stretch
 ,Elon,EDD7,"Man: big: plant,tree,wood"
 ,Emites,EFA8,"Afraid,fear,worry: mouth,said,speak,confession: heart: people"
 ,Emmaus,EC5E,"fire,heat,hot: wet,water: village: many: neighbor: house: near"
 ,Emmor,EB5D,man: donkey: small: horse
-,empty,E277,"cup,drink: no,not"
+,empty,E277,"full: cup,drink: no,not"
 ,Enaim,EBF9,"Throne: crown,ruler,lord,king,master: chair,sit: village: many,much: neighbor: house: near,close"
-,encourage,E262,"free,freedom: heart"
+,encourage,E262,"free,freedom: no: chain: heart"
 ,end,E232,
 ,endure,E170,"time: here: very: land,ground,earth"
 ,enemy,E025,"person: friend: love,compassion: no,not"
@@ -570,19 +570,19 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Enoch,EC5F,"man: teach,teaching: mouth,speak.said: book,learn,read"
 ,Enos,EC60,"man: dead,death,die: no,not: heart"
 ,Enosh,EC60,"Man: die,dead,death: no,not: heart"
-,enter,E242,"door: to,forward"
-,envy,E022,"love,compassion: heart: you: thing"
-,Epaenetus,EBC1,"man: greeting: mouth,said,speak: happy,joy"
+,enter,E242,forward: door
+,envy,E022,"desire: love,compassion: heart: you: thing"
+,Epaenetus,EBC1,"man: greeting: mouth,said,speak: happy,joy: face"
 ,Epaphras,ECE4,Man: good: face
 ,Epaphroditus,ECE4,Man: good: face
 ,Ephah,E1AD,Man: small: measure
 ,Epher,EEFE,Man: animal
 ,Ephesus,EC0C,"love,compassion: village: many: neighbor: house: near"
-,Ephraim,EBA3,very: fruit
+,Ephraim,EBA3,Man: very: fruit
 ,Ephraim_city,EBA4,"Very: fruit: village: many,much: neighbor: house: near,close"
 ,Ephrath,EFBA,Fruit: village: many: neighbor: house: near
 ,Ephron,EEFF,"Man: wild: no,not: peace: lie_down,rest,sleep: love,compassion"
-,Epicurean,EC05,"person: happy,joy: purpose,because,reason,therefore: know,knowledge: ?"
+,Epicurean,EC05,"person: happy,joy: face: purpose,because,reason,therefore: know,knowledge: ?"
 ,equal,E24B,
 ,Er,EC61,"man: beautiful,beauty: eye,see: good"
 ,Erastus,EC0E,"man: send: hand: to,forward"
@@ -591,7 +591,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Esau,EBC2,man: hair: face
 ,Esek,EDDA,"Battle,war,fight: well: wet,water: hole"
 ,Eshban,EFF2,"Man: understand,understanding: very: know"
-,Eshkol,EDDB,"Man: many,much: frruit"
+,Eshkol,EDDB,"Man: many,much: fruit"
 ,Esli,EC49,man: side: thing
 ,eternal,E252,"all,whole: time,when"
 ,eternity,E252,"all,whole: time,when"
@@ -599,9 +599,9 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Eubulus,ECB3,"Man: know,knowledge"
 ,Eunice,ECB4,"Woman: war,battle,fight"
 ,eunuch,EB8F,"very: circumcise,circumcision: knife,cut: flesh: soft: person"
-,Euodia,ECE5,?
+,Euodia,ECE5,Woman: profit: money: many
 ,Euphrates_River,ECD8,"River,stream: fruit"
-,Eutychus,EB1F,"Man: sleep,lie_down,rest"
+,Eutychus,EB1F,"Man: very: straight: descend: sleep,lie_down,rest"
 ,evangelist,E13F,"person: mouth,said,speak: gospel,good_news: book,learn,read: good"
 ,Eve,EBEB,"woman: alive,live,life: good: heart"
 ,evening,E273,"moon,night: straight"
@@ -614,7 +614,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,explanation,E059,"mouth,said,speak: understand,understanding: know,knowledge: very"
 ,eye,E238,
 ,Ezbon,E1AA,Man: small: eye
-,Ezer,E1AB,OT: man: attendant: person: straight: people
+,Ezer,E1AB,OT: man: helper: help: person: straight: people
 ,fabric,E253,
 ,face,E203,
 ,Fair_Haven,EC18,good: boat: village: many: neighbor: house: near
@@ -622,11 +622,11 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,faithful,E219,"very: know,knowledge: cross"
 ,faithfulness,E219,"very: know,knowledge: cross"
 ,fall,E218,very: descend
-,FALSE,E17F,
+,FALSE,E17F,Bad: no: good: measure
 ,family,E176,"house: love,compassion"
 ,famine,E18D,"no,not: grain,wheat"
 ,far,E197,"no,not: near"
-,farewell,EC83,"end,finish: mouth,said,speak: happy,joy"
+,farewell,EC83,"end,finish: greeting: mouth,said,speak: happy,joy: face"
 ,farm,EB91,"grain,wheat: land,ground,earth"
 ,farmer,E133,"person: sow,to_plant: hand: seed: grain,wheat: small,few"
 ,fast_no_eat,E18E,"no,not: eat,food,meal: mouth,said,speak: thing"
@@ -636,8 +636,8 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,father,E003,"man: love,compassion"
 ,fear,E056,"mouth,said,speak: heart"
 ,feast,E054,"big: eat,food,meal: mouth,said,speak: thing"
-,Felix,EB99,"man: big: money,wealth,wealthy"
-,festival,E20B,"happy,joy: eat,food,meal: mouth,said,speak: thing"
+,Felix,EB99,"man: gold: big: money,wealth,wealthy"
+,festival,E20B,"happy,joy: face: eat,food,meal: mouth,said,speak: thing"
 ,few,E19B,
 ,field,EB91,"grain,wheat: land,ground,earth"
 ,fig,EDA2,Sweet: fruit
@@ -665,7 +665,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,foot,E13D,person
 ,for,E086,"hand: love,compassion: to,forward"
 ,foreigner,E158,"person: no,not: land,.ground,earth"
-,foreknowledge,EB79,"know,knowledge: thing: backward"
+,foreknowledge,EB79,"know,knowledge: backward: thing"
 ,forest,EC27,"land,ground,earth: many: plant,tree,wood"
 ,forgive,E18F,"no,not: kill,destroy: knife,cut: person"
 ,forgiveness,E18F,"no,not: kill,destroy: knife,cut: person"
@@ -680,19 +680,19 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Freedmen,EC8E,"Man: no: chain,bound,imprisoned,arrest"
 ,freedom,E260,"No: chain,bound,imprisoned,arrest"
 ,friend,E024,"person: love,compassion"
-,frog,ECF6,"Very: forward,to: up: animal"
+,frog,ECF6,"jump: very: forward,to: up: animal"
 ,from,E31A,"Forward,to"
 ,fruit,E27E,
 ,fulfill,E0D2,"end,finish: prophesy: eye,see: to,forward"
 ,full,E276,"cup,drink"
-,futile,E190,"no,not: thing: work,do"
+,futile,E190,"no,not: use: thing: work,do"
 ,future,E16E,"time: to,forward"
 ,Gabriel,EC39,"big: angel: good: spirit: no,not: person"
 ,Gad,ECBD,"Man: good: time,when"
 ,Gadara,E33F,"chain,arrest,bound,imprisoned: village: many: neighbor: house: near"
 ,Gaham,EFBB,"Man: night,moon: fire,heat,hot"
-,gain,E1A3,"to,forward: hand: love,compassion"
-,Gaius,EC0F,"man: happy,joy"
+,gain,E1A3,"to,forward: gift: hand: love,compassion"
+,Gaius,EC0F,man: good help 
 ,Galatia,EB46,"around: land,ground,earth"
 ,Galeed,EFBC,"Report,parable.story,message.news: mountain"
 ,Galilee,E337,"house: cross: land,ground,earth"
@@ -719,7 +719,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Gideoni,E2BD,
 ,gift,E072,"hand: love,compassion"
 ,Gihon,EDDF,"Break: knife,cut: whole,all: stream,river"
-,Gilead,EFA1,"Mouth,said,speak: you: ground,land,earth"
+,Gilead,EFA1,"Testimony: mouth,said,speak: you: ground,land,earth"
 ,Girgashites,EDE1,"Dirt,soil: ground,land,earth: people"
 ,girl,E009,"woman: small,few"
 ,girls,E00A,"woman: small,few"
@@ -736,10 +736,10 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Gog,ECF7,"Mountain: land,ground,earth"
 ,Goiim,EDE2,"Nation,country: big: ground,land,earth: village: many,much: neighbor: house: near,close"
 ,gold,EB2A," big: money,wealth,wealthy"
-,Golgotha,E34B,"skull: land,ground,earth: face"
+,Golgotha,E34B,"skull: face: land,ground,earth"
 ,Gomer,EDE3,"Man: fire: whole,all"
-,Gomorrah,EA7A,"no,not: good: person: village: many: neighbor,house,near"
-,gong,EBE5,"very: ear,hear: cymbal,drum: hand: thing"
+,Gomorrah,EA7A,"bad: no,not: good: person: village: many: neighbor: house: near"
+,gong,EBE5,"Loud: very: ear,hear: cymbal,drum: hand: thing"
 ,good,E096,
 ,good_news,E22B,"book,learn,read: good"
 ,Goshen,EFBF,"Near,close: sun,day: ground,land,earth"
@@ -749,14 +749,14 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,grain,E279,
 ,grape,ECF4,"Small,few: fruit"
 ,grass,EA33,
-,grateful,E20E,"happy,joy: hand: love,compassion"
-,gratitude,E20E,"happy,joy: hand: love,compassion"
+,grateful,E20E,"happy,joy: face: gift: hand: love,compassion"
+,gratitude,E20E,"happy,joy: face: gift; hand: love,compassion"
 ,grave,E178,"house: dead,death,die: no,not: heart"
 ,great,E14A,"Big: praise,exalt,worship,dignify: mouth,said,speak,confession: good"
 ,Greece,E345,"shake: land,ground,earth"
 ,greed,EA94,"eye,see: desire,like,want: love,compassion: heart"
 ,green,ECD1,Grass: color
-,greeting,E051,"mouth,said,speak: happy,joy"
+,greeting,E051,"mouth,said,speak: happy,joy; face"
 ,grieve,E207,Face
 ,grind,E83D,"knife,cut"
 ,groom,E013,"start,beginning: man: love,compassion"
@@ -1072,7 +1072,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,leg,EBE0,person
 ,Legion,E366,man: most: very: many
 ,Lehabites,E1C1,Fire: people
-,length,ECC2,Forward
+,length,ECC2,Forward: stick
 ,leopard,ECF8,Soft: animal
 ,leprosy,E382,"very: sad,grieve: heart"
 ,letter,EB84,"small,few: book,read,learn"
@@ -1192,7 +1192,7 @@ Sy: ,baptize,E24A,"wet,water: person"
 ,Mesopotamia,EB72,"river,stream: land,ground,earth"
 ,message,E22D,"teach,teaching: book,learn,read: mouth,said,speak"
 ,messenger,E136,"mouth,said,speak: person"
-,Messiah,E334,"very: anointed: king,crown,ruler,lord: beckon: mouth,said,speak: near: person"
+,Messiah,E334,"very: anointed: king,crown,ruler,lord: appointed: call: mouth,said,speak: near: person"
 ,metal,EB28,
 ,Methuselah,EC6C,"man: send: hand: to,forward"
 ,Methushael,EEA7,Man: from
