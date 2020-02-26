@@ -21,7 +21,7 @@ IMAGEPOS = 0
 NAMEPOS = 1
 UECPOS = 2
 XREFPOS = 3
-csv_file = "724all_xref2 (5) (2).csv"
+csv_file = "xref724-3.csv"
 js_out = "sun.js"
 
 def convert2csv(filename):
