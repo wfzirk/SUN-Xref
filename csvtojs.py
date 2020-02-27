@@ -22,7 +22,7 @@ NAMEPOS = 1
 UECPOS = 3
 SYNPOS = 2
 XREFPOS = 4
-csv_file = "synxref724.csv"
+csv_file = "synxref724-5-7-2-2.csv"
 js_out = "sun.js"
 
 def convert2csv(filename):
