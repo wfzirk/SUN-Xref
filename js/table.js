@@ -1,6 +1,11 @@
-var fontCol = -1;
-var uniCol = -1;
+var fontCol = 0;
+var uniCol = 2;
+var nameCol = 1;
+var synCol = 4;
+var xrefCol = 3;
+var noCols = 3;
 	
+// find font column and unicode column	
 function findCol(arry) {
 	var t0 = performance.now();
 	var found = false;
@@ -16,7 +21,7 @@ function findCol(arry) {
 				fontCol = j;
 				for (var k = 0;  k < rowx.length; k++){
 					if (k === fontCol) continue;
-					console.log(j,k,uni, rowx[k], rowx[k].length, fontCol);
+					//console.log(j,k,uni, rowx[k], rowx[k].length, fontCol);
 					if (rowx[k].toUpperCase() === uni) {
 						console.log('found')
 						uniCol = k;
@@ -24,19 +29,22 @@ function findCol(arry) {
 						break;
 					}
 				}
-				//console.log(uni);
-				//found = true;
-				//break;
 			}	
 		}
 		if (i > 16) break;   
 		if (found) break;
 	}
-	console.log(fontCol, uniCol);
+	noCols = arry[5].length;
+	if (fontCol === 0 && uniCol == 3) {
+		nameCol = 1
+		synCol = 2
+		xrefCol = 4
+	} 	
+		
+	console.log(noCols,fontCol, uniCol, nameCol, synCol, xrefCol);
 	var t1 = performance.now();
 	console.log("findCol " + (t1 - t0) + " milliseconds.");
 }
-
 
 function generateTable(lines){
 	//Clear previous data
@@ -54,7 +62,19 @@ function generateTable(lines){
 			len = lines[i].length;
 		}
 	}
-	
+	console.log(lines[5].length)
+/*	
+	// get col length
+	for (var i = 1; i < lines[5].length; i++) {
+		if (i == uniCol) {
+			continue;
+		}	
+		var data = lines[5][i]
+		var d = data.split(' ')
+		console.log('col len',i, data.length, d.length, data)
+
+	}
+*/	
 	table.createCaption();
 	table.caption.innerHTML = lines[0];
 	// make header
@@ -64,17 +84,32 @@ function generateTable(lines){
 	for (var j = 0; j < len; j++) {
 		var th = document.createElement("TH");
 		th.appendChild(document.createTextNode('col '+j));
+		var fontCol = 0;
+
 		if (j === fontCol) {
 			th.className = "fonticon";
 			th.innerHTML = "Font";
 		}
 		if (j === uniCol) {
-			th.className = "Unicode";
-			th.innerHTML = "unicol";
+			th.className = "unicol";
+			th.innerHTML = "Unicode";
+		}
+		if (j === nameCol) {
+			th.className = "nameCol";
+			th.innerHTML = "Name";
+		}
+		if (j === synCol) {
+			th.className = "synCol";
+			th.innerHTML = "Synonym";
+		}
+		if (j === xrefCol) {
+			th.className = "xrefCol";
+			th.innerHTML = "XRef";
 		}
 		row.appendChild(th);
 	}
 
+	
 	table.appendChild(row);
 	var tbody = document.createElement('TBODY');
 	for (var i = 1; i < lines.length; i++) {  // get line
@@ -97,6 +132,15 @@ function generateTable(lines){
 				if (j === uniCol) {
 					td.className = "unicol";
 					c1 = lines[i][uniCol].toLowerCase();
+				}
+				if (j === nameCol) {
+					td.className = "nameCol";
+				}
+				if (j === synCol) {
+					td.className = "synCol";
+				}
+				if (j === xrefCol) {
+					td.className = "xrefCol";
 				}
 				td.appendChild(document.createTextNode(text));
 				row.appendChild(td);
@@ -233,7 +277,7 @@ function search_Table(){
 console.log('searchtable',srchType, input)	
 	table = document.getElementById("searchtable");
 	tr = table.getElementsByTagName("tr");
-	for (i = 0; i < tr.length; i++) {
+	for (i = 1; i < tr.length; i++) {
 		td = tr[i].getElementsByTagName("td") ; 
 		var txt = "+";
 		for(j=1 ; j < td.length ; j++) {

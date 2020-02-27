@@ -18,42 +18,21 @@
 		font-style: normal;
 		src: local('SUN7.24'), url('SUN7.24.ttf') format('truetype');
 	} 
-/*	@font-face {
-		font-family: 'sun7.24regular';
-		src: url('sun7.24-webfont.woff2') format('woff2'),
-			 url('sun7.24-webfont.woff') format('woff');
-		font-weight: normal;
-		font-style: normal;
-	} */
+
 	#output {
-		/*background-color: skyblue;*/
 		font-family: var(--sun-font); 
-		/*font-family: "SUN7.24";*/
 	}
-	#otxt,#etxt {
-		background-color: skyblue;
-		font-family: var(--sun-font); 
-		/*font-family: "SUN7.24";*/
-	}
-	
+
 	:root {
-		/*--sun-font: 'sun7.24regular';  */
 		--sun-font: 'SUN7.24';
 	}
 
-	
-	/*html, select { font-family: Verdana, Geneva, sans-serif, SUN7_24; }
-	*/
 	body {
 		font-family: var(--sun-font); 
 		width = 600px;
 	}
 	
 	 h3 {	    
-		 margin-block-start: .3em;
-		 margin-block-end: .3em;
-		 margin-inline-start: 0px;
-		 margin-inline-end: 0px;
 		 text-align: center;
 	}
 
@@ -67,10 +46,6 @@
 		width: 30%
 	}	
 	
-	xxxinput#xxxrefclear {
-		float: right;
-	}	
-
 
 	table.xreftable {
 		 border-width: 1px;
@@ -78,61 +53,65 @@
 		 border-style: outset;
 		 border-color: black;
 		 border-collapse: separate; 
-	/* 	border-collapse:collapse; */
 		 background-color: white; 
 		 font-size: 14px;
-		/* font-family: var(--sun-font);*/
 		 table-layout: fixed;
 		 margin-bottom: 15px;
 		 width: 100%; 
 		 empty-cells: show;
 	}
+	
 
-	.unicol{
-		width: 50px;
-		color: blue;
+	.xreftable td, .xreftable th {
 		border-width: 1px;
 		padding: 1px;
 		border-style: inset;
 		border-color: lightblue;
 		font-size: 14px;
-		text-align: right; 
-	}
-
-	.xreftable td:not(.unicol), .xreftable th:not(.unicol), .xreftable td:not(.fonticon), .xreftable th:not(.fonticon) {
-		 border-width: 1px;
-		 padding: 1px;
-		 border-style: inset;
-		 border-color: lightblue;
-		 font-size: 14px;
-		 text-align: right; 
-
-		white-space: -o-pre-wrap; 
 		word-wrap: break-word;
-		white-space: pre-wrap; 
-		white-space: -moz-pre-wrap; 
-		white-space: -pre-wrap; 
-		min-width: 50px;
-	/*	width: auto;*/
+		min-width: 25px;
 	}
 
-	 .xreftable td.fonticon {
+	.xreftable td.nameCol, .xreftable th.nameCol {
+		 /*color: green; */
+		 word-wrap: break-word;
+		 width: 125px;
+	}
+	
+	.xreftable td.synCol, .xreftable th.synCol {
+		 width: 170px;
+	}
+	.xreftable td.xrefCol, .xreftable th.xrefCol {
+		
+	}
+
+	.xreftable td.fonticon {
 		font-size: 32px;
 		font-family: var(--sun-font); 
 		color: blue;
-		border-width: 1px;
-		padding: 1px;
-		width: 100px;
+		width: 45px;
 	}
-	 .xreftable th.fonticon {
-
+	.xreftable th.fonticon {
+		text-align: center;
 		color: blue;
-		border-width: 1px;
-		padding: 1px;
-		width: 100px;
+		width: 45px;
+	}
+	
+	.xreftable td.unicol {
+		text-align: center;
+		font-size: 14px;
+		font-family: var(--sun-font); 
+		color: blue;
+		width: 55px;
+	}
+	.xreftable th.unicol {
+		text-align: center;
+		color: blue;
+		width: 55px;
 	}
 
-	 
+		
+
 		 /*Table Even Rows Styles*/
 	 .xreftable tbody, .xreftable tr:nth-child(even){
 		 background-color: #efefef;
@@ -536,7 +515,7 @@ if (debug) {
 	//sortTable();
 }
 */
-
+generateTable(jscsvToArray(csvData));
 </script>
 </body>
 </html>
