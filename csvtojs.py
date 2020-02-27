@@ -19,9 +19,10 @@ logname = script.split('.')[0]
 
 IMAGEPOS = 0
 NAMEPOS = 1
-UECPOS = 2
-XREFPOS = 3
-csv_file = "xref724-3.csv"
+UECPOS = 3
+SYNPOS = 2
+XREFPOS = 4
+csv_file = "synxref724.csv"
 js_out = "sun.js"
 
 def convert2csv(filename):
@@ -51,13 +52,14 @@ def read_csv_data(path, outfile):
         name = row[NAMEPOS]
         uec = row[UECPOS]
         image = row[IMAGEPOS]
+        synname = row[SYNPOS]
         if len(row) < 3:
             xref = ""
         else:
             xref = row[XREFPOS]
         #syn = row[0]
         #+ '"","boy","e001","small,few: man",\n'
-        line = '"'+image+'"|"'+uec+'"|"'+name+'"|"'+xref+'"\\n'    #,'+syn;
+        line = '"'+image+'"|"'+name+'"|"'+synname+'"|"'+uec+'"|"'+xref+'"\\n'    #,'+syn;
         outdata = outdata+line 
         #outfile.write(line)
     #outdata=outdata[:-1]+']\n'        # remove last char 
