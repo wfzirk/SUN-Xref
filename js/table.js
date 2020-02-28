@@ -204,29 +204,7 @@ function table_mismatch() {
 	var t1 = performance.now();
 	console.log("table_mismatch 2 " + (t1 - t0) + " milliseconds.");
 }
-/*
-// Parse a CSV row, accounting for commas inside quotes   
-// https://exceptionshub.com/how-to-read-data-from-csv-file-using-javascript-2.html                
-function xparse(row){
-  var insideQuote = false,                                             
-      entries = [],                                                    
-      entry = [];
-  row.split('').forEach(function (character) {                         
-    if(character === '"') {
-      insideQuote = !insideQuote;                                      
-    } else {
-      if(character == "," && !insideQuote) {                           
-        entries.push(entry.join(''));                                  
-        entry = [];                                                    
-      } else {
-        entry.push(character);                                         
-      }                                                                
-    }                                                                  
-  });
-  entries.push(entry.join(''));                                        
-  return entries;                                                      
-}
-*/
+
 function jscsvToArray(text) {
 	console.log('xcsv...')
 	row = [];
@@ -242,7 +220,6 @@ function jscsvToArray(text) {
 	console.log(row[2])
 	return row;
 }
-
 
 function csvToArray(text) {
 	var t0 = performance.now();
@@ -286,12 +263,14 @@ console.log('searchtable',srchType, input)
 				 txt = txt +'+'+ tdata.innerHTML.toUpperCase();
 			  }
 		}
+		//console.log('srch',txt, 'filter',filter);
 		if (srchType === 'word') {  // word search
 			txt = txt +'+';
-			txt = txt.replace(/ /g,'')
+			txt = txt.replace(/ /g,'+')
 			txt = txt.replace(/:/g,'+')
 			txt = txt.replace(/,/g,'+')
 			//txt = txt.split('+')
+			
 			var found = true;
 			for(var f = 0; f < filter.length; f++) {
 				if (txt.indexOf('+'+filter[f]+'+')  === -1) { 
