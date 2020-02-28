@@ -22,7 +22,7 @@ NAMEPOS = 1
 UECPOS = 3
 SYNPOS = 2
 XREFPOS = 4
-csv_file = "synxref724-5-7-2-2.csv"
+csv_file = sys.argv[1]
 js_out = "sun.js"
 
 def convert2csv(filename):
@@ -45,27 +45,27 @@ def read_csv_data(path, outfile):
     f = open(path, 'r', encoding="utf-8")
     #data = csv.reader(f, delimiter=',', quotechar='"')
     csvReader = csv.reader(f, delimiter=',', quotechar='"')
-    line = '"'+""+'"|"'+csv_file+'"|"'+""+'"|"'+""+'"\\n'    
+    #line = '"'+""+'"|"'+csv_file+'"|"'+""+'"|"'+""+'"\\n'  
+    line = ' '+csv_file+' \\n'
     outdata = outdata+line 
+    print(outdata)
     for row in csvReader:
-        print(len(row),row)
-        name = row[NAMEPOS]
-        uec = row[UECPOS]
-        image = row[IMAGEPOS]
-        synname = row[SYNPOS]
-        if len(row) < 3:
-            xref = ""
-        else:
-            xref = row[XREFPOS]
-        #syn = row[0]
-        #+ '"","boy","e001","small,few: man",\n'
-        line = '"'+image+'"|"'+name+'"|"'+synname+'"|"'+uec+'"|"'+xref+'"\\n'    #,'+syn;
-        outdata = outdata+line 
-        #outfile.write(line)
-    #outdata=outdata[:-1]+']\n'        # remove last char 
+        #print(len(row),row)
+        if len(row)>2:
+            name = row[NAMEPOS]
+            uec = row[UECPOS]
+            image = row[IMAGEPOS]
+            synname = row[SYNPOS]
+            if len(row) < 3:
+                xref = ""
+            else:
+                xref = row[XREFPOS]
+            line = '"'+image+'"|"'+name+'"|"'+synname+'"|"'+uec+'"|"'+xref+'"\\n'    #,'+syn;
+            outdata = outdata+line 
+
     outdata = outdata+"';"
     outdata = outdata+'\nconsole.log(csvData);'
-    print(outdata)
+    #print(outdata)
     with open(outfile, 'w' , encoding="utf-8") as f:
         f.write(outdata)
 
