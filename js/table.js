@@ -147,14 +147,7 @@ function generateTable(lines){
 				row.setAttribute("rowdata", errdata);
 				dispModal(row, fontCol, uniCol);
 			}
-			/*if (lines[i][nameCol] === 'Abel_Mizram') {
-			//   look for u'\uF09E' in string 
-				console.log(i,'09e0',lines[i][xrefCol],lines[i][xrefCol])						// u'\uF09E'
-				//u = lines[i][xrefCol].slice(-1) // u'\uF09E'
-				u = lines[i][xrefCol].slice(-1).charCodeAt(0).toString(16).toLowerCase()
-				console.log( x)
-				if (u === 'f09e')
-			}*/
+
 		}	// end row process
 		tbody.appendChild(row);
 	}  // end process line
@@ -181,12 +174,16 @@ function generateTable(lines){
 	//console.log('toHexArr', str, result);
 	 return result;
   }
-  
+/*
 function table_mismatch() {
-	var t0 = performance.now();
+    var t0 = performance.now();
 	var table = document.getElementById("searchtable");
 	var rows = table.getElementsByTagName("tr");
 	for (i = 1; i < rows.length; i++) {
+		if (rows[i].className === "nameerror") {
+		
+		}
+		
 		var c0 = rows[i].childNodes[fontCol].innerText.charCodeAt(0).toString(16).toLowerCase();
 
 		c0 = rows[i][fontCol]
@@ -204,8 +201,9 @@ function table_mismatch() {
 	}
 	var t1 = performance.now();
 	console.log("table_mismatch 2 " + (t1 - t0) + " milliseconds.");
+	
 }
-
+*/
 function jscsvToArray(text) {
 	console.log('xcsv...')
 	row = [];
@@ -298,7 +296,7 @@ console.log('searchtable',srchType, input)
 
 
 function showError() {
-	table_mismatch();
+	//table_mismatch();
 	var input =  document. getElementById("showerr");
 	if (input.checked) {
 		input.checked = false;
@@ -312,7 +310,7 @@ function showError() {
 	var tr = table.getElementsByTagName("tr");
 	for (var i = 0; i < tr.length; i++) {
 		if (input.checked) {
-			if (tr[i].classList.contains("uerror")) {
+			if (tr[i].classList.contains("uerror") || tr[i].classList.contains("nameerror")) {
 				tr[i].style.display = "";
 			} 	else {
 				tr[i].style.display = "none";
