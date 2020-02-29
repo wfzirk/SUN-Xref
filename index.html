@@ -131,6 +131,9 @@
 	.uerror {
 		  color: red;
 	 }
+	.nameerror {
+		  color: #e45e9d;
+	 }
 	
 	 
 
@@ -161,12 +164,12 @@
 	/* Modal Content */
 	.modal-content {
 	  position: relative;
-	  background-color: #fefefe;
+	  background-color: #eeeeee;
 	  margin: auto;
 	  padding: 0;
 	  border: 1px solid #888;
 	  border-radius:5px;
-	  width: 200px;;
+	  width: 300px;;
 	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	  -webkit-animation-name: animatetop;
 	  -webkit-animation-duration: 0.4s;
@@ -221,6 +224,7 @@
 		<fieldset>
 			<div>
 				<label for="xlf" style="float:left;"> <strong>Select ODS, XLSX or CSV File:</strong></label>
+				<label style="float:right;">10.0</label>
 				<input id="xlf"  type="file" name="xlfile" >
 				<label style="float:right;">Debug&nbsp
 					<input type="checkbox" id="showdebug"  onclick="showDebug();">
@@ -294,10 +298,10 @@
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
-      <p>Font Error</p>
+      <p>Error</p>
     </div>
     <div class="modal-body">
-      <p id="mdisp" >Some text in the Modal Body</p>
+      <p id="mdisp" >Error on row</p>
 	</div>
   </div>
 
@@ -308,7 +312,7 @@
 <!-- <script src="js/cookie.js"></script> -->
 <script src="js/table.js" id="tbl"></script>
 <script src="js/modal.js"></script>
-<script src="js/convertuni.js"></script>
+<!--<script src="js/convertuni.js"></script>-->
 <script src="sun.js" > </script>
 <!-- https://stackoverflow.com/questions/1017424/pass-vars-to-javascript-via-the-src-attribute  -->
 <!-- <script type="text/javascript" data-parameter_1="value_1" ... src="sun.js"></script>

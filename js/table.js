@@ -63,23 +63,10 @@ function generateTable(lines){
 		}
 	}
 	console.log(lines[5].length)
-/*	
-	// get col length
-	for (var i = 1; i < lines[5].length; i++) {
-		if (i == uniCol) {
-			continue;
-		}	
-		var data = lines[5][i]
-		var d = data.split(' ')
-		console.log('col len',i, data.length, d.length, data)
 
-	}
-*/	
 	table.createCaption();
 	table.caption.innerHTML = lines[0];
 	// make header
-	// checkbox in each column header for compare
-
 	var row = document.createElement('TR');
 	for (var j = 0; j < len; j++) {
 		var th = document.createElement("TH");
@@ -113,8 +100,6 @@ function generateTable(lines){
 	table.appendChild(row);
 	var tbody = document.createElement('TBODY');
 	for (var i = 1; i < lines.length; i++) {  // get line
-		//console.log(lines[i]);
-		//console.log(fontCol, uniCol)
 		if (lines[i].length > 1) {	// process row
 			var row = document.createElement('TR');
 			row.className = "item";
@@ -141,6 +126,15 @@ function generateTable(lines){
 				}
 				if (j === xrefCol) {
 					td.className = "xrefCol";
+					xu = lines[i][xrefCol].slice(-1).charCodeAt(0).toString(16).toLowerCase()
+					if (xu === 'f09e') {
+						row.className = "nameerror";
+						errText = lines[i][nameCol].trim();
+						console.log('not equal',errText)
+						var errdata = "Name error = " +errText+"\ndoes not match kmn file";
+						row.setAttribute("rowdata", errdata);
+						dispModal(row, fontCol, uniCol);
+					}
 				}
 				td.appendChild(document.createTextNode(text));
 				row.appendChild(td);
@@ -153,6 +147,14 @@ function generateTable(lines){
 				row.setAttribute("rowdata", errdata);
 				dispModal(row, fontCol, uniCol);
 			}
+			/*if (lines[i][nameCol] === 'Abel_Mizram') {
+			//   look for u'\uF09E' in string 
+				console.log(i,'09e0',lines[i][xrefCol],lines[i][xrefCol])						// u'\uF09E'
+				//u = lines[i][xrefCol].slice(-1) // u'\uF09E'
+				u = lines[i][xrefCol].slice(-1).charCodeAt(0).toString(16).toLowerCase()
+				console.log( x)
+				if (u === 'f09e')
+			}*/
 		}	// end row process
 		tbody.appendChild(row);
 	}  // end process line
@@ -186,9 +188,7 @@ function table_mismatch() {
 	var rows = table.getElementsByTagName("tr");
 	for (i = 1; i < rows.length; i++) {
 		var c0 = rows[i].childNodes[fontCol].innerText.charCodeAt(0).toString(16).toLowerCase();
-		//var c1 = rows[i].childNodes[uniCol].innerText.toLowerCase();
-		//rows[i].childNodes[fontCol].className = "fonticon";
-		//rows[i].childNodes[uniCol].className = "unicol";
+
 		c0 = rows[i][fontCol]
 		c1 = rows[i][uniCol]
 		if (c0 !== c1) {
@@ -200,6 +200,7 @@ function table_mismatch() {
 			rows[i].setAttribute("rowdata", errdata);
 			dispModal(rows[i], [fontCol, uniCol]);
 		}
+		
 	}
 	var t1 = performance.now();
 	console.log("table_mismatch 2 " + (t1 - t0) + " milliseconds.");
