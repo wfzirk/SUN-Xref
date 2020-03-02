@@ -126,7 +126,7 @@ function generateTable(lines){
 				}
 				if (j === xrefCol) {
 					td.className = "xrefCol";
-					xu = lines[i][xrefCol].slice(-1).charCodeAt(0).toString(16).toLowerCase()
+				/*	xu = lines[i][xrefCol].slice(-1).charCodeAt(0).toString(16).toLowerCase()
 					if (xu === 'f09e') {
 						row.className = "nameerror";
 						errText = lines[i][nameCol].trim();
@@ -135,6 +135,7 @@ function generateTable(lines){
 						row.setAttribute("rowdata", errdata);
 						dispModal(row, fontCol, uniCol);
 					}
+					*/
 				}
 				td.appendChild(document.createTextNode(text));
 				row.appendChild(td);
