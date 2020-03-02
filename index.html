@@ -23,11 +23,12 @@
 		--sun-font: 'SUN7.24';
 	}
 	
-	html { height:100vh; }
+	html { height:100%; }
 		
 	body {
 		font-family: var(--sun-font); 
 		height: 100%;
+		min-height: 100%
 		/*position:absolute; top:0; bottom:0; right:0; left:0; */
 		width = 600px;
 		
@@ -37,7 +38,9 @@
 	h3 {	    
 		 text-align: center;
 	}
-
+	footer {
+		color: lightgray;
+	}
 
 	div.filetable {
 		width: 100%
@@ -51,9 +54,10 @@
 
 	#output {
 		font-family: var(--sun-font); 
-		height: 60%;
+		height: 65%;
+		
 		overflow-y: scroll;
-		scroll-behavior: smooth; /* <--- */
+		scroll-behavior: smooth; 
 	}
 	
 	table.xreftable {
@@ -296,7 +300,7 @@
 <footer>
     <center>
 		<!--<font face="SUN7.24"> -->
-      <p>&copy; Wilbur Zirk 2020 &#xe000;
+      <p id="copyright">&copy; Wilbur Zirk 2020 &#xe000;
 	  </p>
 	 <!-- </font> -->
     </center>
