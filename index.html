@@ -19,20 +19,22 @@
 		src: local('SUN7.24'), url('SUN7.24.ttf') format('truetype');
 	} 
 
-	#output {
-		font-family: var(--sun-font); 
-	}
-
 	:root {
 		--sun-font: 'SUN7.24';
 	}
-
+	
+	html { height:100vh; }
+		
 	body {
 		font-family: var(--sun-font); 
+		height: 100%;
+		/*position:absolute; top:0; bottom:0; right:0; left:0; */
 		width = 600px;
+		
 	}
 	
-	 h3 {	    
+		
+	h3 {	    
 		 text-align: center;
 	}
 
@@ -47,6 +49,13 @@
 	}	
 	
 
+	#output {
+		font-family: var(--sun-font); 
+		height: 60%;
+		overflow-y: scroll;
+		scroll-behavior: smooth; /* <--- */
+	}
+	
 	table.xreftable {
 		 border-width: 1px;
 		 border-spacing: 0;
@@ -59,6 +68,7 @@
 		 margin-bottom: 15px;
 		 width: 100%; 
 		 empty-cells: show;
+
 	}
 	
 
