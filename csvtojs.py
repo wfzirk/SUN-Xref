@@ -7,11 +7,10 @@
 """
 
 import sys
-import io		#python 2
+from pathlib import Path
+#import io		#python 2
 import subprocess
 import csv
-#import tkinter
-#import tkinter.filedialog
 
 script = sys.argv[0]
 logname = script.split('.')[0]
@@ -22,14 +21,11 @@ NAMEPOS = 1
 UECPOS = 3
 SYNPOS = 2
 XREFPOS = 4
-csv_file = sys.argv[1]
+
 js_out = "sun.js"
 
 def convert2csv(filename):
 	print('convert2csv ', filename)
-	#result = subprocess.call(["C:\Program Files\LibreOffice\program\soffice", "--headless", "--convert-to", "csv", "--infilter=CSV:44,34,76,1,,,true", filename])
-	#command = '"C:\Program Files\LibreOffice\program\soffice",  "--convert-to", "csv", "--infilter=CSV:44,34,76,1,,,true", '+ filename
-	#print(command)
 	result = subprocess.call(["C:\Program Files\LibreOffice\program\soffice",  "--convert-to", "csv", "--infilter=CSV:44,34,76,1,,,true", filename])
 	print('convert2csv ', result)
 
@@ -68,9 +64,9 @@ def read_csv_data(path, outfile):
     #print(outdata)
     with open(outfile, 'w' , encoding="utf-8") as f:
         f.write(outdata)
-
-
-
-#csv_file = "kmn724_xref.csv"
+        
+ods_file = sys.argv[1]
+csv_file = Path(ods_file).stem + ".csv"
+convert2csv(ods_file)
 
 read_csv_data(csv_file, js_out)
