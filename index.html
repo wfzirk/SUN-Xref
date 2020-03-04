@@ -17,10 +17,16 @@
 		font-weight: normal;
 		font-style: normal;
 		src: local('SUN7.24'), url('SUN7.24.ttf') format('truetype');
+	}
+	@font-face{
+		font-family: "SUN7.251";
+		/*src: url("fonts/SUN7.24.ttf");*/
+		font-weight: normal;
+		font-style: normal;
+		src: local('SUN7.251'), url('SUN7.251.ttf') format('truetype');
 	} 
-
 	:root {
-		--sun-font: 'SUN7.24';
+		--sun-font: 'SUN7.251';
 	}
 	
 	html { height:100%; }
@@ -489,7 +495,7 @@ document.getElementById('xlf').value = "";
 
 var fval = "";
 document.getElementById('sfont').value = fval
-changeFont("SUN7.24");
+changeFont("SUN7.251");
 
 function getFont() {
 	fval = document.getElementById('sfont').value;
