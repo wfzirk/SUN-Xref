@@ -51,13 +51,13 @@
 	div.filetable {
 		width: 100%
 	}	
-	
+	/*
 	label#xrefclear {
 		float: left;
 		width: 30%
 	}	
 	
-
+*/
 	#output {
 		font-family: var(--sun-font); 
 		height: 65%;
@@ -255,21 +255,11 @@
 			<div class="filetable">
 				<div >
 					<label for="sfont" style="float:left;"> <strong>Enter Sun font name &nbsp</strong></label>
-					<input id='sfont' type='text' style='width: 25%;'>
-					<!--<input type="file" name="xfile" id="xfont" /> -->
+					<input id='sfont' type='text' size="10">
 					<label style='float: right;'> <strong>Errors Only &nbsp  </strong>
 						<input type="button" id="showerr"  onclick="showError();"  >
 					</label>
-				</div>
-				<br>
-				<div >
-					<label style='float:left; width:60%'> <strong>Enter search words separated by space &nbsp</strong>
-						<input id='xsearch' onkeyup='search_Table("xref1")' type='text' style='width:50%'>
-					</label>
-					<label style='float:right; width=10%'> <strong>Clear &nbsp  </strong>
-						<input id='xrefclear'  onclick='clearTable()' type='button' >
-					</label>
-					<label style='float:right; width:30%'> <strong>&nbspSearch Type&nbsp</strong>
+					<label style='float:center;' > <strong>&nbspSearch Type&nbsp</strong>
 						<span id="radiospan" style="border:1px; border-style:solid; ">
 							<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
 							<label for="wordsrch">Word</label>
@@ -277,12 +267,31 @@
 							<label for="charsrch">Char&nbsp</label>
 						</span>
 					</label>
+
+				</div>
+				<br>
+				<div >
+					<span style='float:left;'> <strong>Search Words &nbsp</strong>
+						<input id='xsearch' onkeyup='search_Table("xref1")' type='text' size="50">
+					</span>
+					<label style='float:right; width=10%'> <strong>Clear &nbsp  </strong>
+						<input id='xrefclear'  onclick='clearTable()' type='button' >
+					</label>
+				<!--	<label style='float:right; width:30%'> <strong>&nbspSearch Type&nbsp</strong>
+						<span id="radiospan" style="border:1px; border-style:solid; ">
+							<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
+							<label for="wordsrch">Word</label>
+							<input type="radio" id="charsrch" name="wsrch" value="char" onClick="setSrch(false)">
+							<label for="charsrch">Char&nbsp</label>
+						</span>
+					</label> -->
 				</div>
 			</div>
 		</fieldset>
 	</form>
 	
-<div><span style="color: #ff0000">Red text</span> indicates a unicode miscompare between font and the unicode.  Click on the line for specifics.
+<div>In the <b>Search</b> bar, enter words separated by space.
+<span style="color: #ff0000">Red text</span> indicates a unicode miscompare between font and the unicode.  Click on the line for specifics.
 </div>
 <!--<div>
 	<font face = "Times New Roman" size = "5">Times New Roman</font><br />
