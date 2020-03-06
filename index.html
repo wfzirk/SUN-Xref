@@ -30,10 +30,10 @@
 	html { height:100%; }
 		
 	body {
-		font-family: var(--sun-font); 
+		/*font-family: var(--sun-font); */
 		height: 100%;
-		min-height: 100%
 		width = 600px;
+		line-height: normal;
 		
 	}
 	#title {
@@ -53,7 +53,7 @@
 	div.filetable {
 		width: 100%
 	}	
-
+	
 	#output {
 		font-family: var(--sun-font); 
 		height: 65%;
@@ -61,6 +61,16 @@
 		overflow-y: scroll;
 		scroll-behavior: smooth; 
 	}
+	
+	#splitlabel {
+		font-size: 10px;
+		font-weight: bold;
+	}
+	#lblclear {
+		font-size: 12px;
+		font-weight: bold;
+	}
+	
 	
 	table.xreftable {
 		 border-width: 1px;
@@ -76,7 +86,10 @@
 		 empty-cells: show;
 
 	}
-	
+	.xreftable tr {
+		vertical-align: middle;
+		padding-top: 5px;
+	}
 
 	.xreftable td, .xreftable th {
 		border-width: 1px;
@@ -98,14 +111,17 @@
 		 width: 120px;
 	}
 	.xreftable td.xrefCol, .xreftable th.xrefCol {
-		
+		/*vertical-align: top;*/
+		line-height: 15px;
 	}
 
 	.xreftable td.fonticon {
 		font-size: 32px;
 		font-family: var(--sun-font); 
+		vertical-align: middle;
 		color: blue;
 		width: 45px;
+		height: 100%;
 	}
 	.xreftable th.fonticon {
 		text-align: center;
@@ -118,12 +134,12 @@
 		font-size: 14px;
 		font-family: var(--sun-font); 
 		color: blue;
-		width: 55px;
+		width: 60px;
 	}
 	.xreftable th.unicol {
 		text-align: center;
 		color: blue;
-		width: 55px;
+		width: 60px;
 	}
 
 		
@@ -235,7 +251,7 @@
 
 	<form >
 		<div id="title">
-			XREF Search<label style="float:right;">10.2</label>
+			XREF Search<label style="float:right;">10.z</label>
 		</div>
 		<fieldset>
 			<div style="padding-bottom:5px;">
@@ -249,11 +265,8 @@
 
 			<div class="filetable" style="padding-bottom:5px;">
 				<div style="padding-bottom:5px;">
-					<label for="sfont" style="float:left;"> <strong>Enter Sun font name &nbsp</strong></label>
+					<label for="sfont" style="float:left;"> <strong>Sun font&nbsp</strong></label>
 					<input id='sfont' type='text' size="10">
-					<label style='float: right;'> <strong>Errors Only &nbsp  </strong>
-						<input type="button" id="showerr"  onclick="showError();"  >
-					</label>
 					<label style='float:center;' > <strong>&nbspSearch Type&nbsp</strong>
 						<span id="radiospan" style="border:1px; border-style:solid; ">
 							<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
@@ -262,17 +275,16 @@
 							<label for="charsrch">Char&nbsp</label>
 						</span>
 					</label>
-
+					<input type="button" id="showerr" style='float: right;' onclick="showError();"  >
+					<label id="splitlabel" for="showerr" style='float: right;'> <strong>Errors<br>Only &nbsp  </strong></label>
+					
 				</div>
 
 				<div >
-					<label for="xsearch;" span style='float:left;'> <strong>Search Words &nbsp</strong>
-						<input id='xsearch' onkeyup='search_Table("xref1")' type='text' size="50">
-						</label>
-						<label for="xrefClear" style='float:right;'> <strong>Clear &nbsp  </strong>
-							<input id='xrefclear' style='float:right;' onclick='clearTable()' type='button' >
-						</label>
-
+					<label for="xsearch;" span style='float:left;'> <strong>Search Words &nbsp</strong></label>
+						<input id='xsearch' onkeyup='search_Table("xref1")' type='text' size="40">
+						<input id='xrefclear' style='float:right;' onclick='clearTable()' type='button' >
+						<label id="lblclear" for="xrefClear" style='float:right;'>Clear &nbsp</label>
 				</div>
 			</div>
 		</fieldset>
