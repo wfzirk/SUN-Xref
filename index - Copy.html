@@ -11,28 +11,18 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <title>Search SUN Spreadsheet</title>
 <style>
-	@font-face {   /*var(--sun-font)*/
-		font-family: 'var(--sun-font)';
-		src: url('var(--sun-font).woff') format('woff');
-	}
-	@font-face {
-		font-family: "SUN7_25x";
-		src: url("SUN7_25x.woff") format('woff');
-	}
-	@font-face {
-		font-family: "SUN7_251";
-		src: url("SUN7_251.woff") format('woff');
-		/*local('SUN7_251')
-		url('SUN7_251.ttf') format('truetype');*/
-	}
-
 	@font-face{
 		font-family: "SUN7.24";
 		font-weight: normal;
 		font-style: normal;
 		src: local('SUN7.24'), url('SUN7.24.ttf') format('truetype');
 	}
-
+	@font-face{
+		font-family: "SUN7_251";
+		font-weight: normal;
+		font-style: normal;
+		src: local('SUN7_251'), url('SUN7_251.ttf') format('truetype');
+	} 
 	:root {
 		--sun-font: 'SUN7_251';
 	}
@@ -118,8 +108,7 @@
 	}
 	
 	.xreftable td.synCol, .xreftable th.synCol {
-		line-height: 15px;
-		width: 120px;
+		 width: 120px;
 	}
 	.xreftable td.xrefCol, .xreftable th.xrefCol {
 		/*vertical-align: top;*/
@@ -262,7 +251,7 @@
 
 	<form >
 		<div id="title">
-			XREF Search<label style="float:right;">10.5</label>
+			XREF Search<label style="float:right;">10.4</label>
 		</div>
 		<fieldset>
 			<div style="padding-bottom:5px;">
@@ -515,7 +504,7 @@ document.getElementById('xlf').value = "";
 
 var fval = "";
 document.getElementById('sfont').value = fval
-changeFont("SUN7_25x");
+changeFont("SUN7.251");
 
 function getFont() {
 	fval = document.getElementById('sfont').value;
