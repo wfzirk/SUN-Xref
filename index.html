@@ -13,7 +13,8 @@
 <style>
 	@font-face {   /*var(--sun-font)*/
 		font-family: 'var(--sun-font)';
-		src: url('var(--sun-font).woff') format('woff');
+		src: url('var(--sun-font).woff') format('woff').
+		src: local('var(--sun-font)'), url'var(--sun-font).ttf') format('truetype');
 	}
 	@font-face {
 		font-family: "SUN7_25x";
@@ -22,8 +23,6 @@
 	@font-face {
 		font-family: "SUN7_251";
 		src: url("SUN7_251.woff") format('woff');
-		/*local('SUN7_251')
-		url('SUN7_251.ttf') format('truetype');*/
 	}
 
 	@font-face{
@@ -34,7 +33,7 @@
 	}
 
 	:root {
-		--sun-font: 'SUN7_251';
+		--sun-font: 'SUN7_25x';
 	}
 	
 	html { height:100%; }
