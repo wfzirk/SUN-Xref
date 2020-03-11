@@ -9,8 +9,10 @@
 import sys
 from pathlib import Path
 #import io		#python 2
+import os
 import subprocess
 import csv
+import time, datetime
 
 script = sys.argv[0]
 logname = script.split('.')[0]
@@ -41,8 +43,10 @@ def read_csv_data(path, outfile):
     f = open(path, 'r', encoding="utf-8")
     #data = csv.reader(f, delimiter=',', quotechar='"')
     csvReader = csv.reader(f, delimiter=',', quotechar='"')
+    dt = "%s" % time.ctime(os.path.getmtime(path))
+    print(dt) 
     #line = '"'+""+'"|"'+csv_file+'"|"'+""+'"|"'+""+'"\\n'  
-    line = ' '+csv_file+' \\n'
+    line = ' '+path+' '+dt+' \\n'
     outdata = outdata+line 
     print(outdata)
     for row in csvReader:
