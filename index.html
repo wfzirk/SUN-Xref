@@ -11,7 +11,8 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <title>Search SUN Spreadsheet</title>
 <style>
-	@font-face {   /*var(--sun-font)*/
+/*
+	@font-face {   
 		font-family: 'var(--sun-font)';
 		src: url('var(--sun-font).woff') format('woff').
 		src: local('var(--sun-font)'), url'var(--sun-font).ttf') format('truetype');
@@ -31,7 +32,7 @@
 		font-style: normal;
 		src: local('SUN7.24'), url('SUN7.24.ttf') format('truetype');
 	}
-
+*/
 	:root {
 		--sun-font: 'SUN7_25x';
 	}
@@ -514,8 +515,17 @@ document.getElementById('xlf').value = "";
 
 var fval = "";
 document.getElementById('sfont').value = fval
-changeFont("SUN7_25x");
+changeFont("SUN7_6");
 
+
+function getFont() {
+	fval = document.getElementById('sfont').value;
+	console.log('getFont',fval)
+	//document.documentElement.style.setProperty('--sun-font', fval);
+	changeFont(fval)
+}
+
+/*
 function getFont() {
 	fval = document.getElementById('sfont').value;
 	console.log('getFont',fval)
@@ -532,6 +542,37 @@ function changeFont(f) {
 	} catch {
 		alert("Font not found", fval);
 	}
+	document.getElementById('sfont').value = f;
+}
+*/
+
+//https://stackoverflow.com/questions/11355147/font-face-changing-via-javascript
+function fface(f) {
+	ff = "@font-face { font-family: '" + f + "';\
+		src: url('" + f + ".woff') format('woff'),\
+		     url('" + f + ".ttf') format('truetype');\
+	}"
+
+	console.log(ff)
+	return ff;
+}
+
+function changeFont(f) {
+	ff = fface(f)
+	var fStyle = document.getElementById("fontStyle")
+	if (!fStyle) {
+		fStyle = document.createElement('style');
+		fStyle.id = "fontStyle"
+		fStyle.appendChild(document.createTextNode(ff)
+		);
+			
+		document.head.appendChild(fStyle);
+	} else {
+		fStyle.innerHTML = ff;
+	}
+
+	console.log(fStyle.innerHTML)
+	document.documentElement.style.setProperty('--sun-font', f);
 	document.getElementById('sfont').value = f;
 }
 
