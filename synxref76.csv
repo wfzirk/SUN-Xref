@@ -15,7 +15,7 @@
 ,Abilene,,ec4d,"grass: land,ground,earth,space"
 ,Abimael,,e0fb,"Man: no,not: king,master,lord,ruler: love,compassion "
 ,Abimelech,,e0ab,"Man: bad: no,not: good: lead,leader,manage: forward,to: person"
-,Abiram,,e415,
+,Abiram,,e415,"Man: argument: mouth,said,speak,confession; wild: no,not: peace: sleep,rest,lie_down: person: love,compassion"
 ,Abiud,,ea6a,"man: person: praise,exalt,dignify,worship: mouth,said,speak,confession: good"
 ,abomination,,e0a4,"hate,enmity: love,compassion: no,not: thing"
 ,about,,e11b,thing
@@ -712,7 +712,7 @@
 ,Gog,,ecf7,"Mountain: land,ground,earth,space"
 ,Goiim,,ede2,"Country,nation: big: land,ground,earth,space: village: many,much: neighbor: house: near,close"
 ,gold,,eb2a," big: money,wealth,wealthy"
-,Golgotha, Joda Golgotha,e34b,"skull: face: land,ground,earth,space"
+,Golgotha, Joda Golgotha,e34b,"skull: bone: head: face: land,ground,earth,space"
 ,Gomer,,ede3,"Man: fire,heat,hot: all,whole"
 ,Gomorrah,,ea7a,"bad: no,not: good: person: village: many,much: neighbor: house: near,close"
 ,gong,,ebe5,"Loud: very: ear,hear: cymbal,drum: hand: thing"
@@ -1160,7 +1160,7 @@
 ,Michael_man,,e2a5,"Man: same,equal: money,wealth,wealthy"
 ,Midian_land,,eb0f,"War,fight,battle: land,ground,earth,space"
 ,Midian_man,,e1eb,"man: big: war,fight,battle"
-,Migdol,,e0ce,
+,Migdol,,e0ce,"Tower: land,ground,earth,space"
 ,Milcah,,e38f,"Woman: worth,value,worthy: good: money,wealth,wealthy"
 ,Miletus,,eb23,"Flesh: soft: person: island: water,wet: land,ground,earth,space: village: many,much: neighbor: house: near,close"
 ,milk,,eca3,"Baby: very: child: small,few: person: cup,drink"
@@ -1289,7 +1289,7 @@
 ,Omar,,e1c9,"Man: most: very: many,much: mouth,said,speak,confession"
 ,on, on on_top_of,e113,thing
 ,On_city,,efe2,"sun,day: village: many,much: neighborhood: house: near,close "
-,On_man,,e414,
+,On_man,,e414,"Man: sun,day: village: many,much: neighbor: house: near,close"
 ,Onam,,e1ca,"Man: good: easy: happy,joy: face: work,do"
 ,Onan,,e1cb,"Man: very: strong: hand: power,ability,can: big: knife,cut"
 ,one,,e28c,
@@ -1307,7 +1307,7 @@
 ,Pagiel,,e2a8,"Man: above,over: up: thing"
 ,pain, pain hurt,e24f,"knife,cut: heart"
 ,Pallu,,e1cc,"Man: amazed,amazing,great: big: praise,exalt,dignify,worship: mouth,said,speak.confession: good "
-,Palti,,e2a9,
+,Palti,,e2a9,"Man: moon,night"
 ,Paltiel,,e3fb,"Man: no,not: save,rescue: very: help: straight: people"
 ,Pamphylia,,eb6e,"family,relative: house: love,compassion: land,ground,earth,space "
 ,Paphos,,eb9f,"Clean,pure: water,wet: good: village: many,much: neighbor: house: near,close"
@@ -1329,7 +1329,7 @@
 ,Pau,,efd0,"Mouth,said,speak,confession: sheep: soft: village: many,much: neighbor: house: near,close"
 ,Paul,,e377,"man: small,few"
 ,pavement,,ebad,"road: hard: soft: no,not"
-,peace,,e123,"rest,sleep,lie_down: person: love,compassion"
+,peace,,e123,"Sleep,rest,lie_down: person: love,compassion"
 ,Pedahel,,e3fd,"Man: birth,born: start,beginning: person"
 ,Pedahzur,,e2aa,"Man: cornerstone: very: hard: soft: no,not: thing"
 ,Peleg,,ec71,"man: knife,cut"
@@ -1422,12 +1422,12 @@
 ,Publius,,ec1a,"man: part,some"
 ,Pudens,,ecba,"Man: brave,courage: no,not; afraid,fear,worry: mouth,said,speak,confession: heart"
 ,punishment, punishment punish,e1d0,"Whip: sin: bad: no,not: righteous,righteousness: good: work,do"
-,Punon,,e3fe,
+,Punon,,e3fe,"Black: color: moon,night: very: land,ground,earth,space"
 ,purple,,e286,"king,lord,ruler,master: color"
 ,put, put put_verb,e07e,Hand: thing 
 ,Put_man,,eeba,"Man: small,few: dead,death,die: no,not: heart"
 ,Puteoli,,ec1e,"water,wet: village: many,much: neighbor: house: near,close"
-,Putiel,,e2ca,
+,Putiel,,e2ca,"Man: suffering,suffer: very: pain,hurt: knife,cut: heart: no,not"
 ,Pyrrhus,,eb1c,"man: fire,heat,hot: color"
 ,Quartus,,ebd3,man: four
 ,queen,,eb15,"woman: king,lord,ruler,master"
@@ -1453,7 +1453,7 @@
 ,red,,e287,"blood: hand: water,wet: color"
 ,redeem, redemption redeem,e02c,"Money,wealth,wealthy: free,freedom: no,not: chain,bound,arrest,imprisoned"
 ,reed,,ea26,big: grass
-,Rehob,,e2ea,
+,Rehob,,e2ea,"Small,few: money,wealth,wealthy: land,ground,earth,space"
 ,Rehoboam,,ea5a,man: up: big
 ,Rehoboth,,eebc,"Stretch: village: many,much: neighbor: house: near,close"
 ,Rekem,,e3c3,"Man: many,much; color"
@@ -1638,7 +1638,7 @@
 ,Simon_the_Canaanite,,e364,"man: ear,hear"
 ,Simon_the_Leper,,e0f8,"man: ear,hear "
 ,sin, sinful sin lawlessness unrighteous unrighteousness,e08f,"bad: no,not: righteous,righteousness: good: work,do"
-,Sin,,e0ea,
+,Sin,,e0ea,"South: direction: land,ground,earth,space"
 ,sing, sing Psalm song,e0e2,"mouth,said,speak,confession: dance: walk: happy,joy: face"
 ,Sinites,,eed1,"Water,wet: land,ground,earth,space: people"
 ,sinner,,e151,"bad: no,not: good: righteous,righteousness: person: work,do"
@@ -1647,7 +1647,7 @@
 ,Sithri,,e2e5,Man: straight: hide: hand: under: thing: .
 ,Sitnah,,eed2,"Hate: no,not: love,compassion: well: water,wet: hole"
 ,six,,e291,
-,skull,,e20f,face
+,skull,,e20f,bone: head: face
 ,sky,,ec8b,"above,over: up: thing: land,ground,earth,space"
 ,slave,,e10e,thing: person
 ,sleep, rest lie_down sleep,e121,Person
@@ -1731,7 +1731,7 @@
 ,tail,,ecd6,Animal
 ,Talmai,,e2d6,"Man: plow: knife,cut: dirt,soil,ground_soil: land,ground,earth,space"
 ,Tamar,,ea4e,woman: fruit
-,tambourine,,e413,
+,tambourine,,e413,"Small: cymbal: hand: ear,hear: thing "
 ,Tarshish_man,,eed3,"Man: poor: no,not: money,wealth,wealthy "
 ,Tarshish_village,,eed4,"Poor: no,not: money,wealth,wealthy: village: many,much: neighborhood: house: near,close"
 ,Tarsus,,ec30,"basket: small,few: net: village: many,much: neighbor: house: near,close"
@@ -1808,7 +1808,7 @@
 ,Troas,,ec0b,"animal: village: many,much: neighbor: house: near,close"
 ,Trophimus,,eb1e,"man: book read,learn"
 ,trouble,,e333,"heart: bad: no,not: good"
-,true, truth true,e09c,good: measure 
+,TRUE, truth true,e09c,good: measure 
 ,trumpet,,ea79,"big: thing: mouth,said,speak,confession"
 ,trust,,e023,"love,compassion: true,truth: good: measure"
 ,try,,eb94,"small,few: work,do"
