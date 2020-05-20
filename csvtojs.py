@@ -68,9 +68,10 @@ def read_csv_data(path, outfile):
     #print(outdata)
     with open(outfile, 'w' , encoding="utf-8") as f:
         f.write(outdata)
-        
-ods_file = sys.argv[1]
-csv_file = Path(ods_file).stem + ".csv"
-convert2csv(ods_file)
-
+#        
+#ods_file = sys.argv[1]
+#csv_file = Path(ods_file).stem + ".csv"
+#convert2csv(ods_file)
+#
+csv_file = sys.argv[1]
 read_csv_data(csv_file, js_out)
