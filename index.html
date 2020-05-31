@@ -11,13 +11,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <title>Search SUN Spreadsheet</title>
 <style>
-/*
-	@font-face {   
-		font-family: 'var(--sun-font)';
-		src: url('var(--sun-font).woff') format('woff').
-		src: local('var(--sun-font)'), url'var(--sun-font).ttf') format('truetype');
-	}
-*/	
+
 	@font-face {
 		font-family: "SUN7_7";
 		src: url("SUN7_7_519.woff") format('woff');
@@ -27,19 +21,7 @@
 		font-family: "SUNBF76_EN";
 		src: url("SUNBF76_EN.woff") format('woff');
 	}
-/*
-	@font-face {
-		font-family: "SUN7_251";
-		src: url("SUN7_251.woff") format('woff');
-	}
 
-	@font-face{
-		font-family: "SUN7.24";
-		font-weight: normal;
-		font-style: normal;
-		src: local('SUN7.24'), url('SUN7.24.ttf') format('truetype');
-	}
-*/
 	:root {
 		--sun-font: 'SUN7_7';
 	}
@@ -593,6 +575,8 @@ function showDebug() {
 		document.getElementById("output").innerHTML = ""
 	}
 }
+
+generateTable(jscsvToArray(csvData));
 
 /*
 if (debug) {
