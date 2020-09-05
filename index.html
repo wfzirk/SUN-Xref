@@ -13,17 +13,19 @@
 <style>
 
 	@font-face {
-		font-family: "SUN7_7_810";
-		src: url("SUN7_7_810.woff") format('woff');
+		font-family: "SUNBF7_8_EN";
+		src: url("SUNBF7_8_EN.woff") format('woff'),
+			  url("SUNBF7_8_EN.ttf") format(truetype);
 	}
-	/*
 	@font-face {
-		font-family: "SUNBF76_EN";
-		src: url("SUNBF76_EN.woff") format('woff');
+		font-family: "SUN7_8";
+		src: url("SUN7_8.woff") format('woff'),
+			  url("SUN7_8.ttf") format(truetype);
 	}
-	*/
+
+	
 	:root {
-		--sun-font: 'SUN7_7_810';
+		--sun-font: 'SUN7_8';
 	}
 	
 	html { height:100%; }
@@ -261,8 +263,14 @@
 
 			<div class="filetable" style="padding-bottom:5px;">
 				<div style="padding-bottom:5px;">
-					<label for="sfont" style="float:left;"> <strong>Sun font&nbsp</strong></label>
-					<input id='sfont' type='text' size="10">
+					<!--<label for="sfont" style="float:left;"> <strong>Sun font&nbsp</strong></label>
+					<input id='sfont' type='text' size="10">-->
+					<select id = "selFont" onChange="optChangeFont()">
+						   <option value = "SUNBF7_8_EN"  >BACKSUN 7_8</option>
+						   <option value = "SUN7_8" selected>SUN7_8</option>
+					</select>
+					
+					
 					<label style='float:center;' > <strong>&nbspSearch Type&nbsp</strong>
 						<span id="radiospan" style="border:1px; border-style:solid; ">
 							<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
@@ -354,6 +362,9 @@ var colValues =[];
 
 window.addEventListener('DOMContentLoaded', (event) => {
 	console.log('DOM fully loaded')
+	fval = document.getElementById('selFont').value;
+	changeFont(fval);
+
 });
 
 /*
@@ -488,48 +499,21 @@ var do_file = (function() {
 	xlf.addEventListener('change', handleFile, false);
 })();
 
-(function() {
-	var sfont = document.getElementById('sfont');
-	if(!sfont.addEventListener) return;
-	function handleFile(e) { getFont(); }
-	sfont.addEventListener('change', handleFile, false);
-})();
+
 
 //document.getElementById('sfont').value = "";
 document.getElementById('xlf').value = ""; 
 
-var fval = "";
-document.getElementById('sfont').value = fval
-changeFont("SUN7_7_810");
+function optChangeFont() {
+	fval = document.getElementById('selFont').value;
+	getFont(fval);
+}
 
-
-function getFont() {
-	fval = document.getElementById('sfont').value;
+function getFont(fval) {
 	console.log('getFont',fval)
-	//document.documentElement.style.setProperty('--sun-font', fval);
 	changeFont(fval)
 }
 
-/*
-function getFont() {
-	fval = document.getElementById('sfont').value;
-	console.log('getFont',fval)
-	//document.documentElement.style.setProperty('--sun-font', fval);
-	changeFont(fval)
-}
-
-function changeFont(f) {
-	console.log(f)
-	try {
-		fval ='"'+f+'"';
-		console.log('changefont',fval);
-		document.documentElement.style.setProperty('--sun-font', fval);
-	} catch {
-		alert("Font not found", fval);
-	}
-	document.getElementById('sfont').value = f;
-}
-*/
 
 //https://stackoverflow.com/questions/11355147/font-face-changing-via-javascript
 function fface(f) {
@@ -558,7 +542,7 @@ function changeFont(f) {
 
 	console.log(fStyle.innerHTML)
 	document.documentElement.style.setProperty('--sun-font', f);
-	document.getElementById('sfont').value = f;
+	
 }
 
 function setSrch(e) {
