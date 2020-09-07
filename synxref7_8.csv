@@ -1600,7 +1600,7 @@
 ,Mount_Carmel,(1 Kgs 18:19),e45c,"idol: mute: mouth,said,speak,confession: no,not: thing: mountain"
 ,Mount_Ebal,(Deut 11:29),e415,"hard: soft: no,not: thing: mountain"
 ,Mount_Gerizim,(Deut 11:29),e416,"knife,cut: mountain"
-,Mount_Gilboa,(1 Sam 31:1),e4ef,"questioned,ask: mountain"
+,Mount_Gilboa,(1 Sam 31:1),e4ef,"questioned,ask: mouth,said,speak,confession: questionmark: mountain"
 ,Mount_Halak,(Josh 11:17),e44e,"part,some: mountain"
 ,Mount_Hermon,(Deut 3:8),e49d,holy: person: thing: mountain
 ,Mount_Hor,(Num 20:22),e3b4,"Mountain: Aaron: man: voice: mouth,said,speak,confession: ear,hear"
@@ -1883,7 +1883,7 @@
 ,Pyrrhus,(Acts 20:4),eb1c,"man: fire,heat,hot: color"
 ,Quartus,Quartus (Rom 16:23) Arba (Jos 21:11),ebd3,man: four
 ,queen,(1  Kgs 10:1),eb15,"woman: king,lord,ruler,master"
-,questioned,questioned  ask,e061,"mouth,said,speak,confession: ?"
+,questioned,questioned  ask,e061,"mouth,said,speak,confession: questionmark"
 ,questionmark,,e316,
 ,quiet,silence  quiet (Matt 20:31),e185,"mouth,said,speak,confession: no,not"
 ,Quirinius,(Luke 2:2),ec3b,"man: up: governor: small,few: king,lord,ruler,master"
@@ -2477,7 +2477,7 @@
 ,Zelophehad,(Num 26:33),e3bc,"Man: birth,born: start,beginning: person"
 ,Zemarites,(Gen 10:18),eef4,Sheep: soft: people
 ,Zenas,(Titus 3:13),ed09,"Man: lightning: storm: eye,see"
-,Zephaniah,(Zeph 1:1),e60f,
+,Zephaniah,(Zeph 1:1),e60f,"man: Yahweh: king,ruler,lord,master: man: hei: put: hand: thing"
 ,Zephath,(Judg 1:17),e5c2,"big: tower: village: many,much: neighbor: house: near,close"
 ,Zepho,(Gen 36:11),e1de,"Man: watchtower: eye,see: tower"
 ,Zephon,(Num 26:15),e0d0,"Man: future: time,when: forward,to"
