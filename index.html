@@ -96,6 +96,11 @@
 		 empty-cells: show;
 
 	}
+	
+	.xreftable caption {
+		color: green;
+	}
+	
 	.xreftable tr {
 		vertical-align: middle;
 		padding-top: 5px;
@@ -267,9 +272,9 @@
 			<div style="padding-bottom:5px;">
 				<label for="xlf" style="float:left;"> <strong>Select ODS, XLSX or CSV File:</strong></label>
 				<input id="xlf"  type="file" name="xlfile" >
-				<label style="float:right;">Debug&nbsp
+				<!--<label style="float:right;">Debug&nbsp
 					<input type="checkbox" id="showdebug"  onclick="showDebug();">
-				</label>
+				</label>-->
 				<div id="drop">Or drop file here</div>
 			</div>
 
@@ -291,39 +296,27 @@
 							<label for="charsrch">Char&nbsp</label>
 						</span>
 					</label>
-					<input type="button" id="showerr" style='float: right;' onclick="showError();"  >
-					<label id="splitlabel" for="showerr" style='float: right;'> <strong>Errors<br>Only &nbsp  </strong></label>
-					
+					<!--<input type="button" id="showerr" style='float: right;' onclick="showError();"  >
+					<label id="splitlabel" for="showerr" style='float: right;'> <strong>Errors<br>Only &nbsp  </strong></label>-->
+										
 				</div>
 
 				<div >
 					<label for="xsearch;" span style='float:left;'> <strong>Search Words &nbsp</strong></label>
 						<input id='xsearch' onkeyup='search_Table("xref1")' type='text' size="40">
-						<input id='xrefclear' style='float:right;' onclick='clearTable()' type='button' >
-						<label id="lblclear" for="xrefClear" style='float:right;'>Clear &nbsp</label>
+
+					<button type="submit"  onclick='clearTable()'<img> Clear</button>
+					<button type="submit" style='float:right;' onclick='dnldCSV()'<img> Download CSV</button>
+											
 				</div>
 			</div>
 		</fieldset>
 	</form>
 	
-<div>In the <b>Search</b> bar, enter words separated by space.
-<span style="color: #ff0000">Red text</span> indicates a unicode miscompare between font and the unicode.  Click on the line for specifics.
+<div>In the <b>Search</b> bar, enter words separated by space. Select Word in Search Type for full word search.  Select Char in Search Type for partial word search.
+
 </div>
-<!--<div>
-	<font face = "Times New Roman" size = "5">Times New Roman</font><br />
-	<font face = "Verdana" size = "5">Verdana</font><br />
-	<font face = "Comic sans MS" size =" 5">Comic Sans MS</font><br />
-	<font face = SUN7.24 size = "5">SUN7.24 &#174; &#xe000;   &#57344;</font><br />
-</div>  
 
-<iframe id="itxt" src='s1.js' scrolling='yes' frameborder='1'></iframe>
-
-
-<embed id="etxt" src="k.html">
-<object id="otxt" width="800" height="300" type="text/plain" data="k.html" border="1" >
-  <a href="plain.txt">Embedded Text Document</a>
-</object>
---->
 <div id="output">
 &#174; &#xe000;
 </div>
@@ -556,6 +549,22 @@ function changeFont(f) {
 	document.documentElement.style.setProperty('--sun-font', f);
 	
 }
+
+function replaceAll(string, search, replace) {
+  return string.split(search).join(replace);
+}
+
+function dnldCSV() {
+	var name = csvData.substring(0, csvData.indexOf(".csv") + 4);
+	var str = csvData.substring(csvData.indexOf("\n") + 1);
+	var csvContent = replaceAll(str, '|', ',')
+	var link = window.document.createElement("a");
+	link.setAttribute("href", "data:text/csv;charset=utf-8,%EF%BB%BF" + encodeURI(csvContent));
+	link.setAttribute("download", name);
+	link.click(); 
+
+}
+
 
 function setSrch(e) {
 	srchType = document.querySelector('input[name = wsrch]:checked').value
