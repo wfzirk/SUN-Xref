@@ -87,7 +87,7 @@ function generateTable(lines){
 		}
 		if (j === synCol) {
 			th.className = "synCol";
-			th.innerHTML = "Synonym";
+			th.innerHTML = "Reference";
 		}
 		if (j === xrefCol) {
 			th.className = "xrefCol";
