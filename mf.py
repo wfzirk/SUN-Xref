@@ -11,11 +11,12 @@ import csv
 
 import os.path
 
+import logging
+from bfLog import log_setup
 
-
-script = sys.argv[0]
-logname = script.split('.')[0]
-sys.stdout = open(logname+".log", "w",encoding="utf-8")
+#script = sys.argv[0]
+#logname = script.split('.')[0]
+#sys.stdout = open(logname+".log", "w",encoding="utf-8")
 
 
 xsymbol = 0
@@ -25,7 +26,7 @@ xunicode = 3
 xxref = 4
 
 def getXrefList(file, outfile):
-    print('getXrefList',file)
+    logging.info('getXrefList %s',file)
     with open(file, 'r', encoding='utf8') as fr:
         reader = csv.reader(fr, delimiter=',', quotechar ='"')
         #fw = open(outfile, 'w')
@@ -40,17 +41,17 @@ def getXrefList(file, outfile):
                 ukey = row[3].strip()                  #key = unicode
                 nxref = row[4].strip()                 #nvalue = unicode
                 namList[nkey.lower()] = [nfont, nkey, ukey, nxref, nref]
-
+                logging.info('%s %s',nkey.lower(),namList[nkey.lower()])
                 #wr = nfont+","+nkey+","+ukey+","+nxref
                 #fw.write(wr+'\n')
                   
     #fr.close()    
     #fw.close()
-    print('namList',namList)
+    #print('namList',namList)
     return namList
     
 def basicSymbols(file, outfile):
-    print('basicSymbols',file)
+    logging.info('basicSymbols %s',file)
     fr = open(file, encoding='utf8')
     reader = csv.reader(fr, delimiter=',', quotechar ='"')
     fw = open(outfile, 'w')
@@ -64,10 +65,11 @@ def basicSymbols(file, outfile):
             rsym = row[2].strip()                   # synonymn/ reference key    
             ukey = row[3].strip()                   #key = unicode
             nxref = row[4].strip()                  #xref list
+            logging.info('%s %s %s',len(nxref), nkey.lower(), len(rsym))
             if len(nxref) > 0:
                 continue
-            if len(rsym) > 0:
-                continue
+            #if len(rsym) > 0:
+            #    continue
             basicList[nkey.lower()] = ukey
 
             #wr = ' " '+nfont+' "," '+nkey+' "," '+ukey+' " '#," '+rsym+' "," '+str(len(nxref))+' " '
@@ -77,6 +79,9 @@ def basicSymbols(file, outfile):
 
     fr.close()    
     fw.close()
+    for x in basicList:
+        logging.info('bs %s %s',x, basicList[x])
+
 
     return basicList    
 
@@ -111,32 +116,25 @@ def madeFrom(nList, basicSym, outfile='madefrom.csv'):
             mfRow.append(ucode)
 
             ccs= xList.split(',')
-            pList = ""
+            #pList = ""
             uList = ""
             for cc in ccs:
-                c = cc.replace("'"," ").replace(' ','').strip()
-                if c.lower() in basicSym:
-                    mfRow.append(basicSym[c.lower()])
-                    uList = uList+'", "'+basicSym[c.lower()]
-                    #pList = pList+','+c
-            #print(len(uList), uList)
-            '''if len(uList) > 0:
-                outStr = ' "'+fnt+'","'+name+'","'+ref+'","'+ucode+'",'+uList[3:]+'"'.strip()
-            else:
-                outStr = ' "'+fnt+'","'+name+'","'+ref+'","'+ucode+'"'.strip()
-             
-            if len(uList) > 0:
-                outStr = fnt+','+name+','+ref+','+ucode+','+uList[3:].strip()
-            else:
-                outStr = fnt+','+name+','+ref+','+ucode.strip()
+                c = cc.replace("'"," ").replace(' ','').strip().lower()
+                #logging.info('|%s| %s %s',basicSym[c.lower()],len(uList), uList)
+                if c in basicSym:
+                    #logging.info('|%s| %s %s %s %s',c, basicSym[c],len(uList), uList, basicSym[c] in uList)
+                    if basicSym[c] in uList:
+                        logging.info(',** Duplicate **** %s %s %s',name,c, basicSym[c])
+                        continue
+                    mfRow.append(basicSym[c])
 
-            print('outstr',outStr) 
-            mf.write(outStr+'\n')
-            #mf.write('\n')
-            '''
-            print(mfRow)
+                    uList = uList+'", "'+basicSym[c]
+ 
+            logging.info(mfRow)
             csvWriter.writerow(mfRow)
  
+ 
+lgh = log_setup(__file__[:-3]+'.log') 
 if len(sys.argv) > 1: 
     xrefFile = sys.argv[1]
     outfile = sys.argv[2]
@@ -151,6 +149,6 @@ else:
     print("   converts xref words to hex unicode string")
     sys.exit()
 
-print('Done')
+logging.info('Done')
 
     
