@@ -216,7 +216,7 @@
 ,and,"",e11c,thing
 ,Andrew,"Matt 4:18",e357,man: man
 ,Andronicus,"Rom 16:7",ebba,man: best: very: good
-,Aner,"Gen  14:13",edb3,"Man: two: water,wet"
+,Aner_man,"Gen  14:13",edb3,"Man: two: water,wet"
 ,angel,"",e0a7,"good: spirit: no,not: person"
 ,anger,"",e204,
 ,Aniam,"1 Chron 7:19",e75c,"man: me,I: people"
@@ -310,8 +310,8 @@
 ,Ashkenaz,"Gen 10:3",edb9,"Man: cold: no,not: fire,heat,hot"
 ,Ashnah,"Josh 15:33",e4d8,"change,turn: village: many,much: neighbor: house: near,close"
 ,Ashpenaz,"Dan 1:3",e867,
-,Ashtaroth,"",e429,
-,Ashtiroth_Karnaim,"Josh 9:10 Gen 14:5",edba,"small,few: cow: land,earth,ground,space"
+,Ashtaroth,"Josh 9:10",e429,
+,Ashtiroth_Karnaim,"Gen 14:5",edba,"small,few: cow: land,earth,ground,space"
 ,Ashur_land,"Josh 17:7",e0ef,"Black: color: moon,night: land,ground,earth,space"
 ,Ashur_man,"Gen 10:22",edbb,"Man: black: color: moon,night"
 ,Ashurbanipal,"Ezra 4:10",e923,
@@ -1143,7 +1143,7 @@
 ,godly,"Matt 13:43",e130,"person: righteous,righteousness: good: work,do"
 ,Gog_land,"Ezek 38:2",ecf7,"Mountain: land,ground,earth,space"
 ,Gog_man,"1 Chr 5:4",e62b,man: up: house
-,Goiim,"",ede2,"Country,nation: big: land,ground,earth,space: village: many,much: neighbor: house: near,close"
+,Goiim,"Gen 14:1",ede2,"Country,nation: big: land,ground,earth,space: village: many,much: neighbor: house: near,close"
 ,Golan,"Duet 4:43",e468,"no,not: mouth,said,speak,confession: village: many,much: neighbbor: house: near,close"
 ,gold,"",eb2a,"big: money,wealth,wealthy"
 ,Golgotha,"Matt 27:33",e34b,"skull: bone: face: land,ground,earth,space"
@@ -1156,7 +1156,7 @@
 ,Goshen,"Gen 47:1",efbf,"Near,close: sun,day: land,ground,earth,space"
 ,gospel,"",e22b,"book,learn,read: good"
 ,governor,"Acts 13:12",e0a3,"small,few: king,lord,ruler,master"
-,Goyim,"Gen 14:1 Josh 12:23",e44c,"big: land,ground,earth,space"
+,Goyim,"Josh 12:23",e44c,"big: land,ground,earth,space"
 ,Gozan,"2 Kgs 18:11",e619,"hard: soft: no,not: land,ground,earth,space: village: many,much: neighbor: house: near,close"
 ,grace,"",e01f,"love,compassion: no,not: knife,cut"
 ,grain,"",e279,
@@ -1563,7 +1563,7 @@
 ,jar,"",e0d5,"hard: soft: no,not: cup,drink"
 ,Jared,"Gen 5:15",ec62,man: down
 ,Jarib,"Ezra 8:16",e8e1,
-,Jarmuth,"Josh 10:3 1 Kgs 4:13 Josh 19:21",e436,"up: dirt,ground_soil,soil: land,ground,earth,space: village: many,much: neighbor: house: near,close"
+,Jarmuth,"Josh 10:3 Josh 19:21",e436,"up: dirt,ground_soil,soil: land,ground,earth,space: village: many,much: neighbor: house: near,close"
 ,Jaroah,"1 Chr 5:14",e633,"man: smooth: many,much: good: straight"
 ,Jashen,"1 Chron 11:34 2 Sam 23:32",e7f7,
 ,Jashobeam,"1 Chron 11:11",e810,
@@ -1614,7 +1614,7 @@
 ,Jeremiah,"2 Chr 36:12",ea28,"man: cry: sad, grieve"
 ,Jeremoth,"Ezra 10:33 1 Chr 8:14 2 Chr 11:18",e682,"man: more: up: many,much: big"
 ,Jeriah,"1 Chr 26:31",e683,"man: hei: eye,see"
-,Jeribal,"1 Chron 11:46",e814,
+,Jeribai,"1 Chron 11:46",e814,
 ,Jericho,"Num 22:1",ea08,"wall: down: village: many,much: neighbor: house: near,close"
 ,Jeriel,"1 Chron 7:2",e74e,
 ,Jerioth,"1 Chron 2:18",e77e,"woman: afraid,fear,worry: mouth,said,speak,confession: heart"
@@ -1780,7 +1780,6 @@
 ,kingdom,"",e02f,"King,lord,ruler,master: land,ground,earth,space"
 ,Kinnereth,"Josh 19:35",e3f2,"Harp: string: box: village: many,much: neighbor: house: near,close"
 ,Kir,"Isa 22:6 2 Kings 16:9",e45a,"hedge: wall: land,ground,earth,space: village: many,much: neighbor: house: near,close"
-,Kiriath_Arba,"",efd7,
 ,Kiriath_Huzoth,"Num 22:39",e2f9,"Wide: stretch: measure: village: many,much: neighbor: house: near,close"
 ,Kiriath_Jearim,"Josh 9:44 Josh 9:17",e438,"tree,plant,wood: village: many,much: neighbor: house: near,close"
 ,Kish,"1 Chr 24:29",eb49,man: catch: thing: net
@@ -1826,7 +1825,7 @@
 ,Lappidoth,"Judg 4:4",e560,man: storm
 ,Lasea,"Acts 27:8",ec16,"hair: face: village: many,much: neighbor: house: near,close"
 ,Lasha,"Gen 10:19",e1c0,"Fire,heat,hot: clean,pure: water,wet: good: village: many,much: neighbor: house: near,close"
-,Lasharon,"",e443,
+,Lasharon,"Josh 12:18",e443,
 ,last,"",e234,"end,finish"
 ,late,"",e225,"no,not: now,immediately: very: time,when"
 ,Latin,"John 19:20",eba8,"very: knife,cut: tongue: mouth,said,speak.confession: clothing,fabric"
@@ -1909,7 +1908,6 @@
 ,Maaziah,"1 Chron 24:18",e7ae,man: hei: big
 ,Macedonia,"Acts 16:9",ec0d,"above,over: up: thing: land,ground,earth,space"
 ,Machir_man,"Gen 50:23",e2d1,"Man: forward,to: straight: money,wealth,wealthy"
-,Machir_woman,"",e2d2,
 ,Machpelah,"Gen 23:19",eee4,"repeat: village: many,much: neighbor: house: near,close"
 ,Madai,"Gen 10:2",edff,Man: measure
 ,Madmannah,"Josh 15:31",e534,"no,not: desire,like,want: love,compassion: heart: village: many,much: neighbor: house: near,close"
@@ -2199,7 +2197,7 @@
 ,Nebo,"Num 33:47",e3f9,"Prophet: person: prophesy: eye,see: forward,to: village: many,much: neighbor: house: near,close"
 ,Nebo_Sarsekim,"Jer 39:3",e912,
 ,Nebuchadnezzar,"Jer 21:2",e41c,"man: very: cry: sad,grieve: water,wet"
-,Nebuzaradon,"2 Kings 25:20",e8c3,
+,Nebuzaradan,"2 Kings 25:8",e8c3,
 ,Necho,"2 Kgs 23:29",e6b8,man: stumble: walk: bad: no: good
 ,neck,"",e0d3,face
 ,Nedabiah,"1 Chron 3:18",e731,man: ear: work
@@ -2242,7 +2240,6 @@
 ,no,"",e17c,
 ,Noadiah_man,"Ezra 8:33",e2f3,"Man: straight: know,knowledge"
 ,Noadiah_woman,"Neh 6:14",e86a,
-,Noadish,"",e8e8,
 ,Noah_man,"Gen 6:8",ea43,"man: sleep,rest,lie_down: person"
 ,Noah_woman,"Num 36:11",e47a,"woman: sleep,rest,lie_down"
 ,Nob,"1 Sam 21:1",e463,"prophesy: eye,see: forward,to: village: many,much: neighbor: house: near,close"
@@ -2496,7 +2493,7 @@
 ,Ramathaim,"1 Sam 1:1",e4f1,"tower: tower: land,ground,earth,space"
 ,Rameses,"Gen 47:11",efb4,"Slave: thing: person: part,some: land,ground,earth,space"
 ,Ramiah,"Ezra 10:25",e8e9,
-,Ramoth_Gilead,"",e473,
+,Ramoth_Gilead,"1 Kgs 4:13",e473,
 ,Raphu,"Num 13:9",e2e9,"Man: health,healthy: happy,joy: face: heart"
 ,Reaiah,"1 Chr 5:5",e640,"man: sigh: mouth,said,speak,confession: air"
 ,Reba,"Num 31:8",e3c4,"Man: king,lord,ruler,master: bed,mattress: sleep,rest,lie_down: person: straight"
@@ -2695,7 +2692,7 @@
 ,Sharai,"Ezra 10:40",e8ea,
 ,share,"",e07a,"hand: friend: person: love,compassion"
 ,Sharezer,"Zech 7:2",e5c9,"man: hire: person: money,wealth,wealthy"
-,Sharon,"Josh 12:18 1 Chr 5:16",ec2b,"Straight: land,ground,earth,space"
+,Sharon,"1 Chr 5:16",ec2b,"Straight: land,ground,earth,space"
 ,sharp,"",ebf3,"Knife,cut"
 ,Shashai,"Ezra 10:40",e8eb,
 ,Shashak,"1 Chr 8:14",e981,
@@ -2703,6 +2700,7 @@
 ,shave,"",eb27,"very: knife,cut: hair: face"
 ,Shaveh_Kiriathaim,"Num 32:37 Gen 14:5",eec8,"Two: land,ground,earth,space"
 ,Sheal,"Ezra 10:29",e8ec,
+,Shealtiel,"Ezra 3:2",ea68,"man: questioned,ask: mouth,said,speak,confession: ?"
 ,Shear_Jashub,"Isa 7:3",e687,"man: kneel: stay,remain: person: straight: down"
 ,Sheariah,"1 Chr 9:44",e643,man: storm: wall
 ,Sheba_land,"2 Chr 9:12",e425,"come,visit: walk: near,close: land,ground,earth,space"
@@ -2823,7 +2821,7 @@
 ,Siloam_city,"Luke 13:4",ebb1,"send: hand: forward,to: village: many,much: neighbor: house: near,close"
 ,Silvanus,"2 Cor 1:19",eca9,"Man: silver: small,few: money,wealth,wealthy"
 ,silver,"",eb2b,"small,few: money,wealth,wealthy"
-,Simeon,"2 Chron 15:9",e788,
+,Simeon_land,"2 Chron 15:9",e788,
 ,Simon,"Gen 29:33 John 13:26",ea47,"man: ear,hear"
 ,Simon_Jesus_Brother,"Matt 13:55",ea92,"Man: ear,hear"
 ,Simon_of_Cyrene,"Mark 15:21",e37c,"man: ear,hear"
@@ -3267,7 +3265,7 @@
 ,Zimran,"Gen 25:2",e1df,"Man: harvester: person: harvest: hand: grain,wheat"
 ,Zimri,"Num 25:14",e40e,"Man: dance: walk: happy,joy: face"
 ,Zin,"Num 13:21",e1f2,"Thorn: land,ground,earth,space"
-,Zior,"2 King 8:21 Josh 15:54 Gen 13:10",e552,"small: village: many,much: neighbor: house: near,close"
+,Zior,"2 King 8:21 Josh 15:54",e552,"small: village: many,much: neighbor: house: near,close"
 ,Ziph_man,"1 Chr 2:42",e556,"man: very: deceive,deception,false: lead_astray,lie: no,not: true,truth: good: measure"
 ,Ziph_village,"Josh 15:24",e553,"wind: fast_speed: very: forward,to: air: village: many,much: neighbor: house: near,close"
 ,Ziphah,"1 Chron 4:16",e74b,
@@ -3276,7 +3274,7 @@
 ,Zipporah,"Exod 2:21",e2ce,Woman: bird
 ,Ziza,"1 Chron 4:37",e74c,
 ,Zoan,"Num 13:22",e1f3,"Camel: land,ground,earth,space"
-,Zoar,"",eef6,
+,Zoar,"Gen 13:10",eef6,
 ,Zobah,"1 Sam 14:47",e7e2,
 ,Zohar,"Gen 23:8",efa7,"Man: white: no,not: color"
 ,Zoheleth,"1 Kgs 1:9",e4de,"snake: land,ground,earth,space"

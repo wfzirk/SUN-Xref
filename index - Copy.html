@@ -11,19 +11,33 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <title>Search SUN Spreadsheet</title>
 <style>
-
-	@font-face {
-		font-family: "SUN7_7_810";
-		src: url("SUN7_7_810.woff") format('woff');
-	}
 	/*
 	@font-face {
-		font-family: "SUNBF76_EN";
-		src: url("SUNBF76_EN.woff") format('woff');
+		font-family: "SUNBF78_909_EN";
+		src: url("SUNBF78_909_EN.woff") format('woff'),
+			  url("SUNBF78_909_EN.ttf") format(truetype);
 	}
+	@font-face {
+		font-family: "SUN7_8_909";
+		src: url("SUN7_8_909.woff") format('woff'),
+			  url("SUN7_8_909.ttf") format(truetype);
+	}
+
 	*/
+	@font-face {
+		font-family: "SUNBF921_722a_EN";
+		src: url("SUNBF921_722a_EN.woff") format('woff'),
+			 url("SUNBF921_722a_EN.ttf") format(truetype);
+	}
+	@font-face {
+		font-family: "SUN921_7_22a";
+		src: url("SUN921_7_22a.woff") format('woff'),
+			 url("SUN921_7_22a.ttf") format(truetype);
+	}
+
+	
 	:root {
-		--sun-font: 'SUN7_7_810';
+		--sun-font: 'SUN921_7_22a';
 	}
 	
 	html { height:100%; }
@@ -82,6 +96,11 @@
 		 empty-cells: show;
 
 	}
+	
+	.xreftable caption {
+		color: green;
+	}
+	
 	.xreftable tr {
 		vertical-align: middle;
 		padding-top: 5px;
@@ -253,16 +272,22 @@
 			<div style="padding-bottom:5px;">
 				<label for="xlf" style="float:left;"> <strong>Select ODS, XLSX or CSV File:</strong></label>
 				<input id="xlf"  type="file" name="xlfile" >
-				<label style="float:right;">Debug&nbsp
+				<!--<label style="float:right;">Debug&nbsp
 					<input type="checkbox" id="showdebug"  onclick="showDebug();">
-				</label>
+				</label>-->
 				<div id="drop">Or drop file here</div>
 			</div>
 
 			<div class="filetable" style="padding-bottom:5px;">
 				<div style="padding-bottom:5px;">
-					<label for="sfont" style="float:left;"> <strong>Sun font&nbsp</strong></label>
-					<input id='sfont' type='text' size="10">
+					<!--<label for="sfont" style="float:left;"> <strong>Sun font&nbsp</strong></label>
+					<input id='sfont' type='text' size="10">-->
+					<select id = "selFont" onChange="optChangeFont()">
+						   <option value = "SUNBF921_722a_EN"  >SUNBF921_722a_EN</option>
+						   <option value = "SUN921_7_22a" selected>SUN921_7_22a</option>
+					</select>
+					
+					
 					<label style='float:center;' > <strong>&nbspSearch Type&nbsp</strong>
 						<span id="radiospan" style="border:1px; border-style:solid; ">
 							<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
@@ -271,39 +296,27 @@
 							<label for="charsrch">Char&nbsp</label>
 						</span>
 					</label>
-					<input type="button" id="showerr" style='float: right;' onclick="showError();"  >
-					<label id="splitlabel" for="showerr" style='float: right;'> <strong>Errors<br>Only &nbsp  </strong></label>
-					
+					<!--<input type="button" id="showerr" style='float: right;' onclick="showError();"  >
+					<label id="splitlabel" for="showerr" style='float: right;'> <strong>Errors<br>Only &nbsp  </strong></label>-->
+										
 				</div>
 
 				<div >
 					<label for="xsearch;" span style='float:left;'> <strong>Search Words &nbsp</strong></label>
 						<input id='xsearch' onkeyup='search_Table("xref1")' type='text' size="40">
-						<input id='xrefclear' style='float:right;' onclick='clearTable()' type='button' >
-						<label id="lblclear" for="xrefClear" style='float:right;'>Clear &nbsp</label>
+
+					<button type="submit"  onclick='clearTable()'<img> Clear</button>
+					<button type="submit" style='float:right;' onclick='dnldCSV()'<img> Download CSV</button>
+											
 				</div>
 			</div>
 		</fieldset>
 	</form>
 	
-<div>In the <b>Search</b> bar, enter words separated by space.
-<span style="color: #ff0000">Red text</span> indicates a unicode miscompare between font and the unicode.  Click on the line for specifics.
+<div>In the <b>Search</b> bar, enter words separated by space. Select Word in Search Type for full word search.  Select Char in Search Type for partial word search.
+
 </div>
-<!--<div>
-	<font face = "Times New Roman" size = "5">Times New Roman</font><br />
-	<font face = "Verdana" size = "5">Verdana</font><br />
-	<font face = "Comic sans MS" size =" 5">Comic Sans MS</font><br />
-	<font face = SUN7.24 size = "5">SUN7.24 &#174; &#xe000;   &#57344;</font><br />
-</div>  
 
-<iframe id="itxt" src='s1.js' scrolling='yes' frameborder='1'></iframe>
-
-
-<embed id="etxt" src="k.html">
-<object id="otxt" width="800" height="300" type="text/plain" data="k.html" border="1" >
-  <a href="plain.txt">Embedded Text Document</a>
-</object>
---->
 <div id="output">
 &#174; &#xe000;
 </div>
@@ -354,6 +367,9 @@ var colValues =[];
 
 window.addEventListener('DOMContentLoaded', (event) => {
 	console.log('DOM fully loaded')
+	fval = document.getElementById('selFont').value;
+	changeFont(fval);
+
 });
 
 /*
@@ -488,48 +504,21 @@ var do_file = (function() {
 	xlf.addEventListener('change', handleFile, false);
 })();
 
-(function() {
-	var sfont = document.getElementById('sfont');
-	if(!sfont.addEventListener) return;
-	function handleFile(e) { getFont(); }
-	sfont.addEventListener('change', handleFile, false);
-})();
+
 
 //document.getElementById('sfont').value = "";
 document.getElementById('xlf').value = ""; 
 
-var fval = "";
-document.getElementById('sfont').value = fval
-changeFont("SUN7_7_810");
+function optChangeFont() {
+	fval = document.getElementById('selFont').value;
+	getFont(fval);
+}
 
-
-function getFont() {
-	fval = document.getElementById('sfont').value;
+function getFont(fval) {
 	console.log('getFont',fval)
-	//document.documentElement.style.setProperty('--sun-font', fval);
 	changeFont(fval)
 }
 
-/*
-function getFont() {
-	fval = document.getElementById('sfont').value;
-	console.log('getFont',fval)
-	//document.documentElement.style.setProperty('--sun-font', fval);
-	changeFont(fval)
-}
-
-function changeFont(f) {
-	console.log(f)
-	try {
-		fval ='"'+f+'"';
-		console.log('changefont',fval);
-		document.documentElement.style.setProperty('--sun-font', fval);
-	} catch {
-		alert("Font not found", fval);
-	}
-	document.getElementById('sfont').value = f;
-}
-*/
 
 //https://stackoverflow.com/questions/11355147/font-face-changing-via-javascript
 function fface(f) {
@@ -558,8 +547,24 @@ function changeFont(f) {
 
 	console.log(fStyle.innerHTML)
 	document.documentElement.style.setProperty('--sun-font', f);
-	document.getElementById('sfont').value = f;
+	
 }
+
+function replaceAll(string, search, replace) {
+  return string.split(search).join(replace);
+}
+
+function dnldCSV() {
+	var name = csvData.substring(0, csvData.indexOf(".csv") + 4);
+	var str = csvData.substring(csvData.indexOf("\n") + 1);
+	var csvContent = replaceAll(str, '|', ',')
+	var link = window.document.createElement("a");
+	link.setAttribute("href", "data:text/csv;charset=utf-8,%EF%BB%BF" + encodeURI(csvContent));
+	link.setAttribute("download", name);
+	link.click(); 
+
+}
+
 
 function setSrch(e) {
 	srchType = document.querySelector('input[name = wsrch]:checked').value
