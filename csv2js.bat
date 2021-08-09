@@ -7,8 +7,8 @@ echo Create mfxxx.csv for madefrom tools
 
 
 
-set xrefin=xref921_722_802.csv
-set outfile=mf921_722_802.csv
+set xrefin=xref921_8_5.1_EN.csv
+set outfile=mf921_8_5.1_EN.csv
 
 cmd /c python csv2js.py %xrefin%
 
