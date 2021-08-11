@@ -98,19 +98,19 @@
 ,Agur,Pro 30:1,e6c8,e000,e17c,e270,e11f
 ,Ahab,Mic 6:16,e60d,e000,e01a,e300,e24b
 ,Aharhel,1 Chron 4:8,e722,e000,e232
-,Ahasbai,2 Sam 23:34,e7f2
+,Ahasbai,2 Sam 23:34,e7f2,e000,e03f,e256,e211
 ,Ahasuerus,Esth 1:1,e48f,e000,e24e
 ,Ahava,Ezra 8:15,e975,e171,e071,e11f,e30b,e198,e300
 ,Ahaz,Matt 1:9,ea61,e000,e071,e17c,e096
 ,Ahaziah,2 Kgs 1:2,e614,e000,e27d,e238
-,Ahban,1 Chron 2:29,e754
+,Ahban,1 Chron 2:29,e754,e000,e19b,e062
 ,Ahi,1 Chr 5:15,e627,e000
 ,Ahiam,1 Chron 11:35,e7fd,e000,e120,e171
 ,Ahian,1 Chron 7:19,e757,e000,e19b
 ,Ahiezer,Num 1:12,e2ab,e000,e24b,e313
 ,Ahihud,Num 34:27,e3e1,e000,e16a,e318,e19b
 ,Ahijah,Neh 10:26 1 Kings 4:3 1 Chron 8:4,e7e5,e000,e11f,e251
-,Ahikam,2 Kgs 22:12,e689
+,Ahikam,2 Kgs 22:12,e689,e000,e211,e315,e313,e11f,e19b
 ,Ahilud,1 Kings 4:3,e7e6,e000,e211,e231
 ,Ahimaaz,1 Kings 4:15,e7e7,e000,e211,e204
 ,Ahiman,Num 13:22,e2ac,e000,e19b,e071
@@ -124,8 +124,8 @@
 ,Ahisamak,Exod 31:6,e0bb,e000,e171,e153
 ,Ahishahar,1 Chron 7:10,e758,e000,e15f,e313
 ,Ahishar,1 Kgs 4:6,e960,e000,e256,e03f
-,Ahithophel,2 Sam 16:15,e7f3
-,Ahitub,1 Sam 14:3,e7dd
+,Ahithophel,2 Sam 16:15,e7f3,e000,e17c,e062,e211
+,Ahitub,1 Sam 14:3,e7dd,e000,e096,e211
 ,Ahlab,Judg 1:31,e56c,e306,e244,e153
 ,Ahlai,1 Chron 2:31,e759,e000,e03f,e316,e207
 ,Ahumai,1 Chron 4:2,e723,e000,e247,e314
@@ -141,7 +141,7 @@
 ,Akbor,Gen 36:38,e0ed,e000,e19b,e283,e282
 ,Akkad,Gen 10:10,edab,e25f,e198,e171,e300
 ,Akko,Judg 1:31,e56d,e300,e153
-,Akkub,1 Chron 3:24,e725
+,Akkub,1 Chron 3:24,e725,e000,e314,e313
 ,Akkum,1 Chron 9:17,e932,e000,e327,e24e
 ,Akrabbim,Num 34:4,e3d7,e24e,e153
 ,Aksah,Josh 15:16,e4d1,e008,e253,e311
@@ -208,7 +208,7 @@
 ,Ananiah,Neh 3:23,e883,e000,e299,e166
 ,Ananias,Acts 23:2,eb65,e000,e11f,e318,e028,e203
 ,Anath,Judg 5:6,e56e,e000,e03f
-,Anathoth_man,1 Chron 7:8,e75b
+,Anathoth_man,1 Chron 7:8,e75b,e000,e231,e03f
 ,Anathoth_village,Josh 21:18,e4f8,e03f,e203,e198,e171,e300
 ,ancestor,,ec80,e211,e325,e16a,e000,e01a
 ,and,,e11c,e105
@@ -260,9 +260,9 @@
 ,Areopagus,Acts 17:19,ec35,e318,e11f,e19b,e306
 ,Aretas,2 Cor 11:32,eca6,e000,e120,e283,e282
 ,Argob_land,Deut 3:4,e495,e102,e247
-,Argob_man,2 Kgs 15:25,e71e
+,Argob_man,2 Kgs 15:25,e71e,e000,e198,e29b,e153
 ,argument,,e057,e03f,e17c,e11f,e01a
-,Arieh,2 Kgs 15:25,e6a3
+,Arieh,2 Kgs 15:25,e6a3,e000,e102,e19b
 ,Ariel,1 Chron 11:22,e7fe,e000,e198,e102
 ,Arimathea,Matt 27:57,e34d,e038,e171,e17c,e29a,e198,e300
 ,Arioch,Gen  14:1,edb6,e000,e203,e102
@@ -297,7 +297,7 @@
 ,ash,,ea90,e17c,e096,e312
 ,ashamed,,e05f,e17c,e03f,e29a
 ,Ashan,Josh 15:42,e4d7,e268,e301,e198,e171,e300
-,Asharelah,1 Chron 25:2,e87d
+,Asharelah,1 Chron 25:2,e87d,e000,e096,e08c,e211
 ,Ashbel,Gen 46:21,efae,e000,e03f,e105,e301
 ,Ashdod,Josh 11:22,e451,e071,e105,e198,e171,e300
 ,Asher_land,Josh 17:7,e606,e19b,e153
@@ -329,14 +329,14 @@
 ,Ataroth,Num 32:3,e3c6,e105,e028,eb36,e153
 ,Ataroth_Addar,Josh 16:5,e465,e028,e198,e171,e300
 ,Ataroth_Shophan,Num 32:35,e3c7,e313,e105,e153
-,Ater,Ezra 2:16,e828
+,Ater,Ezra 2:16,e828,e000,e17c,e256,e19b
 ,Athaiah,Neh 11:4,e885,e000,e292
 ,Athaliah_man,1 Chr 8:26,e663,e000,e16a
 ,Athaliah_woman,2 Kgs 11:1,e616,e008,e16a
 ,Atharim,Num 21:1,e3a5,e238,e03f,e17c,e11f,e23c
 ,Athens,Acts 17:15,eb07,e062,e17c,e198,e171,e300
 ,Athlai,Ezra 10:28,e924,e000
-,Attai,2 Chron 11:20,e750
+,Attai,2 Chron 11:20,e750,e000,e16a,e29b
 ,Attalia,Acts 14:25,eb31,e16a,e198,e171,e300
 ,authority,,e034,e028,e03f
 ,avenge,Rom 12:19,ed0c,e325,e071,e24b
@@ -346,15 +346,15 @@
 ,away,,e11e,e105
 ,Awel_Marduk,2 Kgs 25:27,e7cc,e000,e325,e318,e203
 ,Azaliah,2 Kgs 22:3,e68a,e000,e300
-,Azaniah,Neh 3:23,e886
+,Azaniah,Neh 3:23,e886,e000,e299,e29b
 ,Azarel,1 Chron 12:6,e7ff,e000,e01a,e096,e313
 ,Azariah,1 Chron 2:7,e972,e000,e268,e29e
-,Azariahu,2 Chron 21:2,e989
+,Azariahu,2 Chron 21:2,e989,e000,e299,e211,e19b
 ,Azaziah,1 chron 15:21,e763,e000,e211,e153
 ,Azekah,Josh 10:10,e42a,e23e,e198,e171,e300
 ,Azel,1 Chr 9:43,e5fb,e000,e274
 ,Azgad,Ezra 2:12,e829,e000,e120,e16a
-,Aziza,Ezra 10:27,e8d9
+,Aziza,Ezra 10:27,e8d9,e000,e251,e11f,e17c
 ,Azmaveth_man,1 Chr 9:42,e5fc
 ,Azmaveth_village,Ezra 2:29,e5c7,e120,e17c,e29a,e198,e171,e300
 ,Azmon,Num 34:5,e3da,e211,e071,e120,e24e,e153
@@ -368,7 +368,7 @@
 ,Baal,Rom 11:4,ebbf,e071,e03f,e17c,e105
 ,Baal_Gad,Josh 11:17,e44b,e203,e153
 ,Baal_Hanan,Gen 36:38,e169,e000,e211,e17c,e24e
-,Baal_Hazor,2 Sam 13:23,e7f5
+,Baal_Hazor,2 Sam 13:23,e7f5,e120,e105,e03f,e19b,e198,e171,e300
 ,Baal_man,1 Chr 9:36,e5fe,e000,e071,e03f,e17c,e105
 ,Baal_Meon,Num 32:38,e3c8,e171,e096,e29a,e153
 ,Baal_Shalishah,2 Kgs 24:42,e6a4,e28e,e153
@@ -401,7 +401,7 @@
 ,Barak,Heb 11:32,ed02,e000,e27d
 ,Barakel,Job 32:2,e862,e000,e381,e0a1,e247
 ,Bariah,1 Chron 3:22,e728,e000,e211,e17c,e313
-,Barkos,Ezra 2:53,e82b
+,Barkos,Ezra 2:53,e82b,e000,e211,e19b,e24e
 ,Barnabas,Acts 9:27,ec2f,e000,e17c,e25f,e29a
 ,Barsabbas,"Acts 15:22,27",eb69,e000,e247
 ,Bartholomew,Matt 10:3,e362,e000,e315,e247
@@ -413,7 +413,7 @@
 ,basket,,e19f,e19b,e307
 ,Bathsheba,1 Kgs 1:11,e4af,e008,e292
 ,Bazluth,Ezra 2:52,e82c,e000,e19b,e071,e15f
-,Bealiah,1 Chron 12:5,e800
+,Bealiah,1 Chron 12:5,e800,e000,e120,e211
 ,Bealoth,Josh 15:24,e4da,e19b,e03f,e166,e198,e171,e300
 ,bear,,ecef,e388,e102
 ,bear_with,,e227,e211,e24b
@@ -431,13 +431,13 @@
 ,Beer_Lahai_Roi,Gen 16:14,eef9,e238,e247,e302
 ,Beerah,1 Chr 5:6,e629,e000,e247,e302
 ,Beeri,Gen 26:34,edbe,e000,e302
-,Beeroth,Deut 10:6,e42b
+,Beeroth,Deut 10:6,e42b,e17c,e096,e305,e211,e198,e171,e300
 ,Beersheba,Gen 26:33,edbf,e03f,e08c,e198,e171,e300
 ,before,,e107,e325,e105
 ,beg,,e21e,e211,e03f,e01a,e29a
 ,behind,,e116,e105
 ,Beker,Gen 46:21,efb1,e000,e29f
-,Bekorath,1 Sam 9:1,e6cd
+,Bekorath,1 Sam 9:1,e6cd,e000,e231,e11f,e28c,e19b
 ,Bela_man,Gen 14:2,e1ed,e000,e028,e300
 ,Bela_village,Gen 14:8,edc1,e03f,e105,e198,e171,e300
 ,believe,,e06f,e062,e038
@@ -452,7 +452,7 @@
 ,Ben_Hanan,1 Chron 4:20,e708,e000,e19b,e096
 ,Ben_Hesed,1 Kgs 4:10,e967,e000
 ,Ben_Hinnom,Josh 15:8,e4db,e24e,e11f,eba7
-,Ben_Hur,1 Kgs 4:8,e968
+,Ben_Hur,1 Kgs 4:8,e968,e000,e29f,e19b
 ,Ben_oni,Gen 35:18,e1a4,e000
 ,Benaiah,1 Kgs 1:8,e4b0,e000,eb34
 ,Bene_Berak,Jos 19:45,e59c,e27c,e238,e198,e171,e300
@@ -482,7 +482,7 @@
 ,Beth_Arabah,Josh 15:6,e4b8,e211,e17c,e247
 ,Beth_Arbel,Hos 10:14,e6c4,e238,e071,e153
 ,Beth_Ashbea,1 Chron 4:21,e709,e17c,e284,e253,e153
-,Beth_Aven,Josh7:2,e546
+,Beth_Aven,Josh7:2,e546,e17c,e105,e19b,e198,e171,e300
 ,Beth_Baal_Meon,Josh 13:17,e547,e071,e03f,e17c,e198,e171,e300
 ,Beth_Barah,Judg 7:24,e571,e105,e318,e30b,e153
 ,Beth_Dagon,Josh 15:41,e4b9,e263,e198,e171,e300
@@ -498,13 +498,13 @@
 ,Beth_Jeshimoth,Num 33:49,e3dc,e211,e153,e247,e17c
 ,Beth_Leaphrah,Mic 1:10,e491,e19b,e29b,e153,e198,e171,e300
 ,Beth_Markaboth,Jos 19:5,e59f,e303,e298,e198,e171,e300
-,Beth_Meon,Jer 48:23,e900
+,Beth_Meon,Jer 48:23,e900,e120,e171,e198,e300
 ,Beth_Millo,Judg 9:6,e572,e274,e288
 ,Beth_Pazzez,Jos 19:21,e5a0,e211,e325,e318,e198,e171,e300
 ,Beth_Pelet,Josh 15:27,e4bb,e313,e198,e171,e300
 ,Beth_Peor,Deut 3:29,e423,e17c,e23f,e153
 ,Beth_Rapha,1 Chrn 4:12,e70a,e000,e198,e203,e29a
-,Beth_Shan,1 Sam 31:10,e4e7
+,Beth_Shan,1 Sam 31:10,e4e7,e17c,e096,e03f,e198,e171,e300
 ,Beth_Shemesh,Josh 21:16 Eze 30:17,e4f9,e15f,e171,e198,e300
 ,Beth_Shittah,Judg 7:22,e573,e096,e244,e153
 ,Beth_Zur_city,1Chron 2:45,e766,e268,e171,e198,e300
@@ -518,7 +518,7 @@
 ,Bethsaida,Matt 11:21,e340,e071,e279,e198,e171,e300
 ,Bethuel_city,I Chr 4:30,e1e0,e000,e247,e096,e198,e171,e300
 ,Bethuel_man,Gen 22:22,e1a0,e000,e247,e096
-,Betonim,Josh 13:26,e548
+,Betonim,Josh 13:26,e548,e19b,e279,e211,e198,e171,e300
 ,betray,,e195,e17c,e01a,e096,e305
 ,better,,e09e,e096,e198
 ,between,,e118,e105,e398
@@ -595,7 +595,7 @@
 ,build,,e17a,e171,e071,e11f
 ,building,,e0a1
 ,Bukki,Num 34:22,e3e3,e000
-,Bunah,1 Chron 2:25,e76a
+,Bunah,1 Chron 2:25,e76a,e000,e315,e198,e062,e211
 ,Bunni,Neh 10:15,e88e,e000,e096,e171,e071,e11f
 ,burden,,ec86,e071,e120,e305,e11f
 ,burn,,ecd0,e24e,e11f,e301
@@ -854,7 +854,7 @@
 ,Eldaah,Gen 25:4,e1e3,e000,e062,e028,e01a
 ,Eldad,Num 11:26,e2b4,e000,e24b
 ,elder,,eb62,e17c,e308,e318,e11f
-,Elead,1 Chron 7:21,e76d
+,Elead,1 Chron 7:21,e76d,e000,e211,e314,e03f
 ,Eleadah,1 Chron 7:20,e76e,e000,e120,e096,e238
 ,Elealeh,Num 32:3,e3ca,e028,e000,e01a
 ,Eleasah,1 Ezra 10:22 1 Chr 9:43,e603,e000,e171,e096,e29a
@@ -902,7 +902,7 @@
 ,Eltekeh,Josh 21:23,e4fa,e268,e105,e247,e198,e171,e300
 ,Eltekon,Josh i5:59,e4c3,e062,e106,e198,e171,e300
 ,Eltolad,Josh 15:30,e4c4,e19b,e11f,e198,e171,e300
-,Eluzai,1 Chron 12:5,e804
+,Eluzai,1 Chron 12:5,e804,e000,e211,e120,e24e,e17c
 ,Elzabad,1 Chr 26:7,e66b,e000,e280
 ,Elzaphan,Exod 6:22,e2f0,e000,e19b,e071,e105
 ,Emek_Keziz,Josh 18:21,e64f,e211,e24e,e198,e171,e300
@@ -934,7 +934,7 @@
 ,Epher,Gen 25:4,eefe,e000,e102
 ,Ephes_Dammim,1 Sam 17:1 1 Chron 11:13,e6ce,e17c,e071,e247,e198,e171,e300
 ,Ephesus,Acts 18:19,ec0c,e01a,e198,e171,e300
-,Ephlal,1 Chron 2:37,e770
+,Ephlal,1 Chron 2:37,e770,e000,e211,e24e,e251,e17c
 ,Ephod,Num 34:23,e475,e000,e211,e24b
 ,Ephraim_land,2 Chr 30:10,eba4,e211,e27e,e198,e171,e300
 ,Ephraim_man,Gen 41:52,eba3,e000,e211,e27e
@@ -956,10 +956,10 @@
 ,Eshkol_land,Num 13:23,e3cb,e19b,e27e,e23c,e153
 ,Eshkol_man,Gen 14:13,eddb,e000,e198,e27e
 ,Eshtaol,Josh 15:33,e4c9,e03f,e198,e171,e300
-,Eshtemoa_man,1 Chron 4:17,e711
+,Eshtemoa_man,1 Chron 4:17,e711,e000,e211,e299,e19b
 ,Eshtemoa_village,Josh 21:14,e4fc,e299,e171,e300
-,Eshtemoh,Josh 15:50,e4ca
-,Eshton,1 Chron 4:11,e712
+,Eshtemoh,Josh 15:50,e4ca,e17c,e096,e102,e19b,e198,e171,e300
+,Eshton,1 Chron 4:11,e712,e000,e300,e153,e211,e17c
 ,Esli,Luke 3:25,ec49,e000,e105
 ,Esther,Esth 2:7,e49f,e008,e071,e105
 ,Etam,Judg 15:11,e579,e120,e25c,e198,e171,e300
@@ -989,12 +989,12 @@
 ,eye,,e238
 ,Ezbai,1 Chron 11:37,e805,e000,e314,e17c,e105
 ,Ezbon,Gen 46:16,e1aa,e000,e19b,e238
-,Ezekiel,Eze 1:2,e998
+,Ezekiel,Eze 1:2,e998,e16a,e318,e238,e03f
 ,Ezem,Josh 21:17,e508,e0b2,e198,e171,e300
 ,Ezer,Gen 36:21,e1ab,e000,e11f,e313
 ,Ezion_Geber,Num 33:35,e3e9,e0b2,e062,e106,e198,e171,e300
 ,Ezra,Ezra 7:1,e4df,e000,e071,e15f
-,Ezri,1 Chron 27:26,e856
+,Ezri,1 Chron 27:26,e856,e000,e17c,e096,e313
 ,face,,e203
 ,Fair_Haven,Acts 27:8,ec18,e096,e265,e198,e171,e300
 ,faithful,,e219,e211,e062,e038
@@ -1065,12 +1065,12 @@
 ,Galatia,Acts 16:6,eb46,e31b,e153
 ,Galeed,Gen 31:47,efbc,e22a,e03f,e306
 ,Galilee,Josh 20:7,e337,e171,e038,e153
-,Gallim,1 Sam 25:44,e7ea
+,Gallim,1 Sam 25:44,e7ea,e108,e17c,e198,e171,e300
 ,Gallio,Acts 18:12,eb3b,e000,e274
 ,Gamaliel,Acts 5:34,eb4d,e000,e22a,e038
 ,Gamul,1 Chron  24:17,e7d3,e000,e071,e105,e096
 ,garden,,eddc,e315,e279,e19b,e153
-,Gareb,1 Chro 11:40,e806
+,Gareb,1 Chro 11:40,e806,e000,ed01
 ,Gatam,Gen 36:11,eff3,e000,e211,e11f
 ,gate,,e289,e288,e23e
 ,Gath,1 Sam 21:10,e461,e274,e27e,e198,e171,e300
@@ -1078,11 +1078,11 @@
 ,Gath_Rimmon,1 Chron 6:70 Josh 21:24,e4fe,e198,e171,e300
 ,gathered,,e108
 ,Gaza,Gen 10:19,eb7f,e071,e19b,e24e,e198,e171,e300
-,Gazez,1 Chron 2:46,e771
+,Gazez,1 Chron 2:46,e771,e000,e24e,e270,e17c
 ,Gazzam,Ezra 2:48,e835,e000,e120,e25c
 ,Geba,Josh 21:17,e4ff,e306,e313,e198,e171,e300
 ,Gebal,Josh 13:5,e549,e306,e153
-,Geber,1 Kgs 4:19,e96b
+,Geber,1 Kgs 4:19,e96b,e000,e19b,e16a,e211
 ,Gebim,Isa 10:31,e715,e247,e302,e153
 ,Gedaliah,Zeph 1:1,e52a,e000,e03f,e211
 ,Geder,Josh 12:13,e440,e313,e288,e198,e171,e300
@@ -1177,15 +1177,15 @@
 ,Gur,2 Kgs 9:27,e61a,e19b,e153
 ,Haahashtari,1 Chron 4:6,e6ec,e000,e298,e171
 ,Habaiah,Ezra 2:61,e837,e000,e23e,e105,e120
-,Habakkuk,Hab 1:1,e95f
-,Habazziniah,Jer 35:3,e905
+,Habakkuk,Hab 1:1,e95f,e000,e17c,e211,e105,e071
+,Habazziniah,Jer 35:3,e905,e000,e203,e300
 ,Habor,1 Chr 5:26,e62c,e29b,e30b
 ,Hadad,Gen 25:15,efa2,e000,e24e
 ,Hadadezer,1 Kgs 11:23,e5d1,e000,e270,e253
 ,Hadar,Gen 36:39,e1af,e000,e028,e282
 ,Hadashah,Josh 15:37,e50a,e308,e198,e171,e300
 ,Hadid,Ezra 2:33,e838,e198,e24e,e171,e300
-,Hadlai,2 Chron  28:12,e2f6,e000,e03f,e17c,e105
+,Hadlai,2 Chron  28:12,e2f6,e000,e120,e268,e11f,e29e
 ,Hadoram,Gen 10:27,ede4,e000,e211,e03f,e096
 ,Hadrak,Zec 9:1,e6c5,e203,e268,e198,e171,e300
 ,Haeleph,Josh 18:28,e650,e211,e102,e19b,e153
@@ -1200,7 +1200,7 @@
 ,hail,,ea13,e028,e03f,e203
 ,hail_storm,,ecdd,e268,e17c
 ,hair,,e208,e203
-,Hakaliah,Neh 1:1,e894
+,Hakaliah,Neh 1:1,e894,e000,e120,e11f,e313
 ,Hakilah,1 Sam 26:1,e6cf,e17c,e15f,e19b,e306
 ,Hakkatan,Ezra 8:12,e8dc,e000,e315,e198,e19b
 ,Hakkoz,1 Chron 24:10 1 Chron 4:8,e6ed,e000,e198,e27b
@@ -1213,7 +1213,7 @@
 ,Ham_man,Gen 6:10,ede5,e000,e299,e105
 ,Ham_village,Gen 14:5,ede6,e105,e198,e171,e300
 ,Haman,Esth 3:1,e4a0,e000,e120,e03f,e166
-,Hamath,Isa 10:9,e716
+,Hamath,Isa 10:9,e716,e19b,e288,e198,e171,e300
 ,Hamathites,Gen 10:18,ede7,e288
 ,Hammedatha,Esth 3:1,e47f,e000,e17c,e096,e11f
 ,Hammoleketh,1 Chron 7:18,e774,e008,e315,e105
@@ -1262,19 +1262,19 @@
 ,Hashabneiah,Neh 3:10,e89a,e000,e071,e01a,e318
 ,Hashbaddanah,Neh 8:4,e89b,e000,e096,e062
 ,Hashmonah,Num 33:29,e3df,e211,e120,e268,e11f,e153
-,Hashubah,1 Chron 3:20,e6f1
+,Hashubah,1 Chron 3:20,e6f1,e000,e198,e211,e17c
 ,Hashum,Ezra 2:19,e843,e000,e313,e309
 ,Hassenaah,Neh 3:3,e89c,e000,e17c,e126
 ,Hassenuah,1 Chr 9:7,e5e1,e000,e03f,e17c,e096
 ,Hasshub,1 Chr 9:14,e5e2,e000,e0b7
-,Hassophereth,Ezra 2:55 Neh 7:57,e844
+,Hassophereth,Ezra 2:55 Neh 7:57,e844,e000,e19b,e11f,e29c
 ,Hasupha,Ezra 2:43 Ezra 2:43,e845,e000,e211,e318,e312
 ,hate,,e01b,e01a,e17c
 ,Hathak,Esth 4:5,e4a1,e000,e03f,e29a
 ,Hathath,1 Chron 4:13,e6f2,e000,e17c,e120
 ,Hatipha,Ezra 2:54,e846,e071,e105,e166
 ,Hatita,Ezra 2:42,e847,e000,e268,e302
-,Hattil,Ezra 2:57,e848
+,Hattil,Ezra 2:57,e848,e000,e120,e03f,e300
 ,Hattush,1 Chron 3:22,e6f3,e000,e23e,e318,e17c,e096
 ,Hauran,Ezek 47:16,e8f3,e211,e17c,e284,e153
 ,have,,e083,e071
@@ -1324,7 +1324,7 @@
 ,helper,,e150,e11f,e313
 ,Heman,1 Kgs 4:31,e1b2,e000,e0f3,e17c
 ,Hemdan,Gen 36:26,eff4,e000,e29a
-,Hen,Zech 6:14,e8f0
+,Hen,Zech 6:14,e8f0,e000,e105,e11f,e17c,e096
 ,Hena,2 Kgs 18:34,e61c,e207,e29a,e198,e171,e300
 ,Henadad,Ezra 3:9,e849,e000,e096
 ,Hepher,Num 26:32,e3ad,e000,e247,e302
@@ -1363,7 +1363,7 @@
 ,Hizki,1 Chr 8:17,e670,e000,e166,e120
 ,Hobab,Num 10:29,e1fd,e000,e251,e08c
 ,Hobah,Gen 14:15,edef,e17c,e238,e198,e171,e300
-,Hod,1 Chron 7:37,e7b7
+,Hod,1 Chron 7:37,e7b7,e000,e120,e19b
 ,Hodaviah,1 Chr 9:7,e5e5,e000,e071,e315
 ,Hodesh,1 Chr 8:9,e671,e008,e308,e272
 ,Hodiah,1 Chron 4:19,e6f7,e000,e17c,e23f,e03f
@@ -1376,10 +1376,10 @@
 ,honor,,e031,e028,e282
 ,hope,,e213,e211,e01a,e29a
 ,Hophni,1 Sam 1:3,e4ea,e000,e268,e17c,e071
-,Hophra,Jer 44:30,e907
+,Hophra,Jer 44:30,e907,e000,e211,e17c,e096,e198
 ,Hor_Haggidgad,Num 33:32,e3ec,e24e,e302,e153
 ,Horam,Josh 10:33,e434,e000,e306,e03f,e08c
-,Horesh,1 Sam 22:5 1 Sam 23:15,e7eb
+,Horesh,1 Sam 22:5 1 Sam 23:15,e7eb,e17c,e198,e153,e244
 ,Hori,Gen 36:22,eff5,e000,e302,e306
 ,Horites,Gen 14:6,edf1,e302,e306
 ,Hormah,Num 14:45,e2f8,e24e,e11f,e153
@@ -1431,7 +1431,7 @@
 ,Iconium,Acts 13:51,ec1f,e381,e198,e171,e300
 ,Idalah,Josh 19:14,e582,e299,e102,e198
 ,Idbash,1 Chron 4:3,e6fa,e000,e03f,e30d
-,Iddo,1 Kgs 4:14 Ez 10:43,e96d
+,Iddo,1 Kgs 4:14 Ez 10:43,e96d,e000,e120,e17c,e096
 ,idol,,e35d,e17c,e03f,e105
 ,Iezer,Num 26:30,e3b1,e000,e313,e03f
 ,if,,e111,e313,e105
@@ -1478,7 +1478,7 @@
 ,Ishi,1 Chr 5:24,e62f,e000,e238,e203
 ,Ishiah,1 Chron 7:3 Ezra 10:31,e7be,e000,e17c,e203
 ,Ishmael,Gen 17:18,e1b5,e000,e17c,e247,e153
-,Ishmaiah,1 chron 12:4,e80b
+,Ishmaiah,1 chron 12:4,e80b,e000,e299,e096
 ,Ishmerai,1 Chr 8:18,e674,e000
 ,Ishpah,1 Chr 8:16,e675,e000,e211,e17c
 ,Ishpan,1 Chr 8:22,e676,e000,e24e,e28d
@@ -1492,7 +1492,7 @@
 ,Italy,Acts 18:2,ec90,e11f,e105,e153
 ,Ithai,1 Chron 11:31,e80c,e000,e24b,e166
 ,Ithamar,Exod 28:1,e2e1,e000,e0f3,e244
-,Ithiel,Neh 11:7,e8a0
+,Ithiel,Neh 11:7,e8a0,e000,e24b,e314
 ,Ithlah,Josh 19:40,e585,e071,e315,e198,e171,e300
 ,Ithmah,1 Chron 11:46,e80d,e000,e17c,e325,e16a
 ,Ithnan,Josh 15:23,e511,e251,e16a,e198,e171,e300
@@ -1572,7 +1572,7 @@
 ,Jattir,Josh 21:14,e505,e11f,e313,e198,e171,e300
 ,Javan,Gen 10:2,e1ba,e000,e17c,e096,e305
 ,Jazer,Num 21:32,e38a,e313,e153
-,Jaziz,1 Chron 27:30,e859
+,Jaziz,1 Chron 27:30,e859,e000,e17c,e120,e398
 ,jealous_God,,e973,e211,e01a,e29a,e03f,e096
 ,Jeatherai,1 Chr 6:21,e67c,e000,e17c,e071,e238
 ,Jeberekiah,Isa 6:12,e6c6,e000,e11f,e319
@@ -1582,7 +1582,7 @@
 ,Jediael,1 Chr 26:2,e67d,e000,e17c
 ,Jedidah,2 Kings 22:1,e8c2,e008,e062
 ,Jegar_Sahadutha,Gen 31:47,e1e6,e22a,e03f,e300,e306
-,Jehallelel,1 Chron 4:16,e6db
+,Jehallelel,1 Chron 4:16,e6db,e000,e03f,e096,e211
 ,Jehdeiah,1 Chron  24:20,e7db,e000,e203
 ,Jehiah,1 Chron 15:24 1 Chron 15:18 2 Chron 29:14,e7c4,e000,e29a
 ,Jehieli,1 Chr 26:22,e67e,e000,e211,e28d
@@ -1599,7 +1599,7 @@
 ,Jehozadak,Zech 6:11 Neh 12:26 Neh,e47e,e000,e071,e11f,e096,e08c
 ,Jehu,Hos 1:4,e597,e000,e211,e29a
 ,Jehud,Josh 19:45,e587,e03f,e096,e198,e171,e300
-,Jehudi,Jer 36:14,e90a
+,Jehudi,Jer 36:14,e90a,e000,e279,e319,e03f
 ,Jehukal,Jer 37:3,e90b,e000,e071,e120,e24e
 ,Jekameam,1 Chron 23:19,e7c5,e000,e171
 ,Jekoliah,2 Kgs 15:2,e6b0,e008,e096,e120,e24e
@@ -1635,9 +1635,9 @@
 ,Jetur,Gen 25:15,eedc,e000,e288,e23e
 ,Jeuel,1 Chr 8:29 1 Chr 9:6,e5ec,e000,e105,e071
 ,Jeush,Gen 36:5,e1bb,e000,e17c,e108
-,Jeuz,1 Chron 8:10,e935
+,Jeuz,1 Chron 8:10,e935,e000,e071,e105,e300
 ,Jew,Esth 2:5 Titus 1:14,e0f9,e11f,e153,e22a
-,Jezaniah,Jer 42:1,e90c
+,Jezaniah,Jer 42:1,e90c,e000,e299,e17c,e300
 ,Jezebel,1 Kgs 16:31,eca2,e008,e028,e17c,e096
 ,Jezer,Gen 46:24,e1bc,e000,e203,e08c
 ,Jeziel,1 Chron 12:3,e815,e000,e28c,e247
@@ -1687,7 +1687,7 @@
 ,Joses,Matt 13:55,e369,e000,e315,e198
 ,Joshah,1 Chron 4:34,e6e1,e000,e17c,e203
 ,Joshaviah,1 Chron 11:46,e818,e000,e096,e08c,e29a
-,Joshbekashah,1 Chron 25:4,e85a
+,Joshbekashah,1 Chron 25:4,e85a,e000,e17c,e106,e300
 ,Joshibiah,1 Chron 4:35,e6e2,e000,e096,e29a
 ,Joshua_man,Ex 17:9,eb03,e000,e313
 ,Josiah,2 Kgs 21:24,ea65,e000,e028,e19b,e11f
@@ -1714,7 +1714,7 @@
 ,Kabul,Josh 19:27,e588,e171,e25f,e198,e300
 ,Kabzeel,Josh 15:21,e518,e108,e198,e171,e300
 ,Kadesh,Gen 14:7 Num 34:4,edf9,e17c,e244,e207,e198,e171,e300
-,Kadmiel,Ezra 2:40,e84d
+,Kadmiel,Ezra 2:40,e84d,e000,e325,e105
 ,Kadmonites,Gen 15:19,efd1,e323
 ,Kain,Josh 15:57,e519,e071,e198,e171,e300
 ,Kalkol,1 Kgs 4:31,e96e,e000,e03f,e105
@@ -1740,14 +1740,14 @@
 ,Kehelathah,Num 33:22,e3f1,e126,e153
 ,Keilah_man,1 Chron 4:19,e6e4,e000,e171,e288
 ,Keilah_village,Josh 15:44,e51b,e238,e282,e198,e171,e300
-,Kelal,Ezra 10:30,e8e3
+,Kelal,Ezra 10:30,e8e3,e000,e211,e251,e300
 ,Kelita,Neh 10:10,e8a7,e000,e17c,e096,e11f
 ,Kelub,1 Chron 4:11,e6e5,e000,e19b,e307
 ,Keluhi,Ezra 10:35,e8e4,e000,e03f,e105
 ,Kemuel,Gen 22:21,efd3,e000,e108
 ,Kenaanah,1 Kgs 22:11,e69f,e000,e318,e325
 ,Kenani,Neh 9:4,e8a8,e000,e31b,e15f
-,Kenaniah,1 Chron 26:29,e938
+,Kenaniah,1 Chron 26:29,e938,e000,e120,e300
 ,Kenath,Num 32:42,e3ce,e19b,e244,e198,e171,e300
 ,Kenaz,Gen 36:11,efd4,e000,e096,e071,e238
 ,Kenites,Gen 15:19,efd5,e096,e071,e238
@@ -1770,7 +1770,7 @@
 ,Kidron_Valley,John 18:1,eba6,e272,e284,eba7
 ,Kilion,Ruth 1:5,e41f,e000,e207,e29a
 ,kill,,e141,e24e,e11f
-,Kilmad,Eze 27:23,e921
+,Kilmad,Eze 27:23,e921,e318,e029,e300,e198,e171
 ,Kimham,2 Sam 19:37,e7f8,e000,e203,e17c,e284
 ,Kinah,Josh 15:22,e530,e211,e207,e247,e198,e171,e300
 ,kind_nice,,e01c,e01a,e096
@@ -1847,7 +1847,7 @@
 ,leg,,ebe0,e11f
 ,Legion,Mark 5:9,e366,e000,e211,e198
 ,Lehabites,Gen 10:13,e1c1,e301
-,Lehi,Judg 15:9,e562
+,Lehi,Judg 15:9,e562,e0b2,e17c,e198,e171,e300
 ,Lekah,1 Chron 4:21,e6ea,e000,e381,e166
 ,Lemuel,Pro 31:1,e6ca,e000,e211,e318
 ,length,,ecc2,e318,e398
@@ -1894,7 +1894,7 @@
 ,Lysias,Acts 24:22,ec37,e000,e11f,e283,e318
 ,Lystra,Acts 16:2,eb44,e029,e198,e171,e300
 ,Maadai,Ezra 10:34,e8e5,e000,e31b,e253
-,Maai,Neh 12:36,e8ab
+,Maai,Neh 12:36,e8ab,e000,e17c,e300,e171
 ,Maakah_man,1 Chr 11:43,efda,e000,e211,e105,e071
 ,Maakah_woman,2 Chr 11:21,e2d8,e008,e211,e105,e071
 ,Maakath_land,Josh 13:13,e483,e24e,e153
@@ -1913,7 +1913,7 @@
 ,Madmenah,Isa 19:31,e717,e17c,e096,e309,e153
 ,Madon,Josh 11:1,e444,e305,e198,e171,e300
 ,Magadan,Matt 15:39,ea30,e30f,e120,e153
-,Magbish,Ezra 2:30,e851
+,Magbish,Ezra 2:30,e851,e108,e17c,e198,e171,e300
 ,Magdiel,Gen 36:43,effc,e000,e211,e029
 ,magician,,ec8a,e000,e238,e17c,e096,e305
 ,Magog_land,Ezek 38:2,ecf9,e315,e198,e153
@@ -1932,14 +1932,14 @@
 ,Mahol,1 Kgs 4:31,e96f,e000,e203,e256,e211
 ,Mahseiah,Jer 32:12,e90d,e000,e288
 ,Makaz,1 Kgs 4:9,e970,e232,e198,e171,e300
-,Makbannai,1 Chron 12:13,e81a
+,Makbannai,1 Chron 12:13,e81a,e000,e120,e253,e284,e272
 ,Makbenah,1 Chron 2:49,e7a0,e000,e071,e029
 ,make,,e076,e071,e11f
 ,Makheloth,Num 33:26,e3f5,e211,e126,e153
 ,Maki,Num 13:15,e2a3,e000,e16a,e19b
 ,Makir,Josh 13:31,e46f,e000,e325,e029
 ,Makkedah,Josh 10:28,e414,e198,e171,e300
-,Maknadebai,Ezra 10:40,e8e6
+,Maknadebai,Ezra 10:40,e8e6,e000,e198,e17c,e25f,e300
 ,Malachi,Mal 1:1,e7ef,e000
 ,Malchus,John 18:10,ebb7,e000,e028,e153
 ,Malkam,1 Chron 8:9,e93a,e000,e19b,e106
@@ -1964,7 +1964,7 @@
 ,Maon_village,Judg 10:12,e521,e17c,e08c,e198,e171,e300
 ,Marah,Exod 15:23,e0cd,e17c,e096,e03f,e253,e247
 ,Maralah,Josh 19:10,e58c,e306,e253,e198,e171,e300
-,Marduk_Baladan,2 Kgs 20:12,e6b4
+,Marduk_Baladan,2 Kgs 20:12,e6b4,e000,e17c,e096,e106,e268
 ,Mareshah_man,1 Chr 2:42,e979,e000,e19b,e28c
 ,Mareshah_village,Josh 15:44,e493,e28c,e198,e171,e300
 ,Mark,Acts 15:37,e371,e000,e22a,e24e,e11f
@@ -2006,7 +2006,7 @@
 ,Mehir,1 Chron 4:11,e729,e000,e17c,e325,e029
 ,Mehujael,Gen 4:18,eea4,e000,e17c,e096,e27c,e238
 ,Mekonah,Neh 11:28,e8ae,e315,e313,e11f,e198,e171,e300
-,Melatiah,Neh 3:7,e8af
+,Melatiah,Neh 3:7,e8af,e000,e096,e25f,e19b
 ,Melchi,Luke 3:24,ec45,e000,e166,e028
 ,Melchizedek,Gen 14:18,ed05,e000,e028,e08c
 ,Melea,Luke 3:31,ec6a,e000,e11f,e01a
@@ -2019,11 +2019,11 @@
 ,Mephaath,Josh 21:37,e4e1,e315,e198,e171,e300
 ,Mephibosheth,2 Sam 9:6 1chron 9:40,e527,e000,e204,e03f
 ,Merab,1 Sam 18:17,e7ec,e008,e198
-,Meraiah,Neh 12:12,e8b0
+,Meraiah,Neh 12:12,e8b0,e000,e17c,e31e,e300
 ,Meraioth,1 Chr 9:11,e637,e000,e17c,e03f,e08c
 ,Merari,Gen 46:11,efdc,e000,e17c,e096,e03f,e253
 ,mercy,,e01d,e01a,e17c,e096,e11f
-,Mered,1 Chron 4:17,e72b
+,Mered,1 Chron 4:17,e72b,e000,e120
 ,Meremoth,Neh 3:4,e8b1,e000,e313,e315
 ,Meribah,Exod 17:7,e2c7,e204,e153
 ,Merom,Jos 11:4 Josh 11:5,e58e,e288,e153
@@ -2035,7 +2035,7 @@
 ,Meshech_man,Gen 10:2,eea6,e000,e323,e11f
 ,Meshezabel,Neh 10:21,e8b2,e000,e28c
 ,Meshillemith,1 Chr 9:12,e638,e000,e096
-,Meshobab,1 Chron 4:34,e72c
+,Meshobab,1 Chron 4:34,e72c,e000,e31e,e29a,e17c
 ,Meshullam,1 Chr 9:7,e639,e000,e096
 ,Meshullemeth,2 Kgs 21:19,e6b6,e008,e071,e105,e325
 ,Mesopotamia,Gen 24:10 Acts 2:9,eb72,e30b,e153
@@ -2074,13 +2074,13 @@
 ,Minni,Jer 51:27,e910,e153,e29b
 ,Minnith,Judg 11:33,e566,e325,e105,e08c,e198,e171,e300
 ,miracle,,e095,e17c,e120,e24e,e08c
-,Miriam_man,1 Chron 4:17,e72d
+,Miriam_man,1 Chron 4:17,e72d,e000,e120,e247,e30b,e284
 ,Miriam_woman,Num 12:1,e385,e008,e120,e247
 ,Mirmah,1 Chron 8:10,e93f,e000,e11f,e17c,e096,e305
 ,mirror,,ebe6,e105,e238,e166
 ,Mishael,Lev 10:4,e2dc,e000,e11f,e03f
 ,Mishal,Josh 19:26 Josh 19:26,e4e2,e22a,e198,e171,e300
-,Misham,1 Chron 8:12,e940
+,Misham,1 Chron 8:12,e940,e000,e211,e071,e238,e17c,e300
 ,Mishma,Gen 25:14,e1c6,e000,e318,e325,e03f,e08c
 ,Mishmannah,1 Chron 12:10,e81b,e000,e03f,e253
 ,Mispar,Ezra 2:2,e8d1,e000,e29c
@@ -2155,7 +2155,7 @@
 ,Naarai,1 Chron 11:37 2 Sam 23:35 2 Sam 23:35,e81c,e000,e11f,e01a,e08c
 ,Nabal,1 Sam 25:3,e7ee,e000,e17c,e062,e106
 ,Naboth,1 Kgs 21:1,e695,e000,e315,e153,e198
-,Nacon,2 Sam 6:6,e916
+,Nacon,2 Sam 6:6,e916,e000,e325,e105,e08c,e300
 ,Nadab,Exod 6:23,e2e3,e000,e28b,e029
 ,Naggai,Luke 3:25,ec4a,e000,e096
 ,Nahalal,Josh 21:35 Judg 1:30,e4e3,e211,e120,ea33,e198,e171,e300
@@ -2174,7 +2174,7 @@
 ,name,,e04f,e03f,e166
 ,Naomi,Ruth 1:2,e421,e008,e203
 ,Naphish,Gen 25:15,eee9,e000,e03f,e312
-,Naphoth_Dor,1 Kgs 4:11,e971
+,Naphoth_Dor,1 Kgs 4:11,e971,e01a,e19b,e198,e171,e300
 ,Naphtali_land,1 Kgs 15:20,e5d6,e282,e153
 ,Naphtali_man,Gen 30:8,ea40,e000,e283
 ,Naphtuh,Gen 10:13,eeac,e000,e17c,e23f
@@ -2201,11 +2201,11 @@
 ,need,,e07f,e071,e211
 ,needle,,e078,e071,e11f
 ,Negev,Gen 12:9,eeae,e000,e17c,e247,e323,e153
-,Nehemiah,Neh 1:1,e98a
+,Nehemiah,Neh 1:1,e98a,e000,e274,e27e,e03f,e253
 ,Nehushta,2 Kgs 24:8,e6b9,e008,e268,eb28
 ,Neiel,Jos 19:13,e591,e03f,e096,e0a1,e198,e171,e300
 ,neighbor,,e173,e171,e300
-,Nekoda,Ezra 2:48,e8d3
+,Nekoda,Ezra 2:48,e8d3,e000,ed01
 ,Nemuel,Num 26:9,e396,e000,e24e,e268,e11f
 ,Nepheg,Exod 6:21,e2e4,e000,eb24
 ,Nephtoah,Josh 15:9,e539,e211,e17c,e23f,e153
@@ -2220,7 +2220,7 @@
 ,Netaim,1 Chron 4:23,e732,e244,e153
 ,Nethanel,Num 1:8,e2ff,e000,e318,e11f,e120,e105,e03f
 ,Nethaniah,2 Chron 17:8,e785,e000,e27b,eb36
-,Netophah,1 Chron 2:54,e7a4
+,Netophah,1 Chron 2:54,e7a4,e319,e198,e171,e300
 ,new,,e308
 ,Neziah,Ezra 2:54,e8d4,e000,e251
 ,Nezib,Josh 15:43,e53a,e120,e24e,e30f,e198,e171,e300
@@ -2263,8 +2263,8 @@
 ,ocean,,e14d,e120,e247
 ,offering,,e03a,e038,e029
 ,Og,Ps 135:11,e39d,e000,e17c,e300,e203
-,Ohad,Gen 46:10,efe1,e000,e120,e03f
-,Ohel,1 Chron 3:20,e733
+,Ohad,Gen 46:10,efe1,e000,e120,e03f,e211
+,Ohel,1 Chron 3:20,e733,e000,e19b,e381,e0a1
 ,Oholah,Ezek 23:4,e8f8,e008,e318,e381,e0a1
 ,Oholiab,Exod 31:6,e0cf,e000,eb34
 ,Oholibah,Ezek 23:4,e8f9,e008,e03f,e096,e381,e0a1
@@ -2306,11 +2306,11 @@
 ,Ozni,Num 26:16,e39e,e000,e19b,e299
 ,Pachereth_Hazzebaim,Ezra 2:57,e8ca,e000,e30e,e102
 ,Paddan_Aram,Gen  25:20,eeea,e313,e120,e153
-,Padon,Ezra 2:44,e8d5
+,Padon,Ezra 2:44,e8d5,e000,e23f,e311
 ,Pagiel,Num 1:13,e2a8,e000,e315,e105
 ,Pahath_Moab,Ezra 2:6,e8d0,e000,e19b,e318,e11f
 ,pain,,e24f,e24e,e29a
-,Palal,Neh 3:25,e86b
+,Palal,Neh 3:25,e86b,e000,e238,e105,e318,e17c,e300
 ,Pallu,Exod 6:14,e1cc,e000,e120,e03f,e096
 ,Palti,Num 13:9,e1f0,e000,e272
 ,Paltiel,Num 34:26,e3fb,e000,e17c,e211,e313
@@ -2325,7 +2325,7 @@
 ,part,,e29b
 ,Parthia,Acts 2:9,eb0a,e253,e03f,e153
 ,Paruah,1 Kgs 4:17,e5aa,e000,e211,e315,e198
-,Parvaim,2 Chron 3:6,e865
+,Parvaim,2 Chron 3:6,e865,e19b,e029,e153,e17c,e300
 ,Pasak,1 Chron 7:33,e7a7,e000,e279
 ,Paseah,1 Chron 4:12,e726,e000,e11f,e381,e17c
 ,Pashhur,1 Chr 9:41,e63e,e000,e17c,e284,e302
@@ -2414,7 +2414,7 @@
 ,pitch,Gen 6:14,eeb9,e247,e17c,e096,e153
 ,Pithom,Exod 1:11,e0db,e288,e315,e198,e171,e300
 ,Pithon,1 Chr 9:41,e63f,e000,e31e,e03f
-,Plain_of_Dura,Dan 3:1,e853
+,Plain_of_Dura,Dan 3:1,e853,e313,e31b,e153
 ,plan,,e06b,e062,e29c
 ,plate,,e386,e120,e384
 ,plow,Deut  22:10,ec72,e24e,e153
@@ -2504,7 +2504,7 @@
 ,red,,e287,e071,e247,e284
 ,redeem,Luke 2:38,e02c,e029,e17c,e25f
 ,reed,,ea26,e120,ea33
-,Reelaiah,Neh 7:7 Neh 7:7 Ezra 2:2,e8cb
+,Reelaiah,Neh 7:7 Neh 7:7 Ezra 2:2,e8cb,e000,e211,e27d,e120
 ,Regem,1 Chron 2:47,e78c,e000,e305,e120
 ,Regem_Melek,Zech 7:2,e5c8,e000,e268,e11f
 ,Rehabiah,1 Chron 26:25,e945,e000,e31c,e305
@@ -2676,7 +2676,7 @@
 ,Shalmaneser,Hos 10:14 2 Kgs 18:9,e623,e000,e30e,e096
 ,Shama,1 Chron 11:44,e820,e000,e166,e299
 ,shame,,e065,e062,e17c,e096,e166
-,Shamgar,Judg 5:20,e5b5
+,Shamgar,Judg 5:20,e5b5,e000,e19b,e062,e17c,e11f
 ,Shamir_man,,e47d,e000,e27b
 ,Shamir_village,Judg 10:2,e524,e27b,e198,e171,e300
 ,Shammah,Gen 36:13,efa0,e000,e23c
@@ -2725,11 +2725,11 @@
 ,Shema_man,1 Chr 2:43,e555,e000,e08c,e211
 ,Shema_village,Josh 15:26,e541,e03f,e08c,e198,e171,e300
 ,Shemaah,1 chron 12:3,e821,e000
-,Shemaiah,2 Chron 11:2,e786
+,Shemaiah,2 Chron 11:2,e786,e000,e299,e08c,e300
 ,Shemariah,2 Chron 11:19,e787,e000,e120,e03f,e30d
 ,Shemeber,Gen 14:2,eecb,e000,e25c
-,Shemed,1 Chron 8:12,e94e
-,Shemer,1 Kgs 16:24,e697
+,Shemed,1 Chron 8:12,e94e,e000,e24e,e300
+,Shemer,1 Kgs 16:24,e697,e000,e211,e120
 ,Shemida,Num 26:32,e39f,e000,e315,e105,e153
 ,Shemiramoth,1 Chron 15:18,e798,e000,e313,e315,e268,e105
 ,Shemuel,Num 34:20,e411,e000,e17c,e11f,e299
@@ -2751,7 +2751,7 @@
 ,shield,,e388
 ,Shihor,Josh 13:2,e54b,e03f,e17c,e247,e198,e171,e300
 ,Shihor_Libnath,Jos 19:26,e594,e284,e272,e30b
-,Shikkeron,Josh 15:11,e542
+,Shikkeron,Josh 15:11,e542,e24e,e244,e19b,e198,e171,e300
 ,Shilhi,1 Kgs 22:42,e6a0,e000,e388
 ,Shilhim,Josh 19:6 Josh 15:32,e54c,eb36,e03f,e105,e198,e171,e300
 ,Shillem,Gen46:24,edd5,e000,e325,e071,e24b
@@ -2761,12 +2761,12 @@
 ,Shimeath,2 kgs 12:21,e6be,e008,e299
 ,Shimei,2 Sam 20:21 Num 3:18,e2cb,e000,e03f,e284
 ,Shimon,1 Chron 4:20,e73c,e000,e102,e247
-,Shimrath,1 Chron 8:21,e94f
+,Shimrath,1 Chron 8:21,e94f,e000,e23e,e105,e211,e16a
 ,Shimri,1 Chron 26:10,e950,e000,e166,e37e,e288
 ,Shimrith,2 Chron  24:26,e91e,e008,e211
 ,Shimron_man,Gen 46:13,efe7,e000,e238,e282
 ,Shimron_village,Josh 11:1,e446,e27b,e096,e198,e171,e300
-,Shimshai,Ezra 4:8,e8ee
+,Shimshai,Ezra 4:8,e8ee,e000,e19b,e15f,e211
 ,Shinab,Gen 14:2,eecc,e000,e03f,e0b2
 ,Shinar,Gen10:10,eecd,e03f,e0b2,e198,e171,e300
 ,Shion,Josh 19:19,e607,e17c,e096,e029,e198,e171,e300
@@ -2933,7 +2933,7 @@
 ,table,,e280
 ,Tabor_village,1 Chron 6:77,e65d,e313,e315,e198,e171,e300
 ,Tabrimmon,1 Kgs 15:18,e5f1,e000,e096,e27e
-,Tadmor,2 Chron 8:4,e866
+,Tadmor,2 Chron 8:4,e866,e120,e309,e198,e171,e300
 ,Tahan,Num 26:35,e476,e000,e211,e062,e038
 ,Tahash,Gen 22:24,e1db,e000,e102,e23e,e105
 ,Tahath_land,Num 33:26,e409,e19b,e03f,e166,e153
@@ -2960,7 +2960,7 @@
 ,teach,,e04c,e03f,e22a
 ,teacher,,e12b,e11f,e03f,e22a
 ,Tebah_man,Gen 22:24,e0b0,e000,e19b,e062,e038
-,Tebah_village,1 Chron 18:8,e742
+,Tebah_village,1 Chron 18:8,e742,e24e,e120,e198,e171,e300
 ,teeth,,e0b1,e03f,e0b2
 ,Tehinnah,1 Chron 4:12,e743,e000,e24e,e29a,e03f
 ,Tekoa_land,2 Samuel 14:2,e8c1,e211,e381,e0a1,e153
@@ -3017,7 +3017,7 @@
 ,tie,,e30e
 ,Tiglath_Pileser,1 Chr 5:6,e648,e000,e30e
 ,Tigris,Dan 10:4,eed6,e211,e318,e30b
-,Tikvah,2 Kgs 22:14,e68f
+,Tikvah,2 Kgs 22:14,e68f,e000,e29a,e247,e096
 ,Tilon,1 Chron 4:20,e745,e000,e03f,e299,e17c
 ,Timaeus,Mark 10:46,e36c,e000,e17c,e238
 ,time,,e16a
@@ -3062,7 +3062,7 @@
 ,Troas,Acts 16:8,ec0b,e102,e198,e171,e300
 ,Trophimus,Acts 20:4,eb1e,e000
 ,trouble,,e333,e29a,e17c,e096
-,true,,e09c,e096,e305
+,TRUE,,e09c,e096,e305
 ,trumpet,,ea79,e120,e105,e03f
 ,trust,,e023,e01a,e096,e305
 ,try,,eb94,e19b,e08c
@@ -3100,7 +3100,7 @@
 ,Uthai,1 Chr 9:4,e649,e000,e03f,e316,e166
 ,Uz_land,Job 1:1,e1dd,e153,e000,e19b,e062
 ,Uz_man,Gen 10:23,eef1,e000,e19b,e062
-,Uzai,Neh 3:25,e877
+,Uzai,Neh 3:25,e877,e000,e062,e247,e096
 ,Uzal,Gen 10:27,eef2,e000,e17c,e323
 ,Uzzah,1 Chr 8:7 1 Chr 13:7,e64a,e000,e19b,e15f
 ,Uzzi,1 Chr 9:8,e64b,e000,e120,e298
@@ -3183,7 +3183,7 @@
 ,Zabad,1 Chron 2:37,e77d,e000,e11f,e325,e029
 ,Zabdi,Josh 7:1,e54f,e000,e238,e105,e318
 ,Zabdiel,1 Chron 27:2,e863,e000,e211
-,Zabud,1 Kgs 4:5,e5ae
+,Zabud,1 Kgs 4:5,e5ae,e000,e120
 ,Zacchaeus,Luke 19:2,ec7e,e000,e247,e096
 ,Zaccur,Num 13:4 1 Chron 9:15,e1f1,e000,e247,e096
 ,Zadok,2 Sam 15:24,ea6d,e000,e207,e08c
