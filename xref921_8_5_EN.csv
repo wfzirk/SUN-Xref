@@ -43,8 +43,8 @@
 ,abomination,,e0a4,"hate,enmity: love,compassion: no,not: thing"
 ,about,,e11b,thing
 ,above,,e110,up: thing
-,Abraham,Matt 1:1,e373,"man: many,much: man: love,compassion"
-,Abram,Gen 12:1,e1d1,"OT: man: man: love,compassion"
+,Abraham,Matt 1:1,e373,"man: many,much: mans: love,compassion"
+,Abram,Gen 12:1,e1d1,"OT: man: mans: love,compassion"
 ,Abronah,Num 33:34,e3d6,"Through,pass: thing: forward,to: above,over: land,ground,earth,space"
 ,Absalom,1 Kgs 1:6,e4ad,"man: no,not: war,fight,battle: sword"
 ,Abyss,Luke 8:31,ec4e,"no,not: end,finish: land,ground,earth,space"
@@ -58,13 +58,13 @@
 ,Achor,Josh 15:7,e4cc,"heart: bad: no,not: good: land,ground,earth,space"
 ,Adadah,Josh 15:20,e4cd,"testimony,witness: mouth,said,speak,confession: you: village: many,much: neighbor: house: near,close"
 ,Adah,Gen 4:19,eda7,Woman: good: face
-,Adaiah,1 Chr 9:12,e5f4,man: cloud: soft: thing: thing
+,Adaiah,1 Chr 9:12,e5f4,man: cloud: soft: thing
 ,Adam_man,Gen 2:17,ec4f,"man: dirt,soil,ground_soil: land,ground,earth,space"
 ,Adam_village,Josh 3:16,e4f6,"dirt,ground_soil,soil: land,ground,earth,space: village: many,much: neighbor: house: near,close"
 ,Adamah,Josh 19:36 Josh 19:36,e5a1,"farm: grain,wheat: land,ground,earth,space: village: many,much: neighbor: house: near,close"
 ,Adami_Nekeb,Josh 19:33,e5b1,"red: blood: hand: water,wet: color: dirt,soil,ground_soil: land,ground,earth,space: village: many,much: neighbor: house: near,close"
 ,Adbeel,Gen 25:13,e0fe,"Man: no,not: cry: sad,grieve: water,wet"
-,Addar,Josh 15:3 Ezra 2:59 Num 34:4,e4ce,"threshing_floor: divorce: house: divide,division,separate,split: grain,wheat: village: many,much: neighbor: house: near,close"
+,Addar,Josh 15:3 Ezra 2:59 Num 34:4,e4ce,"threshing_floor: divorce: divide,division,separate,split: grain,wheat: village: many,much: neighbor: house: near,close"
 ,Addi,Luke 3:28,ec50,"man: mouth,speak,said,confession: me,I"
 ,Addumim,Josh 15:7,e4cf,"color: land,ground,earth,space"
 ,Adiel,1 Chr 9:12,e5f5,"man: many,much: no,not: fire,heat,hot"
@@ -100,7 +100,7 @@
 ,Aharhel,1 Chron 4:8,e722,man: last: end
 ,Ahasbai,2 Sam 23:34,e7f2,man: mouth: run: walk: very
 ,Ahasuerus,Esth 1:1,e48f,"man: division,divide,separate,split: knife,cut"
-,Ahava,Ezra 8:15,e975,build: house: make: hand: person: river: village: many: neighbor: house: near
+,Ahava,Ezra 8:15,e975,build: make: hand: person: river: village: many: neighbor: house: near
 ,Ahaz,Matt 1:9,ea61,"man: hand: bad: no,not,: good"
 ,Ahaziah,2 Kgs 1:2,e614,"man: shake: eye,see"
 ,Ahban,1 Chron 2:29,e754,man: small: assurance: know
@@ -211,8 +211,8 @@
 ,Anathoth_man,1 Chron 7:8,e75b,man: start: greeting: mouth: happy
 ,Anathoth_village,Josh 21:18,e4f8,"greeting: mouth,said,speak,confession: happy,joy: face: village: many,much: neighbor: house: near,close"
 ,ancestor,,ec80,"very: past: backward: time,when: man: love,compassion"
-,and,,e11c,thing
-,Andrew,Matt 4:18,e357,man: man
+,and,,e11c,thing: straight: things
+,Andrew,Matt 4:18,e357,man: mans
 ,Andronicus,Rom 16:7,ebba,man: best: very: good
 ,Aner_man,Gen  14:13,edb3,"Man: two: water,wet"
 ,angel,,e0a7,"good: spirit: no,not: person"
@@ -221,7 +221,7 @@
 ,Anim,Josh 15:50,e4d4,"water,wet: very: village: many,much: neighbor: house: near,close"
 ,animal,,e102,
 ,Anna,Luke 2:36-38 1 Sam 1:2,eb02,"woman: no,not: knife,cut"
-,Annas,Acts 4:6,eb63,"man: priest: cross: person: kill,destroy,destruction: knife,cut: person"
+,Annas,Acts 4:6,eb63,"man: priest: cross: person: kill,destroy,destruction: knife,cut"
 ,anointed,,e033,"king,ruler,lord,master: call,beckon: mouth,said,speak,confession: near,close: person"
 ,another,,ebf2,"Person: after: thing: forward,to"
 ,Anthothijah,1 Chr 8:24,e662,"man: farewell: end,finish: greeting: mouth,said,speak,confession: happy,joy: face"
@@ -264,7 +264,7 @@
 ,argument,,e057,"mouth,said,speak,confession: wild: no,not: peace: sleep,rest,lie_down: person: love,compassion"
 ,Arieh,2 Kgs 15:25,e6a3,man: lion: hair: animal: small
 ,Ariel,1 Chron 11:22,e7fe,man: many: animal
-,Arimathea,Matt 27:57,e34d,"cross: tomb,grave: house: dead,death,die: no,not: heart: village: many,much: neighbor: house: near,close"
+,Arimathea,Matt 27:57,e34d,"cross: tomb,grave: dead,death,die: no,not: heart: village: many,much: neighbor: house: near,close"
 ,Arioch,Gen  14:1,edb6,Man: lion: hair: face: animal
 ,arise,,e322,Up: straight
 ,Aristarchus,Acts 20:3,ec10,"man: good: king,ruler,lord,master"
@@ -320,7 +320,7 @@
 ,Asriel,Num 26:31,e3a4,"Man: chain,bound,arrest,imprisoned"
 ,Asshurites,Gen 25:3,e1ef,"Many,much: war,battle,fight: sword: people"
 ,Assir,Exod 6:24,e2bf,"Man: prison: house: chain,bound,arrest,imprisoned"
-,Assos,Acts 20:13,eb20,"near,close: village: many,much: neighbor: house: near,close"
+,Assos,Acts 20:13,eb20,"near,close: village"
 ,assurance,,e070,"know,knowledge:"
 ,Assyria,Gen 10:11,edbc,"Up: grow,growth,ripen: land,ground,earth,space"
 ,Asyncritius,Rom 16:14,ebbe,"man: go,travel,trip,journey"
@@ -426,7 +426,7 @@
 ,become_thing,,e839,"change,turn: thing"
 ,bed,,e122,"Sleep,rest,lie_down,person: straight"
 ,Bedad,Gen 36:35,e1ee,"Man: same,equal: part,some"
-,Bedeiah,Ezra 10:35,e8da,man: branch: tree
+,Bedeiah,Ezra 10:35,e8da,man: branch: tree: trees
 ,Beer,Num 21:16,e3a7,"Well: water,wet: hole"
 ,Beer_Lahai_Roi,Gen 16:14,eef9,"Eye,see: well: water,wet: hole"
 ,Beerah,1 Chr 5:6,e629,"man: well: water,wet: hole"
@@ -452,9 +452,9 @@
 ,Ben_Hanan,1 Chron 4:20,e708,"man: small,few: good"
 ,Ben_Hesed,1 Kgs 4:10,e967,man: very person
 ,Ben_Hinnom,Josh 15:8,e4db,"kill,destroy,destruction: knife,cut: person: valley"
-,Ben_Hur,1 Kgs 4:8,e968,man: camel: small
-,Ben_oni,Gen 35:18,e1a4,OT: man: man
-,Benaiah,1 Kgs 1:8,e4b0,man: tool
+,Ben_Hur,1 Kgs 4:8,e968,man: camel: camels: small
+,Ben_oni,Gen 35:18,e1a4,OT: man: mans
+,Benaiah,1 Kgs 1:8,e4b0,man: tool: tools
 ,Bene_Berak,Jos 19:45,e59c,"lightning: storm: eye,see: village: many,much: neighbor: house: near,close"
 ,Bene_Jaakan,Num 33:31,e3db,"Need,have_to: hand: very: change,turn: land,ground,earth,space"
 ,Beninu,Neh 10:13,e88a,man: very: above
@@ -467,13 +467,13 @@
 ,Beraiah,1 Chr 8:21,e666,man: very: or
 ,Berakah,1 Chron 12:3,e801,man: bless: mouth: gift: hand: love
 ,Berea,Acts 17:10,eb13,"no,not: walk: village: many,much: neighbor: house: near,close"
-,Bered_city,Gen 16:14,e2d0,"Hail_storm: cloud: soft: thing: hard: no,not: village: many,much: neighbor: house: near,close"
-,Bered_man,I Chr 7:20,efb2,"Man: hail_storm: cloud: soft: thing: hard: no,not"
+,Bered_city,Gen 16:14,e2d0,"Hail_storm: cloud: soft: thing: hard: softs: no,not: village: many,much: neighbor: house: near,close"
+,Bered_man,I Chr 7:20,efb2,"Man: hail_storm: cloud: soft: thing: hard: softs: no,not"
 ,Berekiah,Zech 1:1,e977,man: up: give: gift: hand: love: forward
 ,Beri,1 Chron7:36,e764,"man: person: hand: tree,plant,wood: small,few"
 ,Beriah,Gen 46:17,efb3,"Man: trouble: heart: bad: no,not: good"
 ,Bernice,Acts 25:13,eb9e,"woman: victory,prevail,triumph: king,lord,ruler,master: war,fight,battle: sword"
-,Berothai,Eze 47:16 2 Sam 8:8 1 Chron 18:8,e718,"well: water,wet: hole: village: many,much: neighbor: house: near,close"
+,Berothai,Eze 47:16 2 Sam 8:8 1 Chron 18:8,e718,"well: wells: water,wet: hole: village: many,much: neighbor: house: near,close"
 ,Besai,Ezra 2:49,e82e,man: new: sword
 ,beside,,e117,thing: .
 ,best,,e21f,very: good
@@ -485,11 +485,11 @@
 ,Beth_Aven,Josh7:2,e546,no: thing: small: village: many: neighbor: house: near
 ,Beth_Baal_Meon,Josh 13:17,e547,"have: hand: .: mute: mouth,said,speak,confession: no,not: village: many,much: neighbor: house: near,close"
 ,Beth_Barah,Judg 7:24,e571,"through,pass: thing: forward,to: river,stream: land,ground,earth,space"
-,Beth_Dagon,Josh 15:41,e4b9,"fish: village: many,much: neighbor: house: near,close"
+,Beth_Dagon,Josh 15:41,e4b9,"fish: fishes: village: many,much: neighbor: house: near,close"
 ,Beth_Diblathaim,Jer 48:22,e8fe,fig: sweet: fruit: village: many: neighbor: house: near
 ,Beth_Eden,Amos 1:5,e454,"up: grain,wheat: village: many,much: neighbor: house: near,close"
-,Beth_Emek,Jos 19:27,e59e,"valley: village: many,much: neighbor: house: near,close"
-,Beth_Ezel,Mic 1:11,e43a,"house: village: many,much: neighbor: house: near,close"
+,Beth_Emek,Jos 19:27,e59e,"valley: valleys: village: many,much: neighbor: house: near,close"
+,Beth_Ezel,Mic 1:11,e43a,house: houses: village
 ,Beth_Gamul,Jer 48:23,e8ff,avenge: backward: hand: same: village: many: neighbor: house: near
 ,Beth_Hakkerem,Neh 3:14,e88b,vine: small: up: tree: village: many: neighbor: house: near
 ,Beth_Haran,Num 32:36,e479,"no,not: knife,cut: village: many,much: neighbor: house: near,close"
@@ -497,19 +497,19 @@
 ,Beth_Horon,Josh 10:10,e42c,"anger,angry: village: many,much: neighbor: house: near,close"
 ,Beth_Jeshimoth,Num 33:49,e3dc,"very: land,ground,earth,space: water,wet: no,not"
 ,Beth_Leaphrah,Mic 1:10,e491,"dust: small,few: part,some: land,ground,earth,space: village: many,much: neighbor: house: near,close"
-,Beth_Markaboth,Jos 19:5,e59f,"horse: chair,sit: village: many,much: neighbor: house: near,close"
-,Beth_Meon,Jer 48:23,e900,big: house: village: many: neighbor: house: near
+,Beth_Markaboth,Jos 19:5,e59f,horse: chair: chairs: village
+,Beth_Meon,Jer 48:23,e900,big: house: village
 ,Beth_Millo,Judg 9:6,e572,"full: cup,drink: wall"
 ,Beth_Pazzez,Jos 19:21,e5a0,"very: divide,division,separate,split: backward: forward: village: many,much: neighbor: house: near,close"
 ,Beth_Pelet,Josh 15:27,e4bb,"help: straight: people: village: many,much: neighbor: house: near,close"
 ,Beth_Peor,Deut 3:29,e423,"open: no,not: closed: land,ground,earth,space"
 ,Beth_Rapha,1 Chrn 4:12,e70a,"man: many,much: health,healthy: happy,joy: face: heart"
 ,Beth_Shan,1 Sam 31:10,e4e7,bad: no: good: mouth: village: many: neighbor: house: near
-,Beth_Shemesh,Josh 21:16 Eze 30:17,e4f9,"sun,day: house: village: many,much: neighbor: house: near,close"
+,Beth_Shemesh,Josh 21:16 Eze 30:17,e4f9,"sun,day: house: village"
 ,Beth_Shittah,Judg 7:22,e573,"good: tree,plant,wood: land,ground,earth,space"
-,Beth_Zur_city,1Chron 2:45,e766,"soft: house: village: many,much: neighbor: house: near,close"
-,Beth_Zur_man,1 Chron 2:45,eb79,"know,knowledge: before: backward: thing"
-,Bethany,Matt  21:17,e349,"house: pain,hurt: knife,cut: heart: village: many,much: neighbor: house: near,close"
+,Beth_Zur_city,1Chron 2:45,e766,soft: house: village
+,Beth_Zur_man,1 Chron 2:45,eb79,man: soft: house
+,Bethany,Matt  21:17,e349,house: pain: knife: heart: village
 ,Bethel,Gen 12:8,edc4,"Hei: village: many,much: neighbor: house: near,close"
 ,Bethesda,John 5:2,eba0,"love,compassion: person: lake: small,few: water,wet"
 ,Bethlehem_man,1 Chro  2:54,e765,"man: human_nature: road,path,way: birth,born: start,beginning: person"
@@ -524,12 +524,12 @@
 ,between,,e118,thing: stick
 ,Bezalel,Ezra 2:17 Exod 31:2,e0bf,"Man: very: power,can,ability: big: knife,cut"
 ,Bezek,Judg 1:4,e574,"lightning: storm: eye,see: land,ground,earth,space"
-,Bezer_man,1 Chron 7:37,e767,man: shield
+,Bezer_man,1 Chron 7:37,e767,man: shield: shields
 ,Bezer_village,Deut 4:43,e466,"shield: village: many,much: neighbor: house: near,close"
 ,Bible,Mark 12:10 Rev 19:13,e22c,"book,read,learn: cross"
 ,Bidkar,2 Kgs 9:25,e617,"man: big: pain,hurt: knife,cut: heart"
 ,big,,e120,
-,Bigthana,Esth 6:2,e492,man: fruit: building
+,Bigthana,Esth 6:2,e492,man: fruit: fruits: building
 ,Bigvai,Ezra 2:2,e82f,man: happy: face: people
 ,Bikri,2 Sam 20:1,e719,"man: one: time,when"
 ,Bildad,Job 2:11s,e7c8,"man: old: no,not: new: person"
@@ -569,18 +569,18 @@
 ,book,,e22a,
 ,bottom,,e119,thing
 ,bow,,e210,face: down
-,bow_arrow,,ecc8,"String: war,battle,fight: sword"
+,bow_arrow,,ecc8,"String: war,battle,fight"
 ,bowl,,e384,
 ,box,,e29e,
 ,boy,,e001,"small,few: man"
-,boys,,e002,"small,few: man"
+,boys,,e002,small: smalls: man
 ,Bozkath,Josh 15:39,e4be,"up: arise,ascend: village: many,much: neighbor: house: near,close"
 ,Bozrah,Gen 36:33,efec,"Sheep: keep: very: have: hand: .: village: many,much: neighbor: house: near,close"
 ,branch,,e246,"tree,plant,wood"
 ,brave,,e196,"no,not: afraid,fear,worry: mouth,said,speak,confession: heart"
 ,bread,,e05d,"mouth,said,speak,confession: grain,wheat"
 ,break,,e0e1,"knife,cut: all,whole"
-,breast,,e2db,In_front: thing: body: person
+,breast,,e2db,In_front: thing: things: body: person
 ,breastplate,,ecd5,Shield: body: person
 ,breath,,ecee,"Mouth,said,speak,confession: air"
 ,bribe,,ebdb,"Bad: no,not: good: forward,to: money,wealth,wealthy"
@@ -589,8 +589,8 @@
 ,bright,,e21b,"very: sun,day"
 ,bring,,e088,hand: thing
 ,bronze,,eb2c,soft: metal
-,brother,,e006,"man: love,compassion: small,few"
-,brothers,,e007,"man: love,compassion: small,few"
+,brother,,e006,"man: mans: love,compassion: small,few"
+,brothers,,e007,"man: mans: love,compassion: small,few"
 ,Bubastis,Eze 30:17,e922,slave: thing: person: village: many: neighbor: house: near
 ,build,,e17a,"house: make,create: hand: person"
 ,building,,e0a1,
@@ -629,11 +629,11 @@
 ,cave,,eda6,Hole: mountain
 ,Cenchrea,Acts 18:18,eb3d,"small,few: village: many,much: neighbor: house: near,close"
 ,census,,e0b8,"person: book,read,learn: number"
-,centurion,,eb7a,"lead,leader,manage: forward,to: person: war,fight,battle: sword"
+,centurion,,eb7a,"lead,leader,manage: forward,to: person: war,fight,battle"
 ,ceremony,,ec88,"part,some: believe,faith: know,knowledge: cross: time,when"
 ,chain,,e25f,
 ,chair,,e298,
-,Chaldea,Jer 50:10,eb0e,"river,stream: land,ground,earth,space"
+,Chaldea,Jer 50:10,eb0e,river: rivers: land
 ,change,,e31e,
 ,chapter,,e230,"book,read,learn: part,some"
 ,chariot,,ec82,"horse: chair,sit"
@@ -728,14 +728,14 @@
 ,Dan_man,Gen 30:6,edcd,"Man: person: judge,judgement: king,lord,ruler,master: or"
 ,dance,,e259,"walk: happy,joy: face"
 ,Daniel,Matt 24:15,ea78,"man: me,I: or"
-,Dannah,Josh 15:49,e4bf,"sword: house: village: many,much: neighbor: house: near,close"
+,Dannah,Josh 15:49,e4bf,sword: house: village
 ,Darda,1 Kgs 4:31,e969,man: money: clothing
 ,Darius,Hag 1:1,e490,"man: know,knowledge: very: me,I"
 ,dark,,ea17,"no,not: light: eye,see: sun,day"
 ,Darkon,Ezra 2:56,e832,man: pavement: road: hard: soft: no
 ,Dathan,Num 16:1,e2f7,"Man: law,lawful,commandment: book,read,learn: allow,permission,permit: mouth,said,speak: king,ruler,lord,master"
 ,daughter,,e00c,"small,few: woman: love,compassion"
-,daughters,,e00d,"small,few: woman: love,compassion"
+,daughters,,e00d,"small: smalls: woman: love,compassion"
 ,David,Matt 1:1,e35e,"man: appointed: call,beckon: mouth,said,speak,confession: near,close: person"
 ,dead,,e181,"no,not: heart"
 ,deaf,,e191,"no,not: ear,hear"
@@ -753,7 +753,7 @@
 ,Delilah,Judg 16:4,e576,woman: big: hair: face
 ,Demes,2 Tim 4:10,ecb2,Man: people
 ,Demetrius,Acts 19:24,eb1a,"man: sow,to_plant: hand: seed: grain,wheat: small,few"
-,demon,,eb87,"bad: no,not: good: spirit: person"
+,demon,,eb87,bad: no: nos: good: spirit: person
 ,denarius,Matt 22:19,e165,"sun,day: money,wealth,wealthy"
 ,deny,,e0e5,"no,not: mouth,said,speak,confession: know,knowledge"
 ,Derbe,Acts 14:6,eb43,"flesh: soft: person: village: many,much: neighbor: house: near,close"
@@ -836,7 +836,7 @@
 ,Edrei,Josh 19:37,e474,"cloud: soft: thing: village: many,much: neighbor: house: near,close"
 ,egg,,e482,new: bird
 ,Eglah,1 Chron 3:3,e70d,woman: new: cow
-,Eglaim,Isaiah 15:8,e8b9,water: land
+,Eglaim,Isaiah 15:8,e8b9,water: waters: land
 ,Eglon_man,Judg 3:12,e60c,"man: chariot: chair,sit: horse"
 ,Eglon_village,Josh 10:3,e42e,"horse: chariot: chair,sit: village: many,much: neighbor: house: near,close"
 ,Egypt,Matt 2:13,ea44,"slave: thing: person: land,ground,earth,space"
@@ -898,7 +898,7 @@
 ,Elnaam,1 Chron 11:46,e803,man: me: happy: face
 ,Elnathan,2 Kgs 24:8,e6a7,"man: person: mouth,said,speak,confession"
 ,Elon,Gen 26:34,edd7,"Man: big: tree,plant,wood"
-,Elpaal,1 Chr 8:39,e66a,"man: work,do"
+,Elpaal,1 Chr 8:39,e66a,man: work: works
 ,Eltekeh,Josh 21:23,e4fa,"rain: cloud: soft: thing: water,wet: village: many,much: neighbor: house: near,close"
 ,Eltekon,Josh i5:59,e4c3,"know,knowledge: or: village: many,much: neighbor: house: near,close"
 ,Eltolad,Josh 15:30,e4c4,"child: small,few: person: village: many,much: neighbor: house: near,close"
@@ -909,7 +909,7 @@
 ,Emites,Gen 14:5,efa8,"Afraid,fear,worry: mouth,said,speak,confession: heart: people"
 ,Emmaus,Luke 24:13,ec5e,"fire,heat,hot: water,wet: village: many,much: neighbor: house: near,close"
 ,empty,,e277,"full: cup,drink: no,not"
-,En_Eglaim,Ezek 47:10,e8f2,cow: water: land
+,En_Eglaim,Ezek 47:10,e8f2,cow: cows: water: land
 ,En_Gannim,1 Chron 6:73 2 Kgs 9:22 Josh 21:29,e4fb,"grow,growth,ripen: up: land,ground,earth,space: village: many,much: neighbor: house: near,close"
 ,En_Gedi,Josh 15:62,e4c5,"goat: sheep: bone: village: many,much: neighbor: house: near,close"
 ,En_Haddah,Jos 19:21,e5a4,"very: go,trip,travel,journey: village: many,much: neighbor: house: near,close"
@@ -917,10 +917,10 @@
 ,En_Shemesh,Josh 15:7,e4c6,"sun,day: water,wet: village: many,much: neighbor: house: near,close"
 ,Enaim,Gen 38:14,efb9,"Open: no,not: closed: gate: wall: door"
 ,Enam,Josh 15:34,e4c7,"two: eye,see: village: many,much: neighbor: house: near.close"
-,Enan,Num 1:15,e2b9,"Man: eye,see"
+,Enan,Num 1:15,e2b9,Man: eye: eyes
 ,encourage,,e262,"free,freedom: no,not: chain,bound,arrest,imprisoned: heart"
 ,end,,e232,
-,Endor,Josh 17:11,e467,"house: village: many,much: neighbor: house: near,close"
+,Endor,Josh 17:11,e467,house: village
 ,endure,,e170,"time,when: here: very: land,ground,earth,space"
 ,enemy,,e025,"person: hate: friend: love,compassion: no,not"
 ,Enoch,Gen 4:17 Gen 25:4,ec5f,"man: teach,teaching: mouth,speak.said,confession: book,learn,read"
@@ -1032,7 +1032,7 @@
 ,follow,,e13e,"people: forward,to"
 ,fool,,ea7c,"no,not: wisdom,wise: know,knowledge: or"
 ,foot,,e13d,person
-,foreigner,Matt 4:15,e158,"person: no,not: land,ground,earth,space"
+,foreigner,Matt 4:15,e158,"person: persons: no,not: land,ground,earth,space"
 ,forest,,ec27,"land,ground,earth,space: many,much: tree,plant,wood"
 ,forgive,,e18f,"no,not: kill,destroy,destruction: knife,cut: person"
 ,Fortunatus,1 Cor 16:17,eca4,Man: very: have: hand: .: good
@@ -1042,7 +1042,7 @@
 ,fox,,ea8a,"know,knowledge: small,few: animal"
 ,free,,e260,"No,not: chain,bound,imprisoned,arrest"
 ,free_no_cost,,ebe4,"zero: money,wealth,wealthy"
-,friend,,e024,"person: love,compassion"
+,friend,,e024,"person: persons: love,compassion"
 ,frog,,ecf6,"jump: fast_speed: very: forward,to: up: animal"
 ,from,,e31a,"Forward,to"
 ,fruit,,e27e,
@@ -1075,19 +1075,19 @@
 ,gate,,e289,wall: door
 ,Gath,1 Sam 21:10,e461,"wine: cup,drink: fruit: village: many,much: neighbor: house: near,close"
 ,Gath_Hepher,Josh 19:13,e65c,"wine: cup,drink: fruit: well: water,wet: hole: village: many,much: neighbor: house: near,close"
-,Gath_Rimmon,1 Chron 6:70 Josh 21:24,e4fe,"wine: village: many,much: neighbor: house: near,close"
+,Gath_Rimmon,1 Chron 6:70 Josh 21:24,e4fe,"wine: wines: village: many,much: neighbor: house: near,close"
 ,gathered,,e108,
 ,Gaza,Gen 10:19,eb7f,"hand: small,few: knife,cut: village: many,much: neighbor: house: near,close"
 ,Gazez,1 Chron 2:46,e771,man: knife: sheep: no
 ,Gazzam,Ezra 2:48,e835,man: eagle: big: bird
 ,Geba,Josh 21:17,e4ff,"mountain: straight: village: many,much: neighbor: house: near,close"
-,Gebal,Josh 13:5,e549,"mountain: land,ground,earth,space"
+,Gebal,Josh 13:5,e549,"mountain: mountains: land,ground,earth,space"
 ,Geber,1 Kgs 4:19,e96b,man: young: small: time: very
 ,Gebim,Isa 10:31,e715,"well: water,wet: hole: land,ground,earth,space"
 ,Gedaliah,Zeph 1:1,e52a,"man: mouth,said,speak,confession: very"
 ,Geder,Josh 12:13,e440,"straight: wall: village: many,much: neighbor: house: near,close"
 ,Gedor,1 Chr 9:37,e5dd,"man: hedge: wall: land,ground,earth,space"
-,Gehazi,2 Kgs 5:20,e618,"man: big: eye,see"
+,Gehazi,2 Kgs 5:20,e618,man: big: eye: eyes
 ,Gemalli,Num 13:12,e2bc,Man: very: camel
 ,Gemariah,Jer 29:3,e903,man: end
 ,generation,,e019,"big: small,few: man"
@@ -1107,7 +1107,7 @@
 ,Geuel,Num 13:15,e1fb,"Man: spirit: no,not: person: amazed,amazing,great: big: praise,exalt,dignify,worship: mouth,said,speak,confession: good"
 ,Gezer,Josh 10:33,e42f,"divide,division,separate,split: backward: forward,to: village: many,much: neighbor: house: near,close"
 ,Gibbethon,Josh 21:23,e500,"mountain: big: village: many,much: neighbor: house: near,close"
-,Gibea,1 Chron 2:49,e773,"man: hill: small,few: mountain"
+,Gibea,1 Chron 2:49,e773,man: hill: small: smalls: mountain
 ,Gibeah,Josh 42:33,e501,"mountain: very: village: many,much: neighbor: house: near,close"
 ,Gibeath_Haaraloth,Josh 5:3,e430,"circumcise,circumcision: knife,cut: flesh: soft: person: mountain"
 ,Gibeon_man,Ezra 2:20 1 Chr 9:35,e5de,man: right: mountain
@@ -1129,7 +1129,7 @@
 ,Ginnethon,Neh 10:6,e892,man: up: seed: grain: small
 ,Girgashites,Gen 10:16,ede1,"Dirt,soil,ground_soil: land,ground,earth,space: people"
 ,girl,,e009,"woman: small,few"
-,girls,,e00a,"woman: small,few"
+,girls,,e00a,woman: small: smalls
 ,Gittaim,2 Sam 4:3,e489,"stranger: know,knowledge: spirit: no,not: person: village: many,much: neighbor: house: near.close"
 ,give,,e086,"gift: hand: love,compassion: forward,to"
 ,glass,,ecde,"Eye,see: through,pass: thing: forward,to"
@@ -1147,7 +1147,7 @@
 ,Golan,Duet 4:43,e468,"no,not: mouth,said,speak,confession: village: many,much: neighbbor: house: near,close"
 ,gold,,eb2a,"big: money,wealth,wealthy"
 ,Golgotha,Matt 27:33,e34b,"skull: bone: face: land,ground,earth,space"
-,Goliath,1 Sam 21:9,e462,man: big
+,Goliath,1 Sam 21:9,e462,man: big: bigs
 ,Gomer_man,Gen 10:2,ede3,"Man: fire,heat,hot: all,whole"
 ,Gomer_woman,Hos 1:3,e596,"woman: fire,heat,hot: all,whole"
 ,Gomorrah,Gen 10:19,ea7a,"bad: no,not: good: person: village: many,much: neighbor: house: near,close"
@@ -1183,10 +1183,10 @@
 ,Hadad,Gen 25:15,efa2,"Man: sharp: knife,cut"
 ,Hadadezer,1 Kgs 11:23,e5d1,"man: wool: sheep: clothing,fabric"
 ,Hadar,Gen 36:39,e1af,"OT: man: honor: king,lord,ruler,master: sword"
-,Hadashah,Josh 15:37,e50a,"new: village: many,much: neighbor: house: near,close"
-,Hadid,Ezra 2:33,e838,many: sharp: knife: village: neighbor: house: near
+,Hadashah,Josh 15:37,e50a,new: news: village
+,Hadid,Ezra 2:33,e838,many: sharp: knife: village
 ,Hadlai,2 Chron  28:12,e2f6,Man: fat: big: flesh: soft: person: box
-,Hadoram,Gen 10:27,ede4,"Man: glory,glorify: very: praise,exalt,dignify,worship: mouth,said,speak,confession: good"
+,Hadoram,Gen 10:27,ede4,"Man: glory,glorify: very: verys: praise,exalt,dignify,worship: mouth,said,speak,confession: good"
 ,Hadrak,Zec 9:1,e6c5,"happy,joy: face: soft: village: many,much: neighbor: house: near,close"
 ,Haeleph,Josh 18:28,e650,"very: animal: small,few: land,ground,earth,space"
 ,Hagab,Ezra 2:46,e83e,man: locust: grass; insect
@@ -1195,10 +1195,10 @@
 ,Haggai,Ezra 5:1,e48c,"man: feast: big: eat,food,meal: mouth,said,speak,confession: thing"
 ,Haggedolim,Neh 11:14,e893,man: amen: good: all
 ,Haggi,Gen 46:16,efc2,"Man: festival,party: happy,joy: face: eat,food,meal: mouth,said,speak,confession: thing"
-,Haggiah,1 Chr 6:30,e66e,"man: happy,joy: face: thing"
+,Haggiah,1 Chr 6:30,e66e,"man: happy,joy: face: thing: things"
 ,Haggith,1 Kgs 1:5,e4b2,"woman: festival,party: happy,joy: face: eat,food,meal: mouth,said,speak,confession: thing"
 ,hail,,ea13,"King,lord,ruler,master: greeting: mouth,said,speak,confession: happy,joy: face"
-,hail_storm,,ecdd,"Cloud: soft: thing; hard: no,not"
+,hail_storm,,ecdd,"Cloud: soft: thing; hard: no,not: softs"
 ,hair,,e208,face
 ,Hakaliah,Neh 1:1,e894,man: big: stay: person: straight
 ,Hakilah,1 Sam 26:1,e6cf,"no,not: sun,day: small,few: mountain"
@@ -1207,7 +1207,7 @@
 ,Hakupha,Ezra 2:51,e840,man: bow: face: down
 ,Halah,2 Kgs 18:11,e61b,"small,few: river,stream: village: many,much: neighbor: house: near,close"
 ,half,,ea22,
-,Halhul,Josh 15:58,e50b,"around: village: many,much: neighbor: house: near,close"
+,Halhul,Josh 15:58,e50b,around: arounds: village
 ,Hali,Jos 19:25,e5a6,"around: arm: big: village: many,much: neighbor: house: near,close"
 ,Hallohesh,Neh 3:12,e895,man: after: thing: forward: spirit: no: person
 ,Ham_man,Gen 6:10,ede5,"Man: sound,noise: ear,hear: thing"
@@ -1216,14 +1216,14 @@
 ,Hamath,Isa 10:9,e716,small: wall: village: many: neighbor: house: near
 ,Hamathites,Gen 10:18,ede7,Wall: people
 ,Hammedatha,Esth 3:1,e47f,"man: bad: no,not: good: person"
-,Hammoleketh,1 Chron 7:18,e774,woman: above: up: thing
+,Hammoleketh,1 Chron 7:18,e774,woman: above: up: thing: aboves
 ,Hammoth_Dor,Josh 19:35 Josh 19:28 Josh 21:32,e502,"fire,heat,hot: land,ground,earth,space: village: many,much: neighbor: house: near,close"
 ,Hammuel,1 Chro 4:26,e6ee,"man: anger,angry: fire,heat,hot"
 ,Hamor,Acts 7:16 Gen 33:19,eb5d,"man: donkey: small,few: horse"
 ,Hamul,Gen 46:12,efc3,"man: forgive,forgiveness: no,not: kill,destroy,destruction: knife,cut: person"
 ,Hamutal,2 Kgs 23:31,e6aa,"woman: morning: sun,day: straight: water,wet"
 ,Hanamel,Jer 32:6,e906,man: yellow: sun: color
-,Hanan,1 Chr 9:44,e5df,man: heart
+,Hanan,1 Chr 9:44,e5df,man: heart: hearts
 ,Hananel,Neh 3:1,e896,hei: grace: love: no: knife: tower
 ,Hanani,1 Kgs 16:1,e692,"man: right_time: command,insist: mouth,said,speak,confession: !: time,when"
 ,Hananiah,1 Chr 8:24,e66f,"man: jump,leap: very: forward,to: up"
@@ -1231,14 +1231,14 @@
 ,Hannathon,Jos 19:14,e5a7,"no,not: knife,cut: love,compassion: village: many,much: neighbor: house: near,close"
 ,Hanniel,Num 34:23,e3e5,"man: worse: bad: no,not: good: many,much"
 ,Hanun,2 sam 10:1,e71a,"man: big: face: many,much"
-,Hapharaim,Jos 19:19,e5a8,"hole: village; many,much: neighbor: house: near,close"
+,Hapharaim,Jos 19:19,e5a8,hole: holes: village
 ,Happizzez,1 Chron 24:15,e7d4,"man: knife,cut: small,few"
 ,happy,,e205,face
 ,Hara,1 Chr 5:26,e62d,"eye,see: mountain: land,ground,earth,space"
 ,Haradah,Num 33:24,e3de,"Afraid,fear,worry: mouth,said,speak,confession: heart: many,much: land,ground,earth,space"
 ,Haran_land,Gen 11:31,eb0b,"Dry: no,not: water,wet: land,ground,earth,space"
 ,Haran_man,Gen 11:27,efa4,"Man: hill: small,few: mountain"
-,Harbona,,e38f,"Woman: worth,value,worthy: good: money,wealth,wealthy"
+,Harbona,,e38f,man: sword: swords
 ,hard,,e269,"soft: no,not"
 ,Hareph,1 Chron 2:51,e775,man: or: sword
 ,Harhaiah,Neh 3:8,e897,man: fire: nose
@@ -1258,7 +1258,7 @@
 ,harvester,,e139,"person: hand: grain,wheat"
 ,Hasadiah,1 Chron 3:20,e6f0,"man: bear_with: very: with: same,equal: people"
 ,Hashabiah,1 Chr 9:14,e5e0,"man: big: know,knowledge"
-,Hashabnah,Neh 10:25,e899,man: number
+,Hashabnah,Neh 10:25,e899,man: number: numbers
 ,Hashabneiah,Neh 3:10,e89a,man: give: gift: hand: love: forward
 ,Hashbaddanah,Neh 8:4,e89b,man: good: know
 ,Hashmonah,Num 33:29,e3df,"Very: fat: big: flesh: soft: person: land,ground,earth,space"
@@ -1272,11 +1272,11 @@
 ,hate,,e01b,"love,compassion: no,not"
 ,Hathak,Esth 4:5,e4a1,"man: mouth,said,speak,confession: heart"
 ,Hathath,1 Chron 4:13,e6f2,"man: no,not: big"
-,Hatipha,Ezra 2:54,e846,hand: bring: hand: thing: me
+,Hatipha,Ezra 2:54,e846,hand: bring: thing: me
 ,Hatita,Ezra 2:42,e847,man: soft: hole
 ,Hattil,Ezra 2:57,e848,man: shout: big: mouth: near
 ,Hattush,1 Chron 3:22,e6f3,"man: leave: door: forward,to: bad: no,not: good"
-,Hauran,Ezek 47:16,e8f3,very: no: color: land
+,Hauran,Ezek 47:16,e8f3,very: white: no: color: land
 ,have,,e083,Hand: .
 ,Havilah_land,Gen 2:11,ede8,"Give: gift: hand: love,compassion: forward,to: land,ground,earth,space"
 ,Havilah_man,Gen 10:7,effa,"Man: small,few: give: gift: hand: love,compassion: forward,to"
@@ -1287,13 +1287,13 @@
 ,Hazar_Shual,Josh 15:20 1 Samuel 13:17,e50d,"good: animal: village: many,much: neighbor: house: near,close"
 ,Hazarmaveth,Gen 10:26,ede9,"Man: very: dead,death,die: no,not: heart"
 ,Hazer_Hattikon,Ezek 47:16,e8f4,between: stick: thing: corner: clothing: village: many: neighbor: house: near
-,Hazeroth,Num 11:35,e2be,"Go,travel,trip,journey: building: village: many,much: neighbor: house: many,much"
+,Hazeroth,Num 11:35,e2be,"Go,travel,trip,journey: building: village: many,much: neighbor: house: near"
 ,Hazezon_Tamar,Gen 14:7,edea,"Knife: tree,plant,wood: village: many,much: neighbor: house: near,close"
 ,Haziel,1 Chron 23:9,e7b5,man: big: eye
 ,Hazo,Gen 22:22,e1b0,"Man: no,not: prophet: prophesy: person: eye,see: forward,to"
 ,Hazor,Josh 12:19,e441,"grass: village: many,much: neighbor: house: near,close"
 ,Hazzelelponi,1 Chron 4:3,e6f4,"woman: shade: hand: sun,day: face"
-,Hazzobebah,1 Chron 4:8,e6f5,"man: many,much: war,battle,fight: sword"
+,Hazzobebah,1 Chron 4:8,e6f5,"man: many,much: war"
 ,head,,e206,face
 ,heal,,e084,"hand: health,healthy: happy,joy: face: heart"
 ,health,,e209,"happy,joy: face: heart"
@@ -1310,10 +1310,10 @@
 ,heir,,e018,"money,wealth,wealthy: son,sons: small,few: man: love,compassion"
 ,Helah,1 Chron 4:5,e6f6,woman: ring: around: finger: hand
 ,Helam,2 Sam 10:16,e71b,"person: war,fight,battle: land,ground,earth,space"
-,Helbah,Judg 1:31,e57e,"many,much: tree,plant,wood: village: many,much: neighbor: house: near,close"
+,Helbah,Judg 1:31,e57e,"many,much: tree,plant,wood: village"
 ,Helbon,Ezek 27:18,e8f5,grape: small: fruit: tree: village: many: neighbor: house: near
 ,Heled,1 Chron 11:30,e807,man: correct: heart
-,Helek,Num 26:30,e3ac,"Man: part,some"
+,Helek,Num 26:30,e3ac,Man: part: parts
 ,Heleph,Josh 19:33,e651,"stay: person: straight: grass: village: many,much: neighbor: house: near,close"
 ,Helez,1 Chron 2:39,e7b6,man: sword: before: backward: thing
 ,Helkai,Neh 12:15,e89e,man: receive: forward: gift: hand: love: part
@@ -1330,13 +1330,13 @@
 ,Hepher,Num 26:32,e3ad,"Man: well: water,wet: hole"
 ,Hephzibah,2 Kgs 21:1,e6ac,"woman: me,I: happy,joy: face"
 ,here,,e212,"very: land,ground,earth,space"
-,Heres,Judg 1:35,e559,"mountain: see,day"
+,Heres,Judg 1:35,e559,"mountain: sun,day"
 ,Heresh,1 Chr 9:15,e5e3,"man: very: mute: mouth,said,speak,confession: no,not"
 ,Hermas,Rom 16:14,ebc4,"man: far: no,not: near,close"
-,Hermes_idol,Acts 14:12,eb2f,"Mute: mouth,said,speak,confession: no,not: thing: sell: backward: money,wealth,wealthy: buy,spend: forward,to"
+,Hermes_idol,Acts 14:12,eb2f,Mute: mouth: no: thing: sell: backward: money: buy: forward: moneys
 ,Hermes_man,Rom 16:14,ebed,"Man: everywhere: land,ground,earth,space: all,whole"
 ,Hermogenes,2 Tim 1:15,ecb5,"Man: allow,permit,permission: mouth,said,speak,confession: king,lord,ruler,master"
-,Herod,Matt 2:1,e360,man: big: man
+,Herod,Matt 2:1,e360,man: big: mans
 ,Herodians,Mark 3:6,ea05,"person: king,lord,ruler,master: bad: no,not: good"
 ,Herodias,Matt 14:3,e355,"woman: lust,sensuality,sexual_desire: bad: no,not: good: eye,see"
 ,Herodion,Rom 16:11,ebf1,"Man: family,relative: house: love,compassion"
@@ -1349,7 +1349,7 @@
 ,Hezir,1 Chron 24:15,e7d6,man: thing: pig
 ,Hezro,1 Chron 11:37,e808,man: grain: me
 ,Hezron,Gen 46:9,ea4f,man: wall
-,hide,,e085,Put: hand: under: thing: .
+,hide,,e085,Put: hand: under: thing: period
 ,Hiel,1 Kgs 16:34,e693,"man: very: alive,life,live: good: heart"
 ,Hierapolis,Col 4:13,ece9,"holy: person: thing: village: many,much: neighbor: house: near,close"
 ,Hilkiah,1 Chr 9:11,e5e4,"man: period: me,I: part,some"
@@ -1363,7 +1363,7 @@
 ,Hizki,1 Chr 8:17,e670,"man: me,I: big"
 ,Hobab,Num 10:29,e1fd,"Man: custom: all,whole: work,do"
 ,Hobah,Gen 14:15,edef,"Blind: no,not: eye,see: village: many,much: neighbor: house: near,close"
-,Hod,1 Chron 7:37,e7b7,man: big: small
+,Hod,1 Chron 7:37,e7b7,man: big: bigs: small
 ,Hodaviah,1 Chr 9:7,e5e5,man: hand: up
 ,Hodesh,1 Chr 8:9,e671,"woman: new: moon,night"
 ,Hodiah,1 Chron 4:19,e6f7,"man: open: no,not: closed: mouth,said,speak,confesion"
@@ -1384,11 +1384,11 @@
 ,Horites,Gen 14:6,edf1,Cave: hole: mountain: people
 ,Hormah,Num 14:45,e2f8,"Kill,destroy,destruction: knife,cut: person: land,ground,earth,space"
 ,horn,,ecc5,Bone: head: face: animal
-,Horonaim,Isaiah 15:5,e8ba,hole: village: many: neighbor: house: near
+,Horonaim,Isaiah 15:5,e8ba,hole: holes: village
 ,horse,,e303,
 ,Hosah_man,1 Chr 26:11,e5af,man: under: thing: .
 ,Hosah_village,Josh 19:29,e581,"very: under: thing: .: village: many,much: neighbor: house: near,close"
-,hosanna,,e216,"Save,rescue: very: help: straight: people: now,immediately: time,when"
+,hosanna,,e216,"Save,rescue: very: help: straight: people: now: verys: time"
 ,Hosea,Hos 1:1 Neh 10:23,ebc5,"man: search: hand: eye,see"
 ,Hoshaiah,Neh 12:32,e89f,man: left: hand
 ,Hoshama,1 Chron 3:18,e6f8,"man: open: no,not: closed: ear,hear"
@@ -1396,8 +1396,8 @@
 ,Hothir,1 Chron 25:4,e858,man: up: many: people
 ,hour,,e331,"around: time,when"
 ,house,,e171,
-,how,,e068,"know,knowledge: questioned,ask: mouth,said,speak,confession: ?"
-,how_long,Exod 10:3,e83c,"time,when: questioned,ask: mouth,said,speak,confession: ?"
+,how,,e068,"know,knowledge: questioned,ask: mouth,said,speak,confession: questionmark"
+,how_long,Exod 10:3,e83c,"time,when: questioned,ask: mouth,said,speak,confession: questionmark"
 ,Hubbah,1 Chron 7:34,e7b9,"man: blind: no,not: eye,see: time,when"
 ,Hul,Gen 10:23,edf2,"Man: small,few: shake"
 ,Huldah,2 Kgs 22:14,e68c,"woman: prophet: person: prophesy: eye,see: forward,to"
@@ -1413,7 +1413,7 @@
 ,Huri,1 Chr 5:14,e62e,"man: white: no,not: color: fabric,clothing"
 ,husband,,e012,"man: love,compassion"
 ,Hushah,1 Chron 20:4,e6f9,"man: change,turn: forward,to"
-,Hushai,1 Kgs 4:16,e96c,man: forward
+,Hushai,1 Kgs 4:16,e96c,man: forward: forwards
 ,Husham,Gen 36:34,e1b4,Man: sweet: air
 ,Hushathite,I Chron 20:4,e927,change: forward: people
 ,Hushim_man,Gen 46:23,efc6,"Man; no,not: fast_speed: very: forward,to"
@@ -1431,7 +1431,7 @@
 ,Iconium,Acts 13:51,ec1f,"go,journey,travel,trip: village: many,much: neighbor: house: near,close"
 ,Idalah,Josh 19:14,e582,"ear,hear: animal: village: many,much: neighbor: house; near,close"
 ,Idbash,1 Chron 4:3,e6fa,"man: honey: mouth,said,speak,confession: sweet"
-,Iddo,1 Kgs 4:14 Ez 10:43,e96d,man: big: bad: no: good
+,Iddo,1 Kgs 4:14 Ez 10:43,e96d,man: big: bigs: bad: no: good
 ,idol,,e35d,"Mute: no,not: mouth,said,speak,confession: thing"
 ,Iezer,Num 26:30,e3b1,"Man: help: straight: people: mouth,said,speak,confession"
 ,if,,e111,straight: thing
@@ -1450,7 +1450,7 @@
 ,Imrah,1 Chron 7:36,e7bb,"man: no,not: change,turn"
 ,Imri,1 Chr 9:4,e5e9,"man: testimony,witness: mouth,said,speak,confession: you"
 ,in,,e240,door: thing: .
-,in_front,,e112,thing
+,in_front,,e112,thing: things
 ,incense,,ec98,"perfume,fragrant: good: nose,smell: gift: hand: love,compassion"
 ,India,Esth 8:9,e4a2,"law,commandment,lawful: book,learn,read: allow,permission,permit: mouth,said,speak,confession: king,lord,ruler,master: land,ground,earth,space"
 ,inheritance,,e017,"money,wealth,wealthy: small,few: man"
@@ -1498,17 +1498,17 @@
 ,Ithmah,1 Chron 11:46,e80d,man: no: past: backward: time
 ,Ithnan,Josh 15:23,e511,"always,eternal,eternity: all,whole: time,when: village: many,much: neighbor: house: near,close"
 ,Ithran,Gen 36:26,e1b6,"Man: praise,exalt,dignify,worship: mouth,said,speak,confession: good: small,few"
-,Ithream,1 Chron 3:3,e6fe,"man: stay,remain: person: straight"
+,Ithream,1 Chron 3:3,e6fe,man: stay: stays: person: straight
 ,Ittai,2 Samuel 15:22,e8c0,man: near: knife
 ,Ituraea,Luke 3:1,ec3e,"through,pass: thing: forward,to: land,ground,earth,space"
-,Ivvah,2 Kings 17:24 2 Kgs 18:34,e61d,"whip: village: many,much: neighbor: house: house: near,close"
+,Ivvah,2 Kings 17:24 2 Kgs 18:34,e61d,"whip: village: many,much: neighbor: house: near,close"
 ,Iye_Abarim,Num 21:11,e3b2,"Dead,death,die: no,not: heart: village: many,much: neighbor: house: near,close"
 ,Izhar,Exod 6:18,e2c1,"Man: oil: money,wealth,wealthy: water,wet"
 ,Izliah,1 Chr 8:18,e677,"man: many,much: alive,life,live: good: heart"
 ,Izrahiah,1 Chron 7:3 Neh 12:42,e7bf,"man: bright: very: sun,day: forward,to"
 ,Izziah,Ezra 10:25,e8dd,man: cross: grain
 ,Jaakobah,1 Chron 4:36,e6ff,man: very shield
-,Jaalah,Neh 7:56 Ezra 2:56,e84b,man: mountain: goat: sheep
+,Jaalah,Neh 7:56 Ezra 2:56,e84b,man: mountain: goat: sheep: bone
 ,Jaareshiah,1 Chr 8:27,e678,"man: tree,plant,wood: hand"
 ,Jaasiel,1 Chron 11:47,e80e,man: ten: part
 ,Jaasu,Ezra 10:37,e8de,man: thorn: me
@@ -1519,9 +1519,9 @@
 ,Jabbok,Gen 32:22,efca,"Empty: cup,drink: no,not: river,stream"
 ,Jabesh_man,2 Kgs 15:10,e6ad,"man: very: dry: no,not: water,wet"
 ,Jabesh_village,Judg 21:9 1 Sam 31:11,e4eb,"dry: no,not: water,wet: village: many.much: neighbor: house: near,close"
-,Jabez,1 Chron 4:9,e6d8,man: hole
+,Jabez,1 Chron 4:9,e6d8,man: hole: holes
 ,Jabin,Judg 4:2,e55b,"man: explain,explanation: mouth,said,speak,confession: know,knowledge: very"
-,Jabneel,Josh 15:11,e512,"make,create: hand: person: make,create: hand: person: village: many,much: neighbor: house: near,close"
+,Jabneel,Josh 15:11,e512,"make: hand: person: makes: village: many,much: neighbor: house: near,close"
 ,Jacob,Gen 25:26,e375,man: person: foot
 ,Jada,1 Chron 2:28,e7c1,"man: head: face: many,much"
 ,Jaddua,Neh 10:21,e8a1,man: everyone: person: all: know
@@ -1575,7 +1575,7 @@
 ,Jazer,Num 21:32,e38a,"Help: straight: people: land,ground,earth,space"
 ,Jaziz,1 Chron 27:30,e859,man: no: staff: big: stick
 ,jealous_God,,e2fe,"Good: desire,like,want,will: love,compassion: heart"
-,jealous_God,,e973,hope: very: desire: love: heart: glory: mouth: good
+,jealous_God,,e973,hope: very: desire: love: heart: verys: glory: mouth: good
 ,Jeatherai,1 Chr 6:21,e67c,"man: no,not: search: hand: eye,see"
 ,Jeberekiah,Isa 6:12,e6c6,man: leg: person: down
 ,Jebusites,Gen 10:16,e1e5,"Past: backward: time,when: peace: sleep,rest,lie_down: person: love,compassion: village: many,much: neighbor: house: near,close: people"
@@ -1593,7 +1593,7 @@
 ,Jehoahaz,2 Kgs 13:8 2 Chron 34:8,e6ae,"man: have: hand: .: many,much"
 ,Jehohanan,1 Chr 26:3,e680,"man: hei: forward,to"
 ,Jehoiachin,2 Kgs 24:6,e41b,"man: start,beginning"
-,Jehoiada,1 Kgs 1:8,e4b3,"man: know,knowledge: know,knowledge"
+,Jehoiada,1 Kgs 1:8,e4b3,man: know: knows
 ,Jehonadab,1 Chron 20:7 2 sam 13:3 2 Sam 13:3,e6dc,"man: good: chain,bound,arrest,imprisoned"
 ,Jehoshaphat,1 Kgs 15:24,ea5d,"man: judge,judgement: king,lord,ruler,master: or"
 ,Jehosheba,2 Kgs 11:2,e61e,"woman: full: cup,drink: mouth,said,speak,confession"
@@ -1603,7 +1603,7 @@
 ,Jehud,Josh 19:45,e587,"praise,exalt,dignify,worship: mouth,said,speak,confession: good: village: many,much: neighbor: house: near,close"
 ,Jehudi,Jer 36:14,e90a,man: grain: down: mouth
 ,Jehukal,Jer 37:3,e90b,man: hei: strong: hand: power: big: knife
-,Jekameam,1 Chron 23:19,e7c5,man: house
+,Jekameam,1 Chron 23:19,e7c5,man: house: houses
 ,Jekoliah,2 Kgs 15:2,e6b0,"woman: possible: good: power,can,ability: big: knife,cut"
 ,Jekuthiel,1 Chron 4:18,e6dd,"man: eat,food,meal: mouth,said,speak,confession: thing: forward,to"
 ,Jemuel,Exod 6:15,efcd,"Man: sabbath: sun,day: sleep,rest,lie_down: person"
@@ -1633,7 +1633,7 @@
 ,Jesus,Matt 1:1,e037,"king,lord,ruler,master: cross"
 ,Jether,Judg 8:20,e57f,"man: stay,remain: person: straight"
 ,Jetheth,Gen 36:40,eff8,Man: nail: metal: thorn:
-,Jethro,Exod 18:1,e0cc,"Man: many,much"
+,Jethro,Exod 18:1,e0cc,Man: many: manys
 ,Jetur,Gen 25:15,eedc,Man: gate: wall: door
 ,Jeuel,1 Chr 8:29 1 Chr 9:6,e5ec,man: touch: thing: hand
 ,Jeush,Gen 36:5,e1bb,"Man: no,not: gathered,together_things"
@@ -1690,7 +1690,7 @@
 ,Joshah,1 Chron 4:34,e6e1,"man: no,not: head: face"
 ,Joshaviah,1 Chron 11:46,e818,man: righteous: good: work: heart
 ,Joshbekashah,1 Chron 25:4,e85a,man: no: or: near
-,Joshibiah,1 Chron 4:35,e6e2,"man: good: alive,life,live: good: heart"
+,Joshibiah,1 Chron 4:35,e6e2,"man: good: alive,life,live: goods: heart"
 ,Joshua_man,Ex 17:9,eb03,man: help: straight: people
 ,Josiah,2 Kgs 21:24,ea65,"man: king,lord,ruler,master: child: small,few: person"
 ,Jotbathah,Num 33:33,e3f0,"Good: land,ground,earth,space"
@@ -1707,22 +1707,22 @@
 ,Julius,Acts 27:1,ec07,"man: crooked: no,not: straight: hair: face"
 ,jump,,ed0a,"Very: forward,to: up"
 ,Junia,Rom 16:7,ebc8,"woman: young: small,few: time,when"
-,Jushab_Hesed,1 Chron 3:20,e6e3,"man: change,turn"
-,justice,,ea25,"Forward,to: hand: same,equal"
+,Jushab_Hesed,1 Chron 3:20,e6e3,man: change: changes
+,justice,,ea25,Forward: hand: same: forwards
 ,justify,,eb4f,"make,create: hand: person: righteous,righteousness: good: work,do"
 ,Justus,Acts 1:23,eb6a,"man: righteous,righteousness: good: work,do"
 ,Juttah,Josg 21:16,e506,"leave,depart,come_out: door: forward,to: village: many,much: neighbor: house: near,close"
 ,Kabbon,Josh 15:40,e517,"understand,understanding: know,knowledge: very: village: many,much: neighbor: house: near,close"
-,Kabul,Josh 19:27,e588,"prison: house: chain,bound,imprisoned,arrest: village: many,much: neighbor: house: near,close"
+,Kabul,Josh 19:27,e588,prison: house: chain: village
 ,Kabzeel,Josh 15:21,e518,"gathered: gathered_things: together_things: village: many,much: neighbor: house: near,close"
 ,Kadesh,Gen 14:7 Num 34:4,edf9,"No,not: tree,plant,wood: cry: sad,grieve: village: many,much: neighbor: house: near,close"
 ,Kadmiel,Ezra 2:40,e84d,man: sleep: before: backward: thing
 ,Kadmonites,Gen 15:19,efd1,East: direction: people
 ,Kain,Josh 15:57,e519,"have: hand: .: village: many,much: neighbor: house: near,close"
-,Kalkol,1 Kgs 4:31,e96e,man: tongue: mouth: thing
+,Kalkol,1 Kgs 4:31,e96e,man: tongue: mouth: thing: tongues
 ,Kallai,Neh 12:20,e8a6,man: go: eye
 ,Kalneh,Gen 10:10,edfa,"Wall: village: many,much: neighbor: house: near,close"
-,Kamon,Judg 10:5,e520,"arise,ascend: arise,ascend: village: many,much: neighbor: house: near,close"
+,Kamon,Judg 10:5,e520,arise: arises: village: many: neighbor: house: near
 ,Kanah_brook,Josh 16:8,e46d,"grass: river,stream"
 ,Kanah_village,Josh 19:28,e46e,"grass: village: many,much: neighbor: house: near,close"
 ,Kareah,2 Kgs 25:23,e7ce,man: hair: face: thing
@@ -1731,7 +1731,7 @@
 ,Karmi,Gen 46:9,efd2,"Man: vine: small,few: up: tree,plant,wood"
 ,Kartah,Josh 21:34,e653,"no,not: together_people,gathered_people: village: many,much; neighbor: house: near,close"
 ,Kasiphia,Ezra 8:17,e8e2,person: silver: small: money: land
-,Kasluhites,Gen 10:14,edc9,"Save,rescue: very: help: straight: people"
+,Kasluhites,Gen 10:14,edc9,"Save,rescue: very: help: straight: people: peoples"
 ,Kattath,Josh 19:15,e589,"make,create: hand: person: small,few: village: many,much: neighbor: house: near,close"
 ,Kebar_Canal,Ezek 1:1,e8f7,many: dream: eye: sleep: river
 ,Kedar,Gen 25:13,eede,"Man: dark: no,not: light: eye,see: sun,day"
@@ -1746,7 +1746,7 @@
 ,Kelita,Neh 10:10,e8a7,man: bad: no: good: leg: person
 ,Kelub,1 Chron 4:11,e6e5,"man: basket: small,few: net"
 ,Keluhi,Ezra 10:35,e8e4,man: mouth: thing
-,Kemuel,Gen 22:21,efd3,"Man: gathered,together_things"
+,Kemuel,Gen 22:21,efd3,Man: gathered: gathereds
 ,Kenaanah,1 Kgs 22:11,e69f,"man: forward,to: backward"
 ,Kenani,Neh 9:4,e8a8,man: around: sun
 ,Kenaniah,1 Chron 26:29,e938,man: hei: big: near
@@ -1757,22 +1757,22 @@
 ,Kephirah,Josh 18:26,e437,"hair: animal: village: many,much: neighbor: house: near,close"
 ,Keran,Gen 36:26,eff9,Man: harp: string: box
 ,Kerethites,Zeph 2:5,e52e,"knife,cut: people"
-,Kerioth,Jer 48:24,e459,"call,beckon: mouth,said,speak,confession: near,close: village: many,much: neighbor: house: near,close"
+,Kerioth,Jer 48:24,e459,"call,beckon: mouth,said,speak,confession: near,close: village"
 ,Kerith,1 Kgs 17:3,e694,"knife,cut: river,stream"
 ,Keros,Ezra 2:44,e84e,man: many: bow: face: down
 ,Kerub,Ezra 2:59,e84f,very: up: land
-,Kesed,Gen 22:22,efd6,"Man: demon: bad: no,not: good: spirit: person"
+,Kesed,Gen 22:22,efd6,"Man: demon: bad: no,not: good: nos: spirit: person"
 ,Kesil,Josh b15:3,e52f,"fool: no,not: wisdom,wise: know,knowledge: or: village: many,much: neighbor: house: near,close"
 ,Keturah,Gen 25:1,eee1,"Woman: nose,smell"
 ,key,,ea9d,"thing: open: no,not: closed"
-,Kezib,Gen 38:5,e1bf,"Far: no,not: near,close: village: many,much: neighbor: house: near,close"
+,Kezib,Gen 38:5,e1bf,Far: no: near: village
 ,Kibroth_Hattaavah,Num 11:34,e2a0,"Bury: straight: dead,death,die: no,not: heart: land,ground,earth,space"
 ,Kibzaim,Josh 21:22,e655,"two: mountain: village: many,much: neighbor: house: near,close"
 ,Kidon,1 Chr 13:9,e636,man: around: sword
 ,Kidron_Valley,John 18:1,eba6,"black: moon,night: color: valley"
-,Kilion,Ruth 1:5,e41f,"man: sick,disease: sad,grieve: heart"
+,Kilion,Ruth 1:5,e41f,"man: sick,disease: sad: sads: heart:"
 ,kill,,e141,"knife,cut: person"
-,Kilmad,Eze 27:23,e921,buy: forward: money: near: village: many: neighbor: house: near
+,Kilmad,Eze 27:23,e921,buy: forward: money: near: village
 ,Kimham,2 Sam 19:37,e7f8,man: face: white: no: color
 ,Kinah,Josh 15:22,e530,"very: cry: sad,grieve: water,wet: village: many,much: neighbor: house: near,close"
 ,kind_nice,,e01c,"love,compassion: good"
@@ -1781,7 +1781,7 @@
 ,Kinnereth,Josh 19:35,e3f2,"Harp: string: box: village: many,much: neighbor: house: near,close"
 ,Kir,Isa 22:6 2 Kings 16:9,e45a,"hedge: wall: land,ground,earth,space: village: many,much: neighbor: house: near,close"
 ,Kiriath_Huzoth,Num 22:39,e2f9,"Wide: stretch: measure: village: many,much: neighbor: house: near,close"
-,Kiriath_Jearim,Josh 9:44 Josh 9:17,e438,"tree,plant,wood: village: many,much: neighbor: house: near,close"
+,Kiriath_Jearim,Josh 9:44 Josh 9:17,e438,tree: trees: village
 ,Kish,1 Chr 24:29,eb49,man: catch: thing: net
 ,Kishi,1 Chr 6:44 1 Chr 15:17,e65e,man: bird: person
 ,Kishion,Josh 12:22 Josh 21:28,e4e0,"hard: soft: no,not: village: many,much: neighbor: house: near,close"
@@ -1804,7 +1804,7 @@
 ,Kozbi,Num 25:15,e3d1,"Woman: deceive,deception,false,lie,lead_astray: bad: no,not: true,truth: good: measure"
 ,Kozeba,1 Chron 4:22,e6e6,"deceive: bad: no,not: true,truth: good: measure: land,ground,earth,space"
 ,Kuthah,2 Kgs 17:24,e6b3,"burn,burnt: kill,destroy,destruction: knife,cut: person: fire,hot,heat: village: many,much: neighbor: house: near,close"
-,Laadah,1 Chron 4:21,e6e7,man: neck: face
+,Laadah,1 Chron 4:21,e6e7,man: neck: face: necks
 ,Laban,Gen 24:29,edfd,"Man: very: mouth,said,speak,confession"
 ,Lachish,Josh 10:3,e439,"walk: village: many,much: neighbor: house: near,close"
 ,Ladan,1 Chron 26:21,e939,man: two: neck
@@ -1842,7 +1842,7 @@
 ,leaven,,e32d,"up: bread,loaf: mouth,said,speak,confession: grain,wheat"
 ,Lebanah,Neh 7:48 Ezra 2:45,e850,man: big: white: no: color
 ,Lebanon,Ps 29:5,e599,"tool: all,whole: land,ground,earth,space"
-,Lebaoth,Josh 15:32,e533,"mountain: house: village: many,much: neighbor: house: near,close"
+,Lebaoth,Josh 15:32,e533,mountain: house: village
 ,Lebo_Hamath,Num 34:8,e2a2,"Fire,heat,hot: land,ground,earth,space"
 ,Lebonah,Judg 21:19,e561,"color: village: many,much: neighbor: house: near,close"
 ,left,,e0f4,
@@ -1853,7 +1853,7 @@
 ,Lekah,1 Chron 4:21,e6ea,"man: go: me,I"
 ,Lemuel,Pro 31:1,e6ca,man: very: follow: people: forward
 ,length,,ecc2,"Forward,to: stick"
-,leopard,,ecf8,Soft: animal
+,leopard,,ecf8,Spot: spots: animal
 ,leprosy,,e382,"very: sick,disease: sad,grieve: heart"
 ,letter,,eb84,"small,few: book,read,learn"
 ,Letush,Gen 25:3 Gen 25:3,eee2,tool: people
@@ -1866,7 +1866,7 @@
 ,lift,,e081,hand: up
 ,light,,e0c2,"eye,see: sun,day"
 ,lightning,,ea88,"storm: eye,see"
-,Likhi,1 Chron 7:19,e7ad,man: have: hand: .
+,Likhi,1 Chron 7:19,e7ad,man: have: hand: .: haves
 ,linen,,ea20,"No,not: all,whole: clothing,fabric"
 ,Linus,2 Tim 4:21,ecb0,"Man: clothing,fabric"
 ,lion,,ecb6,Hair: face: animal
@@ -1882,7 +1882,7 @@
 ,love,,e01a,
 ,lower_adj,,e324,straight: down
 ,Lucius,Acts 13:1,ec93,"man: another,next: person: after: thing: forward,to: teach,teaching: mouth,said,speak,confession: book,learn,read"
-,Lud,Gen 10:22,e1c2,"man: first: start,beginning: birth,born: person"
+,Lud,Gen 10:22,e1c2,man: first: start: starts: birth: person
 ,Ludites,Gen 10:13,e1ea,"Bad: no,not: good: land,ground,earth,space; people"
 ,Luke,Col 4:14,eb68,"man: light: eye,see: day,sun"
 ,lunatic,,e06d,"know,knowledge: wild: no,not: peace: sleep,rest,lie_down: person: love,compassion"
@@ -1901,14 +1901,14 @@
 ,Maakah_woman,2 Chr 11:21,e2d8,Woman: press: very: touch: thing: hand
 ,Maakath_land,Josh 13:13,e483,"knife,cut: land,ground: earth,space"
 ,Maakath_man,Josh 12:5,e49c,"man: very: knife,cut: all,whole"
-,Maasai,1 Chr 9:12,e5ed,"man: assurance,confidence: know,knowledge"
+,Maasai,1 Chr 9:12,e5ed,man: assurance: know: knows
 ,Maaseiah,1 Chron 15:18,e79e,man: small: righteous: good: work
 ,Maath,Luke 3:26,ec4b,"man: time,when"
-,Maaz,1 Chron 2:27,e79f,man: tree
+,Maaz,1 Chron 2:27,e79f,man: tree: trees
 ,Maaziah,1 Chron 24:18,e7ae,man: hei: big
 ,Macedonia,Acts 16:9,ec0d,"above,over: up: thing: land,ground,earth,space"
 ,Machir_man,Gen 50:23,e2d1,"Man: forward,to: straight: money,wealth,wealthy"
-,Machpelah,Gen 23:19,eee4,"repeat: village: many,much: neighbor: house: near,close"
+,Machpelah,Gen 23:19,eee4,"repeat: thing: things: village: many,much: neighbor: house: near,close"
 ,Madai,Gen 10:2,edff,Man: measure
 ,Madmannah,Josh 15:31,e534,"no,not: desire,like,want: love,compassion: heart: village: many,much: neighbor: house: near,close"
 ,Madmannah_man,1 Chron 2:49,e7a1,man: no: desire: love: heart
@@ -1930,7 +1930,7 @@
 ,Mahlah_man,1 Chron 7:18,e7ac,man: cry: sad: water: heart
 ,Mahlah_woman,Num 36:11,e38c,"Woman: cry: sad,grieve: water,wet: heart"
 ,Mahli,Ezra 8:18,e2c5,"Man: sad,grieve: heart"
-,Mahlon,Ruth 1:5,e420,"man: trouble: heart: bad: no,not: good"
+,Mahlon,Ruth 1:5,e420,man: trouble: heart: bad: no: good: bads
 ,Mahol,1 Kgs 4:31,e96f,man: happy: face: run: walk: very
 ,Mahseiah,Jer 32:12,e90d,man: hei: wall
 ,Makaz,1 Kgs 4:9,e970,end: village: many: neighbor: house: near
@@ -1950,7 +1950,7 @@
 ,Malkijah,1 Chr 9:12,e5ee,"man: Yahweh: king,lord,ruler,master: hei"
 ,Malkiram,1 Chron 3:18,e6eb,man: mouth: up
 ,Mallothi,1 Chron 25:4,e85c,man: past: backward: time: mouth
-,Malluk,1 Chron 6:44,e93b,man: power: big: knife
+,Malluk,1 Chron 6:44,e93b,man: power: big: bigs: knife
 ,Malta,Acts 28:1,ec19,"storm: island: water,wet: land,ground,earth,space"
 ,Mamre,Gen 18:1,eea3,"Eye,see: land,ground,earth,space"
 ,man,,e000,
@@ -1960,7 +1960,7 @@
 ,Manasseh_land,Josh 17:7,e470,"no,not: call,beckon: mouth,said,speak,confession: near,close: land,ground,earth.space"
 ,Manasseh_man,Gen 41:51,ea63,"man: no,not: know,knowledge"
 ,manna,Exod 16:31,eba9,"soft: grain,wheat"
-,Manoah,Judg 16:31,e564,"man: sleep,rest,lie_down"
+,Manoah,Judg 16:31,e564,man: sleep: sleeps
 ,many,,e198,
 ,Maon_man,,e47c,"man: sin,lawlessness,sinful,unrighteous,unrighteousness: bad: no,not: good: work,do"
 ,Maon_village,Judg 10:12,e521,"no,not: work,do: village: many,much: neighbor: house: near,close"
@@ -1980,16 +1980,16 @@
 ,Masrekah_city,Gen 36:36,effd,"Vineyard: fruit: land,ground,earth,space"
 ,Massa,Gen 25:14,eee5,"Man: patient,longsuffering,patience: time,when: pain,hurt: knife,cut: heart"
 ,Massah,Exod 17:7,e2c3,"Desire,like,want,will: love,compassion: heart: land,ground,earth,space"
-,Matred,Gen 36:39,effe,Woman: repeat: thing
+,Matred,Gen 36:39,effe,Woman: repeat: thing: things
 ,Mattan,2 Kgs 11:18,e620,"man: rain: cloud: soft: thing: water,wet"
 ,Mattanah,Num 21:19,e38d,"King,lord,ruler,master: hand: land,ground,earth,space"
-,Mattaniah,1 Chr 9:15,e5ef,"man: clothing,fabric"
+,Mattaniah,1 Chr 9:15,e5ef,man: clothing: clothings
 ,Mattatha,Luke 3:31,ec9c,"man: dry: no,not: water,wet: land,ground,earth,space"
 ,Mattathias,Luke 3:26,ec9d,"man: bright: very: sun,day"
 ,Mattattah,Ezra 10:33,e8e7,man: good: clothing: mouth
 ,Mattenai,Neh 12:19,e8ad,man: near: forward
 ,Matthan,Matt 1:15,ea71,"man: king,lord,ruler,master: hand"
-,Matthat,Luke 3:24,ed12,"man: thing: bring,carry,take: hand"
+,Matthat,Luke 3:24,ed12,"man: thing: bring,carry,take: hand: things"
 ,Matthew,Matt 9:9 Acts 1:26,eb04,"Man: gift: hand: love,compassion"
 ,Mattithiah,Ezra 10:43,e1c4,"Man: big: bed,mattress: sleep,rest,lie_down: person: straight"
 ,mature,,e236,"end,finish: grow,growth,ripen: up: land,ground,earth,space"
@@ -2002,7 +2002,7 @@
 ,Medan,Gen 25:2,eee7,"Man: people: war,battle,fight"
 ,Medeba,Num 21:30,e38e,"Quiet,silence: village: many,much: neighbor: house: near,close"
 ,Media,Ezra 6:2,eb70,"far: no,not: near,close: land,ground,earth,space"
-,Megiddo,Josh 12:21,ecfb,"Multitude,crowd: people: land,ground,earth,space"
+,Megiddo,Josh 12:21,ecfb,Multitude: people: peoples: land
 ,Mehetabel,Gen 36:39,eff0,Woman: good
 ,Mehida,Ezra 2:52,e852,man: own: have: person
 ,Mehir,1 Chron 4:11,e729,man: owe: no: backward: money
@@ -2014,11 +2014,11 @@
 ,Melea,Luke 3:31,ec6a,"man: person: love,compassion"
 ,Melek,1 Chr 9:41,e5f0,"man: come,visit: walk: near,close"
 ,member,,e174,house: people
-,Memphis,Hos 9:6,e7cb,good: house: village: many: neighbor: house: near
+,Memphis,Hos 9:6,e7cb,good: house: village
 ,Menahem,2 Kgs 15:22,e6b5,man: comfort: love: sleep: person
 ,Menna,Luke 3:31,ec6b,"man: hard: no,not: soft"
-,Meonothai,1 Chron 4:13,e72a,man: land
-,Mephaath,Josh 21:37,e4e1,"up: up: village: many,much: neighbor: house: near,close"
+,Meonothai,1 Chron 4:13,e72a,man: land: lands
+,Mephaath,Josh 21:37,e4e1,up: ups: village: many: neighbor: house: near
 ,Mephibosheth,2 Sam 9:6 1chron 9:40,e527,"man: anger,angry: mouth,said,speak,confession"
 ,Merab,1 Sam 18:17,e7ec,woman: many
 ,Meraiah,Neh 12:12,e8b0,man: no: change: near
@@ -2036,7 +2036,7 @@
 ,Meshech_land,Psa 120:5,e87e,move: direction: person: land
 ,Meshech_man,Gen 10:2,eea6,Man: move: direction: person
 ,Meshezabel,Neh 10:21,e8b2,man: unity: one
-,Meshillemith,1 Chr 9:12,e638,"man: correct,yes: good"
+,Meshillemith,1 Chr 9:12,e638,man: correct: good: corrects
 ,Meshobab,1 Chron 4:34,e72c,man: repent: change: heart: no
 ,Meshullam,1 Chr 9:7,e639,"man: correct,yes: good"
 ,Meshullemeth,2 Kgs 21:19,e6b6,woman: bring: hand: thing: backward
@@ -2062,7 +2062,7 @@
 ,Migron,1 Sam 14:2,e7e0,cave: hole: mountain: village: many: neighbor: house: near
 ,Mijamin,1 Chron 24:9,e7b0,man: thing: right
 ,Mika,2 Sam 9:12,e528,"man: questioned,ask: mouth,said,speak,confession: ?:"
-,Mikloth,1 Chr 9:37,e63a,man: stick
+,Mikloth,1 Chr 9:37,e63a,man: stick: sticks
 ,Mikmethath,Josh 16:6,e471,"under: thing: .: village: many,much: neighbor: house: near,close"
 ,Mikneiah,1 Chron 15:18,e7a2,man: hei: work
 ,Mikri,1 Chr 9:8,e63b,"man: one: money,wealth,wealthy"
@@ -2081,11 +2081,11 @@
 ,Mirmah,1 Chron 8:10,e93f,man: deceiver: person: deceive: bad: no: true: good: measure
 ,mirror,,ebe6,"thing: eye,see: me,I"
 ,Mishael,Lev 10:4,e2dc,"Man: who: person: questioned,ask: mouth,said,speak,confession: ?"
-,Mishal,Josh 19:26 Josh 19:26,e4e2,"book,read,learn: book,read,learn: village: many,much: neighbor: house: near,close"
+,Mishal,Josh 19:26 Josh 19:26,e4e2,book: books: village: many: neighbor: house: near
 ,Misham,1 Chron 8:12,e940,man: very: search: hand: eye: far: no: near
 ,Mishma,Gen 25:14,e1c6,"Man: against: forward,to: backward: obey,obedience: mouth,said,speak,confession: work,do"
 ,Mishmannah,1 Chron 12:10,e81b,man: taste: tongue: mouth: clothing
-,Mispar,Ezra 2:2,e8d1,man: pen
+,Mispar,Ezra 2:2,e8d1,man: pen: pens
 ,Mispereth,Neh 7:7,e8b5,man: number: book
 ,Misrephoth_Maim,Josh 13:6,e54a,"fire,heat,hot: water,wet: land,ground,earth,space"
 ,Mithkah,Num 33:28,e3f6,"Sweet: land,ground,earth,space"
@@ -2131,7 +2131,7 @@
 ,Mount_Pisgah,Num 21:20,e393,"wisdom,wise: know,knowledge: or: mountain"
 ,Mount_Shepher,Num 33:23,e3f8,Good: mountain
 ,Mount_Sinai,Exod 33:6 Exod 19:11,eb5c,thorn: mountain
-,Mount_Tabor,Judg 4:6,e567,up: mountain
+,Mount_Tabor,Judg 4:6,e567,height: straight: up: mountain
 ,Mount_Zalmon,Judg 9:48,e568,"blind: no,not: eye,see: mountain"
 ,Mount_Zion,2 Kgs 19:31,ecf5,"Peace: sleep,rest,lie_down: person: love,compassion: mountain"
 ,mountain,,e306,
@@ -2140,7 +2140,7 @@
 ,Moza,1 Chr 9:42,e63c,"man: another,next: person: after: thing: forward,to"
 ,Mozah,Josh 18:26,e656,"bread,loaf: mouth,said,speak,confession: grain,wheat: down: village: many,much: neighbor: house: near,close"
 ,Muppim,Gen 46:21 1 Chron 26:16,efde,Man: whip
-,murderer,,ea10,"person: kill,destroy,destruction: knife,cut"
+,murderer,,ea10,person: persons: kill: knife
 ,Mushi,Exod 6:19,e2c6,"Man: leave,depart,come_out: door: forward,to"
 ,mustard,,e039,"cross: seed: grain,wheat: small,few"
 ,mute,,e050,"mouth,said,speak,confession: no,not"
@@ -2148,7 +2148,7 @@
 ,myrrh,,e245,"tree,plant,wood: perfume,fragrant: good: nose,smell"
 ,Mysia,Acts 16:7,eb4a,"end,finish: land,ground,earth,space"
 ,mystery,,e18b,"no,not: because,purpose,reason,therefore: know,knowledge: ?"
-,Naam,1 Chron 4:15,e72e,man: happy: face
+,Naam,1 Chron 4:15,e72e,man: happy: face: happys
 ,Naamah_village,Josh 15:41,e538,"happy,joy: face: village: many,much: neighbor: house: near,close"
 ,Naamah_woman,Gen 4:22,eeab,Woman: sweet
 ,Naaman,Gen 46:21,ec6d,"man: very: kind,kindness: love,compassion: good"
@@ -2162,7 +2162,7 @@
 ,Naggai,Luke 3:25,ec4a,"man: correct,yes: good"
 ,Nahalal,Josh 21:35 Judg 1:30,e4e3,"very: reed: big: grass: village: many,much: neighbor: house: near,close"
 ,Nahaliel,Num 21:19,e394,"God: king,lord,ruler,master: man: love,compassion: valley"
-,Naham,1 Chron 4:19,e72f,man: very: best: very: good
+,Naham,1 Chron 4:19,e72f,man: very: best: verys: good
 ,Nahamani,Neh 7:7,e8b7,man: arm: big: around
 ,Naharai,1 Chron 11:39,e81d,man: nose: face
 ,Nahash,1 Sam 11:1,e7e1,man: big: snake
@@ -2174,7 +2174,7 @@
 ,nail,,ebaa,metal: thorn
 ,Nain,Luke 7:11,ea48,"grace: love,compassion: no,not: knife,cut: village: many,much: neighbor: house: near,close"
 ,name,,e04f,"mouth,said,speak,confession: me,I"
-,Naomi,Ruth 1:2,e421,"woman: happy,joy: face"
+,Naomi,Ruth 1:2,e421,"woman: happy,joy: face: happys"
 ,Naphish,Gen 25:15,eee9,"Man: breath,breathe: mouth,said,speak,confession: air"
 ,Naphoth_Dor,1 Kgs 4:11,e971,love: small: village: many: neighbor: house: near
 ,Naphtali_land,1 Kgs 15:20,e5d6,"sword: land,ground,earth,space"
@@ -2208,9 +2208,9 @@
 ,Nehushta,2 Kgs 24:8,e6b9,woman: bronze: soft: metal
 ,Neiel,Jos 19:13,e591,"temple: praise,exalt,dignify,worship: mouth,said,speak,confession: good: building: village: many,much: neighbor: house: near,close"
 ,neighbor,,e173,"house: near,close"
-,Nekoda,Ezra 2:48,e8d3,man: spot
+,Nekoda,Ezra 2:48,e8d3,man: spot: spots
 ,Nemuel,Num 26:9,e396,"Man: circumcise,circumcision: knife,cut: flesh: soft: person"
-,Nepheg,Exod 6:21,e2e4,Man: flower
+,Nepheg,Exod 6:21,e2e4,Man: flower: flowers
 ,Nephtoah,Josh 15:9,e539,"very: open: no,not: closed: land,ground,earth,space"
 ,Nephusim,Neh 7:52,e869,spice: good: taste: tongue: mouth: clothing
 ,Ner,1 Kgs 2:5,e5c6,"man: no,not: black: moon,night: color"
@@ -2220,7 +2220,7 @@
 ,Neriah,Jer 32:12,e913,man: curtain: clothing: window
 ,nest,,e399,Bird: house
 ,net,,e307,
-,Netaim,1 Chron 4:23,e732,tree: land
+,Netaim,1 Chron 4:23,e732,tree: trees:  land
 ,Nethanel,Num 1:8,e2ff,"Man: lead,leader,manage: forward,to: person: trumpet: big: thing: mouth,said,speak,confession"
 ,Nethaniah,2 Chron 17:8,e785,man: thorn: cow
 ,Netophah,1 Chron 2:54,e7a4,descend: down: village: many: neighbor: house: near
@@ -2233,20 +2233,20 @@
 ,Nicolaus,Acts 6:5,eb56,"Man: victory,triumph,prevail: king,ruler,lord,master: war,fight,battle"
 ,Nicopolis,Titus 3:12,ed08,"Hate,enmity: no,not: love,compassion: village: many,much: neighbor: house: near,close"
 ,Nile,Exod 7:18,efdf,"Big: river,stream"
-,Nimrah,Num 32:3,e3cf,"Leopard: soft: animal: village: many,much: neighbor: house: near,close"
+,Nimrah,Num 32:3,e3cf,"Leopard: spot: spots: animal: village: many,much: neighbor: house: near,close"
 ,Nimrod,Gen 10:8,eeaf,"OT: man: no,not: work,do"
 ,Nimshi,1 Kgs 19;16,e5d8,"man: flute: small,few: thing: mouth,said,speak,confession"
 ,nine,,e294,
-,Nineveh,Gen 10:12,e0c6,"enemy: person: hate,enmity: love,compassion: no,not: land,ground,earth,space"
+,Nineveh,Gen 10:12,e0c6,enemy: person: hate: love: no: persons: land
 ,no,,e17c,
 ,Noadiah_man,Ezra 8:33,e2f3,"Man: straight: know,knowledge"
 ,Noadiah_woman,Neh 6:14,e86a,woman: together_people
 ,Noah_man,Gen 6:8,ea43,"man: sleep,rest,lie_down: person"
-,Noah_woman,Num 36:11,e47a,"woman: sleep,rest,lie_down"
+,Noah_woman,Num 36:11,e47a,"woman: sleep,rest,lie_down: person"
 ,Nob,1 Sam 21:1,e463,"prophesy: eye,see: forward,to: village: many,much: neighbor: house: near,close"
 ,Nobah_land,Num 32:42,e3d0,"How: know,knowledge: questioned,ask: mouth,said,speak,confession: ?: land,ground,earth,space"
 ,Nobah_man,Num 32:42,e412,"Man: own: person: have: hand: .: guard: eye,see: sword"
-,Nod,Gen 4:16,eeb1,"OT: very: trip,go,travel,journey: land,ground,earth,space"
+,Nod,Gen 4:16,eeb1,OT: very: go: land
 ,Nogah,1 Chron 14:6,e81e,man: ten: sun
 ,Nohah,1 Chron 8:2,e941,man: quiet
 ,Nophah,Num 21:30,e39b,"Air: village: many,much: neighbor: house: near,close"
@@ -2274,7 +2274,7 @@
 ,Oholibamah_man,Gen 36:41,e0ac,"Man: tent: go,journey,travel,trip: building"
 ,Oholibamah_woman,Gen 36:18,efe0,"Woman: tent: go,journey,travel,trip: building"
 ,oil,,e030,"money,wealth,wealthy: water,wet"
-,Okran,Num 1:13,e2a7,"Man: very: bad: no,not: good"
+,Okran,Num 1:13,e2a7,Man: heart: bad: no: good; bads
 ,old,,e189,"no,not: new"
 ,olive,,eda1,"Money,wealth,wealthy: water,wet: fruit"
 ,Olympus,Rom 16:15,ebcb,man: mountain
@@ -2292,10 +2292,10 @@
 ,Ophir_land,1 Kgs 10:11 Dan 10:5,e5d9,"gold: big: money,wealth,wealthy: land,ground,earth,space"
 ,Ophir_man,Gen 10:29,eeb3,"OT: man: ash: bad: no,not: good: air"
 ,Ophni,Josh 18:24,e657,"very: cloud: soft: thing: village: many,much: neighbor: house: near,close"
-,Ophrah_man,,e2b6,"Man: money,wealth,wealthy: land,ground,earth,space"
+,Ophrah_man,,e2b6,Man: deer: fast_speed: very: forward: animal
 ,Ophrah_village,Judg 8:27,e569,"deer: fast_speed: very: forward,to: animal: village: many,much: neighbor: house: near,close"
 ,or,,e106,
-,Oreb,Judg 7:25,e56a,man: bird
+,Oreb,Judg 7:25,e56a,man: bird: birds
 ,Oren,1 Chron 2:25,e7a5,man: tree: money
 ,Orpah,Ruth 1:4,e422,woman: hair: face
 ,other,,e184,"no,not: this: very: thing"
@@ -2352,7 +2352,7 @@
 ,Pekahiah,2 Kgs 15:22,e6bb,man: bad: no: good: closed
 ,Pelaiah,1 Chron 3:24,e734,man: mouth: no: ear
 ,Pelaliah,Neh 11:12,e86c,man: mirror: thing: eye: me
-,Pelatiah,1 Chron 3:21,e735,man: sweet
+,Pelatiah,1 Chron 3:21,e735,man: sweet: sweets
 ,Peleg,Gen 10:25,ec71,"man: knife,cut"
 ,Pelet,1 Chron 2:47,e7a8,man: run: walk: very: forward
 ,Peleth,Num 16:1,e2fb,"Man: small,few: fast_speed: very: forward,to"
@@ -2368,7 +2368,7 @@
 ,Perez,1 Chr 27:3,ea4c,"man: very: go,travel,trip,journey"
 ,perfume,,e097,"good: nose,smell"
 ,Perga,Acts 13:13,eb47,"world: people: village: many,much: neighbor: house: near,close"
-,Pergamum,Rev 1:11,ebf6,"Hill: small,few: mountain: far: no: near: village: many,much: neighbor: house: near,close"
+,Pergamum,Rev 1:11,ebf6,Hill: small: mountain: far: no: near: village
 ,period,,e37e,
 ,Perizzites,Gen 15:20,eeb5,"Village: many,much: neighbor: house: near,close: people"
 ,persecution,,e03e,"cross: suffering: very: pain,hurt: knife,cut: heart"
@@ -2491,7 +2491,7 @@
 ,Ram,Ruth 4:19,ea50,"man: thing: happy,joy: face"
 ,Ramah,Josh 18:25,ea42,"mountain: village: many,much: neighbor: house: near,close"
 ,Ramath_Lehi,Judg 15:17,e5b3,bone: mountain
-,Ramathaim,1 Sam 1:1,e4f1,"tower: tower: land,ground,earth,space"
+,Ramathaim,1 Sam 1:1,e4f1,"tower: towers: land,ground,earth,space"
 ,Rameses,Gen 47:11,efb4,"Slave: thing: person: part,some: land,ground,earth,space"
 ,Ramiah,Ezra 10:25,e8e9,man: hei: arise: up: straight
 ,Ramoth_Gilead,1 Kgs 4:13,e473,up: village: many: neighbor: house: near
@@ -2515,14 +2515,14 @@
 ,Rehoboam,1 Kgs 11:43,ea5a,man: up: big
 ,Rehoboth,Gen 26:22,eebc,"Stretch: village: many,much: neighbor: house: near,close"
 ,Rehum,Ezra 7:7 Ezra 2:2,e8cc,man: sad: touch: thing: hand
-,Rei,1 Kgs 1:8,e4b6,man: good
+,Rei,1 Kgs 1:8,e4b6,man: good: goods
 ,Rekah,1 Chron 4:12,e736,very: soft: land
 ,Rekem_city,Josh 18:27,e418,"make,create: hand: person: village: many,much: neighbor: house: near,close"
 ,Rekem_man,Num 31:8,e3c3,"Man: many,much; color"
 ,religion,Acts 28:22,ec33,"part,some: believe,faith: know,knowledge: cross"
 ,Remaliah,Isa 7:1,e685,"man: very: fire,heat,hot: near,close"
 ,remember,,e0d8,"call,beckon: mouth,said,speak,confession: near,close: head: face"
-,repeat,,e049,"mouth,said,speak,confession"
+,repeat,,e049,thing: things
 ,repent,,e320,"change,turn: heart"
 ,Rephael,1 Chron 26:7,e946,man: very: health: happy: heart
 ,Rephah,1 Chron 7:25,e78d,man: above: up: thing: full: cup
@@ -2547,20 +2547,20 @@
 ,Rhodes,Acts 21:1,eb25,"flower: island: water,wet: land,ground,earth,space"
 ,rib,Gen 2:21,eebf,Heart: bone
 ,Ribai,1 Chron 11:31,e81f,man: good: room: house: part
-,Riblah,Num 34:11,e3ff,"People: village: many,much: neighbor: house: near,close"
+,Riblah,Num 34:11,e3ff,"People: peoples: village: many,much: neighbor: house: near,close"
 ,right,,e0f3,
 ,right_time,,ed10,"command,insist: mouth,said,speak,confession: !: time,when"
 ,righteous,Matt 5:20,e090,"good: work,do"
 ,Rimmon_man,2 Sam 4:2,e52b,man: up: fruit
 ,Rimmon_Perez,Num 33:19,e400,"Up: fruit: land,ground,earth,space"
-,Rimmon_village,Jos 21:35 Jos 15:32 1 Chron 6:77,e53d,"fruit: fruit: village: many,much: neighbor: house: near,close"
+,Rimmon_village,Jos 21:35 Jos 15:32 1 Chron 6:77,e53d,"fruit: fruits: village: many,much: neighbor: house: near,close"
 ,ring,,ebdf,Around: finger: hand
 ,Rinnah,1 Chron 4:20,e737,man: many: ear
 ,Riphath,Gen 10:3,eec1,"OT: Man: no,not: sleep,rest,lie_down: person"
 ,Rissah,Num 33:21,e401,"Water,wet: land,ground,earth,space"
 ,Rithmah,Num 33:18,e402,"Clean,pure: water,wet: good: tie,knot: land,ground,earth,space"
 ,river,,e30b,
-,Rizia,1 Chron 7:39,e78f,man: happy: face
+,Rizia,1 Chron 7:39,e78f,man: happy: face: faces
 ,Rizpah,2Sam 21:8,e755,woman: fire: hard: soft: no
 ,road,,e23c,
 ,robber,,e0e9,"person: hand: bad: no,not: good"
@@ -2575,7 +2575,7 @@
 ,Rosh,Gen 46:21,e1d2,"Man: small,few: head: face"
 ,rough,Luke 3:5,ec99,"many,much: bad: no,not: smooth: good: straight"
 ,Rufus,Mark 15:21,e36e,"man: blood: red: hand: water,wet: color"
-,Rumah,2 Kgs 23:36,e6bd,straight: arise: land
+,Rumah,2 Kgs 23:36,e6bd,height: straight: up: land
 ,run,,e258,walk: very
 ,Ruth,Ruth 1:4,ea57,"woman: friend: person: love,compassion"
 ,Sabbath,Exod 16:23,e160,"Sun: sleep,rest,lie_down: person"
@@ -2619,7 +2619,7 @@
 ,Sargon,Isa 20:1,e8bb,man: correct: good: measure
 ,Sarid,Jos 19:10,e592,"alive,life,live: good: heart: village: many,much: neighbor: house: near,close"
 ,Sashak,1 Chron 8:14,e94c,man: color: clothing
-,Satan,Matt 10:25 Job 1:6,e335,"big: bad: no,not: good: spirit: person"
+,Satan,Matt 10:25 Job 1:6,e335,"big: bad: no,not: good: spirit: nos: person"
 ,Saul,1 Sam 9:2,eb54,"man: very: questioned,ask: mouth,said,speak,confession: ?"
 ,save,Acts 12:11,e214,very: help: straight: people
 ,Savior,,ec85,"person: save,rescue: very: help: straight: people"
@@ -2663,11 +2663,11 @@
 ,Seth,Gen 4:25,ec79,"man: call,beckon: mouth,said,speak,confession: near,close"
 ,Sethur,Num 13:13,e2eb,"Man: mystery: no,not: because,purpose,reason,therefore: know,knowledge: ?"
 ,seven,,e292,
-,sew,,e077,"hand: make,create: hand: person"
+,sew,,e077,make: hand: person
 ,sex,,ea87,"near,close: body: person"
 ,Shaalbim,Josh 19:42 Judg 1:35,e5b4,"small,few: know,knowledge: village: many,much: neighbor: house: near,close"
 ,Shaaph,1 Chron 2:47,e793,man: fast_forward: very: forward: face
-,Shaaraim,1 Sam 17:52,e6d1,door: village: many: neighbor: house: near
+,Shaaraim,1 Sam 17:52,e6d1,door: doors: village
 ,Shaashgaz,Esth 2:14,e41d,"man: knife,cut: sheep"
 ,Shabbethai,Neh 8:7,e873,man: first: start: sun:
 ,shade,,e079,"hand: sun,day"
@@ -2677,18 +2677,18 @@
 ,Shallum,1 Chr 9:17,e641,"man: correct,yes: happy,joy: face"
 ,Shalmai,Ezra 2:46,e980,man: up: cloak: big: clothing
 ,Shalmaneser,Hos 10:14 2 Kgs 18:9,e623,"man: tie,knot: good"
-,Shama,1 Chron 11:44,e820,man: me: ear
+,Shama,1 Chron 11:44,e820,man: me: mes: ear
 ,shame,,e065,"know,knowledge: bad: no,not: good: me,I"
 ,Shamgar,Judg 5:20,e5b5,man: small: stranger: know: no: person
 ,Shamir_man,,e47d,man: thorn
-,Shamir_village,Judg 10:2,e524,"thorn: thorn: village: many,much: neighbor: house: near,close"
+,Shamir_village,Judg 10:2,e524,thorn: thorns: village
 ,Shammah,Gen 36:13,efa0,Man: road
 ,Shammai,1 Chron 4:17,e739,man: me: ear
-,Shammua,Num 13:4,e2ec,"Man: all,whole"
+,Shammua,Num 13:4,e2ec,Man: all: alls
 ,Shamsherai,1 Chron 8:26,e94b,man: no: run: walk: very
 ,Shapham,1 Chr 5:12,e642,"man: animal: very: small,few"
 ,Shaphan,2 Kgs 22:3,e68e,"man: teeth: mouth,said,speak,confession: bone: animal"
-,Shaphat,Num 13:5,e1e8,Man: or
+,Shaphat,Num 13:5,e1e8,Man: or: ors
 ,Shaphir,Mic 1:11,e4aa,"very: beauty,beautiful: good: eye,see: village: many,much: neighbor: house: near,close"
 ,Sharai,Ezra 10:40,e8ea,man: big: free: no: chain
 ,share,,e07a,"hand: friend: person: love,compassion"
@@ -2711,7 +2711,7 @@
 ,Shebna,2 Kgs 18:18,e624,"man: chain,bound,imprisoned,arrest: sleep,rest,lie_down"
 ,Shechem_city,Josh 21:21,ec95,"Under: thing: .: neck: face: village: many,much: neighbor: house: near,close"
 ,Shechem_man,Gen 34:20,ec97,Man: under: thing: .: neck: face
-,Shedeur,Num 1:5,e2ed,Man: in_front: thing: body: person
+,Shedeur,Num 1:5,e2ed,Man: in_front: thing: things: body: person
 ,sheep,,e270,
 ,Sheerah,1 Chron 7:24,e794,woman: near
 ,Shehariah,1 Chron 8:26,e94d,man: very: morning
@@ -2743,9 +2743,9 @@
 ,Shephatiah,1 Chr 9:8,e644,man: good: or
 ,shepherd,,e271,sheep: person
 ,Shepho,Gen 36:23,e1d6,"Man: smallest,least: very: small,few: hair: face"
-,Shephupham,Num 26:39,e3a0,Man: snake
+,Shephupham,Num 26:39,e3a0,Man: snake: snakes
 ,Sherebiah,Neh 8:7,e875,man: new: fire
-,Sheresh,1 Chron 7:16,e799,man: tree: small
+,Sheresh,1 Chron 7:16,e799,man: tree: small: trees
 ,Sheshai,Num 13:22,e2d3,"Man: clothe,to_clothe: clothing,fabric: person"
 ,Sheshan,1 Chron 2:31,e79a,man: good: flower
 ,Sheshbazzar,Ezra 1:8,e8c8,man: good: thing
@@ -2801,7 +2801,7 @@
 ,Shuhah,1 Chron 4:11,e73e,man: hole: walk
 ,Shuham,Num 26:42,e3b7,"Man: small,few: hole"
 ,Shunem,1 Kgs 1:3,e4b7,"change,turn: village: many,much: neighbor: house: near,close"
-,Shuni,Gen 46:16,e0e0,"Man: secret,whisper: quiet,silence: no,not: mouth,said,speak,confession: ear,hear"
+,Shuni,Gen 46:16,e0e0,"Man: secret,whisper: quiet,silence: no,not: mouth,said,speak,confession: deaf: nos: ear,hear"
 ,Shur,Gen 16:7,e1da,"Sundown: sun,day: down: land,ground,earth,space"
 ,Shuthelah,Num 26:35,e3b8,"Man: new: tree,plant,wood"
 ,Siaha,Neh 7:47 Ezra 2:44,e8c5,man: disciple: person: follow: people: forward
@@ -2831,7 +2831,7 @@
 ,sin,Matt 5:45,e08f,"bad: no,not: righteous,righteousness: good: work,do"
 ,Sin,Ezek 30:15,e0ea,"south: direction: land,ground,earth,space"
 ,sing,1 Chr 16:7,e0e2,"mouth,said,speak,confession: dance: walk: happy,joy: face"
-,Sinim,Isa 49:12,e918,thorn: land
+,Sinim,Isa 49:12,e918,thorn: thorns: land
 ,Sinites,Gen 10:17,eed1,"Water,wet: land,ground,earth,space: people"
 ,sinner,,e151,"sin,lawlessness,sinful,unrighteous,unrighteousness: bad: no,not: good: righteous,righteousness: person: work,do"
 ,Siphmoth,1 Sam 30:28,e720,big: mouth: village: many: neighbor: house: near
@@ -2839,8 +2839,8 @@
 ,Sirah,2 Sam 3:26,e7fb,well: water: hole: thorn
 ,Sisera,Judg 5:20,e5b6,"man: mind,think,think_wonder,think_opinion,thought: know,knowledge: head: face"
 ,Sismai,1 Chron 2:40,e777,man: eye: house
-,sister,,e00e,"woman: small,few: love,compassion"
-,sisters,,e00f,"woman: small,few: love,compassion"
+,sister,,e00e,woman: love: small: womans: loves
+,sisters,,e00f,woman: small: love: womans: smalls: loves
 ,Sithri,Exod 6:22,e2e5,Man: straight: hide: hand: under: thing: .
 ,Sitnah,,eed2,"Hate: no,not: love,compassion: well: water,wet: hole"
 ,six,,e291,
@@ -2856,7 +2856,7 @@
 ,Smyrna,Rev 1:11,ebf5,"Sell: backward: money,wealth,wealthy: village: many,much: neighbor: house: near,close"
 ,snake,,e30c,
 ,snow,,ebfb,"White: no,not: color: rain: cloud: soft: thing: water,wet"
-,Sodi,Num 13:10,e2d4,"Man: mystery: no,not: because,purpose,reason,therefore: know,knowledge: ?"
+,Sodi,Num 13:10,e2d4,Man: mystery: no: because: know: questionmark: mysterys
 ,Sodom,Gen 10:19,ea8e,"fire,hot,heat: village: many,much: neighbor: house: near,close"
 ,soft,,e268,
 ,Soko,1 Chron 4:18,e741,man: very: thorn
@@ -2864,8 +2864,8 @@
 ,soldier,,e12f,"person: war,fight,battle"
 ,Solomon,2 Sam 5:14,ea32,"man: wisdom,wise: know,knowledge: or"
 ,son,,e004,"small,few: man: love,compassion"
-,Son_of_Man,Matt 8:20,e352,"small,few: son: love,compassion: .: man"
-,sons,,e005,"small,few: man: love,compassion"
+,Son_of_Man,Matt 8:20,e352,"small,few: son: love,compassion: .: man: mans"
+,sons,,e005,small: smalls: man: love
 ,Sopater,Acts 20:4 Rom 16:21,ec20,"man: go,travel,trip,journey: with: same,equal: people"
 ,sorcery,,ec8c,"no,not: help: straight: people: God: king,lord,ruler,master: man: love,compassion"
 ,Sorek,Judg 16:14,e5b7,"grape: small,few: fruit: valley"
@@ -2934,7 +2934,7 @@
 ,Tabbaoth,Ezra 2:43,e8d7,man: ring: around: finger: hand
 ,Tabbath,Judg 7:22,e5b8,"down: land,ground,earth,space"
 ,Tabeel,Isa 7:6,e688,"man: command,insist: mouth,said,speak,confession: !"
-,Taberah,Num 11:3,e2d5,"Fire,heat,hot: land,ground,earth,space"
+,Taberah,Num 11:3,e2d5,Fire: fires: land
 ,table,,e280,
 ,Tabor_village,1 Chron 6:77,e65d,"height: straight: up: village: many,much: neighbor: house: near,close"
 ,Tabrimmon,1 Kgs 15:18,e5f1,man: good: fruit
@@ -2952,7 +2952,7 @@
 ,tambourine,,e413,"small,few: cymbal,drum: hand: sound,noise: ear,hear: thing"
 ,Tanhumeth,2 Kgs 25:23,e7cf,man: good: sleep: person
 ,Taphath,1 Kgs 4:11,e5ac,woman water
-,Tappuah_man,1 Chron 2:43,e778,man: arise
+,Tappuah_man,1 Chron 2:43,e778,man: arise: arises
 ,Tappuah_village,Josh 12:17,e448,"arise,ascend: village: many,much: neighbor: house: near,close"
 ,Taralah,Josh 18:27,e65a,"power,can,ability: big: knife,cut: land,ground,earth,space"
 ,Tarshish_man,Gen 10:4,eed3,"Man: poor: no,not: money,wealth,wealthy"
@@ -2974,11 +2974,11 @@
 ,Tel_Assar,2 Kgs 19:12,e6c0,bring: hand: thing: up: village: many: neighbor: house: near
 ,Telah,1 Chron 7:25,e779,man: knife: bone
 ,Telem_man,Num 13:9,e2a9,man: soul: thing: person
-,Telem_village,Josh 15:24,e54e,"sun,day: village: many,much: neighbor: house: near,close"
+,Telem_village,Josh 15:24,e54e,"sun: suns: village: many,much: neighbor: house: near,close"
 ,Tema_land,Isa 21:14,ea60,"far: no,not: near,close: south: direction: land,ground,earth,space"
 ,Tema_man,Gen 25:15,eeed,Man: south: direction
 ,Temah,Ezra 2:53,e8bc,man: very: face
-,Teman_land,Jer 49:20,e1e1,"Land,ground,earth,space: man: color:"
+,Teman_land,Jer 49:20,e1e1,Land: man: color: lands
 ,Teman_man,Gen 36:11,ef90,"Man: color: land,ground,earth,space"
 ,Temeni,1 Chron 4:6,e744,man: down: south: direction
 ,temple,,e03d,"Praise,exalt,dignify,worship: mouth,said,speak,confession: good: building"
@@ -3022,7 +3022,7 @@
 ,tie,,e30e,
 ,Tiglath_Pileser,1 Chr 5:6,e648,"man: tie,knot"
 ,Tigris,Dan 10:4,eed6,"Fast_speed: very: forward,to: river,stream"
-,Tikvah,2 Kgs 22:14,e68f,man: heart: clean: water: good
+,Tikvah,2 Kgs 22:14,e68f,man: heart: hearts: clean: water: good
 ,Tilon,1 Chron 4:20,e745,man: voice: mouth: ear: no
 ,Timaeus,Mark 10:46,e36c,"man: love compassion: blind: no,not: eye,see"
 ,time,,e16a,
@@ -3050,7 +3050,7 @@
 ,Togarmah,Gen 10:3,eed8,Man: bone
 ,together_people,,e126,
 ,Tohu,1 Sam 1:1,e4f2,man: alive: good: heart
-,Token,1 Chron 4:32,e747,many: measure: village: many: neighbor: house: near
+,Token,1 Chron 4:32,e747,many: measure: village
 ,Tola,Gen 46:13,e0c0,"Man; worm: small,few: snake"
 ,tomb,,e178,"house: dead,death,die: no,not: heart"
 ,tongue,,e045,"mouth,said,speak,confession: clothing,fabric"
@@ -3074,8 +3074,8 @@
 ,Tryphaena,Rom 16:12,ebd8,"woman: no,not: power,ability,can: big: knife,cut"
 ,Tryphosa,Rom 16:12,ebd9,"woman: no,not: pain,hurt: knife,cut: heart"
 ,Tubal,Gen 10:2,eed9,"Man: no,not: thing"
-,Tubal_Cain,Gen 4:22,eeef,Man: thing
-,twin,,ec1b,"man: love,compassion: same,equal: small,few"
+,Tubal_Cain,Gen 4:22,eeef,Man: thing: things
+,twin,,ec1b,man: love: same: small: mans: loves
 ,two,,e28d,
 ,Tychicus,Acts 20:4,ecbb,"Man: better: good: many,much"
 ,type,,ed00,"Part,some: same,equal"
@@ -3084,7 +3084,7 @@
 ,Ulai_Canal,Dan 8:2,e854,dirty: water: bad: no: good: river
 ,Ulam,1 Chron 8:39,e953,man: lead: forward: person: one
 ,Ulla,1 Chron 7:39,e77b,man: yoke: animal: tool
-,Ummah,Josh 19:30,e608,"adopt,adoption: house: love,compassion: village: many,much: neighbor: house: near,close"
+,Ummah,Josh 19:30,e608,adopt: house: love: village
 ,under,,e10a,thing: .
 ,understand,,e063,"know,knowledge: very"
 ,unity,,e297,one
@@ -3100,12 +3100,12 @@
 ,Uriah,2 Sam 11:3,ea46,"man: war,fight,battle: light: eye,see: sun,day"
 ,Uriel,1 Chron 6:24,e954,man: cloud: soft: thing: fire
 ,Urim,Exod  28:30,e2cc,"Fire,heat,hot: choose: love,compassion: or"
-,us,,e167,"me,I"
+,us,,e167,me: mes
 ,use,,e08d,"thing: work,do"
 ,Uthai,1 Chr 9:4,e649,"man: questioned,ask: mouth,said,speak,confession: questionmark: me,I"
 ,Uz_land,Job 1:1,e1dd,"Land,ground,earth,space: man: small,few: know,knowledge"
 ,Uz_man,Gen 10:23,eef1,"Man: small,few: know,knowledge"
-,Uzai,Neh 3:25,e877,man: know: clean: water: good
+,Uzai,Neh 3:25,e877,man: know: knows: clean: water: good
 ,Uzal,Gen 10:27,eef2,"Man: no,not: direction"
 ,Uzzah,1 Chr 8:7 1 Chr 13:7,e64a,"man: small,few: day,sun"
 ,Uzzi,1 Chr 9:8,e64b,"man: couch: big: chair,sit"
@@ -3124,7 +3124,7 @@
 ,vineyard,,e27f,"fruit: land,ground,earth,space"
 ,virgin,,ea7e,"pure,clean: water,wet: good: woman"
 ,voice,,e042,"mouth,said,speak,confession: ear,hear"
-,Vophsi,Num 13:14,e40b,Man: and: thing
+,Vophsi,Num 13:14,e40b,Man: and: thing: straight: things
 ,Waheb,Num 21:14,e3bb,"Buy,spend: forward,to: money,wealth,wealthy: village: many,much: neighbor: house: near,close"
 ,waist,,e391,person
 ,wait,,ea11,"stay,remain: person: straight: time,when"
@@ -3144,7 +3144,7 @@
 ,well,,ebb3,"water,wet: hole"
 ,west,,ea89,direction
 ,what,,e109,"thing: questioned,ask: mouth,said,speak,confession: questionmark"
-,wheels,1 Kgs 7:30,e7d0,hole: straight
+,wheels,1 Kgs 7:30,e7d0,hole: straight: holes
 ,where,,e15a,"land,ground,earth,space: questioned,ask: mouth,said,speak,confession: questionmark"
 ,whip,,e310,
 ,white,,e285,"no,not: color"
@@ -3183,15 +3183,15 @@
 ,yoke,,eb09,animal: tool
 ,you,,e314,
 ,young,,e0f1,"small,few: time,when"
-,Zaanan,Mic 1:11 Josh 15:37,e4ab,"sheep: village: many,much: neighbor: house: near,close"
+,Zaanan,Mic 1:11 Josh 15:37,e4ab,"sheep: sheeps: village: many,much: neighbor: house: near,close"
 ,Zaanannim,Judg 4:11,e5bc,"walk: sleep,rest,lie_down: village: many,much: neighbor: house: near,close"
 ,Zaavan,Gen 36:27,ef70,Man: very: shake
 ,Zabad,1 Chron 2:37,e77d,man: vendor: person: backward: money
 ,Zabdi,Josh 7:1,e54f,"man: glass: eye,see: through,pass: thing: forward,to"
-,Zabdiel,1 Chron 27:2,e863,man: very: and
-,Zabud,1 Kgs 4:5,e5ae,man: big: arm
+,Zabdiel,1 Chron 27:2,e863,man: very: and: thing: straight: things
+,Zabud,1 Kgs 4:5,e5ae,man: big: arm: bigs
 ,Zacchaeus,Luke 19:2,ec7e,"man: clean,pure: water,wet: good"
-,Zaccur,Num 13:4 1 Chron 9:15,e1f1,"Man: clean,pure: water,wet: good"
+,Zaccur,Num 13:4 1 Chron 9:15,e1f1,Man: clean: water: good: cleans
 ,Zadok,2 Sam 15:24,ea6d,"man: difficult: sad,grieve: work,do"
 ,Zaham,2 Chron 11:19,e7c7,man: fat: big: soft
 ,Zakkai,Neh 3:20 Ezra 2:9,e8bd,man: good: water
@@ -3224,11 +3224,11 @@
 ,Zelah,Josh 18:28,e65b,"rib: heart: bone: village: many,much: neighbor: house: near,close"
 ,Zelek,1 Chron 11:39,e825,man: break: all: knife: face
 ,Zelophehad,Num 26:33,e3bc,"Man: birth,born: start,beginning: person"
-,Zemaraim,Jos 18:22,e701,"mountain: village: many,much: neighbor: house: near,close"
-,Zemarites,Gen 10:18,eef4,Sheep: people
+,Zemaraim,Jos 18:22,e701,"mountain: mountains: village: many,much: neighbor: house: near,close"
+,Zemarites,Gen 10:18,eef4,Sheep: sheeps: people
 ,Zemirah,1 Chron 7:8,e77f,man: many: mouth
 ,Zenas,Titus 3:13,ed09,"Man: lightning: storm: eye,see"
-,Zephaniah,Zeph 1:1,e60f,"man: Yahweh: king,ruler,lord,master: man: hei: put: hand: thing"
+,Zephaniah,Zeph 1:1,e60f,man: hei: put: hand: thing: period
 ,Zephath,Judg 1:17,e5c2,"big: tower: village: many,much: neighbor: house: near,close"
 ,Zepho,Gen 36:11,e1de,"Man: watchtower: eye,see: tower"
 ,Zephon,Num 26:15,e0d0,"Man: future: time,when: forward,to"
@@ -3249,7 +3249,7 @@
 ,Zetham,1 Chron 26:22,e958,man: tree: water
 ,Zethan,1 Chron 7:10,e780,man: olive: money: water: fruit
 ,Zeus,Acts 14:12,eb2d,"thunder: mouth,said,speak,confession: storm: spirit: no,not: person"
-,Zia,1 Chr 5:13,e64c,man: shake
+,Zia,1 Chr 5:13,e64c,man: shake: shakes
 ,Ziba,2 Sam 9:2,e52c,man: sword
 ,Zibeon,Gen 36:20,ef60,Man: color
 ,Zibia,1 Chron 8:9,e959,man: animal: forward
@@ -3265,7 +3265,7 @@
 ,Zimran,Gen 25:2,e1df,"Man: harvester: person: harvest: hand: grain,wheat"
 ,Zimri,Num 25:14,e40e,"Man: dance: walk: happy,joy: face"
 ,Zin,Num 13:21,e1f2,"Thorn: land,ground,earth,space"
-,Zior,2 King 8:21 Josh 15:54,e552,"small: village: many,much: neighbor: house: near,close"
+,Zior,2 King 8:21 Josh 15:54,e552,"small: smalls: village: many,much: neighbor: house: near,close"
 ,Ziph_man,1 Chr 2:42,e556,"man: very: deceive,deception,false: lead_astray,lie: no,not: true,truth: good: measure"
 ,Ziph_village,Josh 15:24,e553,"wind: fast_speed: very: forward,to: air: village: many,much: neighbor: house: near,close"
 ,Ziphah,1 Chron 4:16,e74b,man: small: river
@@ -3273,17 +3273,17 @@
 ,Zippor,Num 22:2,e2fd,"Man: small,few: bird"
 ,Zipporah,Exod 2:21,e2ce,Woman: bird
 ,Ziza,1 Chron 4:37,e74c,man: sun: go
-,Zoan,Num 13:22,e1f3,"Camel: land,ground,earth,space"
+,Zoan,Num 13:22,e1f3,Camel: village: many: neighbor: house: near
 ,Zoar,Gen 13:10,eef6,least: very: small: village: many: neighbor: house: near
-,Zobah,1 Sam 14:47,e7e2,sword: village: many: neighbor: house: near
+,Zobah,1 Sam 14:47,e7e2,sword: swords: village: many: neighbor: house: near
 ,Zohar,Gen 23:8,efa7,"Man: white: no,not: color"
 ,Zoheleth,1 Kgs 1:9,e4de,"snake: land,ground,earth,space"
 ,Zoheth,1 Chron 4:20,e74d,man: good: away: thing
-,Zophah,1 Chron 7:35,e781,man: cup
+,Zophah,1 Chron 7:35,e781,man: cup: cups
 ,Zophar,Job 2:11,e7c9,man: morning: sun: straight: sleep: person
 ,Zophim,Num 23:14,e3be,"Good: land,ground,earth,space"
 ,Zorah,Josh 15:33,e554,"insect: village: many,much: neighbor: house: near,close"
-,Zuar,Num 1:8,e1f4,"Man: sons: small,few"
+,Zuar,Num 1:8,e1f4,Man: small: smalls
 ,Zuph,1 Chron 6:26 1 Sam 1:1,e4f3,"man: eye,see: cover: straight: thing"
 ,Zur,Num 25:15,e410,"Man: clay: water,wet: dirt,soil,ground_soil: land,ground,earth,space"
 ,Zuriel,Num 3:35,e1f5,"Man: spirit: no,not: person: metal"
