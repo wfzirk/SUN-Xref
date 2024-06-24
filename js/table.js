@@ -1,9 +1,9 @@
 var fontCol = 0;
-var uniCol = 2;
 var nameCol = 1;
-var synCol = 4;
-var xrefCol = 3;
-var noCols = 3;
+var synCol = 2;
+var uniCol = 3;
+var xrefCol = 4;
+var noCols = 5;
 	
 // find font column and unicode column	
 function findCol(arry) {
@@ -12,11 +12,11 @@ function findCol(arry) {
 	var rowx = 0;
 	for (var i = 4; i < arry.length; i ++) {
 		rowx = arry[i]
-		console.log(i, rowx.length, rowx);
+		//console.log(i, rowx.length, rowx);
 		for (var j = 0;  j < rowx.length; j++) {  //  eeac8d = eb0d
 			//	https://stackoverflow.com/questions/17267329/converting-unicode-character-to-string-format
 			var	uni = rowx[j].charCodeAt(0).toString(16).toUpperCase();
-			console.log(i, j, '|'+uni+'|', uni.length);
+			//console.log(i, j, '|'+uni+'|', uni.length);
 		    if (uni.length == 4) { 
 				fontCol = j;
 				for (var k = 0;  k < rowx.length; k++){
@@ -41,7 +41,7 @@ function findCol(arry) {
 		xrefCol = 4
 	} 	
 		
-	console.log(noCols,fontCol, uniCol, nameCol, synCol, xrefCol);
+	console.log("#:%i f:%i n:%i r:%i u:%i x:%i",noCols,fontCol, nameCol, synCol, uniCol, xrefCol);
 	var t1 = performance.now();
 	console.log("findCol " + (t1 - t0) + " milliseconds.");
 }
@@ -62,7 +62,7 @@ function generateTable(lines){
 			len = lines[i].length;
 		}
 	}
-	console.log(lines[5].length)
+	console.log(lines)
 
 	table.createCaption();
 	table.caption.innerHTML = lines[0];
@@ -107,12 +107,13 @@ function generateTable(lines){
 			var c0;
 		    var c1;
 			for (var j = 0; j < lines[i].length; j++) {
-				var text = "";
+				var txt = "";
 				var td = document.createElement("TD");
-				if (lines[i][j]) text = lines[i][j].trim();
+				if (lines[i][j]) txt = lines[i][j].trim();
 				if (j ===fontCol) {
 					td.className = "fonticon";
 					c0 = lines[i][fontCol].charCodeAt(0).toString(16).toLowerCase();
+					//if (i <5) console.log('fontcol', j, toHex(txt), c0, lines[i][uniCol])
 				}
 				if (j === uniCol) {
 					td.className = "unicol";
@@ -137,16 +138,18 @@ function generateTable(lines){
 					}
 					
 				}
-				td.appendChild(document.createTextNode(text));
+				td.appendChild(document.createTextNode(txt));
 				row.appendChild(td);
 			}  // end column process
 			row.style.display = "";
 			if (c0 !== c1) {
-				console.log('not equal',i,c0, c1)
+				if (i<5) console.log('not equal',i,c0, c1)
 				var errdata = "Font error\nicon = " +c0+"\nunicode ="+ c1;
 				row.className = "uerror";
 				row.setAttribute("rowdata", errdata);
 				dispModal(row, fontCol, uniCol);
+			//} else {
+				//if (i <5 ) console.log('equal',i,c0, c1)
 			}
 
 		}	// end row process
@@ -164,7 +167,7 @@ function generateTable(lines){
     for (var i=0; i<str.length; i++) {
       result += str.charCodeAt(i).toString(16);
     }
-	console.log('toHex', str, result);
+	//console.log('toHex', str, result);
 	 return result;
   }
    function toHexArray(str) {
@@ -205,12 +208,13 @@ function table_mismatch() {
 	
 }
 */
-function jscsvToArray(text) {
+function jscsvToArray(txt) {
 	console.log('xcsv...')
 	row = [];
-	lines = text.split('\n');
+	lines = txt.split('\n');
 	for (var i in lines){
 		//l = lines[i].replace(/|/g, ",");
+		console.log('lines',lines[i]);
 		l = lines[i].split('|')
 		for (var j in l) {
 			l[j] = l[j].substring(1, l[j].length - 1)
@@ -221,10 +225,10 @@ function jscsvToArray(text) {
 	return row;
 }
 
-function csvToArray(text) {
+function csvToArray(txt) {
 	var t0 = performance.now();
     let p = '', row = [''], ret = [row], i = 0, r = 0, s = !0, line;
-   for (line of text) {
+	for (line of txt) {
 	    if ('"' === line) {
             if (s && line === p) {
 				row[i] += line;
@@ -251,7 +255,7 @@ function csvToArray(text) {
 function search_Table(){
 	var input = document.getElementById('xsearch').value.toUpperCase();
 	var filter =  input.split(' '); 
-console.log('searchtable',srchType, input)	
+	console.log('searchtable',srchType, input)	
 	table = document.getElementById("searchtable");
 	tr = table.getElementsByTagName("tr");
 	for (i = 1; i < tr.length; i++) {
@@ -324,72 +328,6 @@ function showError() {
 	console.log(input.checked);
 }   
 
-function xsortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("searchtable");
-  switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc"; 
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("td")[n];
-      y = rows[i + 1].getElementsByTagName("td")[n];
-      /*check if the two rows should switch place,
-      based on the direction, asc or desc:*/
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      //Each time a switch is done, increase this count by 1:
-      switchcount ++;      
-    } else {
-      /*If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again.*/
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-
-function xsortArrayByCol(arr, colIndex){
-    arr.sort(sortFunction);
-    function sortFunction(a, b) {
-        a = a[colIndex];
-        b = b[colIndex];
-       return isNaN(a-b) ? (a === b) ? 0 : (a < b) ? -1 : 1 : a-b  ;  // test if text string - ie cannot be coerced to numbers.
-       // Note that sorting a column of mixed types will always give an entertaining result as the strict equality test will always return false
-       // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
-
-       }
-}
 function clearTable() {
     var input, filter, found, srchtable, tr, td, i, j;
     document.getElementById('xsearch').value = "";

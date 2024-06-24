@@ -44,7 +44,7 @@
 		
 	body {
 		height: 100%;
-		width: 100%;
+		width = 600px;
 		line-height: normal;
 		
 	}
@@ -272,6 +272,9 @@
 			<div style="padding-bottom:5px;">
 				<label for="xlf" style="float:left;"> <strong>Select ODS, XLSX or CSV File:</strong></label>
 				<input id="xlf"  type="file" name="xlfile" >
+				<!--<label style="float:right;">Debug&nbsp
+					<input type="checkbox" id="showdebug"  onclick="showDebug();">
+				</label>-->
 				<div id="drop">Or drop file here</div>
 			</div>
 
@@ -285,7 +288,7 @@
 					</select>
 					
 					
-					<label style="float:center;" > <strong>&nbspSearch Type&nbsp</strong>
+					<label style='float:center;' > <strong>&nbspSearch Type&nbsp</strong>
 						<span id="radiospan" style="border:1px; border-style:solid; ">
 							<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
 							<label for="wordsrch">Word</label>
@@ -299,11 +302,11 @@
 				</div>
 
 				<div >
-					<label for="xsearch;" span style="float:left;"> <strong>Search Words &nbsp</strong></label>
+					<label for="xsearch;" span style='float:left;'> <strong>Search Words &nbsp</strong></label>
 						<input id='xsearch' onkeyup='search_Table("xref1")' type='text' size="40">
 
 					<button type="submit"  onclick='clearTable()'<img> Clear</button>
-					<button type="submit" style="float:right;" onclick='dnldCSV()'<img> Download CSV</button>
+					<button type="submit" style='float:right;' onclick='dnldCSV()'<img> Download CSV</button>
 											
 				</div>
 			</div>
@@ -343,20 +346,20 @@
 </div>
 
 <script src="js/jszip.js"></script>
-<!--<script src="js/xlsx.js"></script>-->
-<script src="js/xlsx.bundle.js"></script>
+<script src="js/xlsx.js"></script>
+<!-- <script src="js/cookie.js"></script> -->
 <script src="js/table.js" id="tbl"></script>
 <script src="js/modal.js"></script>
 <script src="js/convertuni.js"></script>
-<!-- <script src="sun.js" > </script> -->
+<script src="sun.js" > </script>
 <!-- https://stackoverflow.com/questions/1017424/pass-vars-to-javascript-via-the-src-attribute  -->
 <!-- <script type="text/javascript" data-parameter_1="value_1" ... src="sun.js"></script>
 -->
 
 <script>
 var debug = false;
-//var X = XLSX;
-var _CSV = false;
+var X = XLSX;
+var CSV = false;
 var global_wb;
 var srchType = document.querySelector('input[name = wsrch]:checked').value
 var colValues =[];
@@ -369,6 +372,20 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 });
 
+/*
+var csvData = 'Test Data\n'
++ '"","questioned","e061","mouth,said,speak: ?","ask"\n'
++ '"","ashamed","e05f","no,not: mouth: heart",\n'
++ '"","loaf","e05d","mouth,said,speak: grain,wheat","bread"\n'
++ '"","boy","e001","small,few: man",\n'
++ '"me poss","mine",,,"ours:my:our"\n'
++ '"","blaspheme","e05b","mouth,said,speak,confessiom: bad: no,not: good: king,crown,ruler,lord,master: man: love,compassion","insult:blasphemy"\n'
++ '"","Apelles","ebcd","man:split,divide,division,separate","looks_like"\n'
++ '"","Levi","eb1b","man: with: equal,same: people",\n'
++ '"","chariot","EC82","horse: chair,sit",\n'
++ '"","Cilicia","EB5B","hair: face: fabric,clothing: land,ground,earth",\n'
++ '"","Nahor","EC6E","man: air",\n';
+*/
 
 function fixUnicode(lines) {
 	console.log('fix');
@@ -397,7 +414,7 @@ var process_wb = (function() {
 		var t0 = performance.now();
 		var result = [];
 		workbook.SheetNames.forEach(function(sheetName) {
-			var csv = XLSX.utils.sheet_to_csv(workbook.Sheets[sheetName]);
+			var csv = X.utils.sheet_to_csv(workbook.Sheets[sheetName]);
 			//var csv = X.utils.sheet_to_json(workbook.Sheets[sheetName], {header:1, raw:true});
 			if(csv.length){
 				result.push("SHEET: " + sheetName);
@@ -417,12 +434,17 @@ var process_wb = (function() {
 		global_wb = wb;
 		var output = "";
         csv = to_csv(wb);
-		console.log(_CSV,'to_csv', csv);
 		output = csvToArray(csv);
 		console.log(output)
-		if (_CSV) output = fixUnicode(output);
+		if (CSV) output = fixUnicode(output);
 		generateTable(output);
-
+		//var ta = performance.now();
+		//for ( i = 0; i < 3; i++){
+		//table_mismatch();
+		//}
+		//sortTable();
+		//var tb = performance.now();
+		//console.log("2nd delay "+ (tb - ta) + " milliseconds.");
 		var t1 = performance.now();
 		console.log("process_wb "+ (t1 - t0) + " milliseconds.");
 	};
@@ -431,19 +453,19 @@ var process_wb = (function() {
 
 var do_file = (function() {
 	return function do_file(files) {
-		console.log('do_file', files[0]["name"]);
+		console.log('do_file');
 		var t0 = performance.now();
 		var rABS = false;
 		var f = files[0];
 		var fname = f["name"];
 		var ext = fname.slice((fname.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
-		if (ext === 'csv') _CSV = true;
-		else _CSV = false;
+		if (ext === 'csv') CSV = true;
+		else CSV = false;
 		var reader = new FileReader();
 		reader.onload = function(e) {
 			var data = e.target.result;
 			console.log(data);
-			process_wb(XLSX.read(data, {type:'array'}));
+			process_wb(X.read(data, {type:'array'}));
 		};
 		if(rABS) reader.readAsBinaryString(f);
 		else {
@@ -459,14 +481,12 @@ var do_file = (function() {
 	if(!drop.addEventListener) return;
 
 	function handleDrop(e) {
-		console.log('handleDrop',e.dataTransfer.files);
 		e.stopPropagation();
 		e.preventDefault();
 		do_file(e.dataTransfer.files);
 	}
 
 	function handleDragover(e) {
-		console.log('handleDragover');
 		e.stopPropagation();
 		e.preventDefault();
 		e.dataTransfer.dropEffect = 'copy';
@@ -477,14 +497,10 @@ var do_file = (function() {
 	drop.addEventListener('drop', handleDrop, false);
 })();
 
-
-// from browse select file
 (function() {
 	var xlf = document.getElementById('xlf');
 	if(!xlf.addEventListener) return;
-	function handleFile(e) { 
-		console.log('handleFile',e.target.files);
-		do_file(e.target.files); }
+	function handleFile(e) { do_file(e.target.files); }
 	xlf.addEventListener('change', handleFile, false);
 })();
 
@@ -568,7 +584,7 @@ function showDebug() {
 	}
 }
 
-//generateTable(jscsvToArray(csvData));
+generateTable(jscsvToArray(csvData));
 
 /*
 if (debug) {
@@ -578,22 +594,6 @@ if (debug) {
 	//sortTable();
 }
 */
-
-//url = "https://raw.githubusercontent.com/wfzirk/Library-Card/main/Input/librarything_HolmstadLibrary.xls"
-url = "./input/xref921_10_6_9_EN.csv";
-fetch(url).then(res => { 
-    return res.arrayBuffer();
-}).then(res => {
-	var use_utf8 = false;
-    console.log('file:', url);
-	var ext = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
-	if (ext === 'csv') _CSV = true;
-	data = new Uint8Array(res);
-	console.log(data)
-	// https://docs.sheetjs.com/docs/api/parse-options/
-	process_wb(XLSX.read(data, {type: 'array', codepage: use_utf8 ? 65001 : void 0}));
-
-});
 
 </script>
 </body>
