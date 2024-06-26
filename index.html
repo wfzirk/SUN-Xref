@@ -4,6 +4,7 @@
 		https://stuk.github.io/jszip/
 		https://oss.sheetjs.com/js-xlsx/
 		https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website
+		https://medium.com/@mityanovosad/fontface-api-handling-the-custom-fonts-with-javascript-1c46fcfffda2
 -->
 <html>
 <head>
@@ -24,6 +25,7 @@
 	}
 
 	*/
+	/*
 	@font-face {
 		font-family: "SUNBF921_10_6_EN";
 		src: url("SUNBF921_10_6_EN.woff") format('woff'),
@@ -35,11 +37,11 @@
 			 url("SUN921_10_6.ttf") format(truetype);
 	}
 
-	
+	*/
 	:root {
-		--sun-font: 'SUN921_10_6';
+		/*--sun-font: 'SUN921_10_6';*/
 	}
-	
+
 	html { height:100%; }
 		
 	body {
@@ -67,7 +69,7 @@
 	}	
 	
 	#output {
-		font-family: var(--sun-font); 
+		/*font-family: var(--sun-font);*/ 
 		height: 65%;
 		overflow-y: scroll;
 		scroll-behavior: smooth; 
@@ -94,11 +96,19 @@
 		 margin-bottom: 5px;
 		 width: 100%; 
 		 empty-cells: show;
-
 	}
 	
 	.xreftable caption {
 		color: green;
+	}
+	
+	table th {
+		position:sticky;
+		top:0;
+		z-index:1;
+		border-top:0;
+		font-size: 16px;
+		background: #d6eaf8;
 	}
 	
 	.xreftable tr {
@@ -106,7 +116,7 @@
 		padding-top: 5px;
 	}
 
-	.xreftable td, .xreftable th {
+	.xreftable td { /*  , .xreftable th {*/
 		border-width: 1px;
 		padding: 1px;
 		border-style: inset;
@@ -132,7 +142,7 @@
 
 	.xreftable td.fonticon {
 		font-size: 32px;
-		font-family: var(--sun-font); 
+		font-family: var(--sun-font);
 		vertical-align: middle;
 		color: blue;
 		width: 45px;
@@ -147,7 +157,7 @@
 	.xreftable td.unicol {
 		text-align: center;
 		font-size: 14px;
-		font-family: var(--sun-font); 
+		/*font-family: var(--sun-font);*/
 		color: blue;
 		width: 60px;
 	}
@@ -157,9 +167,8 @@
 		width: 60px;
 	}
 
-		
 
-		 /*Table Even Rows Styles*/
+	/*Table Even Rows Styles*/
 	 .xreftable tbody, .xreftable tr:nth-child(even){
 		 background-color: #efefef;
 	 }
@@ -176,22 +185,29 @@
 
 
 	.uerror {
-		  color: red;
-	 }
-	.nameerror {
-		  color: gray;
-	 }
-	
-	 
-
-	#drop{
-		border:2px dashed #bbb;
-		border-radius:5px;
-		padding:5px;
-		text-align:center;
-		font:20pt bold,"Vollkorn";color:#bbb
+	  color: red;
 	}
+	.nameerror {
+	  color: gray;
+	}
+
+	a { text-decoration: none }
 	
+	#drop-zone{
+		background: white;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		z-index: -1;
+	}
+	#drop-zone p, #drop-zone svg { pointer-events: none }
+	#drop-zone svg { margin-right: 5px }
 
 	/* The Modal (background) */
 	.modal {
@@ -261,31 +277,30 @@
 	.modal-body {padding: 2px 16px;}
 
 </style>
+
+
 </head>
 <body>
 
 	<form >
-		<div id="title">
-			XREF Search<label style="float:right;">10.5</label>
-		</div>
+		<center><h2>XREF Search</h2></center>
 		<fieldset>
 			<div style="padding-bottom:5px;">
-				<label for="xlf" style="float:left;"> <strong>Select ODS, XLSX or CSV File:</strong></label>
-				<input id="xlf"  type="file" name="xlfile" >
-				<div id="drop">Or drop file here</div>
+			<!--<label for="xlf" style="fontsize:25px;"> <strong>Either browse or drop a docment file and font File anywhere on page:</strong></label> -->
+				<center><h3>Either browse or drop a docment file and font File anywhere on page:</h3></center>
+				<input id="xlf"  type="file" name="xlfile" style="width:80px; overflow:hidden">
+				<span id="droptext"> </span>
 			</div>
-
+			<br>
 			<div class="filetable" style="padding-bottom:5px;">
 				<div style="padding-bottom:5px;">
-					<!--<label for="sfont" style="float:left;"> <strong>Sun font&nbsp</strong></label>
-					<input id='sfont' type='text' size="10">-->
-					<select id = "selFont" onChange="optChangeFont()">
+					<!--<select id = "selFont" onChange="optChangeFont()">
 						   <option value = "SUNBF921_10_6_EN"  >SUNBF921_10_6_EN</option>
 						   <option value = "SUN921_10_6" selected>SUN921_10_6</option>
 					</select>
+					-->
 					
-					
-					<label style="float:center;" > <strong>&nbspSearch Type&nbsp</strong>
+					<label style="float:left;" > <strong>&nbspSearch Type&nbsp</strong>
 						<span id="radiospan" style="border:1px; border-style:solid; ">
 							<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
 							<label for="wordsrch">Word</label>
@@ -293,17 +308,15 @@
 							<label for="charsrch">Char&nbsp</label>
 						</span>
 					</label>
-					<!--<input type="button" id="showerr" style='float: right;' onclick="showError();"  >
-					<label id="splitlabel" for="showerr" style='float: right;'> <strong>Errors<br>Only &nbsp  </strong></label>-->
-										
-				</div>
+				
+				<!--</div>
 
-				<div >
-					<label for="xsearch;" span style="float:left;"> <strong>Search Words &nbsp</strong></label>
+				<div >  -->
+					<label for="xsearch;" span style="float:left;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Search Words &nbsp</strong></label>
 						<input id='xsearch' onkeyup='search_Table("xref1")' type='text' size="40">
 
 					<button type="submit"  onclick='clearTable()'<img> Clear</button>
-					<button type="submit" style="float:right;" onclick='dnldCSV()'<img> Download CSV</button>
+				<!--<button type="submit" style="float:right;" onclick='dnldCSV()'<img> Download CSV</button>-->
 											
 				</div>
 			</div>
@@ -314,9 +327,8 @@
 
 </div>
 
-<div id="output">
-&#174; &#xe000;
-</div>
+<pre id="output"></pre>
+<div id="drop-zone"></div>
 
 <footer>
     <center>
@@ -364,8 +376,13 @@ var colValues =[];
 
 window.addEventListener('DOMContentLoaded', (event) => {
 	console.log('DOM fully loaded')
-	fval = document.getElementById('selFont').value;
-	changeFont(fval);
+	//fval = document.getElementById('selFont').value;
+	//changeFont(fval);
+	ele = document.getElementById("droptext");
+	var fnt = getComputedStyle(ele).fontFamily
+		  .split(', ')
+		  .find(font => document.fonts.check(`10px ${font}`));
+		  console.log(fnt);
 
 });
 
@@ -453,9 +470,9 @@ var do_file = (function() {
 		console.log("do_file " + (t1 - t0) + " milliseconds.");
 	};
 })();
-
+/*
 (function() {
-	var drop = document.getElementById('drop');
+	var drop = document.getElementById("drop-zone");
 	if(!drop.addEventListener) return;
 
 	function handleDrop(e) {
@@ -476,15 +493,88 @@ var do_file = (function() {
 	drop.addEventListener('dragover', handleDragover, false);
 	drop.addEventListener('drop', handleDrop, false);
 })();
+*/
 
+selectedDocument = "None Selected";
+selectedFont = "None Selected";
 
+function displayFileNames() {
+	console.log('displayFilenames', selectedFont, selectedDocument);
+	document.getElementById("droptext").innerHTML = "Font File:<b> "+ selectedFont + "</b>&nbsp;&nbsp;&nbsp;&nbsp; Document File:<b>"+selectedDocument+"</b>";
+}
+
+(function() {
+		var dropZone = document.getElementById('drop-zone')
+		if(!dropZone.addEventListener && !window.addEventListener) return;
+
+		function handleDrop(e) {
+			dropZoneDisplay(e, false); 
+			console.log('handledrop ', e.dataTransfer.files[0].name);
+
+			var url = e.dataTransfer.files[0].name;
+			var ext = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
+			var fname = url.substring(0, url.lastIndexOf('.')) || url
+
+			if (ext === 'woff' || ext === 'ttf'){
+				//selectedFont = fname;
+				//document.getElementById("droptext").innerHTML = "<b>Font File:</b> "+ fname;
+				changeFont(fname);
+			} else {
+				selectedDocument = fname;
+				displayFileNames()
+				do_file(e.dataTransfer.files);
+			}
+		}
+
+		function handleDragover(e) {
+			e.stopPropagation();
+			e.preventDefault();
+			e.dataTransfer.dropEffect = 'copy';
+		}
+
+		function dropZoneDisplay(e, show){
+			e.stopPropagation();
+			e.preventDefault();
+
+			var opacity = show ? '1' : '0';
+			var zIndex  = show ? '1' : '-1';
+
+			dropZone.style.opacity = opacity;
+			dropZone.style.zIndex = zIndex;
+		}
+
+		window.addEventListener('drop' , handleDrop)
+		window.addEventListener('dragover' , handleDragover)
+		window.addEventListener('dragenter' , function(e){
+			dropZoneDisplay(e, true);
+		})
+
+		dropZone.addEventListener('dragleave' , function(e){
+			dropZoneDisplay(e, false);
+		})
+	})();
+	
 // from browse select file
 (function() {
+	// load either document or font file
 	var xlf = document.getElementById('xlf');
 	if(!xlf.addEventListener) return;
 	function handleFile(e) { 
-		console.log('handleFile',e.target.files);
-		do_file(e.target.files); }
+		console.log('handleFile',e.target.files[0]);
+		url = e.target.files[0].name;
+		var ext = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
+		var fname = url.substring(0, url.lastIndexOf('.')) || url
+
+		if (ext === 'woff' || ext === 'ttf'){
+			changeFont(fname);
+			//selectedFont = fname;
+		} else {
+			//document.getElementById("droptext").innerHTML = "<b>Selected File:</b> "+ e.target.files[0].name;
+			selectedDocument = e.target.files[0].name;
+			displayFileNames()
+			do_file(e.target.files); 
+		}
+	}	
 	xlf.addEventListener('change', handleFile, false);
 })();
 
@@ -492,10 +582,10 @@ var do_file = (function() {
 
 //document.getElementById('sfont').value = "";
 document.getElementById('xlf').value = ""; 
-
+/*
 function optChangeFont() {
 	fval = document.getElementById('selFont').value;
-	getFont(fval);
+	changeFont(fval);
 }
 
 function getFont(fval) {
@@ -503,7 +593,7 @@ function getFont(fval) {
 	changeFont(fval)
 }
 
-
+*/
 //https://stackoverflow.com/questions/11355147/font-face-changing-via-javascript
 function fface(f) {
 	ff = "@font-face { font-family: '" + f + "';\
@@ -511,7 +601,7 @@ function fface(f) {
 		     url('" + f + ".ttf') format('truetype');\
 	}"
 
-	console.log(ff)
+	//console.log('font face',ff)
 	return ff;
 }
 
@@ -528,11 +618,13 @@ function changeFont(f) {
 	} else {
 		fStyle.innerHTML = ff;
 	}
-
-	console.log(fStyle.innerHTML)
+	selectedFont = f;
+	displayFileNames();
+	console.log('changefont',fStyle.innerHTML)
 	document.documentElement.style.setProperty('--sun-font', f);
 	
 }
+
 
 function replaceAll(string, search, replace) {
   return string.split(search).join(replace);
@@ -549,7 +641,6 @@ function dnldCSV() {
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
-
 }
 
 
@@ -568,17 +659,6 @@ function showDebug() {
 	}
 }
 
-//generateTable(jscsvToArray(csvData));
-
-/*
-if (debug) {
-	console.log(csvData)
-	generateTable(csvToArray(csvData));
-	table_mismatch();
-	//sortTable();
-}
-*/
-
 //url = "https://raw.githubusercontent.com/wfzirk/Library-Card/main/Input/librarything_HolmstadLibrary.xls"
 url = "./input/xref921_10_6_9_EN.csv";
 fetch(url).then(res => { 
@@ -587,6 +667,8 @@ fetch(url).then(res => {
 	var use_utf8 = false;
     console.log('file:', url);
 	var ext = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
+	selectedDocument = url;
+	displayFileNames();
 	if (ext === 'csv') _CSV = true;
 	data = new Uint8Array(res);
 	console.log(data)
@@ -594,6 +676,10 @@ fetch(url).then(res => {
 	process_wb(XLSX.read(data, {type: 'array', codepage: use_utf8 ? 65001 : void 0}));
 
 });
+
+fontURL = "SUNBF921_10_6_EN";
+changeFont(fontURL);
+
 
 </script>
 </body>

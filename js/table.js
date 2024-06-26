@@ -64,9 +64,10 @@ function generateTable(lines){
 	}
 	console.log(lines)
 
-	table.createCaption();
-	table.caption.innerHTML = lines[0];
+	//table.createCaption();
+	//table.caption.innerHTML = lines[0];
 	// make header
+	var thead = document.createElement('THEAD');
 	var row = document.createElement('TR');
 	for (var j = 0; j < len; j++) {
 		var th = document.createElement("TH");
@@ -91,13 +92,13 @@ function generateTable(lines){
 		}
 		if (j === xrefCol) {
 			th.className = "xrefCol";
-			th.innerHTML = "XRef";
+			th.innerHTML = "Made From";
 		}
 		row.appendChild(th);
 	}
-
+	thead.appendChild(row)
 	
-	table.appendChild(row);
+	table.appendChild(thead);
 	var tbody = document.createElement('TBODY');
 	for (var i = 1; i < lines.length; i++) {  // get line
 		if (lines[i].length > 1) {	// process row
