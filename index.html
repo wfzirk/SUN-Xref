@@ -659,8 +659,9 @@ function showDebug() {
 	}
 }
 
-//url = "https://raw.githubusercontent.com/wfzirk/Library-Card/main/Input/librarything_HolmstadLibrary.xls"
-url = "./input/xref921_10_6_9_EN.csv";
+url = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/main/input/xref921_10_6_9_EN.csv"
+url = "https://github.com/wfzirk/SUN-Xref/blob/Auto-Load-10-6-10/input/xref921_10_6_9_EN.csv"
+//url = "./input/xref921_10_6_9_EN.csv";
 fetch(url).then(res => { 
     return res.arrayBuffer();
 }).then(res => {
@@ -676,8 +677,9 @@ fetch(url).then(res => {
 	process_wb(XLSX.read(data, {type: 'array', codepage: use_utf8 ? 65001 : void 0}));
 
 });
-
-fontURL = "SUNBF921_10_6_EN";
+//fontURL = "https://github.com/wfzirk/SUN-Xref/blob/Auto-Load-10-6-10/fonts/SUNBF921_10_6_EN.ttf"
+//fontURL = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/main/fonts/SUN921_10_6_EN.woff";
+fontURL = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/main/SUNBF921_10_6_EN.woff";
 changeFont(fontURL);
 
 
