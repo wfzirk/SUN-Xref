@@ -58,7 +58,7 @@
 		font-size: 12px;
 		font-weight: bold;
 	}
-	
+
 	table.xreftable {
 		 border-width: 1px;
 		 border-spacing: 0;
@@ -72,17 +72,20 @@
 		 width: 100%; 
 		 empty-cells: show;
 	}
-	
+
 	.xreftable caption {
 		color: green;
 	}
-	
-	table th {
+
+	/* table header to not scroll */
+	.xreftable th {
 		position:sticky;
 		top:0;
 		z-index:1;
-		border-top:0;
-		font-size: 16px;
+		border-style: inset;
+		border-color: lightblue;
+		border-width: 2px;
+		font-size: 14px;
 		background: #d6eaf8;
 	}
 	
@@ -257,38 +260,27 @@
 </head>
 <body>
 
-	<form >
-		<center><h2>XREF Search</h2></center>
-		<fieldset>
-			<div style="padding-bottom:5px;">
-			<!--<label for="xlf" style="fontsize:25px;"> <strong>Either browse or drop a docment file and font File anywhere on page:</strong></label> -->
-				<center><h3>Either browse or drop a docment file and font File anywhere on page:</h3></center>
+	<form>
+		<fieldset> <a href="javascript:window.location.reload(true)">Reload</a></div>
+		<center style="color:blue;">XREF Search</center>
+		
+			<div id="droptext" > 
+			<center><b>Either browse or drop a document file and font File anywhere on page.</b></center>
 				<input id="xlf"  type="file" name="xlfile" style="width:80px; overflow:hidden">
-				<span id="droptext"> </span>
 			</div>
-			<br>
-			<div class="filetable" style="padding-bottom:5px;">
-				<div style="padding-bottom:5px;">
 
+			<div class="filetable" style="padding-bottom:1px; padding-top:5px;">
 					<label style="float:left;" > <strong>&nbspSearch Type&nbsp</strong>
-						<span id="radiospan" style="border:1px; border-style:solid; ">
+						<span id="radiospan" style="border:1px; border-style:solid; padding-bottom:3px;">
 							<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
 							<label for="wordsrch">Word</label>
 							<input type="radio" id="charsrch" name="wsrch" value="char" onClick="setSrch(false)">
 							<label for="charsrch">Char&nbsp</label>
 						</span>
 					</label>
-				
-				<!--</div>
-
-				<div >  -->
 					<label for="xsearch;" span style="float:left;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Search Words &nbsp</strong></label>
 						<input id='xsearch' onkeyup='search_Table("xref1")' type='text' size="40">
-
-					<button type="submit"  onclick='clearTable()'<img> Clear</button>
-				<!--<button type="submit" style="float:right;" onclick='dnldCSV()'<img> Download CSV</button>-->
-											
-				</div>
+					<button type="submit"  onclick='clearTable()'<img> Clear</button>				
 			</div>
 		</fieldset>
 	</form>
@@ -352,7 +344,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	var fnt = getComputedStyle(ele).fontFamily
 		  .split(', ')
 		  .find(font => document.fonts.check(`10px ${font}`));
-		  console.log(fnt);
+		  console.log('font family',fnt);
 
 });
 
@@ -440,37 +432,16 @@ var do_file = (function() {
 		console.log("do_file " + (t1 - t0) + " milliseconds.");
 	};
 })();
-/*
-(function() {
-	var drop = document.getElementById("drop-zone");
-	if(!drop.addEventListener) return;
-
-	function handleDrop(e) {
-		console.log('handleDrop',e.dataTransfer.files);
-		e.stopPropagation();
-		e.preventDefault();
-		do_file(e.dataTransfer.files);
-	}
-
-	function handleDragover(e) {
-		console.log('handleDragover');
-		e.stopPropagation();
-		e.preventDefault();
-		e.dataTransfer.dropEffect = 'copy';
-	}
-
-	drop.addEventListener('dragenter', handleDragover, false);
-	drop.addEventListener('dragover', handleDragover, false);
-	drop.addEventListener('drop', handleDrop, false);
-})();
-*/
 
 selectedDocument = "None Selected";
 selectedFont = "None Selected";
 
 function displayFileNames() {
 	console.log('displayFilenames', selectedFont, selectedDocument);
-	document.getElementById("droptext").innerHTML = "Font File:<b> "+ selectedFont + "</b>&nbsp;&nbsp;&nbsp;&nbsp; Document File:<b>"+selectedDocument+"</b>";
+	sf = selectedFont.substring(selectedFont.lastIndexOf('/') + 1)
+	sd = selectedDocument.substring(selectedDocument.lastIndexOf('/') + 1)
+	document.getElementById("droptext").innerHTML = "Font File: <b> "+ sf + "</b>&nbsp;&nbsp;&nbsp;&nbsp; Document File: <b>"+sd+"</b>";
+	//document.getElementById("droptext").innerHTML = "Font File:<b> "+ selectedFont + "<br>Document File:<b>"+selectedDocument+"</b>";
 	var ext = selectedDocument.slice((selectedDocument.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
 	if (ext === 'csv') _CSV = true;
 }
@@ -632,35 +603,37 @@ function showDebug() {
 	}
 }
 
+function initDocumentFile() {
+	url = "https://github.com/wfzirk/SUN-Xref/gh-pages/input/xref921_10_6_9_EN.csv"
 
-url = "https://github.com/wfzirk/SUN-Xref/gh-pages/input/xref921_10_6_9_EN.csv"
+	//url = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/gh-pages/input/xref921_10_6_9_EN.csv"
+	//url = "https://raw.githubusercontent.com/wfzirk/Library-Card/main/Input/librarything_HolmstadLibrary.xls"
 
-//url = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/gh-pages/input/xref921_10_6_9_EN.csv"
-//url = "https://raw.githubusercontent.com/wfzirk/Library-Card/main/Input/librarything_HolmstadLibrary.xls"
+	//url = "./input/xref921_10_6_9_EN.csv";
 
-//url = "./input/xref921_10_6_9_EN.csv";
+	fetch(url, { mode: 'no-cors'}).then(res => { 
+		return res.arrayBuffer();
+	}).then(res => {
+		var use_utf8 = false;
+		console.log('file:', url);
+		selectedDocument = url;
+		displayFileNames();
+		//var ext = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
+		//if (ext === 'csv') _CSV = true;
+		data = new Uint8Array(res);
+		console.log(data)
+		// https://docs.sheetjs.com/docs/api/parse-options/
+		if (data) process_wb(XLSX.read(data, {type: 'array', codepage: use_utf8 ? 65001 : void 0}));
 
-fetch(url, { mode: 'no-cors'}).then(res => { 
-    return res.arrayBuffer();
-}).then(res => {
-	var use_utf8 = false;
-    console.log('file:', url);
-	selectedDocument = url;
-	displayFileNames();
-	//var ext = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
-	//if (ext === 'csv') _CSV = true;
-	data = new Uint8Array(res);
-	console.log(data)
-	// https://docs.sheetjs.com/docs/api/parse-options/
-	process_wb(XLSX.read(data, {type: 'array', codepage: use_utf8 ? 65001 : void 0}));
-
-});
-
-fontURL = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/gh-pages/fonts/SUN921_10_6_EN.woff";
-//fontURL = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/main/SUNBF921_10_6_EN.woff";
-
-changeFont(fontURL);
-
+	});
+}
+function initFont() {
+	fontURL = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/gh-pages/fonts/SUN921_10_6_EN.woff";
+	//fontURL = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/main/SUNBF921_10_6_EN.woff";
+	changeFont(fontURL);
+}
+initFont();
+initDocumentFile();
 
 </script>
 </body>
