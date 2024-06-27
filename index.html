@@ -12,36 +12,11 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <title>Search SUN Spreadsheet</title>
 <style>
-	/*
-	@font-face {
-		font-family: "SUNBF78_909_EN";
-		src: url("SUNBF78_909_EN.woff") format('woff'),
-			  url("SUNBF78_909_EN.ttf") format(truetype);
-	}
-	@font-face {
-		font-family: "SUN7_8_909";
-		src: url("SUN7_8_909.woff") format('woff'),
-			  url("SUN7_8_909.ttf") format(truetype);
-	}
 
+	/*:root {
+		--sun-font: 'SUN921_10_6';
+	}
 	*/
-	/*
-	@font-face {
-		font-family: "SUNBF921_10_6_EN";
-		src: url("SUNBF921_10_6_EN.woff") format('woff'),
-			 url("SUNBF921_10_6_EN.ttf") format(truetype);
-	}
-	@font-face {
-		font-family: "SUN921_10_6";
-		src: url("SUN921_10_6.woff") format('woff'),
-			 url("SUN921_10_6.ttf") format(truetype);
-	}
-
-	*/
-	:root {
-		/*--sun-font: 'SUN921_10_6';*/
-	}
-
 	html { height:100%; }
 		
 	body {
@@ -294,12 +269,7 @@
 			<br>
 			<div class="filetable" style="padding-bottom:5px;">
 				<div style="padding-bottom:5px;">
-					<!--<select id = "selFont" onChange="optChangeFont()">
-						   <option value = "SUNBF921_10_6_EN"  >SUNBF921_10_6_EN</option>
-						   <option value = "SUN921_10_6" selected>SUN921_10_6</option>
-					</select>
-					-->
-					
+
 					<label style="float:left;" > <strong>&nbspSearch Type&nbsp</strong>
 						<span id="radiospan" style="border:1px; border-style:solid; ">
 							<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
@@ -501,6 +471,8 @@ selectedFont = "None Selected";
 function displayFileNames() {
 	console.log('displayFilenames', selectedFont, selectedDocument);
 	document.getElementById("droptext").innerHTML = "Font File:<b> "+ selectedFont + "</b>&nbsp;&nbsp;&nbsp;&nbsp; Document File:<b>"+selectedDocument+"</b>";
+	var ext = selectedDocument.slice((selectedDocument.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
+	if (ext === 'csv') _CSV = true;
 }
 
 (function() {
@@ -580,8 +552,6 @@ function displayFileNames() {
 
 
 
-//document.getElementById('sfont').value = "";
-document.getElementById('xlf').value = ""; 
 /*
 function optChangeFont() {
 	fval = document.getElementById('selFont').value;
@@ -594,6 +564,9 @@ function getFont(fval) {
 }
 
 */
+xlfFile = document.getElementById('xlf');
+xlfFile.value = ""; 
+
 //https://stackoverflow.com/questions/11355147/font-face-changing-via-javascript
 function fface(f) {
 	ff = "@font-face { font-family: '" + f + "';\
@@ -672,10 +645,10 @@ fetch(url, { mode: 'no-cors'}).then(res => {
 }).then(res => {
 	var use_utf8 = false;
     console.log('file:', url);
-	var ext = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
 	selectedDocument = url;
 	displayFileNames();
-	if (ext === 'csv') _CSV = true;
+	//var ext = url.slice((url.lastIndexOf(".") - 1 >>> 0) + 2).toLowerCase();
+	//if (ext === 'csv') _CSV = true;
 	data = new Uint8Array(res);
 	console.log(data)
 	// https://docs.sheetjs.com/docs/api/parse-options/
@@ -683,8 +656,7 @@ fetch(url, { mode: 'no-cors'}).then(res => {
 
 });
 
-fontURL = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/gh-pages/fonts/SUNBF921_10_6_EN.woff";
-//fontURL = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/main/fonts/SUN921_10_6_EN.woff";
+fontURL = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/gh-pages/fonts/SUN921_10_6_EN.woff";
 //fontURL = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/main/SUNBF921_10_6_EN.woff";
 
 changeFont(fontURL);
