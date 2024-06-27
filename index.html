@@ -261,35 +261,40 @@
 <body>
 
 	<form>
-		<fieldset> <a href="javascript:window.location.reload(true)">Reload</a></div>
-		<center style="color:blue;">XREF Search</center>
-		
-			<div id="droptext" > 
-			<center><b>Either browse or drop a document file and font File anywhere on page.</b></center>
-				<input id="xlf"  type="file" name="xlfile" style="width:80px; overflow:hidden">
+		<fieldset style="background-color:   #f2f4f4;"> 
+			<div class="name" >
+				<center style="color:blue;"><b>XREF Search</b></center>
+					<label for="xlfile"></label>
+					<input id="xlf"  type="file" name="xlfile" style="width:80px; overflow:hidden float: left">
+				<label id="droptext" > 
+					<b>Either browse or drop a document file and font file anywhere on page.</b>
+				</label><a style="float: right; padding-right:50px;" href="javascript:window.location.reload(true)">Reload</a>
+					 
 			</div>
+<!--
+			<input id="xlf"  type="file" name="xlfile" style="width:80px; overflow:hidden float: left">
+			<div id="droptext" > 
+				<b>Either browse or drop a document file and font File anywhere on page.</b>
+			</div>-->
+			<hr>
+			<div class="filetable" style="padding-bottom:1px; padding-top:5px; background-color:    #d4e6f1  ;">
+				<label style="float:left;" > <strong>&nbspSearch Type&nbsp</strong>
+					<span id="radiospan" style="border:1px; border-style:solid; padding-bottom:3px;">
+						<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
+						<label for="wordsrch">Word</label>
+						<input type="radio" id="charsrch" name="wsrch" value="char" onClick="setSrch(false)">
+						<label for="charsrch">Char&nbsp</label>
+					</span>
+				</label>
+				<label for="xsearch;" span style="float:left;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Search Words &nbsp</strong></label>
+					<input id='xsearch' onkeyup='search_Table("xref1")' type='text' size="40">
+				<button type="submit"  onclick='clearTable()'<img> Clear</button>	
+				<br>In the <b>Search</b> bar, enter words separated by space. Select Word in Search Type for full word search.  Select Char in Search Type for partial word search.
 
-			<div class="filetable" style="padding-bottom:1px; padding-top:5px;">
-					<label style="float:left;" > <strong>&nbspSearch Type&nbsp</strong>
-						<span id="radiospan" style="border:1px; border-style:solid; padding-bottom:3px;">
-							<input type="radio" id="wordsrch" name="wsrch" value="word" onClick="setSrch(true)" checked>
-							<label for="wordsrch">Word</label>
-							<input type="radio" id="charsrch" name="wsrch" value="char" onClick="setSrch(false)">
-							<label for="charsrch">Char&nbsp</label>
-						</span>
-					</label>
-					<label for="xsearch;" span style="float:left;"> &nbsp;&nbsp;&nbsp;&nbsp;<strong>Search Words &nbsp</strong></label>
-						<input id='xsearch' onkeyup='search_Table("xref1")' type='text' size="40">
-					<button type="submit"  onclick='clearTable()'<img> Clear</button>				
 			</div>
 		</fieldset>
 	</form>
-	
-<div>In the <b>Search</b> bar, enter words separated by space. Select Word in Search Type for full word search.  Select Char in Search Type for partial word search.
-
-</div>
-
-<pre id="output"></pre>
+<div id="output"></div>
 <div id="drop-zone"></div>
 
 <footer>
@@ -632,8 +637,8 @@ function initFont() {
 	//fontURL = "https://raw.githubusercontent.com/wfzirk/SUN-Xref/main/SUNBF921_10_6_EN.woff";
 	changeFont(fontURL);
 }
-initFont();
-initDocumentFile();
+//initFont();
+//initDocumentFile();
 
 </script>
 </body>
