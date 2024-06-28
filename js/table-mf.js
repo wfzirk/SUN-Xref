@@ -4,7 +4,8 @@ var synCol = 2;
 var uniCol = 3;
 var xrefCol = 4;
 var noCols = 5;
-	
+
+
 // find font column and unicode column	
 function findCol(arry) {
 	var t0 = performance.now();
